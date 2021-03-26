@@ -29,9 +29,9 @@ class UsersTableSeeder extends Seeder
 			$id     =  (string) Uuid::uuid4();
             $data   = UserAggregateRoot::retrieve($id)
                     ->register([
-                    	'name' 		=> 'Silvia (Basil Virtual Assistant)', 
-                    	'email' 	=> 'silvia@basil.id', 
-                    	'password'	=> 'silvia123',
+                    	'name' 		=> config()->get('web.bot.name'), 
+                    	'email' 	=> config()->get('web.bot.email'), 
+                    	'password'	=> 'tlabGo!!!',
                     	'level'		=> 'thunder',
                     	'scopes'	=> array_keys(config()->get('tacl.scopes')),
                     ])->persist();

@@ -35,7 +35,7 @@ use Lacunose\Procure\Events\Transaction\Voided;
 final class ProcureTransactionReactor extends Reactor {
 
     private function incoming_stock($trs, $when, $who){
-        $agent = (new User)->setConnection(config()->get('web.user.conn'))->where('email', config()->get('web.agent.chatbot'))->first();
+        $agent = (new User)->setConnection(config()->get('web.db.tacl'))->where('email', config()->get('web.bot.email'))->first();
 
         if(!Str::is($trs->warehouse, 'dropship')){
 

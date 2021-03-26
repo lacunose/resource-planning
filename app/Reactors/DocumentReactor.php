@@ -29,7 +29,7 @@ use Spatie\EventSourcing\EventHandlers\Reactors\Reactor;
 final class DocumentReactor extends Reactor {
 
     public function onStocked(Stocked $event, string $aggregateUuid){
-        $agent  = (new User)->setConnection(config()->get('web.user.conn'))->where('email', config()->get('web.agent.chatbot'))->first();
+        $agent  = (new User)->setConnection(config()->get('web.db.tacl'))->where('email', config()->get('web.bot.email'))->first();
         $dwh    = Document::uuid($aggregateUuid);
         
         if(in_array($dwh->cause, ['keluar'])) {
@@ -69,7 +69,7 @@ final class DocumentReactor extends Reactor {
     }
 
     public function onTimed(Timed $event, string $aggregateUuid){
-        $agent  = (new User)->setConnection(config()->get('web.user.conn'))->where('email', config()->get('web.agent.chatbot'))->first();
+        $agent  = (new User)->setConnection(config()->get('web.db.tacl'))->where('email', config()->get('web.bot.email'))->first();
         $dwh    = Document::uuid($aggregateUuid);
         
         if(in_array($dwh->cause, ['keluar']) && Str::is($dwh->status, 'stocked') && !$dwh->ux_has_open_timer) {
@@ -84,7 +84,7 @@ final class DocumentReactor extends Reactor {
     }
 
     public function onSubmitted(Submitted $event, string $aggregateUuid){
-        $agent  = (new User)->setConnection(config()->get('web.user.conn'))->where('email', config()->get('web.agent.chatbot'))->first();
+        $agent  = (new User)->setConnection(config()->get('web.db.tacl'))->where('email', config()->get('web.bot.email'))->first();
         $dwh    = Document::uuid($aggregateUuid);
         
         if(in_array($dwh->cause, ['keluar'])) {
@@ -99,7 +99,7 @@ final class DocumentReactor extends Reactor {
     }
 
     public function onLocked(Locked $event, string $aggregateUuid){
-        $agent  = (new User)->setConnection(config()->get('web.user.conn'))->where('email', config()->get('web.agent.chatbot'))->first();
+        $agent  = (new User)->setConnection(config()->get('web.db.tacl'))->where('email', config()->get('web.bot.email'))->first();
         $dwh    = Document::uuid($aggregateUuid);
         
         if(in_array($dwh->cause, ['keluar'])) {
@@ -113,44 +113,44 @@ final class DocumentReactor extends Reactor {
         }
 
         if(in_array($dwh->cause, ['masuk', 'keluar'])) {
-            $lines      = [];
+            // $lines      = [];
 
-            foreach ($dwh->stocks as $line) {
-                $lines[]    = [
-                    'description'   => $line['description']. ' x '. $line['amount'], 
-                    'amount'        => $line['amount'] * $line['price']
-                ];
-            }
+            // foreach ($dwh->stocks as $line) {
+            //     $lines[]    = [
+            //         'description'   => $line['description']. ' x '. $line['amount'], 
+            //         'amount'        => $line['amount'] * $line['price']
+            //     ];
+            // }
 
-            //BUAT TRANSAKSI JURNAL
-            $boo  = Book::where('no_ref', $dwh->no)->firstornew();
-            $doc  = [
-                'no_ref'    => $dwh->no,
-                'cause'     => config()->get('web.translator.tfin_twh_cause.'.$dwh->cause),
-                'group'     => $dwh->warehouse,
-                'type'      => config()->get('web.translator.tfin_twh_type.'.$dwh->cause),
-                'date'      => $dwh->date,
-                'lines'     => $lines,
-                'issuer'    => [
-                    'name'      => $dwh->sender['name'],
-                    'phone'     => $dwh->sender['phone'],
-                    'address'   => $dwh->sender['address']
-                ],
-                'customer'  => [
-                    'pid'       => '',
-                    'name'      => $dwh->receiver['name'],
-                    'phone'     => $dwh->receiver['phone'],
-                    'address'   => $dwh->receiver['address']
-                ],
-            ];
+            // //BUAT TRANSAKSI JURNAL
+            // $boo  = Book::where('no_ref', $dwh->no)->firstornew();
+            // $doc  = [
+            //     'no_ref'    => $dwh->no,
+            //     'cause'     => config()->get('web.translator.tfin_twh_cause.'.$dwh->cause),
+            //     'group'     => $dwh->warehouse,
+            //     'type'      => config()->get('web.translator.tfin_twh_type.'.$dwh->cause),
+            //     'date'      => $dwh->date,
+            //     'lines'     => $lines,
+            //     'issuer'    => [
+            //         'name'      => $dwh->sender['name'],
+            //         'phone'     => $dwh->sender['phone'],
+            //         'address'   => $dwh->sender['address']
+            //     ],
+            //     'customer'  => [
+            //         'pid'       => '',
+            //         'name'      => $dwh->receiver['name'],
+            //         'phone'     => $dwh->receiver['phone'],
+            //         'address'   => $dwh->receiver['address']
+            //     ],
+            // ];
 
-            //1. BUAT PROJECTOR
-            if($boo->id){
-                $id = $boo->uuid;
-            }else{
-                $id =  (string) Uuid::uuid4();
-            }
-            $data   = BookAggregateRoot::retrieve($id)->draft($doc, [])->persist();
+            // //1. BUAT PROJECTOR
+            // if($boo->id){
+            //     $id = $boo->uuid;
+            // }else{
+            //     $id =  (string) Uuid::uuid4();
+            // }
+            // $data   = BookAggregateRoot::retrieve($id)->draft($doc, [])->persist();
         }
     }
 }

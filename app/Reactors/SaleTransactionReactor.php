@@ -183,7 +183,7 @@ final class SaleTransactionReactor extends Reactor {
     }
 
     private function stock_alert($trs, $when, $who){
-        $agent = (new User)->setConnection(config()->get('web.user.conn'))->where('email', config()->get('web.agent.chatbot'))->first();
+        $agent = (new User)->setConnection(config()->get('web.db.tacl'))->where('email', config()->get('web.bot.email'))->first();
 
         if(!Str::is($trs->warehouse, 'dropship')){
 
@@ -263,7 +263,7 @@ final class SaleTransactionReactor extends Reactor {
     }
 
     private function conflict($trs, $when, $where){
-        $agent      = (new User)->setConnection(config()->get('web.user.conn'))->where('email', config()->get('web.agent.chatbot'))->first();
+        $agent      = (new User)->setConnection(config()->get('web.db.tacl'))->where('email', config()->get('web.bot.email'))->first();
 
         if(!Str::is($trs->warehouse, 'dropship')){
             //CHECK OPEN CONFLICT
@@ -393,7 +393,7 @@ final class SaleTransactionReactor extends Reactor {
 
     private function ship_alert($trs, $when, $who){
         if(!Str::is('*grab*', $trs->courier) && !Str::is('*gojek*', $trs->courier) && empty($trs->shipping['receipt'])) {
-            $agent  = (new User)->setConnection(config()->get('web.user.conn'))->where('email', config()->get('web.agent.chatbot'))->first();
+            $agent  = (new User)->setConnection(config()->get('web.db.tacl'))->where('email', config()->get('web.bot.email'))->first();
             $msg    = 'Belum ada nomor resi, pengiriman dengan ekspedisi harus menyertakan nomor resi';
             $chat   = TransactionAggregateRoot::retrieve($trs->uuid)->discuss($msg, $agent ? $agent : null)->persist();
         }
@@ -403,7 +403,7 @@ final class SaleTransactionReactor extends Reactor {
 
     private function print_alert($trs, $when, $who){
         if(!$trs->is_printed && $trs->has_printed_before && !config()->get('tsale.default.order.is_printed')){
-            $agent  = (new User)->setConnection(config()->get('web.user.conn'))->where('email', config()->get('web.agent.chatbot'))->first();
+            $agent  = (new User)->setConnection(config()->get('web.db.tacl'))->where('email', config()->get('web.bot.email'))->first();
             $msg    = '#'.($trs->no_ref ? $trs->no_ref : $trs->no).' perlu re-print ';
             $chat   = TransactionAggregateRoot::retrieve($trs->uuid)->discuss($msg, $agent ? $agent : null)->persist();
         }
@@ -468,7 +468,7 @@ final class SaleTransactionReactor extends Reactor {
         $this->auto_print($trs, $event->when, $event->who);
         
         $us     = new User;
-        $us     = $us->setConnection(config()->get('web.user.conn'));
+        $us     = $us->setConnection(config()->get('web.db.tacl'));
         $us     = $us->whereIn('id', array_column($trs->chats->toArray(), 'user_id'))->wherenotnull('fcm_token')->get()->toarray();
         $us2    = Token::whereIn('user_id', array_column($trs->chats->toArray(), 'user_id'))->wherenotnull('fcm')->where('revoked', 0)->get()->toarray();
         $tokens = array_column($us, 'fcm_token');

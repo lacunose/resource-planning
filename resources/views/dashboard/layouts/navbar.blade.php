@@ -8,7 +8,7 @@
   </button>
   <div class="collapse navbar-collapse ml-5" id="main_nav">
     <ul class="navbar-nav navigation-menu">
-      @foreach(config()->get('web.dashboard_navbar') as $kv => $nv)
+      @foreach(config()->get('menu.dashboard') as $kv => $nv)
         <li class="nav-item has-megamenu has-submenu">
           <a class="nav-link dropdown-toggle menu-navbar" href="#" data-toggle="dropdown"> {{$kv}}  </a>
           <ul class="dropdown-menu submenu megamenu">
