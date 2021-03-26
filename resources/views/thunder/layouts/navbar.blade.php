@@ -2,7 +2,7 @@
       
   <!-- Navigation Menu-->
   <ul class="navigation-menu">
-    @foreach(config()->get('web.thunder_navbar') as $kv => $nv)
+    @foreach(config()->get('menu.thunder') as $kv => $nv)
       <li class="has-submenu">
         <a href="#">{{$kv}} <i class="mdi mdi-chevron-down mdi-drop"></i></a>
         <ul class="submenu text-center">
