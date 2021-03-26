@@ -16,7 +16,9 @@ return [
 		'email'	    => 'sovia@soda.id',
 	],
 	'setting'		=> [
-		'wh_usage_cutoff'	=> 'daily',	
-		// 'wh_usage_cutoff'	=> 'transaction'	
+		// 'wh_usage_cutoff'	=> 'daily',	
+		// 'sale_flow'			=> 'mrp',	
+		'wh_usage_cutoff'	=> 'transaction',	
+		'sale_flow'			=> 'erp',	
 	],
 ];
