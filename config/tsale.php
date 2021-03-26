@@ -96,8 +96,8 @@ return [
             1               => 'Tidak Bermasalah',
         ],
         'item_model'        => 'Lacunose\\Warehouse\\Models\\Item',
-        'item_url'          => 'http://nakoa.localhost:8777/api/warehouse/item/submitted',
-        'catalog_url'       => 'http://nakoa.localhost:8777/api/sale/katalog/published',
+        'item_url'          => '/api/warehouse/item/submitted',
+        'catalog_url'       => '/api/sale/katalog/published',
     ],
     'color' => [
         'catalog'           => [
