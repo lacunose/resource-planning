@@ -40,20 +40,26 @@ return [
 				'scope'	=> 'tsale.transaction.blibli',
 			]],
 			'Pengaturan' => [[
-				'title'	=> 'Katalog',
+				'title'	=> 'Produk',
 				'url'	=> 'tsale.catalog.index',
 				'param' => ['status' => 'published'],
 				'scope'	=> 'tsale.catalog.setting',
-			], [
-				'title'	=> 'Promo Transaksi',
-				'url'	=> 'tsale.promo.index',
-				'param' => ['mode' => 'transaction', 'status' => 'activated'],
-				'scope'	=> 'tsale.promo.transaction',
 			], [
 				'title'	=> 'Promo Produk',
 				'url'	=> 'tsale.promo.index',
 				'param' => ['mode' => 'catalog', 'status' => 'activated'],
 				'scope'	=> 'tsale.promo.catalog',
+			], [
+				'title'	=> 'Promo Transaksi',
+				'url'	=> 'tsale.promo.index',
+				'param' => ['mode' => 'transaction', 'status' => 'activated'],
+				'scope'	=> 'tsale.promo.transaction',
+			]],
+			'Outlet' => [[
+				'title'	=> 'Katalog',
+				'url'	=> 'tsale.catalog.listing',
+				'param' => [],
+				'scope'	=> 'tsale.catalog.listing',
 			], [
 				'title'	=> 'Template Note',
 				'url'	=> 'tsale.note.get',
