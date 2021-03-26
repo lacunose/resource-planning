@@ -10,7 +10,7 @@ return [
 	'email'			=> 'hello@soda.id',
 	'whatsapp'		=> '+62.896.7200.7400',
 	'address'		=> 'VERNON BUILDING, Jln. Letjen Sutoyo No. 102A, Kota Malang, Jawa Timur, Indonesia 65145',
-	'db'			=> ['acl' => 'system', 'sub' => 'system'],
+	'db'			=> ['tacl' => 'system', 'tsub' => 'system'],
 	'bot'		    => [
 		'name'	    => 'Sovia (Soda Virtual Assistant)',
 		'email'	    => 'sovia@soda.id',
