@@ -10,7 +10,7 @@ return [
 	'email'			=> 'hello@basil.id',
 	'whatsapp'		=> '+62.896.7200.7400',
 	'address'		=> 'VERNON BUILDING, Jln. Letjen Sutoyo No. 102A, Kota Malang, Jawa Timur, Indonesia 65145',
-	'db'			=> ['acl' => 'system', 'sub' => 'system'],
+	'db'			=> ['tacl' => 'system', 'tsub' => 'system'],
 	'bot'		    => [
 		'name'	    => 'Silvia (Basil Virtual Assistant)',
 		'email'	    => 'silvia@basil.id',
