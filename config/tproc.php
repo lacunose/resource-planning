@@ -36,7 +36,7 @@ return [
             ['method'    => 'Cash', 'min_amount' => 0],
             ['method'    => 'Transfer', 'min_amount' => 0],
         ],
-        'item_url'          => 'http://vernon.localhost:8700/api/warehouse/item/submitted',
+        'item_url'          => '/api/warehouse/item/submitted',
     ],
     'color' => [
         'transaction'  => [
