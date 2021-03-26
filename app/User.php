@@ -17,6 +17,6 @@ class User extends Model {
      * relationship has many chats
      */
     public function subs() {
-        return $this->setConnection(config()->get('web.sub.conn'))->hasMany(Plan::class)->orderby('ended_at', 'asc');
+        return $this->setConnection(config()->get('web.db.tacl'))->hasMany(Plan::class)->orderby('ended_at', 'asc');
     }
 }

@@ -52,7 +52,7 @@ class RouteServiceProvider extends ServiceProvider
         $this->mapThunderRoutes();
         $this->mapOwnerRoutes();
 
-        $this->mapTenantWebRoutes();
+        $this->mapTenantHomepageRoutes();
         $this->mapTenantDashboardRoutes();
     }
 
@@ -119,11 +119,11 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    protected function mapTenantWebRoutes()
+    protected function mapTenantHomepageRoutes()
     {
         Route::middleware('web')
-             ->namespace('App\Http\Controllers\Basil')
-             ->group(base_path('routes/basil.php'));
+             ->namespace('App\Http\Controllers\Homepage')
+             ->group(base_path('routes/homepage.php'));
     }
 
     /**

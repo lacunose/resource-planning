@@ -35,13 +35,15 @@ return [
             'monthly'   => 'Bulan',
             'yearly'    => 'Tahun',
         ],
-        'management'=> 'Manajemen', 
-        'tacl'      => 'Akses', 
-        'tfin'      => 'Keuangan', 
-        'twh'       => 'Gudang', 
-        'tsale'     => 'Penjualan', 
-        'tproc'     => 'Pembelian', 
-        'tsub'      => 'Langganan',
+        'domain'        => [
+            'management'=> 'Manajemen', 
+            'tacl'      => 'Akses', 
+            'tfin'      => 'Keuangan', 
+            'twh'       => 'Gudang', 
+            'tsale'     => 'Penjualan', 
+            'tproc'     => 'Pembelian', 
+            'tsub'      => 'Langganan',
+        ],
     ],
     'opsi'              => [
         'membership'    => [
@@ -61,11 +63,11 @@ return [
         ],
         'client'    => [
             //WMM - WEB, MANAGEMENT, MANAGERS
-            'WMM01'      => 'Web Dashboard',
+            'BTMDW01'       => 'Web Dashboard Management',
             //WOM - WEB, OPERATIONAL, WAREHOUSE
-            'WOW02'      => 'Web Tools',
+            'BTOGW01'       => 'Web Tools Gudang',
             //AOS - APPS, OPERATIONAL, SALES
-            'AOS01'      => 'Apps POS',
+            'BTOSD01'       => 'Windows Apps POS',
         ],
     ],
     'color'         => [
