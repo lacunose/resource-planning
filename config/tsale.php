@@ -85,11 +85,11 @@ return [
             'tax'               => 'Pajak',
         ],
         'tax'               => [
-            // 'ppn'           => 10,
-            'pb1'           => 10,
+            'ppn'           => 10,
+            // 'pb1'           => 10,
         ],
         'service'           => [
-            'service'       => 10,
+            // 'service'       => 10,
         ],
         'can_print'         => [
             0               => 'Bermasalah',
