@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>BASIL.ID</title>
+        <title>{{ strtoupper(env('APP_NAME', 'MANAGEMENT')) }}</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -43,7 +43,7 @@
 
                 <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
                     <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                        BASIL.ID by THUNDERLAB (PHP v{{ PHP_VERSION }})
+                        {{ strtoupper(env('APP_NAME', 'MANAGEMENT')) }} by THUNDERLAB (PHP v{{ PHP_VERSION }})
                     </div>
                 </div>
             </div>
