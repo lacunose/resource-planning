@@ -11,11 +11,11 @@ return [
 	'support'		=> ['tacl', 'tsub'],
 	'setting'		=> [
 		'reserved_hosts' 		=> [
-			'basil.id',
-			'member.basil.id',
-			'owner.basil.id',
-			'thunder.basil.id',
-			'tools.basil.id',
+			'soda.id',
+			'member.soda.id',
+			'owner.soda.id',
+			'thunder.soda.id',
+			'tools.soda.id',
 		],
 		'dashboard'	=> 'BTMDW01'
 	],

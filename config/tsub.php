@@ -63,11 +63,11 @@ return [
         ],
         'client'    => [
             //WMM - WEB, MANAGEMENT, MANAGERS
-            'BTMDW01'       => 'Web Dashboard Management',
+            'STMDW01'       => 'Web Dashboard Management',
             //WOM - WEB, OPERATIONAL, WAREHOUSE
-            'BTOGW01'       => 'Web Tools Gudang',
+            'STOGW01'       => 'Web Tools Gudang',
             //AOS - APPS, OPERATIONAL, SALES
-            'BTOSD01'       => 'Windows Apps POS',
+            'STOSD01'       => 'Windows Apps POS',
         ],
     ],
     'color'         => [
@@ -86,6 +86,6 @@ return [
         'per_page'  => 80
     ],
     'title'         => [
-        'bill'      => ['unpaid' => 'Tagihan Pending', 'paid' => 'Tagihan Lunas'],
+        'Sill'      => ['unpaid' => 'Tagihan Pending', 'paid' => 'Tagihan Lunas'],
     ],
 ];
