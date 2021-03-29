@@ -23,12 +23,22 @@ class AppServiceProvider extends ServiceProvider {
             \URL::forceScheme('https');
         }
 
-        Projectionist::addReactors([
-            \Lacunose\Swirl\Reactors\SaleTransactionReactor::class,
-            \Lacunose\Swirl\Reactors\ProcureTransactionReactor::class,
-            \Lacunose\Swirl\Reactors\DocumentReactor::class,
-            \Lacunose\Swirl\Reactors\SubscriptionReactor::class,
-            \Lacunose\Swirl\Reactors\UserReactor::class,
-        ]);
+        if(in_array(env('APP_MODE', 'erp'), ['erp'])) {
+            Projectionist::addReactors([
+                \Lacunose\Swirl\Reactors\ERPSaleTransactionReactor::class,
+                \Lacunose\Swirl\Reactors\ProcureTransactionReactor::class,
+                \Lacunose\Swirl\Reactors\DocumentReactor::class,
+                \Lacunose\Swirl\Reactors\SubscriptionReactor::class,
+                \Lacunose\Swirl\Reactors\UserReactor::class,
+            ]);
+        }else{
+            Projectionist::addReactors([
+                \Lacunose\Swirl\Reactors\MRPSaleTransactionReactor::class,
+                \Lacunose\Swirl\Reactors\ProcureTransactionReactor::class,
+                \Lacunose\Swirl\Reactors\DocumentReactor::class,
+                \Lacunose\Swirl\Reactors\SubscriptionReactor::class,
+                \Lacunose\Swirl\Reactors\UserReactor::class,
+            ]);
+        }
     }
 }

@@ -10,7 +10,7 @@ use Lacunose\Sale\Models\Order;
 use Lacunose\Warehouse\Models\Item;
 use Lacunose\Warehouse\Models\Document;
 
-class ToolController extends Controller {
+class ToolsController extends Controller {
     /**
      *
      * @param Request $request
