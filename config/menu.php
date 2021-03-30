@@ -163,8 +163,8 @@ return [
 			'Laporan' => [[
 				'title'	=> 'Harga Barang',
 				'url'	=> 'tproc.laporan.index',
-				'param' => ['group' => 'item', 'filter[date_gte]' => date('Y-m-d')],
-				'scope'	=> 'tproc.laporan.item',
+				'param' => ['group' => 'price', 'filter[date_gte]' => date('Y-m-d')],
+				'scope'	=> 'tproc.laporan.price',
 			], [
 				'title'	=> 'Settlement Pembelian',
 				'url'	=> 'tproc.laporan.index',
