@@ -72,6 +72,7 @@ return [
             'LIFO'      => 'LIFO',
         ],
         'warehouse'     => [],
+        'item_url'      => '/api/warehouse/item/submitted',
     ],
     'color' => [
         'item'          => [

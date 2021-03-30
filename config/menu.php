@@ -40,7 +40,7 @@ return [
 				'scope'	=> 'tsale.transaction.blibli',
 			]],
 			'Pengaturan' => [[
-				'title'	=> 'Produk',
+				'title'	=> 'Katalog',
 				'url'	=> 'tsale.catalog.index',
 				'param' => ['status' => 'published'],
 				'scope'	=> 'tsale.catalog.setting',
@@ -71,6 +71,17 @@ return [
 				'param' => [],
 				'scope'	=> 'tsale.setting.pay',
 			]],
+			'Station' 	=> [[
+				'title'	=> 'Menu',
+				'url'	=> 'tsale.menu.index',
+				'param' => ['status' => 'published'],
+				'scope'	=> 'tsale.menu.setting',
+			], [
+				'title'	=> 'Checker',
+				'url'	=> 'tsale.transaction.checker',
+				'param' => ['status' => 'requested'],
+				'scope'	=> 'tsale.transaction.deliver',
+			]],
 			'Laporan' => [[
 				'title'	=> 'Trend Produk',
 				'url'	=> 'tsale.laporan.index',
@@ -88,8 +99,8 @@ return [
 				'scope'	=> 'tsale.laporan.payment',
 			]],
 		],
-		'GUDANG'	=> [
-			'Stok' 	=> [[
+		'PERSEDIAAN'	=> [
+			'Stok' 		=> [[
 				'title'	=> 'Masuk',
 				'url'	=> 'twh.document.index',
 				'param' => ['cause' => 'masuk', 'status' => 'drafted'],
@@ -281,8 +292,9 @@ return [
 		'management'=> 'Manajemen', 
 		'tacl'		=> 'Akses', 
 		'tfin'		=> 'Keuangan', 
-		'twh'		=> 'Gudang', 
+		'twh'		=> 'Persediaan', 
 		'tsale'		=> 'Penjualan', 
+		'tproc'		=> 'Pembelian', 
 		'tsub'		=> 'Langganan',
 	],
 ];
