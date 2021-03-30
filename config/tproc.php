@@ -52,8 +52,9 @@ return [
         ],
         'branch'            => [],
         'flag'              => [
-            'service'           => 'Jasa',
-            'catalog'           => 'Katalog',
+            'service'       => 'Jasa',
+            'catalog'       => 'Katalog',
+            'asset'         => 'Aset',
             // 'promo_catalog'     => 'Promo Produk',
             // 'promo_transaction' => 'Promo Transaksi',
             // 'deposit'           => 'Deposit',
