@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 */
 
-Route::domain('basil.id')->get('config', function (Request $request) {
+Route::domain(env('APP_BASE', 'localhost'))->get('config', function (Request $request) {
 	$pay  		= [];
 
 	return response()->json([
@@ -101,7 +101,7 @@ Route::middleware('auth:api')->namespace('Dashboard\\API')->group(function(){
 	});
 
 	//tool
-	Route::prefix('tools')->namespace('Lacunose\\Swirl\\Http\\Controllers\\API')->group(function(){
+	Route::prefix('tools')->namespace('\\Lacunose\\Swirl\\Http\\Controllers\\API')->group(function(){
 		Route::get('search/{ref}', [
 		    'as' => 'api.tools.search',				'uses' 	=> 'ToolsController@search'
 		]);

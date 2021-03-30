@@ -96,9 +96,18 @@ class TransactionController extends Controller {
             foreach ($nos as $no) {
                 $order  = Order::no($no)->where('warehouse', $warehouse)
                     ->whereIn('status', ['opened', 'processed'])
-                    ->where('processes->'.$process.'->is_executed', false)
+                    ->where(function($q)use($process){
+                        $q
+                        ->where('processes', 'like', '%'.json_encode(['state' => $process, 'is_executed' => true]).'%')
+                        ->orwhere('processes', 'not like', '%'.json_encode(['state' => $process, 'is_executed' => true]).'%')
+                        ;
+                    })
                     ->firstorfail();
-                $data   = TransactionAggregateRoot::retrieve($order->uuid)->process($process)->persist();
+                if(request()->has('reason')) {
+                    $data= TransactionAggregateRoot::retrieve($order->uuid)->process($process)->discuss(request()->get('reason'))->persist();
+                }else{
+                    $data= TransactionAggregateRoot::retrieve($order->uuid)->process($process)->persist();
+                }
             }
             DB::commit();
           

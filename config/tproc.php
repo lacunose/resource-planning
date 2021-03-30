@@ -4,8 +4,9 @@ return [
     'scopes'    => [
         'tproc.transaction.pembelian' => 'Handle transaksi pembelian',
         'tproc.transaction.konsinyasi'=> 'Handle transaksi konsinyasi',
-        'tproc.laporan.item'          => 'Melihat laporan harga barang',
+        'tproc.laporan.price'         => 'Melihat laporan harga barang',
         'tproc.laporan.payment'       => 'Melihat laporan settlement pembelian',
+        'tproc.transaction.voided'    => 'Approval void transaksi',
     ],
     'logo'          => 'https://thunderlab.id/storage/app/uploads/public/5f7/ae8/123/5f7ae81237a56599536208.png',
     'name'          => 'THUNDERLAB',
@@ -29,14 +30,50 @@ return [
             'monthly'   => 'Bulanan',
             'yearly'    => 'Tahunan',
         ],
-        'batch_pos'         => [],
-        'batch_ecommerce'   => [
+        'day'       => [
+            '*'         => 'Hari',
+            'sunday'    => 'Minggu',
+            'monday'    => 'Senin',
+            'tuesday'   => 'Selasa',
+            'wednesday' => 'Rabu',
+            'thursday'  => 'Kamis',
+            'friday'    => 'Jumat',
+            'saturday'  => 'Sabtu',
         ],
-        'method'    => [
-            ['method'    => 'Cash', 'min_amount' => 0],
-            ['method'    => 'Transfer', 'min_amount' => 0],
+        'mode'          => [
+            'pos'       => 'POS',
         ],
+        'branch'            => [],
+        'flag'              => [
+            'service'           => 'Jasa',
+            'catalog'           => 'Stok',
+            'asset'             => 'Inventaris',
+            // 'promo_catalog'     => 'Promo Produk',
+            // 'promo_transaction' => 'Promo Transaksi',
+            // 'deposit'           => 'Deposit',
+            // 'tax'               => 'Pajak',
+        ],
+        'tax'               => [
+            // 'ppn'           => 10,
+            // 'pb1'           => 10,
+        ],
+        'service'           => [
+            // 'service'       => 10,
+        ],
+        'can_print'         => [
+            0               => 'Bermasalah',
+            1               => 'Tidak Bermasalah',
+        ],
+        'method'            => [[
+            'method'        => 'cash',
+            'min_amount'    => 0,
+        ],[
+            'method'        => 'transfer',
+            'min_amount'    => 0,
+        ]],
+        'item_model'        => 'Lacunose\\Warehouse\\Models\\Item',
         'item_url'          => '/api/warehouse/item/submitted',
+        'catalog_url'       => '/api/warehouse/item/submitted',
     ],
     'color' => [
         'transaction'  => [
@@ -47,12 +84,12 @@ return [
         ],
     ],
     'default'       => [
-        'order'     => ['warehouse' => 'vernon'],
+        'order'     => ['warehouse' => 'nakoa', 'is_printed' => true],
     ],
     'setting'       => [
-        'per_page'  => 80
+        'per_page'  => 80,
     ],
     'title'         => [
-        'report'    => ['payment' => 'Settlement Penjualan', 'item' => 'Harga Barang'],
+        'report'    => ['price' => 'Harga Barang', 'payment' => 'Settlement Pembelian'],
     ],
 ];
