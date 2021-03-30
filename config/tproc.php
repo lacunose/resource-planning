@@ -5,7 +5,7 @@ return [
         'tproc.transaction.pembelian' => 'Handle transaksi pembelian',
         'tproc.transaction.konsinyasi'=> 'Handle transaksi konsinyasi',
         'tproc.laporan.price'         => 'Melihat laporan harga barang',
-        'tproc.laporan.payment'       => 'Melihat laporan settlement penjualan',
+        'tproc.laporan.payment'       => 'Melihat laporan settlement pembelian',
         'tproc.transaction.voided'    => 'Approval void transaksi',
     ],
     'logo'          => 'https://thunderlab.id/storage/app/uploads/public/5f7/ae8/123/5f7ae81237a56599536208.png',
@@ -40,8 +40,8 @@ return [
             'friday'    => 'Jumat',
             'saturday'  => 'Sabtu',
         ],
-        'mode'       => [
-            'pos'           => 'POS',
+        'mode'          => [
+            'pos'       => 'POS',
         ],
         'branch'            => [],
         'flag'              => [
@@ -64,6 +64,13 @@ return [
             0               => 'Bermasalah',
             1               => 'Tidak Bermasalah',
         ],
+        'method'            => [[
+            'method'        => 'cash',
+            'min_amount'    => 0,
+        ],[
+            'method'        => 'transfer',
+            'min_amount'    => 0,
+        ]],
         'item_model'        => 'Lacunose\\Warehouse\\Models\\Item',
         'item_url'          => '/api/warehouse/item/submitted',
         'catalog_url'       => '/api/warehouse/item/submitted',

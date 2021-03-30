@@ -6,7 +6,8 @@ use Str;
 
 use App\Http\Controllers\Controller;
 
-use Lacunose\Sale\Models\Order;
+use Lacunose\Sale\Models\Order as SaleOrder;
+use Lacunose\Procure\Models\Order as ProcureOrder;
 use Lacunose\Warehouse\Models\Item;
 use Lacunose\Warehouse\Models\Document;
 
@@ -98,7 +99,7 @@ class ToolsController extends Controller {
             $data['data']       = $dt;
         }else{
             //2. CARI DI SALES ORDER
-            $dt     = Order::no($ref)->with(['chats', 'chats.user'])->first();
+            $dt     = SaleOrder::no($ref)->with(['chats', 'chats.user'])->first();
             if($dt){
                 $data['topic']      = 'tsale.transaction';
                 $data['action']     = 'track';
@@ -106,20 +107,31 @@ class ToolsController extends Controller {
                     $data['action'] = 'chat';
                 }elseif(!$dt->is_printed){
                     $data['action'] = 'print';
-                }elseif(Str::is('opened', $dt->status)){
-                    $data['action'] = 'confirm';
-                    $data['batch']  = Order::where('status', 'opened')->where('warehouse', $dt->warehouse)->where('uuid', '<>', $dt->uuid)->get();
-                }elseif(Str::is('processed', $dt->status) && $dt['processed']['shipped']['is_executed']){
-                    $data['action'] = 'retur';
                 }
                 $data['data']       = $dt;
             }else{
-                //3. CARI DI WAREHOUSE ITEM
-                $dt = Item::code($ref)->first();
+                //2. CARI DI SALES ORDER
+                $dt     = ProcureOrder::no($ref)->with(['chats', 'chats.user'])->first();
                 if($dt){
-                    $data['topic']      = 'twh.item';
+                    $data['topic']      = 'tproc.transaction';
                     $data['action']     = 'track';
+                    if($dt->ux_has_open_chat){
+                        $data['action'] = 'chat';
+                    }elseif(!$dt->is_printed){
+                        $data['action'] = 'print';
+                    }elseif(Str::is('opened', $dt->status)){
+                        $data['action'] = 'confirm';
+                        $data['batch']  = ProcureOrder::where('status', 'opened')->where('warehouse', $dt->warehouse)->where('uuid', '<>', $dt->uuid)->get();
+                    }
                     $data['data']       = $dt;
+                }else{
+                    //3. CARI DI WAREHOUSE ITEM
+                    $dt = Item::code($ref)->first();
+                    if($dt){
+                        $data['topic']      = 'twh.item';
+                        $data['action']     = 'track';
+                        $data['data']       = $dt;
+                    }
                 }
             }
         }
