@@ -15,9 +15,11 @@ return [
         'tsale.promo.transaction'     => 'Mengatur promo transaksi',
         'tsale.promo.catalog'         => 'Mengatur promo produk',
         'tsale.catalog.setting'       => 'Mengatur produk',
-        'tsale.catalog.listing'       => 'Mengatur catalog',
+        'tsale.catalog.listing'       => 'Mengatur katalog',
         'tsale.setting.pay'           => 'Mengatur metode pembayaran',
         'tsale.setting.note'          => 'Mengatur template note',
+        'tsale.menu.setting'          => 'Mengatur menu',
+        'tsale.transaction.checker'   => 'Handle checker transaksi',
         'tsale.transaction.voided'    => 'Approval void transaksi',
     ],
     'logo'          => 'https://thunderlab.id/storage/app/uploads/public/5f7/ae8/123/5f7ae81237a56599536208.png',
@@ -33,7 +35,15 @@ return [
             'unpublished'   => 'Tidak ditampilkan',
             'published'     => 'Ditampilkan',
         ],
-        'promo'   => [
+        'menu'      => [
+            'unpublished'   => 'Tidak ditampilkan',
+            'published'     => 'Ditampilkan',
+        ],
+        'checker'   => [
+            'requested'     => 'Belum Dikerjakan',
+            'delivered'     => 'Dikerjakan',
+        ],
+        'promo'     => [
             'inactivated'   => 'Tidak diaktifkan',
             'activated'     => 'Diaktifkan',
         ],
@@ -45,12 +55,12 @@ return [
         ],
     ],
     'opsi'  => [
-        'period'    => [
+        'period'        => [
             'daily'     => 'Harian',
             'monthly'   => 'Bulanan',
             'yearly'    => 'Tahunan',
         ],
-        'day'       => [
+        'day'           => [
             '*'         => 'Hari',
             'sunday'    => 'Minggu',
             'monday'    => 'Senin',
@@ -59,6 +69,11 @@ return [
             'thursday'  => 'Kamis',
             'friday'    => 'Jumat',
             'saturday'  => 'Sabtu',
+        ],
+        'type'          => [
+            'free'      => 'Produk Saja',
+            'item'      => 'Item Stok',
+            'menu'      => 'Station Menu',
         ],
         'promo'     => [
             'transaction'=> [
@@ -98,9 +113,15 @@ return [
         'item_model'        => 'Lacunose\\Warehouse\\Models\\Item',
         'item_url'          => '/api/warehouse/item/submitted',
         'catalog_url'       => '/api/sale/katalog/published',
+        'menu_url'          => '/api/sale/menu/published',
     ],
     'color' => [
         'catalog'           => [
+            'unpublished'   => 'warning',
+            'published'     => 'primary',
+            'archived'      => 'danger',
+        ],
+        'menu'              => [
             'unpublished'   => 'warning',
             'published'     => 'primary',
             'archived'      => 'danger',
