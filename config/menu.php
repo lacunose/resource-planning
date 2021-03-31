@@ -111,15 +111,10 @@ return [
 				'param' => ['cause' => 'keluar', 'status' => 'drafted'],
 				'scope'	=> 'twh.document.keluar',
 			], [
-				'title'	=> 'Opname',
+				'title'	=> 'Inhouse',
 				'url'	=> 'twh.document.index',
-				'param' => ['cause' => 'opname', 'status' => 'drafted'],
-				'scope'	=> 'twh.document.opname',
-			], [
-				'title'	=> 'Konversi',
-				'url'	=> 'twh.document.index',
-				'param' => ['cause' => 'konversi', 'status' => 'drafted'],
-				'scope'	=> 'twh.document.konversi',
+				'param' => ['cause' => 'inhouse', 'status' => 'drafted'],
+				'scope'	=> 'twh.document.inhouse',
 			]],
 			'Pengaturan' => [[
 				'title'	=> 'Item',

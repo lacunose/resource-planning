@@ -4,8 +4,7 @@ return [
     'scopes'    => [
         'twh.document.masuk'    => 'Handle stok masuk',
         'twh.document.keluar'   => 'Handle stok keluar',
-        'twh.document.opname'   => 'Handle stok opname',
-        'twh.document.konversi' => 'Handle stok konversi',
+        'twh.document.inhouse'  => 'Handle stok inhouse',
         'twh.recipe.produksi'   => 'Handle konversi untuk produksi item',
         'twh.recipe.unpack'     => 'Handle konversi untuk unpack item',
         'twh.laporan.stat'      => 'Melihat laporan statistik stok',
@@ -49,14 +48,7 @@ return [
                 'locked'    => 'Sudah Selesai',
                 'archived'  => 'Diarsipkan',
             ],
-            'konversi'    => [
-                'drafted'   => 'Inbox',
-                'stocked'   => 'Sudah Dikonversi',
-                'submitted' => 'Sudah Dicek',
-                'locked'    => 'Sudah Selesai',
-                'archived'  => 'Diarsipkan',
-            ],
-            'opname'        => [
+            'inhouse'       => [
                 'drafted'   => 'Inbox',
                 'stocked'   => 'Sudah Dicatat',
                 'submitted' => 'Sudah Dicek',

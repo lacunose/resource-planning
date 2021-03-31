@@ -15,7 +15,7 @@ return [
         'tsale.promo.transaction'     => 'Mengatur promo transaksi',
         'tsale.promo.catalog'         => 'Mengatur promo produk',
         'tsale.catalog.setting'       => 'Mengatur produk',
-        'tsale.catalog.listing'       => 'Mengatur catalog',
+        'tsale.catalog.listing'       => 'Mengatur katalog',
         'tsale.setting.pay'           => 'Mengatur metode pembayaran',
         'tsale.setting.note'          => 'Mengatur template note',
         'tsale.menu.setting'          => 'Mengatur menu',

@@ -98,6 +98,10 @@ Route::middleware('auth:api')->namespace('Dashboard\\API')->group(function(){
 		Route::post('locked', [
 		    'as' => 'api.document.locked',  			'uses' 	=> 'DocumentController@locked'
 		]);
+
+		Route::post('unpacked/{id}', [
+		    'as' => 'api.document.unpacked',  			'uses' 	=> 'DocumentController@unpacked'
+		]);
 	});
 
 	//tool

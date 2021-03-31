@@ -103,4 +103,37 @@ class DocumentController extends Controller {
         ]);
     }
 
+    /**
+     *
+     * @param Request $request
+     *
+     * @return Response
+     */
+    public function unpacked($cause, $id) {
+        $group  = request()->get('group');
+        $refs   = request()->get('refs');
+        $doc    = Document::where('cause', $cause)->where('uuid', $id)->whereIn('status', ['drafted'])->firstorfail();
+        $input  = $doc->toArray();
+        $input['lines'] = request()->get('lines'); 
+
+        try {
+            DB::beginTransaction();
+            $dt = DocumentAggregateRoot::retrieve($id)->draft($input, [])->timer($group, $refs)->persist();
+            DB::commit();
+          
+            return response()->json([
+                'status' => true,
+                'data'   => $input['lines'],
+                'message'=> 'Data Berhasil Disimpan',
+            ]);
+        } catch (Exception $e) {
+            DB::rollback();
+
+            return response()->json([
+                'status' => false,
+                'data'   => [],
+                'message'=> $e->getMessage(),
+            ]);
+        }
+    }
 }
