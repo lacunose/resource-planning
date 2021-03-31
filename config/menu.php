@@ -80,7 +80,7 @@ return [
 				'title'	=> 'Checker',
 				'url'	=> 'tsale.transaction.checker',
 				'param' => ['status' => 'requested'],
-				'scope'	=> 'tsale.transaction.deliver',
+				'scope'	=> 'tsale.transaction.checker',
 			]],
 			'Laporan' => [[
 				'title'	=> 'Trend Produk',
@@ -92,6 +92,21 @@ return [
 				'url'	=> 'tsale.laporan.index',
 				'param' => ['group' => 'customer', 'filter[date_gte]' => date('Y-m-d')],
 				'scope'	=> 'tsale.laporan.customer',
+			], [
+				'title'	=> 'Preferensi Produk',
+				'url'	=> 'tsale.laporan.index',
+				'param' => ['group' => 'palate', 'filter[date_gte]' => date('Y-m-d')],
+				'scope'	=> 'tsale.laporan.palate',
+			], [
+				'title'	=> 'Performance Station',
+				'url'	=> 'tsale.laporan.index',
+				'param' => ['group' => 'station', 'filter[date_gte]' => date('Y-m-d')],
+				'scope'	=> 'tsale.laporan.station',
+			], [
+				'title'	=> 'Rasio Menu',
+				'url'	=> 'tsale.laporan.index',
+				'param' => ['group' => 'ratio', 'filter[date_gte]' => date('Y-m-d')],
+				'scope'	=> 'tsale.laporan.ratio',
 			], [
 				'title'	=> 'Settlement Penjualan',
 				'url'	=> 'tsale.laporan.index',
