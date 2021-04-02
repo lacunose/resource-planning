@@ -153,10 +153,15 @@ return [
 				'param' => [],
 				'scope'	=> 'twh.laporan.stock',
 			], [
-				'title'	=> 'Statistik Stok',
-				'url'	=> 'twh.laporan.stat',
+				'title'	=> 'Rekomendasi Opname',
+				'url'	=> 'twh.laporan.opname',
 				'param' => [],
-				'scope'	=> 'twh.laporan.stat',
+				'scope'	=> 'twh.laporan.opname',
+			], [
+				'title'	=> 'Rekomendasi PO',
+				'url'	=> 'twh.laporan.procure',
+				'param' => [],
+				'scope'	=> 'twh.laporan.procure',
 			], [
 				'title'	=> 'Kepemilikan Stok',
 				'url'	=> 'twh.laporan.index',

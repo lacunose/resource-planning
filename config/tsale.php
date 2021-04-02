@@ -117,6 +117,7 @@ return [
         'item_url'          => '/api/warehouse/item/submitted',
         'catalog_url'       => '/api/sale/katalog/published',
         'menu_url'          => '/api/sale/menu/published',
+        'promo_url'         => '/api/sale/promo/published',
     ],
     'color' => [
         'catalog'           => [
