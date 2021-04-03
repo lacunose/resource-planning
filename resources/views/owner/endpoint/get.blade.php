@@ -6,7 +6,7 @@
       <h4 class="page-title">ENDPOINT</h4>
     </div>
     <div class="col-md-4 text-right">
-      <span class="btn btn-light" data-toggle="modal" data-target=".modal-grant">TAMBAH</span>
+      <span class="btn btn-primary" data-toggle="modal" data-target=".modal-grant">TAMBAH</span>
     </div>
   </div>
 @endsection

@@ -11,11 +11,16 @@ return [
 	'support'		=> ['tacl', 'tsub'],
 	'setting'		=> [
 		'reserved_hosts' 		=> [
-			'soda.id',
-			'member.soda.id',
-			'owner.soda.id',
-			'thunder.soda.id',
-			'tools.soda.id',
+			// 'soda.id',
+			// 'member.soda.id',
+			// 'owner.soda.id',
+			// 'thunder.soda.id',
+			// 'tools.soda.id',
+			'localhost',
+			'member.localhost',
+			'owner.localhost',
+			'thunder.localhost',
+			'tools.localhost',
 		],
 		'dashboard'	=> 'STMDW01'
 	],

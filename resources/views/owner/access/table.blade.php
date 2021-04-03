@@ -34,6 +34,15 @@
           </td>
           <td class="text-left">
             @foreach($data['opsi']['scopes'] as $dt)
+            @php
+              $show = false;
+              foreach ($dt['scopes'] as $a => $b) {
+                if(in_array($a, $data['data']['scopes'])){
+                  $show = true;
+                }
+              }
+            @endphp
+            @if ($show)
               <div class="row">
                 <div class="col">
                   <h5>{{ $dt['domain'] }}</h5>
@@ -50,11 +59,16 @@
                 </div>
               @endforeach
               </div>
+              @if (!end($data['data']))   
               <hr/>
+              @endif
+
+            @endif
             @endforeach
           </td>
-          <td>
-            <a class="btn btn-danger btn-sm rounded-0 ml-2" href="{{ route('owner.access.delete', ['id' => $v['website'], 'email' => $v['email']]) }}">NONAKTIFKAN</a>
+          <td class="text-center">
+            <a class="btn btn-primary mb-2 btn-sm rounded-0" href="{{ route('owner.access.show', ['id' => $v['website'], 'email' => $v['email']]) }}">EDIT</a>
+            <a class="btn btn-danger btn-sm rounded-0" href="{{ route('owner.access.delete', ['id' => $v['website'], 'email' => $v['email']]) }}">NONAKTIFKAN</a>
           </td>
         </tr>
       @empty
