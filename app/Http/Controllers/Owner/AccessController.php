@@ -44,7 +44,7 @@ class AccessController extends Controller {
         $data['accesses']           = $datas->paginate(request()->has('per_page') ? request()->get('per_page') : 20);
         $data['opsi']['scopes']     = Plan::getScopes();
         $data['opsi']['scope']      = array_column(Plan::getScopes(), 'scopes');
-        $data['opsi']['clients']    = Plan::getClients();
+        $data['opsi']['clients']    = $data['data']->ux_clients;
 
         return view('owner.access.get', compact('data'));
     }
