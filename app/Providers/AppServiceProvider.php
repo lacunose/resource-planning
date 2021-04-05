@@ -30,6 +30,9 @@ class AppServiceProvider extends ServiceProvider {
                 \Lacunose\Swirl\Reactors\DocumentReactor::class,
                 \Lacunose\Swirl\Reactors\SubscriptionReactor::class,
                 \Lacunose\Swirl\Reactors\UserReactor::class,
+                \Lacunose\Swirl\Reactors\CustomerReactor::class,
+                \Lacunose\Swirl\Reactors\AccessReactor::class,
+                \Lacunose\Swirl\Reactors\AnyReactor::class,
             ]);
         }else{
             Projectionist::addReactors([
@@ -38,6 +41,9 @@ class AppServiceProvider extends ServiceProvider {
                 \Lacunose\Swirl\Reactors\DocumentReactor::class,
                 \Lacunose\Swirl\Reactors\SubscriptionReactor::class,
                 \Lacunose\Swirl\Reactors\UserReactor::class,
+                \Lacunose\Swirl\Reactors\CustomerReactor::class,
+                \Lacunose\Swirl\Reactors\AccessReactor::class,
+                \Lacunose\Swirl\Reactors\AnyReactor::class,
             ]);
         }
     }
