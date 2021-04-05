@@ -19,3 +19,6 @@
 [submodule "lacunose/swirl"]
 	path = lacunose/swirl
 	url = https://github.com/lacunose/swirl
+[submodule "lacunose/subscribe"]
+	path = lacunose/subscribe
+	url = https://github.com/lacunose/subscribe
