@@ -4,9 +4,6 @@
 [submodule "lacunose/finance"]
 	path = lacunose/finance
 	url = https://github.com/lacunose/finance
-[submodule "lacunose/subscribe"]
-	path = lacunose/subscribe
-	url = https://github.com/lacunose/subscribe
 [submodule "lacunose/warehouse"]
 	path = lacunose/warehouse
 	url = https://github.com/lacunose/warehouse
