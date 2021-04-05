@@ -74,6 +74,7 @@ return [
         'item_model'        => 'Lacunose\\Warehouse\\Models\\Item',
         'item_url'          => '/api/warehouse/item/submitted',
         'catalog_url'       => '/api/warehouse/item/submitted',
+        'promo_url'         => null,
     ],
     'color' => [
         'transaction'  => [

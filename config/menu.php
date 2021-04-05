@@ -114,6 +114,36 @@ return [
 				'scope'	=> 'tsale.laporan.payment',
 			]],
 		],
+		'PELANGGAN'		=> [
+			'Data' 		=> [[
+				'title'	=> 'Akun',
+				'url'	=> 'tcust.account.index',
+				'param' => ['status' => 'opened'],
+				'scope'	=> 'tcust.account.data',
+			]],
+			'Pengaturan' => [[
+				'title'	=> 'Anggota',
+				'url'	=> 'tcust.customer.index',
+				'param' => ['status' => 'actived', 'sort[name]' => 'asc'],
+				'scope'	=> 'tcust.setting.customer',
+			], [
+				'title'	=> 'Program',
+				'url'	=> 'tcust.program.index',
+				'param' => ['status' => 'published'],
+				'scope'	=> 'tcust.setting.program',
+			]],
+			'Laporan' => [[
+				'title'	=> 'Transaksi Pending',
+				'url'	=> 'tcust.laporan.log',
+				'param' => ['mode' => 'pending'],
+				'scope'	=> 'tcust.log.pending',
+			], [
+				'title'	=> 'Transaksi Verifikasi',
+				'url'	=> 'tcust.laporan.log',
+				'param' => ['mode' => 'verified'],
+				'scope'	=> 'tcust.log.verified',
+			]],
+		],
 		'PERSEDIAAN'	=> [
 			'Stok' 		=> [[
 				'title'	=> 'Masuk',
@@ -153,10 +183,15 @@ return [
 				'param' => [],
 				'scope'	=> 'twh.laporan.stock',
 			], [
-				'title'	=> 'Statistik Stok',
-				'url'	=> 'twh.laporan.stat',
+				'title'	=> 'Rekomendasi Opname',
+				'url'	=> 'twh.laporan.opname',
 				'param' => [],
-				'scope'	=> 'twh.laporan.stat',
+				'scope'	=> 'twh.laporan.opname',
+			], [
+				'title'	=> 'Rekomendasi PO',
+				'url'	=> 'twh.laporan.procure',
+				'param' => [],
+				'scope'	=> 'twh.laporan.procure',
 			], [
 				'title'	=> 'Kepemilikan Stok',
 				'url'	=> 'twh.laporan.index',
@@ -222,15 +257,15 @@ return [
 				'param' => ['status' => 'actived'],
 				'scope'	=> 'tfin.setting.coa',
 			], [
-				'title'	=> 'Aset Berwujud',
+				'title'	=> 'Depresiasi',
 				'url'	=> 'tfin.asset.index',
-				'param' => ['type' => 'berwujud', 'status' => 'drafted'],
-				'scope'	=> 'tfin.asset.berwujud',
+				'param' => ['type' => 'depresiasi', 'status' => 'drafted'],
+				'scope'	=> 'tfin.asset.depresiasi',
 			], [
-				'title'	=> 'Aset Tidak Berwujud',
+				'title'	=> 'Amortisasi',
 				'url'	=> 'tfin.asset.index',
-				'param' => ['type' => 'tidak_berwujud', 'status' => 'drafted'],
-				'scope'	=> 'tfin.asset.tidak_berwujud',
+				'param' => ['type' => 'amortisasi', 'status' => 'drafted'],
+				'scope'	=> 'tfin.asset.amortisasi',
 			]],
 			'Laporan' 	=> [[
 				'title'	=> 'Buku Besar',
