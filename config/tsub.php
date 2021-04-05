@@ -2,7 +2,7 @@
 
 return [
     'support'   => [
-        'scopes'    => ['management', 'tfin', 'twh', 'tsale', 'tproc'],
+        'scopes'    => ['management', 'tfin', 'twh', 'tsale', 'tproc', 'tcust'],
     ],
     'scopes'        => [
         'tsub.subscription.professional'    => 'Handle langganan pro',
@@ -40,6 +40,7 @@ return [
             'tacl'      => 'Akses', 
             'tfin'      => 'Keuangan', 
             'twh'       => 'Gudang', 
+            'tcust'     => 'Pelanggan',
             'tsale'     => 'Penjualan', 
             'tproc'     => 'Pembelian', 
             'tsub'      => 'Langganan',

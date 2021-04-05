@@ -16,6 +16,9 @@
 [submodule "lacunose/procure"]
 	path = lacunose/procure
 	url = https://github.com/lacunose/procure
+[submodule "lacunose/customer"]
+	path = lacunose/customer
+	url = https://github.com/lacunose/customer
 [submodule "lacunose/swirl"]
 	path = lacunose/swirl
 	url = https://github.com/lacunose/swirl

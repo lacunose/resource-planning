@@ -182,6 +182,7 @@ return [
 
         Lacunose\Acl\Providers\AclServiceProvider::class,
         Lacunose\Sale\Providers\SaleServiceProvider::class,
+        Lacunose\Customer\Providers\CustomerServiceProvider::class,
         Lacunose\Procure\Providers\ProcureServiceProvider::class,
         Lacunose\Warehouse\Providers\WarehouseServiceProvider::class,
         Lacunose\Finance\Providers\FinanceServiceProvider::class,
