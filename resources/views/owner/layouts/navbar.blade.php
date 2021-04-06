@@ -17,8 +17,6 @@
           <li><a href="{{ route('owner.endpoint.get', ['id' => $v['website']]) }}">ENDPOINT</a></li>
           <li><a href="{{ route('owner.access.get', ['id' => $v['website']]) }}">AKSES</a></li>
           <li><a href="{{$v['ux_website']}}">DASHBOARD</a></li>
-          @else
-          <li><a href="http://owner.{{$v['website']}}">PENGATURAN</a></li>
           @endif
         </ul>
       </li>
