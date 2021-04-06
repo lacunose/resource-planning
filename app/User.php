@@ -18,7 +18,7 @@ class User extends Model {
      * relationship has many chats
      */
     public function subs() {
-        return $this->setConnection(config()->get('web.db.tsub'))->hasMany(Plan::class)->orderby('ended_at', 'asc');
+        return $this->setConnection(config()->get('web.db.tsub'))->hasMany(Plan::class, 'email', 'email')->orderby('ended_at', 'asc');
     }
 
     protected function findForPassport($val) {
