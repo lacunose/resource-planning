@@ -13,7 +13,7 @@ class AddUserPhoneField extends Migration
      */
     public function up()
     {
-        Schema::table('tacl_users', function (Blueprint $table) {
+        Schema::table('acl_users', function (Blueprint $table) {
             $table->string('phone')->nullable()->unique();
         });
     }
@@ -25,7 +25,7 @@ class AddUserPhoneField extends Migration
      */
     public function down()
     {
-        Schema::table('tacl_users', function (Blueprint $table) {
+        Schema::table('acl_users', function (Blueprint $table) {
             $table->dropColumn('phone');
         });
     }
