@@ -17,8 +17,8 @@ class SubscriptionController extends Controller {
      * @return Response
      */
     public function get($website) {
-        $data['data']   = Plan::where('website', $website)->firstorfail();
-        $datas          = PlanBill::where('plan_id', $data['data']->id);
+        $data['data']   = (new Plan)->setConnection(config()->get('web.db.tsub'))->where('website', $website)->firstorfail();
+        $datas          = (new PlanBill)->setConnection(config()->get('web.db.tsub'))->where('plan_id', $data['data']->id);
 
         if(request()->filter){
             $datas      = $datas->filter(array_filter(request()->filter));
@@ -38,7 +38,7 @@ class SubscriptionController extends Controller {
      * @return Response
      */
     public function bayar() {
-        $bill   = PlanBill::where('no', request()->get('order_id'))->firstorfail();
+        $bill   = (new PlanBill)->setConnection(config()->get('web.db.tsub'))->where('no', request()->get('order_id'))->firstorfail();
         $nb     = $bill->no.'-'.time();
         $params = [
             'transaction_details'   => [
@@ -77,13 +77,13 @@ class SubscriptionController extends Controller {
             DB::beginTransaction();
             if(Str::is($status->transaction_status, 'settlement')) {
                 $no     = explode('-', request()->get('order_id'))[0];
-                $bill   = PlanBill::where('no', $no)->firstorfail();
+                $bill   = (new PlanBill)->setConnection(config()->get('web.db.tsub'))->where('no', $no)->firstorfail();
                 $url    = $bill->plan->website;
                 $data   = SubscriptionAggregateRoot::retrieve($bill->plan->uuid)->pay($no, $url)->persist();
                 Flash::success('Tagihan berhasil dibayar.');
             }elseif(Str::is($status->transaction_status, 'pending')) {
                 $no     = explode('-', request()->get('order_id'))[0];
-                $bill   = PlanBill::where('no', $no)->firstorfail();
+                $bill   = (new PlanBill)->setConnection(config()->get('web.db.tsub'))->where('no', $no)->firstorfail();
                 $url    = $bill->plan->website;
                 $data   = SubscriptionAggregateRoot::retrieve($bill->plan->uuid)->pay($no, $url)->persist();
                 Flash::success('Pembayaran sedang diproses.');
