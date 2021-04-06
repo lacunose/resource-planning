@@ -18,7 +18,7 @@ class EndpointController extends Controller {
      * @return Response
      */
     public function get($website) {
-        $data['data']   = Plan::where('website', $website)->firstorfail();
+        $data['data']   = (new Plan)->setConnection(config()->get('web.db.tsub'))->active(now())->where('website', $website)->firstorfail();
         $datas          = Endpoint::where('website', $website);
 
         if(request()->filter){
@@ -40,7 +40,7 @@ class EndpointController extends Controller {
      * @return Response
      */
     public function post($website) {
-        $plan   = Plan::where('website', $website)->firstorfail();
+        $plan   = (new Plan)->setConnection(config()->get('web.db.tsub'))->active(now())->where('website', $website)->firstorfail();
         $input  = request()->input();
         $end    = Endpoint::where('website', $website)->where('name', $input['name'])->first();
         if(!$end){
@@ -68,7 +68,7 @@ class EndpointController extends Controller {
      * @return Response
      */
     public function delete($website, $name) {
-        $plan   = Plan::where('website', $website)->firstorfail();
+        $plan   = (new Plan)->setConnection(config()->get('web.db.tsub'))->active(now())->where('website', $website)->firstorfail();
         $end    = Endpoint::where('website', $plan['website'])->where('name', $name)->firstorfail();
         try {
             DB::beginTransaction();

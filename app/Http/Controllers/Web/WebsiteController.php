@@ -100,7 +100,7 @@ class WebsiteController extends Controller {
         $input['contract']  = $pack->contract;
         $input['clients']   = $pack->clients;
         $input['scopes']    = $pack->scopes;
-        $input['user_id']   = auth::id();
+        $input['email']     = auth::check() ? auth::user()->email : null;
 
         try {
             DB::beginTransaction();

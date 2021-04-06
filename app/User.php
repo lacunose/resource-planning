@@ -18,6 +18,12 @@ class User extends Model {
      * relationship has many chats
      */
     public function subs() {
-        return $this->setConnection(config()->get('web.db.tacl'))->hasMany(Plan::class)->orderby('ended_at', 'asc');
+        return $this->setConnection(config()->get('web.db.tsub'))->hasMany(Plan::class, 'email', 'email')->orderby('ended_at', 'asc');
+    }
+
+    protected function findForPassport($val) {
+    	return $this->where(function($q) use($val) {
+    		$q->where('email', $val)->orwhere('phone', $val);
+    	})->first();
     }
 }

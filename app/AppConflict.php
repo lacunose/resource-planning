@@ -11,12 +11,15 @@ class AppConflict extends Model {
     use SoftDeletes;
     
     public function getConnectionName(){
-        return app(\Hyn\Tenancy\Database\Connection::class)->tenantName();
+        if ( Str::is('tenant', config()->get('twh.mode')) ) {
+            return app(\Hyn\Tenancy\Database\Connection::class)->tenantName();
+        }
+        return parent::getConnectionName();
     }
 
     protected $table = 'app_conflicts';
 
-	/**
+    /**
      * The attributes that are mass assignable.
      *
      * @var array
