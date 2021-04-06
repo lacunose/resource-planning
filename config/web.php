@@ -13,6 +13,6 @@ return [
 	'db'			=> ['tacl' => 'system', 'tsub' => 'system'],
 	'bot'		    => [
 		'name'	    => 'Silvia (Basil Virtual Assistant)',
-		'email'	    => 'sovia@basil.id',
+		'email'	    => 'silvia@basil.id',
 	],
 ];
