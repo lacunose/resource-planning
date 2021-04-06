@@ -103,20 +103,34 @@
             </div>
           </div>
         </div>
-        @foreach($data['opsi']['scopes'] as $dt)
+        @foreach($data['opsi']['scopes'] as $index => $dt)
+          @php
+              $show = false;
+              foreach ($dt['scopes'] as $a => $b) {
+                if(in_array($a, $data['data']['scopes'])){
+                  $show = true;
+                }
+              }
+          @endphp
+
+          @if ($show)
           <div class="row">
-            <div class="col">
-              <h4>{{ $dt['domain'] }}</h4>
-              <hr/>
+            <div class="col">   
+              <h4 style="display:inline">{{ $dt['domain'] }}</h4>
+              <input id="{{$dt['domain']}}" class="ml-3" type="checkbox" name="checkall">
+              {!! Form::label('checkall', 'Pilih Semua') !!}
+              <hr>
             </div>
           </div>
+          @endif
+          
           <div class="row">
             @foreach($dt['scopes'] as $idx => $scope)
             
             @if(in_array($idx, $data['data']['scopes']))
               <div class="col-3">
                 <div class="form-group">
-                  <input type="checkbox" name="scopes[]" value="{{$idx}}" >
+                  <input id="{{$dt['domain']}}" type="checkbox" name="scopes[]" value="{{$idx}}" >
                   {!! Form::label('scopes[]', $scope) !!}
                   @if ($errors->has('scopes[]'))
                     <span class="invalid-feedback d-block py-1" role="alert">
@@ -150,6 +164,21 @@
 
 @push('js')
 <script>
+  $("#Manajemen").change(function(){
+    $("input[name='scopes[]'][id='Manajemen']").prop("checked",$(this).prop("checked"));
+  });
+  $("#Keuangan").change(function(){
+    $("input[name='scopes[]'][id='Keuangan']").prop("checked",$(this).prop("checked"));
+  });
+  $("#Pembelian").change(function(){
+    $("input[name='scopes[]'][id='Pembelian']").prop("checked",$(this).prop("checked"));
+  });
+  $("#Penjualan").change(function(){
+    $("input[name='scopes[]'][id='Penjualan']").prop("checked",$(this).prop("checked"));
+  });
+  $("#Gudang").change(function(){
+    $("input[name='scopes[]'][id='Gudang']").prop("checked",$(this).prop("checked"));
+  });
   $("input[name='filter[date_gte]']").change(function() {
     $("input[name='filter[date_lte]']").attr({'min': $(this).val()});
   })

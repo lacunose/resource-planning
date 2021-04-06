@@ -28,8 +28,9 @@ Route::middleware('auth:web')->group(function(){
 
 	Route::prefix('akses/{id}')->group(function(){
 	  Route::get('/',			['uses' => 'AccessController@get',			'as' => 'owner.access.get']);
+	  Route::get('{email}', 	['uses' => 'AccessController@show',			'as' => 'owner.access.show']);
 	  Route::post('/',			['uses' => 'AccessController@post',			'as' => 'owner.access.post']);
-	  Route::get('{email}',		['uses' => 'AccessController@delete',		'as' => 'owner.access.delete']);
+	  Route::post('{email}',		['uses' => 'AccessController@delete',		'as' => 'owner.access.delete']);
 	});
 
 	Route::prefix('endpoint/{id}')->group(function(){

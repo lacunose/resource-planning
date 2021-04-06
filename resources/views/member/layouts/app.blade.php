@@ -30,77 +30,11 @@
   <div class="header-bg pb-0">
     <!-- Navigation Bar-->
     <header id="topnav">
-      {{-- <div class="topbar-main">
-        <div class="container-fluid">
-          <!-- Logo-->
-          <div class="d-block d-lg-none mr-5">
-            <a href="#" class="logo">
-              <img src="{{config()->get('web.logo-invert')}}" alt="" height="50" class="logo-small"> 
-            </a>
-          </div>
-          <!-- End Logo-->
-          
-          <div class="menu-extras topbar-custom navbar p-0">
-            <ul class="list-inline flags-dropdown d-none d-lg-block mb-0">
-              <li class="list-inline-item text-white-50 mr-3">
-                <span class="font-13">WA : {{config()->get('web.whatsapp')}}</span>
-              </li>
-            </ul>
-            
-            <!-- Search input -->
-            <div class="search-wrap" id="search-wrap">
-              <div class="search-bar">
-                <input class="search-input" type="search" placeholder="Search" />
-                <a href="#" class="close-search toggle-search" data-target="#search-wrap">
-                  <i class="mdi mdi-close-circle"></i>
-                </a>
-              </div>
-            </div>
-            
-            <ul class="list-inline ml-auto mb-0">
-              <!-- User-->
-              <li class="list-inline-item dropdown notification-list">
-                <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button"
-                aria-haspopup="false" aria-expanded="false">
-                  <span class="d-none d-md-inline-block ml-1"> {{Auth::user()->name}} <i class="mdi mdi-chevron-down"></i> </span>
-                </a>
-                <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown">
-                  <form action="{{route('logout')}}" method="post">
-                    @csrf
-                    <button class="dropdown-item" type="submit"><i class="dripicons-exit text-muted"></i> Logout</button>
-                  </form>
-                </div>
-              </li>
-              <li class="menu-item list-inline-item">
-                <!-- Mobile menu toggle-->
-                <a class="navbar-toggle nav-link">
-                  <div class="lines">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                </a>
-                <!-- End mobile menu toggle-->
-              </li>
-            </ul>
-          </div>
-          <!-- end menu-extras -->
-          <div class="clearfix"></div>
-        </div> <!-- end container -->
-      </div> --}}
-      <!-- end topbar-main -->
     
       <!-- MENU Start -->
       <div class="navbar-custom">
         <div class="container-fluid">
-          <!-- Logo-->
-          {{-- <div class="d-none d-lg-block">
-            <a href="#" class="logo text-white">
-              <img src="{{config()->get('web.logo-invert')}}" alt="" height="50" class="logo-small"> 
-            </a>
-          </div> --}}
-            <!-- End Logo-->
-            @include('thunder.layouts.navbar') <!-- end #navigation -->
+            @include('member.layouts.navbar') <!-- end #navigation -->
         </div> <!-- end container -->
       </div> <!-- end navbar-custom -->
     </header>
@@ -118,8 +52,6 @@
         </div>
       </div>
       <!-- end page title end breadcrumb -->
-    </div>
-    <div class="container-fluid">
       <div class="clearfix">&nbsp;</div>
       @include('flash::message')
       @yield('content')

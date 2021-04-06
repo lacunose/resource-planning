@@ -51,6 +51,7 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapThunderRoutes();
         $this->mapOwnerRoutes();
+        $this->mapMemberRoutes();
 
         $this->mapTenantHomepageRoutes();
         $this->mapTenantDashboardRoutes();
@@ -169,5 +170,21 @@ class RouteServiceProvider extends ServiceProvider
              ->middleware(['web', 'tacl.level:owner|thunder'])
              ->namespace('App\Http\Controllers\Owner')
              ->group(base_path('routes/owner.php'));
+    }
+
+    /**
+     * Define the "web" routes for the application.
+     *
+     * These routes all receive session state, CSRF protection, etc.
+     *
+     * @return void
+     */
+    protected function mapMemberRoutes()
+    {
+        Route::domain('member.'.env('APP_BASE', 'localhost'))
+        //  ->middleware(['web', 'tacl.level:member'])
+             ->middleware(['web'])
+             ->namespace('App\Http\Controllers\Member')
+             ->group(base_path('routes/member.php'));
     }
 }
