@@ -14,10 +14,9 @@ class DashboardController extends Controller {
      * @return Response
      */
     public function index() {
-        // dd(Auth::user()->email);
-        $data['data']       = Access::get();
-        $data['opsi']['scopes']     = Plan::getScopes();
-        // dd($data,'here');
+        $data['data']           = Access::get();
+        $data['opsi']['scopes'] = Plan::getScopes();
+
         return view('member.index', compact('data'));
     }
 }
