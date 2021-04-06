@@ -182,7 +182,6 @@ class RouteServiceProvider extends ServiceProvider
     protected function mapMemberRoutes()
     {
         Route::domain('member.'.env('APP_BASE', 'localhost'))
-        //  ->middleware(['web', 'tacl.level:member'])
              ->middleware(['web'])
              ->namespace('App\Http\Controllers\Member')
              ->group(base_path('routes/member.php'));

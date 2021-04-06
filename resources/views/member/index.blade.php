@@ -3,10 +3,6 @@
 
 @extends('member.layouts.app')
 
-@php
-    // dd($data);
-@endphp
-
 @section('title')
   <h4 class="page-title">DASHBOARD</h4>
 @endsection
