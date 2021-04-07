@@ -17,7 +17,7 @@ return [
 			'thunder.basil.id',
 			'tools.basil.id',
 		],
-		'dashboard'	=> 'STMDW01'
+		'dashboard'	=> 'BTMDW01'
 	],
 	'scopes'		=> [
         'tacl.setting.user'	=> 'Mengatur user',
