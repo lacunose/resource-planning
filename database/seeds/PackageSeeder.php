@@ -58,15 +58,15 @@ class PackageSeeder extends Seeder
            		],
            	];
 
-           	$pack1 	= Price::where('name', $inp1['name'])->first();
-           	$pack2 	= Price::where('name', $inp2['name'])->first();
+           	$pack1 	= Price::where('title', $inp1['title'])->first();
+           	$pack2 	= Price::where('title', $inp2['title'])->first();
 
 	        $id1	= $pack1 ? $pack1->uuid : (string) Uuid::uuid4();
 	        $id2	= $pack2 ? $pack2->uuid : (string) Uuid::uuid4();
 
            	DB::beginTransaction();
-            $dt   	= PackageAggregateRoot::retrieve($id1)->save($inp1)->publish()->persist();
-            $dt   	= PackageAggregateRoot::retrieve($id2)->save($inp2)->publish()->persist();
+            $dt   	= PackageAggregateRoot::retrieve($id1)->save($inp1)->publish(now()->format('Y-m-d'))->persist();
+            $dt   	= PackageAggregateRoot::retrieve($id2)->save($inp2)->publish(now()->format('Y-m-d'))->persist();
             DB::commit();
 		}
 		catch (\Exception $e) {
