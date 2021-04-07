@@ -37,8 +37,8 @@ class User extends Model {
         return $this->setConnection(config()->get('web.db.tsub'))->hasMany(Plan::class, 'email', 'email')->orderby('ended_at', 'asc');
     }
 
-    protected function findForPassport($val) {
-        return $this->where(function($q) use($val) {
+    protected function scopefindForPassport($q, $val) {
+        return $q->where(function($q) use($val) {
             $q->where('email', $val)->orwhere('phone', $val);
         })->first();
     }
