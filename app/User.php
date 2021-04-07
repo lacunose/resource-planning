@@ -10,9 +10,25 @@ use Lacunose\Subscribe\Models\Plan;
 use Laravel\Passport\HasApiTokens;
 
 class User extends Model {
-	use HasApiTokens;
+    use HasApiTokens;
 
     protected $appends  = [];
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'uuid',
+        'name',
+        'email',
+        'phone',
+        'password',
+        'level',
+        'scopes',
+    ];
+
 
     /*
      * relationship has many chats
@@ -22,8 +38,8 @@ class User extends Model {
     }
 
     protected function findForPassport($val) {
-    	return $this->where(function($q) use($val) {
-    		$q->where('email', $val)->orwhere('phone', $val);
-    	})->first();
+        return $this->where(function($q) use($val) {
+            $q->where('email', $val)->orwhere('phone', $val);
+        })->first();
     }
 }
