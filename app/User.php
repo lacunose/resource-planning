@@ -14,22 +14,6 @@ class User extends Model {
 
     protected $appends  = [];
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
-    protected $fillable = [
-        'uuid',
-        'name',
-        'email',
-        'phone',
-        'password',
-        'level',
-        'scopes',
-    ];
-
-
     /*
      * relationship has many chats
      */
