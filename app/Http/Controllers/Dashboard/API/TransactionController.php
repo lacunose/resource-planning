@@ -100,6 +100,7 @@ class TransactionController extends Controller {
                         $q
                         ->where('processes', 'like', '%'.json_encode(['state' => $process, 'is_executed' => true]).'%')
                         ->orwhere('processes', 'not like', '%'.json_encode(['state' => $process, 'is_executed' => true]).'%')
+                        ->orwherenull('processes')
                         ;
                     })
                     ->firstorfail();
