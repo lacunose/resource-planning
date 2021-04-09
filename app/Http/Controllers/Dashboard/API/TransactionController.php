@@ -97,14 +97,15 @@ class TransactionController extends Controller {
                 $order  = Order::no($no)->where('warehouse', $warehouse)
                     ->whereIn('status', ['opened', 'processed'])
                     // dimatikan atau diganti orwhere karena kena error lacunose/salemodel/order no query waktu confirm
-                    ->orwhere(function($q)use($process){
+                    // yg komen diatas gagal akhirnya diupdated ditambahkan orwherenull, karena dari db ada processes yg masih null, 
+                    ->where(function($q)use($process){
                         $q
                         ->where('processes', 'like', '%'.json_encode(['state' => $process, 'is_executed' => true]).'%')
                         ->orwhere('processes', 'not like', '%'.json_encode(['state' => $process, 'is_executed' => true]).'%')
+                        ->orwhereNull('processes')
                         ;
                     })
                     ->firstorfail();
-                    
                 if(request()->has('reason')) {
                     $data= TransactionAggregateRoot::retrieve($order->uuid)->process($process)->discuss(request()->get('reason'))->persist();
                 }else{
