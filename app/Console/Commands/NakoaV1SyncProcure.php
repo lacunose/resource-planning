@@ -4,7 +4,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
-use DB, Validator, Auth, Exception, Log;
+use DB, Validator, Auth, Exception, Log, Str;
 use Ramsey\Uuid\Uuid;
 use Carbon\Carbon;
 
@@ -167,12 +167,12 @@ class NakoaV1SyncProcure extends Command
                     $bills[]    = [
                         'description'   => $ll['name'],
                         'catalog_code'  => $ll['code'],
-                        'catalog_price' => $ll['total']/min(1, $ll['qty']),
+                        'catalog_price' => $ll['total']/max(1, $ll['qty']),
                         'rqs'           => $ll['qty'],
                         'qty'           => $ll['qty'],
                         'rcv'           => 0,
                         'dlv'           => 0,
-                        'amount'        => $ll['total']/min(1, $ll['qty']),
+                        'amount'        => $ll['total']/max(1, $ll['qty']),
                         'flag'          => 'catalog',
                         'promo_code'    => null,
                         'note'          => [],
@@ -202,27 +202,29 @@ class NakoaV1SyncProcure extends Command
                 $ref    = DB::connection('nakoa1')->table('purc_documents')
                         ->Where('id', $po->ref_doc_id ? $po->ref_doc_id : 0)->first();
                 
+                $outlet = json_decode($po->outlet_detail, true);
+                $vendor = json_decode($po->supplier_detail, true);
                 $input  = [
                     'no'        => $po->no,
                     'no_ref'    => $ref ? $ref->no : null,
                     'issued_at' => $po->date,
                     'mode'      => 'pembelian',
-                    'branch'    => $po->outlet_detail->code,
-                    'vendor'    => $po->supplier_detail->name,
-                    'warehouse' => $po->outlet_detail->code,
+                    'branch'    => $outlet['code'],
+                    'vendor'    => $vendor['name'],
+                    'warehouse' => $outlet['code'],
                     'bills'     => $bills,
                     'shipping'  => [
-                        'name'      => $po->outlet_detail->name,
+                        'name'      => $outlet['name'],
                         'phone'     => null,
-                        'address'   => $po->outlet_detail->address.', '.$po->outlet_detail->city.'-'.$po->outlet_detail->province,
+                        'address'   => $outlet['address'].', '.$outlet['city'].'-'.$outlet['province'],
                         'notes'     => $po->note,
                         'receipt'   => null,
                         'deadline'  => $po->ship_at,
                     ],
                     'store'     => [
-                        'name'      => $po->supplier_detail->name,
+                        'name'      => $vendor['name'],
                         'phone'     => null,
-                        'address'   => $po->supplier_detail->address.', '.$po->supplier_detail->city.'-'.$po->supplier_detail->province,
+                        'address'   => $vendor['address'].', '.$vendor['city'].'-'.$vendor['province'],
                     ],
                     'customer'  => [
                         'name'      => 'NAKOA',
@@ -236,6 +238,7 @@ class NakoaV1SyncProcure extends Command
                     'amount'  => $ttl,
                     'no_ref'  => null,
                     'date'    => $po->date,
+                    'user_id' => auth::check() ? auth::id() : null,
                 ]];
 
                 //GENERATE INPUT WH
@@ -278,44 +281,46 @@ class NakoaV1SyncProcure extends Command
                         'cause'     => 'masuk',
                         'owner'     => 'nakoa',
                         'type'      => 'receiving',
-                        'warehouse' => 'nakoa_001',
+                        'warehouse' => $outlet['code'],
                         'date'      => $po->ship_at,
                         'lines'     => $lines,
                         'sender'    => [
-                            'name'      => $po->supplier_detail->name,
+                            'name'      => $vendor['name'],
                             'phone'     => null,
-                            'address'   => $po->supplier_detail->address.', '.$po->supplier_detail->city.'-'.$po->supplier_detail->province,
+                            'address'   => $vendor['address'].', '.$vendor['city'].'-'.$vendor['province'],
                             'receipt'   => null,
                             'courier'   => null,
                         ],
                         'receiver'  => [
-                            'name'      => $po->outlet_detail->name,
+                            'name'      => $outlet['name'],
                             'phone'     => null,
-                            'address'   => $po->outlet_detail->address.', '.$po->outlet_detail->city.'-'.$po->outlet_detail->province,
+                            'address'   => $outlet['address'].', '.$outlet['city'].'-'.$outlet['province'],
                         ],
                         'stocks'    => $stocks,
                     ];
                 }
 
 
-            try {
-                DB::BeginTransaction();
-                $id = $npo ? $npo->uuid : (string) Uuid::uuid4();
-                if(in_array($st->status, ['CANCELLED'])) {
-                    $dt = ProcureTransactionAggregateRoot::retrieve($id)->create($input)->void('unknown')->persist();
-                }elseif(in_array($st->status, ['RECEIVED', 'PARTIALLY RECEIVED'])) {
-                    $dt = ProcureTransactionAggregateRoot::retrieve($id)->create($input)->pay($pay)->persist();
-                    foreach ($inpwh as $inp) {
-                        $dwh    = Document::no($po->no)->where('status', 'drafted')->first();
-                        $id2    = $dwh ? $dwh->uuid : (string) Uuid::uuid4();
-                        $dt     = DocumentAggregateRoot::retrieve($id2)->draft($inp, [])->stock($inp['stocks'], [])->lock([])->persist();
+                try {
+                    DB::BeginTransaction();
+                    $id = $npo ? $npo->uuid : (string) Uuid::uuid4();
+                    if(in_array($po->status, ['CANCELLED'])) {
+                        $dt = ProcureTransactionAggregateRoot::retrieve($id)->create($input)->void('unknown')->persist();
+                    }elseif(in_array($po->status, ['RECEIVED', 'PARTIALLY RECEIVED'])) {
+                        $dt = ProcureTransactionAggregateRoot::retrieve($id)->create($input)->process('confirmed')->pay($pay)->persist();
+                        foreach ($inpwh as $inp) {
+                            $dwh    = Document::no($po->no)->where('status', 'drafted')->first();
+                            $id2    = $dwh ? $dwh->uuid : (string) Uuid::uuid4();
+                            $dt     = DocumentAggregateRoot::retrieve($id2)->draft($inp, [])->stock($inp['stocks'], [])->lock([])->persist();
+                        }
+                        $dt = ProcureTransactionAggregateRoot::retrieve($id)->close()->persist();
                     }
+                    DB::commit();
+                } catch (Exception $e) {
+                    DB::rollback();
+                    Log::info('SYNC PROCURE');
+                    Log::info($e);
                 }
-                DB::commit();
-            } catch (Exception $e) {
-                DB::rollback();
-                Log::info('SYNC PROCURE');
-                Log::info($e);
             }
         }
     }

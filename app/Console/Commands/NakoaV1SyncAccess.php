@@ -4,13 +4,12 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
-use DB, Validator, Auth, Exception, Log;
+use DB, Validator, Auth, Exception, Log, Str;
 use Ramsey\Uuid\Uuid;
 use Carbon\Carbon;
 
 use App\User;
 
-use Lacunose\Acl\Models\User;
 use Lacunose\Acl\Models\Access;
 use Lacunose\Acl\Models\Endpoint;
 use Lacunose\Acl\Aggregates\UserAggregateRoot;
@@ -51,8 +50,8 @@ class NakoaV1SyncAccess extends Command
     public function handle() {
         Auth::loginUsingId(2);
 
-        $website    = 'nakoa.localhost';
-        // $website     = 'basilx.nakoa.id';
+        // $website    = 'nakoa.localhost';
+        $website     = 'basilx.nakoa.id';
 
         $blists     = [];
             
@@ -142,10 +141,10 @@ class NakoaV1SyncAccess extends Command
                 $scopes     = [];
                 $role       = 'staff';
 
-                if(in_array('finance', json_decode($user->management_roles, true))) {
+                if($user->management_roles && in_array('finance', json_decode($user->management_roles, true))) {
                     $domains    = ['tfin', 'tproc'];
                     $role       = 'accountant';
-                }elseif(in_array('superuser', json_decode($user->management_roles, true))) {
+                }elseif($user->management_roles && in_array('superuser', json_decode($user->management_roles, true))) {
                     $domains    = ['tsale', 'twh', 'tfin', 'tproc', 'tcust', 'management'];
                     $role       = 'owner';
                 }

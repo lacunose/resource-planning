@@ -11,13 +11,14 @@ return [
 	'support'		=> ['tacl', 'tsub'],
 	'setting'		=> [
 		'reserved_hosts' 		=> [
-			'localhost',
-			'member.localhost',
-			'ownerx.localhost',
-			'thunder.localhost',
-			'tools.localhost',
+			'nakoa.id',
+			'member.nakoa.id',
+			'ownerx.nakoa.id',
+			'thunder.nakoa.id',
+			'tools.nakoa.id',
 		],
-		'dashboard'	=> 'STMDW01'
+		'dashboard'	=> 'BTMDW01',
+		'customer'	=> 'BTCSA01',
 	],
 	'scopes'		=> [
         'tacl.setting.user'	=> 'Mengatur user',

@@ -13,8 +13,10 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        Commands\CreateWebsite::class,
         //
+        Commands\NakoaV1SyncAccess::class,
+        Commands\NakoaV1SyncProcure::class,
+        Commands\NakoaV1SyncSale::class,
     ];
 
     /**

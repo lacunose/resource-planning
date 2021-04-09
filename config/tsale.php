@@ -17,8 +17,9 @@ return [
         'tsale.laporan.payment'       => 'Melihat laporan settlement penjualan',
         'tsale.promo.transaction'     => 'Mengatur promo transaksi',
         'tsale.promo.catalog'         => 'Mengatur promo produk',
-        'tsale.catalog.setting'       => 'Mengatur produk',
-        'tsale.catalog.listing'       => 'Mengatur katalog',
+        'tsale.promo.listing'         => 'Mengatur promo outlet',
+        'tsale.catalog.setting'       => 'Mengatur katalog',
+        'tsale.catalog.listing'       => 'Mengatur katalog outlet',
         'tsale.setting.pay'           => 'Mengatur metode pembayaran',
         'tsale.setting.note'          => 'Mengatur template note',
         'tsale.menu.setting'          => 'Mengatur menu',
@@ -81,7 +82,7 @@ return [
         'promo'     => [
             'transaction'=> [
                 'ENTERTAIN'                 => 'Voucher entertain',
-                'MEMBERSHIP'                => 'Diskon member',
+                'MEMBERSHIP'                => 'Voucher member',
                 'COUPON'                    => 'Kupon belanja',
             ],
             'catalog'   => [
