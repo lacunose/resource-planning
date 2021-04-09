@@ -17,7 +17,8 @@ return [
 			'thunder.basil.id',
 			'tools.basil.id',
 		],
-		'dashboard'	=> 'BTMDW01'
+		'dashboard'	=> 'BTMDW01',
+		'customer'	=> 'BTCSA01',
 	],
 	'scopes'		=> [
         'tacl.setting.user'	=> 'Mengatur user',

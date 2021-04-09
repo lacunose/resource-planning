@@ -54,12 +54,6 @@ return [
 				'url'	=> 'tsale.promo.index',
 				'param' => ['mode' => 'transaction', 'status' => 'activated'],
 				'scope'	=> 'tsale.promo.transaction',
-			]],
-			'Outlet' => [[
-				'title'	=> 'Katalog',
-				'url'	=> 'tsale.catalog.listing',
-				'param' => [],
-				'scope'	=> 'tsale.catalog.listing',
 			], [
 				'title'	=> 'Template Note',
 				'url'	=> 'tsale.note.get',
@@ -71,7 +65,17 @@ return [
 				'param' => [],
 				'scope'	=> 'tsale.setting.pay',
 			]],
-			'Station' 	=> [[
+			'Outlet' => [[
+				'title'	=> 'Katalog',
+				'url'	=> 'tsale.catalog.listing',
+				'param' => [],
+				'scope'	=> 'tsale.catalog.listing',
+			],[
+				'title'	=> 'Promo',
+				'url'	=> 'tsale.promo.listing',
+				'param' => [],
+				'scope'	=> 'tsale.promo.listing',
+			],[
 				'title'	=> 'Menu',
 				'url'	=> 'tsale.menu.index',
 				'param' => ['status' => 'published'],
