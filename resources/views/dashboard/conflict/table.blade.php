@@ -10,7 +10,9 @@
         <tr>
           <td>{{ $data['datas']->firstItem() + $k }}</td>
           <td class="text-left">
-            <a href="{!! $v->stakes['callback_url'] !!}" target="__blank">{!! $v->stakes['issue'] !!}</a>
+            @if (isset($v->stakes))
+              <a href="{!! $v->stakes['callback_url'] !!}" target="__blank">{!! $v->stakes['issue'] !!}</a>
+            @endif
           </td>
           <td class="text-left">
             <div class="row">
@@ -19,13 +21,15 @@
                   <a href="{!! $hist['callback_url'] !!}" target="__blank">{!! $hist['title'] !!}</a>
                   <br/>
                   <ul>
-                    @foreach($hist['compares'] as $compare)
-                    @if(!array_diff($compare, $hist['stake']))
-                      <li><span class="badge badge-warning">{!! $compare['description'] !!}</span></li>
-                    @else
-                      <li>{!! $compare['description'] !!}</li>
+                    @if (isset($hist['compares']))
+                      @foreach($hist['compares'] as $compare)
+                      @if(!array_diff($compare, $hist['stake']))
+                        <li><span class="badge badge-warning">{!! $compare['description'] !!}</span></li>
+                      @else
+                        <li>{!! $compare['description'] !!}</li>
+                      @endif
+                      @endforeach
                     @endif
-                    @endforeach
                   </ul>
                 </div>
               @endforeach
