@@ -52,24 +52,38 @@ return [
         ],
         'trigger'       => [
             'tsale.transaction.closed'  => 'Belanja',
-            'tcust.account.verified'    => 'Total Point',
+            'tcust.account.verified'    => 'Saldo Akun Bertambah',
         ],
-        'param'       => [
-            'ux_bill'           => 'Total belanja',
-            'ux_paid'           => 'Total bayar',
-            'verified_balance'  => 'Total point terverifikasi',
+        'param'         => [
+            'tsale.transaction.closed'  => [
+                'ux_bill'   => 'Total belanja',
+                'ux_paid'   => 'Total bayar',
+            ],
+            'tcust.account.verified'    => [
+                'verified_balance'      => 'Total point terverifikasi',
+            ],
         ],
-        'target'       => [
-            'tcust.account.verified'    => 'Berikan Point',
-            'tsale.promo.duplicated'    => 'Redeem Voucher (Coupon, Gift Card, Warranty)',
+        'target'        => [
+            'tcust.account.granted'     => 'Tambahkan Saldo Akun',
+            'tsale.promo.duplicated'    => 'Redeem Voucher',
         ],
-        'field'       => [
-            'currency'  => 'Currency',
-            'code'      => 'Kode',
+        'field'         => [
+            'tcust.account.granted'  => [
+                'currency'  => 'Currency',
+            ],
+            'tsale.promo.duplicated'  => [
+                'code'      => 'Kode',
+            ],
         ],
         'currency'      => [
             'nakoin'    => 'nakoin',
             'idr'       => 'idr',
+        ],
+        'catalog_url'   => '/api/sale/katalog/published',
+        'program_url'   => '/api/customer/program/published',
+        'mark'          => [
+            'favorite'  => 'Favorit',
+            'wishlist'  => 'Wishlist',
         ],
     ],
     'color'         => [
