@@ -22,7 +22,7 @@
                   <br/>
                   <ul>
                     @foreach($hist['compares'] as $compare)
-                      @if(!array_diff($compare, $hist['stake']))
+                      @if(!array_diff(Arr::except($compare, ['note', 'ux']), Arr::except($hist['stake'], ['note', 'ux'])))
                         <li><span class="badge badge-warning">{!! $compare['description'] !!}</span></li>
                       @else
                         <li>{!! $compare['description'] !!}</li>
