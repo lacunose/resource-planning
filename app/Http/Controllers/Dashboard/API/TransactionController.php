@@ -96,8 +96,6 @@ class TransactionController extends Controller {
             foreach ($nos as $no) {
                 $order  = Order::no($no)->where('warehouse', $warehouse)
                     ->whereIn('status', ['opened', 'processed'])
-                    // dimatikan atau diganti orwhere karena kena error lacunose/salemodel/order no query waktu confirm
-                    // yg komen diatas gagal akhirnya diupdated ditambahkan orwherenull, karena dari db ada processes yg masih null, 
                     ->where(function($q)use($process){
                         $q
                         ->where('processes', 'like', '%'.json_encode(['state' => $process, 'is_executed' => true]).'%')

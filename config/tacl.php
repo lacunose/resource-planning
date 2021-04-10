@@ -17,7 +17,8 @@ return [
 			'thunder.soda.id',
 			'tools.soda.id',
 		],
-		'dashboard'	=> 'STMDW01'
+		'dashboard'	=> 'STMDW01',
+		'customer'	=> 'STCSA01',
 	],
 	'scopes'		=> [
         'tacl.setting.user'	=> 'Mengatur user',
