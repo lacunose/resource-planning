@@ -21,15 +21,13 @@
                   <a href="{!! $hist['callback_url'] !!}" target="__blank">{!! $hist['title'] !!}</a>
                   <br/>
                   <ul>
-                    @if (isset($hist['compares']))
-                      @foreach($hist['compares'] as $compare)
+                    @foreach($hist['compares'] as $compare)
                       @if(!array_diff($compare, $hist['stake']))
                         <li><span class="badge badge-warning">{!! $compare['description'] !!}</span></li>
                       @else
                         <li>{!! $compare['description'] !!}</li>
                       @endif
-                      @endforeach
-                    @endif
+                    @endforeach
                   </ul>
                 </div>
               @endforeach

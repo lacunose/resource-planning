@@ -100,10 +100,10 @@ class TransactionController extends Controller {
                         $q
                         ->where('processes', 'like', '%'.json_encode(['state' => $process, 'is_executed' => true]).'%')
                         ->orwhere('processes', 'not like', '%'.json_encode(['state' => $process, 'is_executed' => true]).'%')
-                        ->orwhereNull('processes')
+                        ->orwherenull('processes')
                         ;
-                    })
-                    ->firstorfail();
+                    })->firstorfail();
+                    
                 if(request()->has('reason')) {
                     $data= TransactionAggregateRoot::retrieve($order->uuid)->process($process)->discuss(request()->get('reason'))->persist();
                 }else{
