@@ -27,7 +27,8 @@ class AppServiceProvider extends ServiceProvider {
             Projectionist::addReactors([
                 \Lacunose\Swirl\Reactors\ERPSaleTransactionReactor::class,
                 \Lacunose\Swirl\Reactors\ProcureTransactionReactor::class,
-                \Lacunose\Swirl\Reactors\DocumentReactor::class,
+                \Lacunose\Swirl\Reactors\WhDocumentReactor::class,
+                \Lacunose\Swirl\Reactors\MfDocumentReactor::class,
                 \Lacunose\Swirl\Reactors\SubscriptionReactor::class,
                 \Lacunose\Swirl\Reactors\UserReactor::class,
                 \Lacunose\Swirl\Reactors\CustomerReactor::class,
@@ -38,7 +39,8 @@ class AppServiceProvider extends ServiceProvider {
             Projectionist::addReactors([
                 \Lacunose\Swirl\Reactors\MRPSaleTransactionReactor::class,
                 \Lacunose\Swirl\Reactors\ProcureTransactionReactor::class,
-                \Lacunose\Swirl\Reactors\DocumentReactor::class,
+                \Lacunose\Swirl\Reactors\WhDocumentReactor::class,
+                \Lacunose\Swirl\Reactors\MfDocumentReactor::class,
                 \Lacunose\Swirl\Reactors\SubscriptionReactor::class,
                 \Lacunose\Swirl\Reactors\UserReactor::class,
                 \Lacunose\Swirl\Reactors\CustomerReactor::class,
