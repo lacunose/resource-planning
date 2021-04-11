@@ -75,16 +75,6 @@ return [
 				'url'	=> 'tsale.promo.listing',
 				'param' => [],
 				'scope'	=> 'tsale.promo.listing',
-			],[
-				'title'	=> 'Menu',
-				'url'	=> 'tsale.menu.index',
-				'param' => ['status' => 'published'],
-				'scope'	=> 'tsale.menu.setting',
-			], [
-				'title'	=> 'Checker',
-				'url'	=> 'tsale.transaction.checker',
-				'param' => ['status' => 'requested'],
-				'scope'	=> 'tsale.transaction.checker',
 			]],
 			'Laporan' => [[
 				'title'	=> 'Trend Produk',
@@ -101,16 +91,6 @@ return [
 				'url'	=> 'tsale.laporan.index',
 				'param' => ['group' => 'palate', 'filter[date_gte]' => date('Y-m-d')],
 				'scope'	=> 'tsale.laporan.palate',
-			], [
-				'title'	=> 'Performance Station',
-				'url'	=> 'tsale.laporan.index',
-				'param' => ['group' => 'station', 'filter[date_gte]' => date('Y-m-d')],
-				'scope'	=> 'tsale.laporan.station',
-			], [
-				'title'	=> 'Rasio Menu',
-				'url'	=> 'tsale.laporan.index',
-				'param' => ['group' => 'ratio', 'filter[date_gte]' => date('Y-m-d')],
-				'scope'	=> 'tsale.laporan.ratio',
 			], [
 				'title'	=> 'Settlement Penjualan',
 				'url'	=> 'tsale.laporan.index',
@@ -206,6 +186,41 @@ return [
 				'url'	=> 'twh.laporan.timer',
 				'param' => ['group' => 'packing'],
 				'scope'	=> 'twh.timer.packing',
+			]],
+		],
+		'PRODUKSI'		=> [
+			'Pesanan'	=> [[
+				'title'	=> 'Persediaan',
+				'url'	=> 'tmf.document.index',
+				'param' => ['mode' => 'persediaan', 'status' => 'drafted'],
+				'scope'	=> 'tmf.document.persediaan',
+			], [
+				'title'	=> 'Penjualan',
+				'url'	=> 'tmf.document.index',
+				'param' => ['mode' => 'penjualan', 'status' => 'drafted'],
+				'scope'	=> 'tmf.document.penjualan',
+			], [
+				'title'	=> 'Checker',
+				'url'	=> 'tmf.checker.index',
+				'param' => ['status' => 'requested'],
+				'scope'	=> 'tmf.document.checker',
+			]],
+			'Pengaturan' => [[
+				'title'	=> 'Menu',
+				'url'	=> 'tmf.menu.index',
+				'param' => ['status' => 'published'],
+				'scope'	=> 'tmf.menu.setting',
+			]],
+			'Laporan' => [[
+				'title'	=> 'Performa Station',
+				'url'	=> 'tmf.laporan.index',
+				'param' => ['group' => 'station', 'filter[date_gte]' => date('Y-m-d')],
+				'scope'	=> 'tmf.laporan.station',
+			], [
+				'title'	=> 'Rasio Menu',
+				'url'	=> 'tmf.laporan.index',
+				'param' => ['group' => 'ratio', 'filter[date_gte]' => date('Y-m-d')],
+				'scope'	=> 'tmf.laporan.ratio',
 			]],
 		],
 		'PEMBELIAN'		=> [
@@ -340,10 +355,12 @@ return [
 	'glossary'		=> [
 		'management'=> 'Manajemen', 
 		'tacl'		=> 'Akses', 
-		'tfin'		=> 'Keuangan', 
 		'twh'		=> 'Persediaan', 
+		'tmf'		=> 'Produksi', 
 		'tsale'		=> 'Penjualan', 
+	    'tcust'     => 'Pelanggan',
 		'tproc'		=> 'Pembelian', 
+		'tfin'		=> 'Keuangan', 
 		'tsub'		=> 'Langganan',
 	],
 ];

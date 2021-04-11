@@ -181,11 +181,16 @@ return [
         Mpociot\ApiDoc\ApiDocGeneratorServiceProvider::class,
 
         Lacunose\Acl\Providers\AclServiceProvider::class,
+        //SALES AREA
         Lacunose\Sale\Providers\SaleServiceProvider::class,
-        Lacunose\Customer\Providers\CustomerServiceProvider::class,
-        Lacunose\Procure\Providers\ProcureServiceProvider::class,
+        //OPERATION AREA
         Lacunose\Warehouse\Providers\WarehouseServiceProvider::class,
+        Lacunose\Manufacture\Providers\ManufactureServiceProvider::class,
+        //PROCURE AREA
+        Lacunose\Procure\Providers\ProcureServiceProvider::class,
         Lacunose\Finance\Providers\FinanceServiceProvider::class,
+        //BISDEV AREA
+        Lacunose\Customer\Providers\CustomerServiceProvider::class,
         Lacunose\Subscribe\Providers\SubscribeServiceProvider::class,
     ],
 

@@ -22,3 +22,6 @@
 [submodule "lacunose/subscribe"]
 	path = lacunose/subscribe
 	url = https://github.com/lacunose/subscribe
+[submodule "lacunose/manufacture"]
+	path = lacunose/manufacture
+	url = https://github.com/lacunose/manufacture

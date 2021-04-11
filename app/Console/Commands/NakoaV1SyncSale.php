@@ -10,13 +10,18 @@ use Carbon\Carbon;
 
 use App\User;
 
-use Lacunose\Sale\Models\Menu;
+use Lacunose\Manufacture\Models\Menu;
+use Lacunose\Manufacture\Models\Document;
+use Lacunose\Manufacture\Models\DocumentChecker;
+use Lacunose\Manufacture\Aggregates\MenuAggregateRoot;
+use Lacunose\Manufacture\Aggregates\DocumentAggregateRoot;
+
+use Lacunose\Manufacture\Libraries\Traits\BatchMenuTrait;
+
 use Lacunose\Sale\Models\Promo;
 use Lacunose\Sale\Models\Product;
 use Lacunose\Sale\Models\ProductVarian;
-use Lacunose\Sale\Models\OrderChecker;
 use Lacunose\Sale\Models\Order as SaleOrder;
-use Lacunose\Sale\Aggregates\MenuAggregateRoot;
 use Lacunose\Sale\Aggregates\PromoAggregateRoot;
 use Lacunose\Sale\Aggregates\CatalogAggregateRoot;
 use Lacunose\Sale\Aggregates\TransactionAggregateRoot as SaleTransactionAggregateRoot;
@@ -31,6 +36,7 @@ use Lacunose\Finance\Aggregates\BookAggregateRoot;
 class NakoaV1SyncSale extends Command
 {
     use BatchCatalogTrait;
+    use BatchMenuTrait;
     /**
      * The name and signature of the console command.
      *
@@ -291,6 +297,7 @@ class NakoaV1SyncSale extends Command
                 foreach ($lls as $ll) {
                     $vou        = DB::connection('nakoa1')->table('reward_vouchers')->where('id', $ll['voucher_id'] ? $ll['voucher_id'] : 0)->first();
                     $promo      = Promo::where('title', $vou ? $vou->caption : '---')->first();
+                    $menu       = Menu::where('code', $ll['code'])->first();
 
                     $bills[]    = [
                         'description'   => $ll['name'],
@@ -304,7 +311,7 @@ class NakoaV1SyncSale extends Command
                         'flag'          => 'catalog',
                         'promo_code'    => $promo ? $promo->code : null,
                         'note'          => [],
-                        'ux'            => []
+                        'ux'            => ['item' => [], 'menu' => $menu ? $menu : []]
                     ];
                 }
 
@@ -378,10 +385,13 @@ class NakoaV1SyncSale extends Command
                     }else{
                         $dt = SaleTransactionAggregateRoot::retrieve($id)->create($input)->process('confirmed')->pay($pay)->persist();
 
+                        $docs   = Document::where('no_ref', $so->no)->get();
+                        foreach ($docs as $doc) {
+                            $ids= array_column(DocumentChecker::where('document_id', $doc->id)->wherenull('delivered_at')->get()->toArray(), 'id');
+                            $dt = DocumentAggregateRoot::retrieve($doc->uuid)->submit($ids)->persist();
+                        }
                         //DO THE CHECKER
-                        $nso    = SaleOrder::where('no', $so->no)->first();
-                        $chids  = array_column(OrderChecker::where('order_id', $nso->id)->get()->toArray(), 'id');
-                        $dt     = SaleTransactionAggregateRoot::retrieve($id)->checker($chids)->close()->persist();
+                        $dt     = SaleTransactionAggregateRoot::retrieve($id)->close()->persist();
                     }
                     DB::commit();
                 } catch (Exception $e) {
