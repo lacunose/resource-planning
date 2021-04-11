@@ -51,6 +51,7 @@
             "Lacunose\\Sale\\": "lacunose/sale/src",
             "Lacunose\\Customer\\": "lacunose/customer/src",
             "Lacunose\\Warehouse\\": "lacunose/warehouse/src",
+            "Lacunose\\Manufacture\\": "lacunose/manufacture/src",
             "Lacunose\\Procure\\": "lacunose/procure/src",
             "Lacunose\\Finance\\": "lacunose/finance/src",
             "Lacunose\\Subscribe\\": "lacunose/subscribe/src",

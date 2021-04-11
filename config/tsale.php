@@ -11,10 +11,8 @@ return [
         'tsale.transaction.blibli'    => 'Handle transaksi blibli',
         'tsale.laporan.catalog'       => 'Melihat laporan trend produk',
         'tsale.laporan.customer'      => 'Melihat laporan pelanggan',
-        'tsale.laporan.palate'        => 'Melihat laporan preferensi produk',
-        'tsale.laporan.station'       => 'Melihat laporan performance station',
-        'tsale.laporan.ratio'         => 'Melihat laporan rasio menu',
         'tsale.laporan.payment'       => 'Melihat laporan settlement penjualan',
+        'tsale.laporan.palate'        => 'Melihat laporan preferensi produk',
         'tsale.promo.transaction'     => 'Mengatur promo transaksi',
         'tsale.promo.catalog'         => 'Mengatur promo produk',
         'tsale.promo.listing'         => 'Mengatur promo outlet',
@@ -22,8 +20,6 @@ return [
         'tsale.catalog.listing'       => 'Mengatur katalog outlet',
         'tsale.setting.pay'           => 'Mengatur metode pembayaran',
         'tsale.setting.note'          => 'Mengatur template note',
-        'tsale.menu.setting'          => 'Mengatur menu',
-        'tsale.transaction.checker'   => 'Handle checker transaksi',
         'tsale.transaction.voided'    => 'Approval void transaksi',
     ],
     'logo'          => 'https://thunderlab.id/storage/app/uploads/public/5f7/ae8/123/5f7ae81237a56599536208.png',
@@ -38,14 +34,6 @@ return [
         'catalog'   => [
             'unpublished'   => 'Tidak ditampilkan',
             'published'     => 'Ditampilkan',
-        ],
-        'menu'      => [
-            'unpublished'   => 'Tidak ditampilkan',
-            'published'     => 'Ditampilkan',
-        ],
-        'checker'   => [
-            'requested'     => 'Belum Dikerjakan',
-            'delivered'     => 'Dikerjakan',
         ],
         'promo'     => [
             'inactivated'   => 'Tidak diaktifkan',
@@ -117,16 +105,12 @@ return [
         'item_model'        => 'Lacunose\\Warehouse\\Models\\Item',
         'item_url'          => '/api/warehouse/item/submitted',
         'catalog_url'       => '/api/sale/katalog/published',
-        'menu_url'          => '/api/sale/menu/published',
         'promo_url'         => '/api/sale/promo/published',
+        'menu_model'        => 'Lacunose\\Manufacture\\Models\\Menu',
+        'menu_url'          => '/api/manufacture/menu/published',
     ],
     'color' => [
         'catalog'           => [
-            'unpublished'   => 'warning',
-            'published'     => 'primary',
-            'archived'      => 'danger',
-        ],
-        'menu'              => [
             'unpublished'   => 'warning',
             'published'     => 'primary',
             'archived'      => 'danger',
