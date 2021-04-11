@@ -64,7 +64,7 @@ class NakoaV1SyncAccess extends Command
 
 
     private function set_thunder_user($website, $email) {
-        $domains    = ['tsale', 'twh', 'tfin', 'tproc', 'tcust', 'management'];
+        $domains    = ['tsale', 'twh', 'tfin', 'tproc', 'tmf', 'tcust', 'management'];
         $role       = 'maintainer';
         $scopes     = [];
 
@@ -137,7 +137,7 @@ class NakoaV1SyncAccess extends Command
             if(!$nuser && !in_array($email, $blists)) {
                 $acc    = Access::where('website', $website)->where('email', $email)->first();
 
-                $domains    = ['tsale', 'twh'];
+                $domains    = ['tsale', 'twh', 'tmf'];
                 $scopes     = [];
                 $role       = 'staff';
 
