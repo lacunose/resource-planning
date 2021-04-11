@@ -130,7 +130,7 @@ class NakoaV1SyncAccess extends Command
     }
 
     private function set_user_from_employment($website, $blists){
-        $users  = DB::connection('nakoa1')->table('user_users')->get();
+        $users  = DB::connection('nakoa1')->table('USER_users')->get();
         foreach ($users as $user) {
             $nuser  = User::where('phone', $user->username)->first();
             $email  = $user->username.'@nakoa.id';

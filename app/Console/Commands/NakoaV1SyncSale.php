@@ -79,11 +79,11 @@ class NakoaV1SyncSale extends Command
     }
 
     private function set_menu() {
-        $menus  = DB::connection('nakoa1')->table('app_product_item')->get();
+        $menus  = DB::connection('nakoa1')->table('APP_product_item')->get();
         $recs   = [];
         foreach ($menus as $menu) {
-            $product= DB::connection('nakoa1')->table('sales_products')->where('id', $menu->product_id)->first();
-            $item   = DB::connection('nakoa1')->table('wms_items')->where('id', $menu->item_id)->first();
+            $product= DB::connection('nakoa1')->table('SALES_products')->where('id', $menu->product_id)->first();
+            $item   = DB::connection('nakoa1')->table('WMS_items')->where('id', $menu->item_id)->first();
 
             if($product && $item) {
                 $all_row['code']    = $product->code;
@@ -120,7 +120,7 @@ class NakoaV1SyncSale extends Command
     }
 
     private function set_katalog() {
-        $items      = DB::connection('nakoa1')->table('sales_products')->get();
+        $items      = DB::connection('nakoa1')->table('SALES_products')->get();
         $recs       = [];
         foreach ($items as $item) {
             $code   = explode('-', $item->code);
@@ -196,7 +196,7 @@ class NakoaV1SyncSale extends Command
     }
 
     private function set_promo() {
-        $vous  = DB::connection('nakoa1')->table('reward_vouchers')->get();
+        $vous  = DB::connection('nakoa1')->table('REWARD_vouchers')->get();
         $recs   = [];
         foreach ($vous as $vou) {
             switch ($vou->type) {
@@ -220,8 +220,8 @@ class NakoaV1SyncSale extends Command
             $terms  = json_decode($vou->condition, true);
             $benfs  = json_decode($vou->value, true);
 
-            $ccf    = DB::connection('nakoa1')->table('sales_products')->whereIn('id', $terms['product_ids'])->get()->toArray();
-            $vcf    = DB::connection('nakoa1')->table('sales_products')->whereIn('id', $benfs['product_ids'])->get()->toArray();
+            $ccf    = DB::connection('nakoa1')->table('SALES_products')->whereIn('id', $terms['product_ids'])->get()->toArray();
+            $vcf    = DB::connection('nakoa1')->table('SALES_products')->whereIn('id', $benfs['product_ids'])->get()->toArray();
 
             $ccc    = Product::whereIn('code', array_column($ccf, 'code'))->get()->toArray();
             $vcc    = Product::whereIn('code', array_column($vcf, 'code'))->get()->toArray();
@@ -288,14 +288,14 @@ class NakoaV1SyncSale extends Command
     }
 
     private function set_sale() {
-        $sos        = DB::connection('nakoa1')->table('sales_invoices')->orderby('updated_at', 'desc')->get();
+        $sos        = DB::connection('nakoa1')->table('SALES_invoices')->orderby('updated_at', 'desc')->get();
         foreach ($sos as $so) {
             $nso    = SaleOrder::where('no', $so->no)->first();
             if(!$nso) {
                 $lls    = json_decode($so->lines, true);
                 $bills  = [];
                 foreach ($lls as $ll) {
-                    $vou        = DB::connection('nakoa1')->table('reward_vouchers')->where('id', $ll['voucher_id'] ? $ll['voucher_id'] : 0)->first();
+                    $vou        = DB::connection('nakoa1')->table('REWARD_vouchers')->where('id', $ll['voucher_id'] ? $ll['voucher_id'] : 0)->first();
                     $promo      = Promo::where('title', $vou ? $vou->caption : '---')->first();
                     $menu       = Menu::where('code', $ll['code'])->first();
 
@@ -332,7 +332,7 @@ class NakoaV1SyncSale extends Command
                     ];
                 }
 
-                $adm    = DB::connection('nakoa1')->table('user_users')->where('id', $so->admin_id)->first();
+                $adm    = DB::connection('nakoa1')->table('USER_users')->where('id', $so->admin_id)->first();
                 $user   = User::where('phone', $adm ? $adm->username : '---')->first();
                 $outlet = json_decode($so->outlet_detail, true);
 

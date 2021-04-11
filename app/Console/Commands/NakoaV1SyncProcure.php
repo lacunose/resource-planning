@@ -65,7 +65,7 @@ class NakoaV1SyncProcure extends Command
     }
 
     private function set_coa() {
-        $coas       = DB::connection('nakoa1')->table('accounting_coas')->get();
+        $coas       = DB::connection('nakoa1')->table('ACCOUNTING_coas')->get();
 
         foreach ($coas as $coa) {
             $ncoa   = Coa::where('code', $coa->code)->first();
@@ -90,7 +90,7 @@ class NakoaV1SyncProcure extends Command
 
             $path   = $coa->code;
             if($coa->parent_id) {
-                $parent = DB::connection('nakoa1')->table('accounting_coas')->where('id', $coa->parent_id)->first();
+                $parent = DB::connection('nakoa1')->table('ACCOUNTING_coas')->where('id', $coa->parent_id)->first();
                 $path   = $parent->code.','.$path;
 
             }
@@ -123,7 +123,7 @@ class NakoaV1SyncProcure extends Command
     }
 
     private function set_item(){
-        $items      = DB::connection('nakoa1')->table('wms_items')->get();
+        $items      = DB::connection('nakoa1')->table('WMS_items')->get();
         foreach ($items as $item) {
             $nitem  = Item::where('code', $item->code)->first();
             $gals   = [];
@@ -152,7 +152,7 @@ class NakoaV1SyncProcure extends Command
     }
 
     private function restok_from_po() {
-        $pos        = DB::connection('nakoa1')->table('purc_documents')->get();
+        $pos        = DB::connection('nakoa1')->table('PURC_documents')->get();
         foreach ($pos as $po) {
             $npo    = ProcureOrder::where('no', $po->no)->first();
             if(!$npo) {
@@ -199,7 +199,7 @@ class NakoaV1SyncProcure extends Command
                         'ux'            => [],
                     ];
                 }
-                $ref    = DB::connection('nakoa1')->table('purc_documents')
+                $ref    = DB::connection('nakoa1')->table('PURC_documents')
                         ->Where('id', $po->ref_doc_id ? $po->ref_doc_id : 0)->first();
                 
                 $outlet = json_decode($po->outlet_detail, true);
@@ -242,7 +242,7 @@ class NakoaV1SyncProcure extends Command
                 ]];
 
                 //GENERATE INPUT WH
-                $whs    = DB::connection('nakoa1')->table('wms_documents')->where('ref_doc_type', 'App\Domain\Purchasing\PurchaseOrder')->where('ref_doc_id', $po->id)->get();
+                $whs    = DB::connection('nakoa1')->table('WMS_documents')->where('ref_doc_type', 'App\Domain\Purchasing\PurchaseOrder')->where('ref_doc_id', $po->id)->get();
                 $inpwh  = [];
 
                 foreach ($whs as $wh) {
