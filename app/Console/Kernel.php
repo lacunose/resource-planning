@@ -27,7 +27,9 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')->hourly();
+        $schedule->command(Command\NakoaV1SyncAccess::class)->weeklyOn(1, '23:00');
+        $schedule->command(Command\NakoaV1SyncProcure::class)->weeklyOn(1, '23:00');
+        $schedule->command(Command\NakoaV1SyncSale::class)->weeklyOn(1, '23:00');
     }
 
     /**
