@@ -10,9 +10,11 @@ return [
         'tsale.transaction.jdid'      => 'Handle transaksi jdid',
         'tsale.transaction.blibli'    => 'Handle transaksi blibli',
         'tsale.laporan.catalog'       => 'Melihat laporan trend produk',
+        'tsale.laporan.palate'        => 'Melihat laporan preferensi produk',
+        'tsale.laporan.sold'          => 'Melihat laporan penjualan produk',
+        'tsale.laporan.category'      => 'Melihat laporan penjualan berdasarkan kategori produk',
         'tsale.laporan.customer'      => 'Melihat laporan pelanggan',
         'tsale.laporan.payment'       => 'Melihat laporan settlement penjualan',
-        'tsale.laporan.palate'        => 'Melihat laporan preferensi produk',
         'tsale.promo.transaction'     => 'Mengatur promo transaksi',
         'tsale.promo.catalog'         => 'Mengatur promo produk',
         'tsale.promo.listing'         => 'Mengatur promo outlet',
@@ -133,6 +135,6 @@ return [
         'per_page'  => 80,
     ],
     'title'         => [
-        'report'    => ['catalog' => 'Trend Produk', 'payment' => 'Settlement Penjualan', 'customer' => 'Pelanggan'],
+        'report'    => ['catalog' => 'Trend Produk', 'sold' => 'Penjualan Produk', 'payment' => 'Settlement Penjualan', 'customer' => 'Pelanggan'],
     ],
 ];

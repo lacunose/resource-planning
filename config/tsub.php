@@ -64,12 +64,14 @@ return [
             // 'penalty'   => 'Denda',
         ],
         'client'    => [
-            //WMM - WEB, MANAGEMENT, MANAGERS
+            //BASIL, TENANT, MANAGEMENT, MANAGERS, WEB, 01
             'STMDW01'       => 'Web Dashboard Management',
-            //WOM - WEB, OPERATIONAL, WAREHOUSE
+            //BASIL, TENANT, OPERATIONAL, GUDANG, WEB, 01
             'STOGW01'       => 'Web Tools Gudang',
-            //AOS - APPS, OPERATIONAL, SALES
-            'STOSD01'       => 'Windows Apps POS',
+            //BASIL, TENANT, OPERATIONAL, SALE, DESKTOP WINDOWS, 01
+            'STOSW01'       => 'Windows Apps POS',
+            //BASIL, TENANT, MANAGEMENT, TEAM, ANDROID, 01
+            'STMTA01'       => 'Android Apps Team',
         ],
     ],
     'color'         => [
