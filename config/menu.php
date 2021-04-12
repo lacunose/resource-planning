@@ -86,7 +86,7 @@ return [
 				'url'	=> 'tsale.laporan.index',
 				'param' => ['group' => 'sold', 'filter[date_gte]' => date('Y-m-d')],
 				'scope'	=> 'tsale.laporan.sold',
-			], , [
+			], [
 				'title'	=> 'Penjualan Produk (Berdasarkan Kategori)',
 				'url'	=> 'tsale.laporan.index',
 				'param' => ['group' => 'category', 'filter[date_gte]' => date('Y-m-d')],
