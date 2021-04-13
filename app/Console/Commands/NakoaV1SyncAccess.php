@@ -62,37 +62,6 @@ class NakoaV1SyncAccess extends Command
         $this->set_user_from_employment($website, $blists);
     }
 
-
-    private function set_thunder_user($website, $email) {
-        $domains    = ['tsale', 'twh', 'tfin', 'tproc', 'tmf', 'tcust', 'management'];
-        $role       = 'maintainer';
-        $scopes     = [];
-
-        foreach ($domains as $dom) {
-            $scopes = array_merge(array_keys(config()->get($dom.'.scopes')), $scopes);
-        }
-        
-        $acc    = Access::where('website', $website)->where('email', $email)->first();
-
-        $inp2   = [
-            'website'   => $website,
-            'email'     => $email,
-            'token'     => Str::random(32),
-            'role'      => $role,
-            'scopes'    => $scopes,
-            'clients'   => array_keys(config()->get('tsub.opsi.client')),
-            'endpoints' => array_column(Endpoint::whereIn('name', ['MLG01', 'MLG02'])->get()->toArray(), 'id'),
-        ];
-
-        try{
-            $id2= $acc ? $acc->uuid : (string) Uuid::uuid4();
-            $dt = AccessAggregateRoot::retrieve($id2)->grant($inp2, 'https://basil.id')->accept($inp2['token'])->persist();
-        } catch (Exception $e) {
-            DB::rollback();
-            Log::info('TROUBLE: '.$e);
-        }
-    }
-
     private function set_endpoint($website) {
         $inp1  = [
             'website'   => $website,
@@ -123,6 +92,36 @@ class NakoaV1SyncAccess extends Command
             //2. GRANT AKSES
 
             DB::commit();
+        } catch (Exception $e) {
+            DB::rollback();
+            Log::info('TROUBLE: '.$e);
+        }
+    }
+
+    private function set_thunder_user($website, $email) {
+        $domains    = ['tsale', 'twh', 'tfin', 'tproc', 'tmf', 'tcust', 'management'];
+        $role       = 'maintainer';
+        $scopes     = [];
+
+        foreach ($domains as $dom) {
+            $scopes = array_merge(array_keys(config()->get($dom.'.scopes')), $scopes);
+        }
+        
+        $acc    = Access::where('website', $website)->where('email', $email)->first();
+
+        $inp2   = [
+            'website'   => $website,
+            'email'     => $email,
+            'token'     => Str::random(32),
+            'role'      => $role,
+            'scopes'    => $scopes,
+            'clients'   => array_keys(config()->get('tsub.opsi.client')),
+            'endpoints' => array_column(Endpoint::whereIn('name', ['MLG01', 'MLG02'])->get()->toArray(), 'id'),
+        ];
+
+        try{
+            $id2= $acc ? $acc->uuid : (string) Uuid::uuid4();
+            $dt = AccessAggregateRoot::retrieve($id2)->grant($inp2, 'https://basil.id')->accept($inp2['token'])->persist();
         } catch (Exception $e) {
             DB::rollback();
             Log::info('TROUBLE: '.$e);
