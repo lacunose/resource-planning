@@ -282,7 +282,7 @@ class NakoaV1SyncProcure extends Command
                         'owner'     => 'nakoa',
                         'type'      => 'receiving',
                         'warehouse' => $outlet['code'],
-                        'date'      => $po->ship_at,
+                        'date'      => $wh->date,
                         'lines'     => $lines,
                         'sender'    => [
                             'name'      => $vendor['name'],

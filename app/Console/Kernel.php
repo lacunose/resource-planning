@@ -16,6 +16,7 @@ class Kernel extends ConsoleKernel
         //
         Commands\NakoaV1SyncAccess::class,
         Commands\NakoaV1SyncProcure::class,
+        Commands\NakoaV1SyncWarehouse::class,
         Commands\NakoaV1SyncSale::class,
     ];
 
@@ -27,9 +28,10 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command(Command\NakoaV1SyncAccess::class)->weeklyOn(1, '23:00');
-        $schedule->command(Command\NakoaV1SyncProcure::class)->weeklyOn(1, '23:00');
-        $schedule->command(Command\NakoaV1SyncSale::class)->weeklyOn(1, '23:00');
+        $schedule->command(Command\NakoaV1SyncAccess::class)->weeklyOn(1, '22:00');
+        $schedule->command(Command\NakoaV1SyncProcure::class)->weeklyOn(1, '22:30');
+        $schedule->command(Command\NakoaV1SyncWarehouse::class)->weeklyOn(1, '23:00');
+        $schedule->command(Command\NakoaV1SyncSale::class)->weeklyOn(1, '23:30');
     }
 
     /**
