@@ -8,9 +8,9 @@ return [
         'tfin.book.memorial'          => 'Handle catatan memorial',
         'tfin.asset.depresiasi'       => 'Handle otomasi depresiasi',
         'tfin.asset.amortisasi'       => 'Handle otomasi amortisasi',
-        'tfin.laporan.jurnal'         => 'Melihat laporan buku besar',
-        'tfin.laporan.neraca'         => 'Melihat laporan neraca',
-        'tfin.laporan.labarugi'       => 'Melihat laporan laba/rugi',
+        'tfin.report.jurnal'         => 'Melihat report buku besar',
+        'tfin.report.neraca'         => 'Melihat report neraca',
+        'tfin.report.labarugi'       => 'Melihat report laba/rugi',
         'tfin.setting.coa'            => 'Mengatur Akun Perkiraan',
         'tfin.setting.jurnal'         => 'Mengatur pengaturan jurnal otomatis',
     ],
@@ -20,9 +20,6 @@ return [
     'email'         => 'hello@thunderlab.id',
     'whatsapp'      => '+62.895.8100.00500',
     'address'       => 'VERNON BUILDING, Jln. Letjen Sutoyo No. 102A, Kota Malang, Jawa Timur, Indonesia 65145',
-    // 'mode'          => 'local',
-    'mode'          => 'tenant',
-    'get_item'      => 80,
     'glossary'      => [
         'coa'       => [
             'actived'   => 'Aktif',

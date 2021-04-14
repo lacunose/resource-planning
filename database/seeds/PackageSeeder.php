@@ -19,12 +19,12 @@ class PackageSeeder extends Seeder
 	public function run()
 	{
 		try {
-			$domains 	= ['tsale', 'twh', 'tfin', 'tproc', 'tcust', 'management'];
+			$domains 	= ['tsale', 'tcust', 'twh', 'tmf', 'tproc', 'tfin', 'tswirl'];
 			$scopes 	= [];
 
 			foreach ($domains as $dom) {
 				$scopes	= array_merge(array_keys(config()->get($dom.'.scopes')), $scopes);
-			}
+            }
 
            	$inp1 = [
            		'title'			=> 'Pro Plus', 

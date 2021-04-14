@@ -8,7 +8,7 @@
                 <h4 class="font-18 mt-3 m-b-5">{{ $data['data']['website'] }}</h4>
                 <p class="text-muted">Bergabung sebagai {{ $data['data']['role'] }}</p>
             </div>
-            <div class="logo-admin"><img src="{{config()->get('web.logo')}}" alt="" height="75" class="logo-small"> </div>
+            <div class="logo-admin"><img src="{{config()->get('tswirl.logo')}}" alt="" height="75" class="logo-small"> </div>
         </div>
         <div class="p-3">
             {!! Form::open(['url' =>  route('invited', [$data['data']['website'], $data['data']['token']]), 'class' => 'form-horizontal m-t-10']) !!}

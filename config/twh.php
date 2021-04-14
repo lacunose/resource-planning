@@ -5,13 +5,13 @@ return [
         'twh.document.masuk'    => 'Handle stok masuk',
         'twh.document.keluar'   => 'Handle stok keluar',
         'twh.document.inhouse'  => 'Handle stok inhouse',
-        'twh.recipe.produksi'   => 'Handle konversi untuk produksi item',
-        'twh.recipe.unpack'     => 'Handle konversi untuk unpack item',
-        'twh.laporan.opname'    => 'Melihat laporan rekomendasi opname',
-        'twh.laporan.procure'   => 'Melihat laporan rekomendasi po',
-        'twh.laporan.stock'     => 'Melihat laporan kartu stok',
-        'twh.laporan.owner'     => 'Melihat laporan kepemilikan stok',
-        'twh.timer.packing'     => 'Melihat laporan performace packer',
+        'twh.conversion.repack' => 'Handle konversi untuk repack item',
+        'twh.conversion.unpack' => 'Handle konversi untuk unpack item',
+        'twh.report.opname'     => 'Melihat report rekomendasi opname',
+        'twh.report.procure'    => 'Melihat report rekomendasi po',
+        'twh.report.stock'      => 'Melihat report kartu stok',
+        'twh.report.owner'      => 'Melihat report kepemilikan stok',
+        'twh.timer.packing'     => 'Melihat report performace packer',
         'twh.setting.item'      => 'Mengatur item',
         'twh.document.submitted'=> 'Approval surat jalan',
     ],
@@ -21,15 +21,13 @@ return [
     'email'         => 'hello@thunderlab.id',
     'whatsapp'      => '+62.895.8100.00500',
     'address'       => 'VERNON BUILDING, Jln. Letjen Sutoyo No. 102A, Kota Malang, Jawa Timur, Indonesia 65145',
-    // 'mode'          => 'local',
-    'mode'          => 'tenant',
     'glossary'      => [
         'item'      => [
             'drafted'   => 'Belum Aktif',
             'submitted' => 'Sudah Aktif',
             'archived'  => 'Diarsipkan',
         ],
-        'recipe'    => [
+        'conversion'    => [
             'drafted'   => 'Inbox',
             'actived'   => 'Sudah Aktif',
             'archived'  => 'Diarsipkan',
@@ -73,7 +71,7 @@ return [
             'submitted' => 'primary',
             'archived'  => 'danger',
         ],
-        'recipe'        => [
+        'conversion'        => [
             'drafted'   => 'warning',
             'actived'   => 'primary',
             'archived'  => 'danger',

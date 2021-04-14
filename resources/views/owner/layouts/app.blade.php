@@ -10,7 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
   <!-- App Icons -->
-  <link rel="shortcut icon" href="{{ config()->get('web.favicon') }}">
+  <link rel="shortcut icon" href="{{ config()->get('tswirl.favicon') }}">
   
   <!-- App css -->
   <link href="{{ asset('dashboard/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
@@ -35,7 +35,7 @@
           <!-- Logo-->
           <div class="d-block d-lg-none mr-5">
             <a href="#" class="logo">
-              <img src="{{config()->get('web.logo-invert')}}" alt="" height="50" class="logo-small"> 
+              <img src="{{config()->get('tswirl.logo-invert')}}" alt="" height="50" class="logo-small"> 
             </a>
           </div>
           <!-- End Logo-->
@@ -43,7 +43,7 @@
           <div class="menu-extras topbar-custom navbar p-0">
             <ul class="list-inline flags-dropdown d-none d-lg-block mb-0">
               <li class="list-inline-item text-white-50 mr-3">
-                <span class="font-13">WA : {{config()->get('web.whatsapp')}}</span>
+                <span class="font-13">WA : {{config()->get('tswirl.whatsapp')}}</span>
               </li>
             </ul>
             
@@ -96,7 +96,7 @@
           <!-- Logo-->
           {{-- <div class="d-none d-lg-block">
             <a href="#" class="logo text-white">
-              <img src="{{config()->get('web.logo-invert')}}" alt="" height="50" class="logo-small"> 
+              <img src="{{config()->get('tswirl.logo-invert')}}" alt="" height="50" class="logo-small"> 
             </a>
           </div> --}}
             <!-- End Logo-->

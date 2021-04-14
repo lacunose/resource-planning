@@ -47,15 +47,15 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "Lacunose\\Acl\\": "lacunose/acl/src",
-            "Lacunose\\Sale\\": "lacunose/sale/src",
-            "Lacunose\\Customer\\": "lacunose/customer/src",
-            "Lacunose\\Warehouse\\": "lacunose/warehouse/src",
-            "Lacunose\\Manufacture\\": "lacunose/manufacture/src",
-            "Lacunose\\Procure\\": "lacunose/procure/src",
-            "Lacunose\\Finance\\": "lacunose/finance/src",
-            "Lacunose\\Subscribe\\": "lacunose/subscribe/src",
-            "Lacunose\\Swirl\\": "lacunose/swirl"
+            "Lacunose\\Acl\\": "lacunose/acl/app",
+            "Lacunose\\Sale\\": "lacunose/sale/app",
+            "Lacunose\\Customer\\": "lacunose/customer/app",
+            "Lacunose\\Warehouse\\": "lacunose/warehouse/app",
+            "Lacunose\\Manufacture\\": "lacunose/manufacture/app",
+            "Lacunose\\Procure\\": "lacunose/procure/app",
+            "Lacunose\\Finance\\": "lacunose/finance/app",
+            "Lacunose\\Subscribe\\": "lacunose/subscribe/app",
+            "Lacunose\\Swirl\\": "lacunose/swirl/app"
         },
         "classmap": [
             "database/seeds",

@@ -17,8 +17,6 @@ return [
     'whatsapp'      => '+62.896.7200.7400',
     'business'      => 'thunderlab',
     'address'       => 'VERNON BUILDING, Jln. Letjen Sutoyo No. 102A, Kota Malang, Jawa Timur, Indonesia 65141',
-    // 'mode'          => 'local',
-    'mode'          => 'tenant',
     'glossary'      => [
         'customer'  => [
             'actived'    => 'Aktif',
@@ -59,8 +57,8 @@ return [
                 'ux_bill'   => 'Total belanja',
                 'ux_paid'   => 'Total bayar',
             ],
-            'tcust.account.verified'    => [
-                'verified_balance'      => 'Total point terverifikasi',
+            'tcust.account.verified'  => [
+                'verified_balance'  => 'Total point terverifikasi',
             ],
         ],
         'target'        => [

@@ -5,8 +5,8 @@ return [
         'tmf.document.persediaan'   => 'Handle pesanan untuk persediaan',
         'tmf.document.penjualan'    => 'Handle pesanan untuk penjualan',
         'tmf.document.checker'      => 'Handle checker pesanan',
-        'tmf.laporan.station'       => 'Melihat laporan performa station',
-        'tmf.laporan.ratio'         => 'Melihat laporan rasio menu',
+        'tmf.report.station'       => 'Melihat report performa station',
+        'tmf.report.ratio'         => 'Melihat report rasio menu',
         'tmf.menu.setting'          => 'Mengatur menu',
         'tmf.document.archived'       => 'Approval void document',
     ],
@@ -16,8 +16,6 @@ return [
     'email'         => 'hello@thunderlab.id',
     'whatsapp'      => '+62.895.8100.00500',
     'address'       => 'VERNON BUILDING, Jln. Letjen Sutoyo No. 102A, Kota Malang, Jawa Timur, Indonesia 65145',
-    // 'mode'          => 'local',
-    'mode'          => 'tenant',
     'glossary'      => [
         'menu'      => [
             'unpublished'   => 'Tidak ditampilkan',
