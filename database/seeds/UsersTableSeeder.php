@@ -29,8 +29,8 @@ class UsersTableSeeder extends Seeder
 			$id     =  (string) Uuid::uuid4();
             $data   = UserAggregateRoot::retrieve($id)
                     ->register([
-                    	'name' 		=> config()->get('web.bot.name'), 
-                    	'email' 	=> config()->get('web.bot.email'), 
+                    	'name' 		=> config()->get('tswirl.bot.name'), 
+                    	'email' 	=> config()->get('tswirl.bot.email'), 
                     	'password'	=> 'tlabGo!!!',
                     	'level'		=> 'thunder',
                     	'scopes'	=> array_keys(config()->get('tacl.scopes')),

@@ -18,7 +18,23 @@ class User extends Model {
      * relationship has many chats
      */
     public function subs() {
-        return $this->setConnection(config()->get('web.db.tsub'))->hasMany(Plan::class, 'email', 'email')->orderby('ended_at', 'asc');
+        return $this->setConnection(config()->get('tswirl.db.tsub'))->hasMany(Plan::class, 'email', 'email')->orderby('ended_at', 'asc');
+    }
+
+    /*
+     * relationship has many chats
+     */
+    public function sub() {
+        $host   = request()->getHost();
+
+        return $this->setConnection(config()->get('tswirl.db.tsub'))->hasOne(Plan::class, 'email', 'email')->where('website', $host)->orderby('ended_at', 'asc');
+    }
+
+    /*
+     * relationship has many chats
+     */
+    public function getUxBusinessAttribute() {
+        return $this->sub && isset($this->sub->biller['business']) ? $this->sub->biller['business'] : '';
     }
 
     protected function scopefindForPassport($q, $val) {

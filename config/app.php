@@ -179,8 +179,11 @@ return [
         Barryvdh\DomPDF\ServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
         Mpociot\ApiDoc\ApiDocGeneratorServiceProvider::class,
-
+        //SETUP AREA
+        Lacunose\Swirl\Providers\BasilServiceProvider::class,
         Lacunose\Acl\Providers\AclServiceProvider::class,
+        Lacunose\Subscribe\Providers\SubscribeServiceProvider::class,
+        
         //SALES AREA
         Lacunose\Sale\Providers\SaleServiceProvider::class,
         //OPERATION AREA
@@ -191,7 +194,6 @@ return [
         Lacunose\Finance\Providers\FinanceServiceProvider::class,
         //BISDEV AREA
         Lacunose\Customer\Providers\CustomerServiceProvider::class,
-        Lacunose\Subscribe\Providers\SubscribeServiceProvider::class,
     ],
 
     /*

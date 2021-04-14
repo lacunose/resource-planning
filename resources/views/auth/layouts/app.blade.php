@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- App Icons -->
-    <link rel="shortcut icon" href="{{ config()->get('web.favicon') }}">
+    <link rel="shortcut icon" href="{{ config()->get('tswirl.favicon') }}">
 
     <!-- App css -->
     <link href="{{ asset('dashboard/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />
