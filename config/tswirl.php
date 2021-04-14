@@ -1,13 +1,13 @@
 <?php
 
 return [
-	'favicon'		=> 'https://basil.id/favicon.png',
-	'logo'			=> 'https://basil.id/logo-basil.png',
-	'logo-invert'	=> 'https://basil.id/logo-basil-white.png',
-	'logo-black'    => 'https://basil.id/logo-basil-block.png',
-	'name'			=> 'BASIL.ID by THUNDERLAB',
-	'url'			=> 'https://basil.id',
-	'email'			=> 'hello@basil.id',
+	'favicon'		=> 'https://soda.id/favicon.png',
+	'logo'			=> 'https://soda.id/logo-soda.png',
+	'logo-invert'	=> 'https://soda.id/logo-soda-white.png',
+	'logo-black'    => 'https://soda.id/logo-soda-block.png',
+	'name'			=> 'SODA.ID by THUNDERLAB',
+	'url'			=> 'https://soda.id',
+	'email'			=> 'hello@soda.id',
 	'whatsapp'		=> '+62.896.7200.7400',
 	'address'		=> 'VERNON BUILDING, Jln. Letjen Sutoyo No. 102A, Kota Malang, Jawa Timur, Indonesia 65145',
 	'db'			=> [
@@ -34,11 +34,11 @@ return [
 	],
     'blacklist'    	=> [
         'host'		=> [
-        	'basil.id',
-			'member.basil.id',
-			'owner.basil.id',
-			'thunder.basil.id',
-			'tools.basil.id',
+        	'soda.id',
+			'member.soda.id',
+			'owner.soda.id',
+			'thunder.soda.id',
+			'tools.soda.id',
         ],
     ],
     'whitelist'    	=> [
@@ -47,8 +47,8 @@ return [
         ],
     ],
 	'bot'		    => [
-		'name'	    => 'Silvia (Basil Virtual Assistant)',
-		'email'	    => 'silvia@basil.id',
+		'name'	    => 'Silvia (Soda Virtual Assistant)',
+		'email'	    => 'silvia@soda.id',
 	],
 	'scopes'	=> [
         'tswirl.conflict.stock_overlap'		=> 'Melihat stok rebutan',
