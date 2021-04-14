@@ -11,7 +11,7 @@
       @foreach(config()->get('menu.dashboard') as $kv => $nv)
         <li class="nav-item has-megamenu has-submenu">
           <a class="nav-link dropdown-toggle menu-navbar" href="#" data-toggle="dropdown"> {{$kv}}  </a>
-          <ul class="dropdown-menu submenu megamenu">
+          <ul class="dropdown-menu submenu megamenu {{ $kv === 'KEUANGAN' ? 'submenu-right' : '' }}">
             @foreach($nv as $group => $menus)
               <li>
                 <ul>
