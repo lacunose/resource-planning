@@ -1,6 +1,6 @@
 <nav id="navigation" class="navbar navbar-expand-lg p-1" style="display: flex;">
   <a class="navbar-brand mr-5 d-none d-md-block" href="{{ route('dashboard') }}">
-    <img src="{{config()->get('web.logo-invert')}}" alt="" height="35" class="logo-small"> 
+    <img src="{{config()->get('tswirl.logo-invert')}}" alt="" height="35" class="logo-small"> 
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
     <i class="fa fa-bars"></i>
@@ -11,7 +11,7 @@
       @foreach(config()->get('menu.dashboard') as $kv => $nv)
         <li class="nav-item has-megamenu has-submenu">
           <a class="nav-link dropdown-toggle menu-navbar" href="#" data-toggle="dropdown"> {{$kv}}  </a>
-          <ul class="dropdown-menu submenu megamenu">
+          <ul class="dropdown-menu submenu megamenu {{ $kv === 'KEUANGAN' ? 'submenu-right' : '' }}">
             @foreach($nv as $group => $menus)
               <li>
                 <ul>

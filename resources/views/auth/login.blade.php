@@ -8,7 +8,7 @@
                     <h4 class="font-18 mt-3 m-b-5">Welcome Back !</h4>
                     <p class="text-muted">Sign in to {{env('APP_NAME')}}</p>
                 </div>
-                <div class="logo-admin"><img src="{{config()->get('web.logo')}}" alt="" height="50" class="logo-small"> </div>
+                <div class="logo-admin"><img src="{{config()->get('tswirl.logo')}}" alt="" height="50" class="logo-small"> </div>
             </div>
             <div class="p-3">
                 {!! Form::open(['url' => route('login')]) !!}

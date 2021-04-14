@@ -2,13 +2,13 @@
 
 return [
     'support'   => [
-        'scopes'    => ['management', 'tfin', 'twh', 'tsale', 'tproc', 'tcust', 'tmf'],
+        'scopes'    => ['tsale', 'tcust', 'twh', 'tmf', 'tproc', 'tfin', 'tswirl'],
     ],
     'scopes'        => [
         'tsub.subscription.professional'    => 'Handle langganan pro',
         'tsub.subscription.exclusive'       => 'Handle langganan x',
-        'tsub.bill.paid'                    => 'Melihat laporan tagihan lunas',
-        'tsub.bill.unpaid'                  => 'Melihat laporan tagihan pending',
+        'tsub.bill.paid'                    => 'Melihat report tagihan lunas',
+        'tsub.bill.unpaid'                  => 'Melihat report tagihan pending',
         'tsub.subscription.paid'            => 'Pelunasan tagihan manual',
         'tsub.setting.package'              => 'Mengatur paket langganan',
     ],
@@ -19,8 +19,6 @@ return [
     'whatsapp'      => '+62.896.7200.7400',
     'business'      => 'thunderlab',
     'address'       => 'VERNON BUILDING, Jln. Letjen Sutoyo No. 102A, Kota Malang, Jawa Timur, Indonesia 65141',
-    'mode'          => 'local',
-    // 'mode'          => 'tenant',
     'glossary'      => [
         'package'   => [
             'unpublished'   => 'Tidak ditampilkan',
@@ -36,15 +34,15 @@ return [
             'yearly'    => 'Tahun',
         ],
         'domain'        => [
-            'management'=> 'Manajemen', 
             'tacl'      => 'Akses', 
-            'twh'       => 'Persediaan', 
-            'tmf'       => 'Produksi', 
+            'tsub'      => 'Langganan',
             'tsale'     => 'Penjualan', 
             'tcust'     => 'Pelanggan',
+            'twh'       => 'Persediaan', 
+            'tmf'       => 'Produksi', 
             'tproc'     => 'Pembelian', 
             'tfin'      => 'Keuangan', 
-            'tsub'      => 'Langganan',
+            'tswirl'    => 'Bisnis', 
         ],
     ],
     'opsi'              => [
@@ -63,15 +61,17 @@ return [
             'support'   => 'Layanan Support',
             // 'penalty'   => 'Denda',
         ],
-        'client'    => [
-            //BASIL, TENANT, MANAGEMENT, MANAGERS, WEB, 01
-            'BTMDW01'       => 'Web Dashboard Management',
-            //BASIL, TENANT, OPERATIONAL, GUDANG, WEB, 01
-            'BTOGW01'       => 'Web Tools Gudang',
-            //BASIL, TENANT, OPERATIONAL, SALE, DESKTOP WINDOWS, 01
-            'BTOSW01'       => 'Windows Apps POS',
-            //BASIL, TENANT, MANAGEMENT, TEAM, ANDROID, 01
-            'BTMTA01'       => 'Android Apps Team',
+        'client'        => [
+            //THUNDER, MANAGEMENT, MANAGERS, WEB, 01
+            'TMDW01'   => 'Web Dashboard Management',
+            //THUNDER, OPERATIONAL, GUDANG, WEB, 01
+            'TOGW01'   => 'Web Tools Gudang',
+            //THUNDER, OPERATIONAL, SALE, DESKTOP WINDOWS, 01
+            'TOSW01'   => 'Windows Apps POS',
+            //THUNDER, MANAGEMENT, TEAM, ANDROID, 01
+            'TMTA01'   => 'Android Apps Team',
+            //THUNDER, MANAGEMENT, CUSTOMER, ANDROID, 01
+            'TMCA01'   => 'Android Apps Customer',
         ],
     ],
     'color'         => [

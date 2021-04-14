@@ -99,7 +99,7 @@ class NakoaV1SyncAccess extends Command
     }
 
     private function set_thunder_user($website, $email) {
-        $domains    = ['tsale', 'twh', 'tfin', 'tproc', 'tmf', 'tcust', 'management'];
+        $domains    = ['tsale', 'tcust', 'twh', 'tmf', 'tproc', 'tfin', 'tswirl'];
         $role       = 'maintainer';
         $scopes     = [];
 
@@ -141,10 +141,10 @@ class NakoaV1SyncAccess extends Command
                 $role       = 'staff';
 
                 if($user->management_roles && in_array('finance', json_decode($user->management_roles, true))) {
-                    $domains    = ['tfin', 'tproc'];
+                    $domains    = ['tproc', 'tfin'];
                     $role       = 'accountant';
                 }elseif($user->management_roles && in_array('superuser', json_decode($user->management_roles, true))) {
-                    $domains    = ['tsale', 'twh', 'tfin', 'tproc', 'tcust', 'management'];
+                    $domains    = ['tsale', 'tcust', 'twh', 'tmf', 'tproc', 'tfin', 'tswirl'];
                     $role       = 'owner';
                 }
 

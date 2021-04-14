@@ -1,6 +1,6 @@
 <nav id="navigation" class="navbar navbar-expand-lg p-1" style="display: flex;">
     <a class="navbar-brand mr-5 d-none d-md-block" href="{{ route('dashboard') }}">
-      <img src="{{config()->get('web.logo-invert')}}" alt="" height="45" class="logo-small"> 
+      <img src="{{config()->get('tswirl.logo-invert')}}" alt="" height="45" class="logo-small"> 
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
       <i class="fa fa-bars"></i>
