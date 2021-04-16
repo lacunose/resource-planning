@@ -2,11 +2,12 @@
 
 return [
     'scopes'    => [
-        'tproc.transaction.pembelian' => 'Handle transaksi pembelian',
-        'tproc.transaction.konsinyasi'=> 'Handle transaksi konsinyasi',
-        'tproc.report.price'         => 'Melihat report harga barang',
-        'tproc.report.payment'       => 'Melihat report settlement pembelian',
-        'tproc.transaction.voided'    => 'Approval void transaksi',
+        'tproc.transaction.pembelian'   => 'Handle transaksi pembelian',
+        'tproc.transaction.konsinyasi'  => 'Handle transaksi konsinyasi',
+        'tproc.report.price'            => 'Melihat laporan harga barang',
+        'tproc.report.vendor'           => 'Melihat laporan vendor',
+        'tproc.report.payment'          => 'Melihat laporan settlement pembelian',
+        'tproc.transaction.voided'      => 'Approval void transaksi',
     ],
     'logo'          => 'https://thunderlab.id/storage/app/uploads/public/5f7/ae8/123/5f7ae81237a56599536208.png',
     'name'          => 'THUNDERLAB',
