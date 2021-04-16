@@ -192,10 +192,15 @@ return [
 				'param' => ['group' => 'owner'],
 				'scope'	=> 'twh.report.owner',
 			], [
-				'title'	=> 'Performance Packer',
+				'title'	=> 'Performa Packing',
 				'url'	=> 'twh.report.timer',
 				'param' => ['group' => 'packing'],
 				'scope'	=> 'twh.timer.packing',
+			], [
+				'title'	=> 'Performa Unpacking',
+				'url'	=> 'twh.report.timer',
+				'param' => ['group' => 'unpacking'],
+				'scope'	=> 'twh.timer.unpacking',
 			]],
 		],
 		'PRODUKSI'		=> [
@@ -250,6 +255,11 @@ return [
 				'url'	=> 'tproc.report.index',
 				'param' => ['group' => 'price', 'filter[date_gte]' => date('Y-m-d')],
 				'scope'	=> 'tproc.report.price',
+			], [
+				'title'	=> 'Vendor',
+				'url'	=> 'tproc.report.index',
+				'param' => ['group' => 'vendor', 'filter[date_gte]' => date('Y-m-d')],
+				'scope'	=> 'tproc.report.vendor',
 			], [
 				'title'	=> 'Settlement Pembelian',
 				'url'	=> 'tproc.report.index',

@@ -388,7 +388,7 @@ class NakoaV1SyncSale extends Command
                         $docs   = Document::where('no_ref', $so->no)->get();
                         foreach ($docs as $doc) {
                             $ids= array_column(DocumentChecker::where('document_id', $doc->id)->wherenull('delivered_at')->get()->toArray(), 'id');
-                            $dt = DocumentAggregateRoot::retrieve($doc->uuid)->submit($ids)->persist();
+                            $dt = DocumentAggregateRoot::retrieve($doc->uuid)->submit($ids, $doc->date)->persist();
                         }
                         //DO THE CHECKER
                         $dt     = SaleTransactionAggregateRoot::retrieve($id)->close()->persist();
