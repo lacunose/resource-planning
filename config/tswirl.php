@@ -39,6 +39,7 @@ return [
 			'owner.basil.id',
 			'thunder.basil.id',
 			'tools.basil.id',
+			'pos.basil.id',
         ],
     ],
     'whitelist'    	=> [
