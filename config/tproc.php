@@ -4,8 +4,8 @@ return [
     'scopes'    => [
         'tproc.transaction.pembelian'   => 'Handle transaksi pembelian',
         'tproc.transaction.konsinyasi'  => 'Handle transaksi konsinyasi',
-        'tproc.report.price'            => 'Melihat laporan harga barang',
         'tproc.report.vendor'           => 'Melihat laporan vendor',
+        'tproc.report.price'            => 'Melihat laporan harga barang',
         'tproc.report.payment'          => 'Melihat laporan settlement pembelian',
         'tproc.transaction.voided'      => 'Approval void transaksi',
     ],
@@ -90,6 +90,10 @@ return [
         'per_page'  => 80,
     ],
     'title'         => [
-        'report'    => ['price' => 'Harga Barang', 'payment' => 'Settlement Pembelian'],
+        'report'    => [
+            'vendor'    => 'Vendor', 
+            'price'     => 'Harga Barang', 
+            'payment'   => 'Settlement Pembelian'
+        ],
     ],
 ];

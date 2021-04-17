@@ -77,15 +77,15 @@ return [
 				'scope'	=> 'tsale.promo.listing',
 			]],
 			'Laporan' => [[
-				'title'	=> 'Trend Produk',
-				'url'	=> 'tsale.report.index',
-				'param' => ['group' => 'catalog', 'filter[date_gte]' => date('Y-m-d')],
-				'scope'	=> 'tsale.report.catalog',
-			], [
 				'title'	=> 'Pelanggan',
 				'url'	=> 'tsale.report.index',
 				'param' => ['group' => 'customer', 'filter[date_gte]' => date('Y-m-d')],
 				'scope'	=> 'tsale.report.customer',
+			], [
+				'title'	=> 'Trend Produk',
+				'url'	=> 'tsale.report.index',
+				'param' => ['group' => 'catalog', 'filter[date_gte]' => date('Y-m-d')],
+				'scope'	=> 'tsale.report.catalog',
 			], [
 				'title'	=> 'Preferensi Produk',
 				'url'	=> 'tsale.report.index',
@@ -272,15 +272,15 @@ return [
 				'scope'	=> 'tproc.transaction.konsinyasi',
 			]],
 			'Laporan' => [[
-				'title'	=> 'Harga Barang',
-				'url'	=> 'tproc.report.index',
-				'param' => ['group' => 'price', 'filter[date_gte]' => date('Y-m-d')],
-				'scope'	=> 'tproc.report.price',
-			], [
 				'title'	=> 'Vendor',
 				'url'	=> 'tproc.report.index',
 				'param' => ['group' => 'vendor', 'filter[date_gte]' => date('Y-m-d')],
 				'scope'	=> 'tproc.report.vendor',
+			], [
+				'title'	=> 'Harga Barang',
+				'url'	=> 'tproc.report.index',
+				'param' => ['group' => 'price', 'filter[date_gte]' => date('Y-m-d')],
+				'scope'	=> 'tproc.report.price',
 			], [
 				'title'	=> 'Settlement Pembelian',
 				'url'	=> 'tproc.report.index',
