@@ -1,121 +1,95 @@
 <?php
 
 return [
-    'scopes'    => [
-        'twh.document.masuk'        => 'Handle stok masuk',
-        'twh.document.keluar'       => 'Handle stok keluar',
-        'twh.document.inhouse'      => 'Handle stok inhouse',
-        'twh.conversion.repack'     => 'Handle konversi untuk repack item',
-        'twh.conversion.unpack'     => 'Handle konversi untuk unpack item',
-        'twh.report.opname'         => 'Melihat laporan rekomendasi opname',
-        'twh.report.procure'        => 'Melihat laporan rekomendasi po',
-        'twh.report.stock'          => 'Melihat laporan kartu stok',
-        'twh.report.spoiled'        => 'Melihat laporan item keluar (Basi)',
-        'twh.report.expired'        => 'Melihat laporan item keluar (Kadaluarsa)',
-        'twh.report.defected'       => 'Melihat laporan item keluar (Cacat)',
-        'twh.report.lost'           => 'Melihat laporan item keluar (Hilang)',
-        'twh.report.unidentified'   => 'Melihat laporan item keluar (Tidak jelas)',
-        'twh.timer.packing'         => 'Melihat laporan performa packing',
-        'twh.timer.unpacking'       => 'Melihat laporan performa unpacking',
-        'twh.setting.item'          => 'Mengatur item',
-        'twh.document.submitted'=> 'Approval surat jalan',
+    'support'       => [
+        'scopes'    => ['tsale', 'tcust', 'twh', 'tmf', 'tproc', 'tfin', 'tswirl'],
     ],
-    'logo'      => 'https://thunderlab.id/storage/app/uploads/public/5f7/ae8/123/5f7ae81237a56599536208.png',
-    'name'      => 'THUNDERLAB',
+    'scopes'        => [
+        'tsub.subscription.professional'    => 'Handle langganan pro',
+        'tsub.subscription.exclusive'       => 'Handle langganan x',
+        'tsub.bill.paid'                    => 'Melihat laporan tagihan lunas',
+        'tsub.bill.unpaid'                  => 'Melihat laporan tagihan pending',
+        'tsub.subscription.paid'            => 'Pelunasan tagihan manual',
+        'tsub.setting.package'              => 'Mengatur paket langganan',
+    ],
+    'logo'      => 'https://basil.id/skin/assets/images/logo/logo-dark.png',
+    'name'      => 'PT THUNDER LABS INDONESIA',
     'url'       => 'https://thunderlab.id',
     'email'     => 'hello@thunderlab.id',
-    'whatsapp'  => '+62.895.8100.00500',
-    'address'   => 'VERNON BUILDING, Jln. Letjen Sutoyo No. 102A, Kota Malang, Jawa Timur, Indonesia 65145',
+    'whatsapp'  => '+62.896.7200.7400',
+    'business'  => 'thunderlab',
+    'address'   => 'VERNON BUILDING, Jln. Letjen Sutoyo No. 102A, Kota Malang, Jawa Timur, Indonesia 65141',
     'glossary'  => [
-        'item'      => [
-            'drafted'   => 'Belum Aktif',
-            'submitted' => 'Sudah Aktif',
-            'archived'  => 'Diarsipkan',
+        'package'       => [
+            'unpublished'   => 'Tidak ditampilkan',
+            'published'     => 'Ditampilkan',
         ],
-        'conversion'=> [
-            'drafted'   => 'Inbox',
-            'actived'   => 'Sudah Aktif',
-            'archived'  => 'Diarsipkan',
+        'subscription'  => [
+            'actived'       => 'Aktif',
+            'inactived'     => 'Tidak aktif',
         ],
-        'document'  => [
-            'masuk'     => [
-                'drafted'   => 'Inbox',
-                'stocked'   => 'Sudah Dibuka',
-                'submitted' => 'Sudah Dilabeli',
-                'locked'    => 'Sudah Selesai',
-                'archived'  => 'Diarsipkan',
-            ],
-            'keluar'    => [
-                'drafted'   => 'Inbox',
-                'stocked'   => 'Sudah Disiapkan',
-                'submitted' => 'Sudah Dicek',
-                'locked'    => 'Sudah Selesai',
-                'archived'  => 'Diarsipkan',
-            ],
-            'inhouse'   => [
-                'drafted'   => 'Inbox',
-                'stocked'   => 'Sudah Dicatat',
-                'submitted' => 'Sudah Dicek',
-                'locked'    => 'Sudah Selesai',
-                'archived'  => 'Diarsipkan',
-            ],
+        'period'        => [
+            'daily'         => 'Hari',
+            'monthly'       => 'Bulan',
+            'yearly'        => 'Tahun',
+        ],
+        'domain'        => [
+            'tacl'          => 'Akses', 
+            'tsub'          => 'Langganan',
+            'tsale'         => 'Penjualan', 
+            'tcust'         => 'Pelanggan',
+            'twh'           => 'Persediaan', 
+            'tmf'           => 'Produksi', 
+            'tproc'         => 'Pembelian', 
+            'tfin'          => 'Keuangan', 
+            'tswirl'        => 'Bisnis', 
         ],
     ],
     'opsi'      => [
-        'method'        => [
-            'FEFO'      => 'FEFO',
-            'FIFO'      => 'FIFO',
-            'LIFO'      => 'LIFO',
+        'membership'    => [
+            'professional'  => 'Pro',
+            'exclusive'     => 'X',
         ],
-        'note'          => [
-            'spoiled'       => 'Basi',
-            'expired'       => 'Kadaluarsa',
-            'defected'      => 'Cacat',
-            'lost'          => 'Hilang',
-            'missed'        => 'Tertukar',
-            'unidentified'  => 'Tidak jelas',
+        'period'        => [
+            'daily'         => 'Harian',
+            'monthly'       => 'Bulanan',
+            'yearly'        => 'Tahunan',
         ],
-        'warehouse'     => [],
-        'item_url'      => '/api/warehouse/item/submitted',
+        'flag'          => [
+            'feature'       => 'Fitur',
+            'rent'          => 'Sewa',
+            'support'       => 'Layanan Support',
+            // 'penalty'       => 'Denda',
+        ],
+        'client'        => [
+            //THUNDER, MANAGEMENT, MANAGERS, WEB, 01
+            'TMDW01'        => 'Web Dashboard Management',
+            //THUNDER, OPERATIONAL, GUDANG, WEB, 01
+            'TOGW01'        => 'Web Tools Gudang',
+            //THUNDER, OPERATIONAL, SALE, DESKTOP WINDOWS, 01
+            'TOSW01'        => 'Windows Apps POS',
+            //THUNDER, MANAGEMENT, TEAM, ANDROID, 01
+            'TMTA01'        => 'Android Apps Team',
+            //THUNDER, MANAGEMENT, CUSTOMER, ANDROID, 01
+            'TMCA01'        => 'Android Apps Customer',
+        ],
     ],
     'color'     => [
-        'item'          => [
-            'drafted'   => 'warning',
-            'submitted' => 'primary',
-            'archived'  => 'danger',
+        'package'       => [
+            'unpublished'   => 'warning',
+            'published'     => 'primary',
+            'archived'      => 'danger',
         ],
-        'conversion'    => [
-            'drafted'   => 'warning',
-            'actived'   => 'primary',
-            'archived'  => 'danger',
+        'subscription'  => [
+            'actived'       => 'primary',
+            'inactived'     => 'danger',
         ],
-        'document'      => [
-            'drafted'   => 'warning',
-            'stocked'   => 'warning',
-            'submitted' => 'warning',
-            'locked'    => 'primary',
-            'archived'  => 'danger',
-        ],
-    ],
-    'default'   => [
-        'stock'     => ['owner' => 'default'],
     ],
     'setting'   => [
-        'document_batch'=> ['inhouse', 'masuk', 'keluar'],
-        'per_page'      => 80
+        'due_days'  => 7,
+        'per_page'  => 80
     ],
     'title'     => [
-        'timer'     => [
-            'packing'       => 'Perfoma Packing',
-            'unpacking'     => 'Perfoma Unpacking',
-        ],
-        'report'    => [
-            'spoiled'       => 'Item Basi',
-            'expired'       => 'Item Kadaluarsa',
-            'defected'      => 'Item Cacat',
-            'lost'          => 'Item Hilang',
-            'missed'        => 'Item Tertukar',
-            'unidentified'  => 'Item Tidak jelas',
-        ],
+        'bill'      => ['unpaid' => 'Tagihan Pending', 'paid' => 'Tagihan Lunas'],
     ],
 ];
