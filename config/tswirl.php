@@ -39,6 +39,7 @@ return [
 			'ownerx.nakoa.id',
 			'thunder.nakoa.id',
 			'tools.nakoa.id',
+			'pos.nakoa.id',
         ],
     ],
     'whitelist'    	=> [
