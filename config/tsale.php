@@ -9,11 +9,11 @@ return [
         'tsale.transaction.bukalapak'   => 'Handle transaksi bukalapak',
         'tsale.transaction.jdid'        => 'Handle transaksi jdid',
         'tsale.transaction.blibli'      => 'Handle transaksi blibli',
+        'tsale.report.customer'         => 'Melihat laporan pelanggan',
         'tsale.report.catalog'          => 'Melihat laporan trend produk',
         'tsale.report.palate'           => 'Melihat laporan preferensi produk',
         'tsale.report.sold'             => 'Melihat laporan penjualan (produk)',
         'tsale.report.category'         => 'Melihat laporan penjualan (kategori)',
-        'tsale.report.customer'         => 'Melihat laporan pelanggan',
         'tsale.report.payment'          => 'Melihat laporan penjualan (pembayaran)',
         'tsale.promo.transaction'       => 'Mengatur promo transaksi',
         'tsale.promo.catalog'           => 'Mengatur promo produk',
@@ -133,6 +133,13 @@ return [
         'per_page'  => 80,
     ],
     'title'         => [
-        'report'    => ['catalog' => 'Trend Produk', 'sold' => 'Penjualan Produk', 'payment' => 'Settlement Penjualan', 'customer' => 'Pelanggan'],
+        'report'    => [
+            'customer'  => 'Pelanggan',
+            'catalog'   => 'Trend produk',
+            'palate'    => 'Preferensi produk',
+            'sold'      => 'Penjualan (produk)',
+            'category'  => 'Penjualan (kategori)',
+            'payment'   => 'Penjualan (pembayaran)',
+        ],
     ],
 ];

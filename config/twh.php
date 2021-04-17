@@ -72,6 +72,7 @@ return [
             'expired'       => 'Kadaluarsa',
             'defected'      => 'Cacat',
             'lost'          => 'Hilang',
+            'missed'        => 'Tertukar',
             'unidentified'  => 'Tidak jelas',
         ],
         'warehouse'     => [],
@@ -104,7 +105,17 @@ return [
         'per_page'      => 80
     ],
     'title'     => [
-        'timer'     => ['packing' => 'Perfomance Packer'],
-        'report'    => ['owner' => 'Kepemilikan Stok'],
+        'timer'     => [
+            'packing'       => 'Perfoma Packing',
+            'unpacking'     => 'Perfoma Unpacking',
+        ],
+        'report'    => [
+            'spoiled'       => 'Item Basi',
+            'expired'       => 'Item Kadaluarsa',
+            'defected'      => 'Item Cacat',
+            'lost'          => 'Item Hilang',
+            'missed'        => 'Item Tertukar',
+            'unidentified'  => 'Item Tidak jelas',
+        ],
     ],
 ];
