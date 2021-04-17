@@ -5,30 +5,30 @@ return [
         'tmf.document.persediaan'   => 'Handle pesanan untuk persediaan',
         'tmf.document.penjualan'    => 'Handle pesanan untuk penjualan',
         'tmf.document.checker'      => 'Handle checker pesanan',
-        'tmf.report.station'       => 'Melihat report performa station',
-        'tmf.report.ratio'         => 'Melihat report rasio menu',
+        'tmf.report.station'        => 'Melihat laporan performa station',
+        'tmf.report.ratio'          => 'Melihat laporan rasio menu',
         'tmf.menu.setting'          => 'Mengatur menu',
-        'tmf.document.archived'       => 'Approval void document',
+        'tmf.document.archived'     => 'Approval void document',
     ],
-    'logo'          => 'https://thunderlab.id/storage/app/uploads/public/5f7/ae8/123/5f7ae81237a56599536208.png',
-    'name'          => 'THUNDERLAB',
-    'url'           => 'https://thunderlab.id',
-    'email'         => 'hello@thunderlab.id',
-    'whatsapp'      => '+62.895.8100.00500',
-    'address'       => 'VERNON BUILDING, Jln. Letjen Sutoyo No. 102A, Kota Malang, Jawa Timur, Indonesia 65145',
-    'glossary'      => [
-        'menu'      => [
+    'logo'      => 'https://thunderlab.id/storage/app/uploads/public/5f7/ae8/123/5f7ae81237a56599536208.png',
+    'name'      => 'THUNDERLAB',
+    'url'       => 'https://thunderlab.id',
+    'email'     => 'hello@thunderlab.id',
+    'whatsapp'  => '+62.895.8100.00500',
+    'address'   => 'VERNON BUILDING, Jln. Letjen Sutoyo No. 102A, Kota Malang, Jawa Timur, Indonesia 65145',
+    'glossary'  => [
+        'menu'  => [
             'unpublished'   => 'Tidak ditampilkan',
             'published'     => 'Ditampilkan',
         ],
-        'document'     => [
-            'drafted'   => 'Belum Dikerjakan',
-            'submitted' => 'Sedang Dikerjakan',
-            'locked'    => 'Sudah Dikerjakan',
-            'archived'  => 'Dibatalkan',
+        'document'          => [
+            'drafted'       => 'Belum Dikerjakan',
+            'submitted'     => 'Sedang Dikerjakan',
+            'locked'        => 'Sudah Dikerjakan',
+            'archived'      => 'Dibatalkan',
         ],
     ],
-    'opsi'  => [
+    'opsi'      => [
         'period'        => [
             'daily'     => 'Harian',
             'monthly'   => 'Bulanan',
@@ -74,6 +74,6 @@ return [
         'per_page'  => 80,
     ],
     'title'         => [
-        'report'    => ['station' => 'Perfroma Station', 'ratio' => 'Rasio Menu'],
+        'report'    => ['station' => 'Performa Station', 'ratio' => 'Rasio Menu'],
     ],
 ];

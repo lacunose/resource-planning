@@ -39,6 +39,7 @@ return [
 			'owner.soda.id',
 			'thunder.soda.id',
 			'tools.soda.id',
+			'pos.soda.id',
         ],
     ],
     'whitelist'    	=> [
