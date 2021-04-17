@@ -62,6 +62,26 @@ class NakoaV1SyncWarehouse extends Command {
             $lines  = [];
             $stocks = [];
 
+
+            if( preg_match('/\btester\b/i', strtolower($wh->note) ) ){
+                $note   = 'unidentified';
+            }elseif( preg_match('/\bkadaluarsa\b/i', strtolower($wh->note)) 
+                || preg_match('/\bexp\b/i', strtolower($wh->note)) 
+                || preg_match('/\bjamur\b/i', strtolower($wh->note)) 
+                || preg_match('/\bbasi\b/i', strtolower($wh->note))
+                || preg_match('/\bumur\b/i', strtolower($wh->note))
+                || preg_match('/\bbuang\b/i', strtolower($wh->note))
+            ){
+                $note   = 'spoiled';
+            }elseif( preg_match('/\bjamur\b/i', strtolower($wh->note)) 
+                || preg_match('/\bbasi\b/i', strtolower($wh->note))
+                || preg_match('/\bbuang\b/i', strtolower($wh->note))
+            ){
+                $note   = 'expired';
+            }else{
+                $note   = 'unidentified';
+            }
+
             foreach ($lns as $ln) {
                 $item       = Item::where('code', $ln['code'])->first();
 
@@ -80,24 +100,11 @@ class NakoaV1SyncWarehouse extends Command {
                         'description'   => $ln['name'],
                         'amount'        => $ln['qty'] * -1,
                         'expired_at'    => null,
+                        'note'          => $note,
                     ];
                 }else{
                     \Log::info('Unlisted: '.$ln['code']);
                 }
-            }
-
-            if( preg_match('/\btester\b/i', strtolower($wh->note) ) ){
-                $note   = 'tester';
-            }elseif( preg_match('/\bkadaluarsa\b/i', strtolower($wh->note)) 
-                || preg_match('/\bexp\b/i', strtolower($wh->note)) 
-                || preg_match('/\bjamur\b/i', strtolower($wh->note)) 
-                || preg_match('/\bbasi\b/i', strtolower($wh->note))
-                || preg_match('/\bumur\b/i', strtolower($wh->note))
-                || preg_match('/\bbuang\b/i', strtolower($wh->note))
-            ){
-                $note   = 'kadaluarsa';
-            }else{
-                $note   = 'penyesuaian';
             }
 
             $whouse = DB::connection('nakoa1')->table('WMS_warehouses')->where('id', $wh->warehouse_id)->first();
@@ -107,7 +114,7 @@ class NakoaV1SyncWarehouse extends Command {
                 'no'        => $wh->no,
                 'cause'     => 'inhouse',
                 'owner'     => 'nakoa',
-                'type'      => $note,
+                'type'      => 'penyesuaian',
                 'warehouse' => $whouse->code,
                 'date'      => $wh->date,
                 'lines'     => $lines,
@@ -174,6 +181,7 @@ class NakoaV1SyncWarehouse extends Command {
                         'description'   => $ln['name'],
                         'amount'        => $ln['qty'],
                         'expired_at'    => null,
+                        'note'          => '',
                     ];
                 }else{
                     \Log::info('Unlisted: '.$ln['code']);
@@ -227,6 +235,7 @@ class NakoaV1SyncWarehouse extends Command {
                         'description'   => $ln['name'],
                         'amount'        => $ln['qty'] * -1,
                         'expired_at'    => null,
+                        'note'          => '',
                     ];
                 }else{
                     \Log::info('Unlisted: '.$ln['code']);
@@ -307,6 +316,7 @@ class NakoaV1SyncWarehouse extends Command {
                         'description'   => $ln['name'],
                         'amount'        => $ln['qty'],
                         'expired_at'    => null,
+                        'note'          => '',
                     ];
                 }else{
                     \Log::info('Unlisted: '.$ln['code']);

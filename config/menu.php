@@ -77,15 +77,15 @@ return [
 				'scope'	=> 'tsale.promo.listing',
 			]],
 			'Laporan' => [[
-				'title'	=> 'Trend Produk',
-				'url'	=> 'tsale.report.index',
-				'param' => ['group' => 'catalog', 'filter[date_gte]' => date('Y-m-d')],
-				'scope'	=> 'tsale.report.catalog',
-			], [
 				'title'	=> 'Pelanggan',
 				'url'	=> 'tsale.report.index',
 				'param' => ['group' => 'customer', 'filter[date_gte]' => date('Y-m-d')],
 				'scope'	=> 'tsale.report.customer',
+			], [
+				'title'	=> 'Trend Produk',
+				'url'	=> 'tsale.report.index',
+				'param' => ['group' => 'catalog', 'filter[date_gte]' => date('Y-m-d')],
+				'scope'	=> 'tsale.report.catalog',
 			], [
 				'title'	=> 'Preferensi Produk',
 				'url'	=> 'tsale.report.index',
@@ -177,20 +177,30 @@ return [
 				'param' => [],
 				'scope'	=> 'twh.report.stock',
 			], [
-				'title'	=> 'Rekomendasi Opname',
-				'url'	=> 'twh.report.opname',
-				'param' => [],
-				'scope'	=> 'twh.report.opname',
-			], [
-				'title'	=> 'Rekomendasi PO',
-				'url'	=> 'twh.report.procure',
-				'param' => [],
-				'scope'	=> 'twh.report.procure',
-			], [
-				'title'	=> 'Kepemilikan Stok',
+				'title'	=> 'Item Keluar (Basi)',
 				'url'	=> 'twh.report.index',
-				'param' => ['group' => 'owner'],
-				'scope'	=> 'twh.report.owner',
+				'param' => ['group' => 'spoiled'],
+				'scope'	=> 'twh.report.spoiled',
+			], [
+				'title'	=> 'Item Keluar (Kadaluarsa)',
+				'url'	=> 'twh.report.index',
+				'param' => ['group' => 'expired'],
+				'scope'	=> 'twh.report.expired',
+			], [
+				'title'	=> 'Item Keluar (Cacat)',
+				'url'	=> 'twh.report.index',
+				'param' => ['group' => 'defected'],
+				'scope'	=> 'twh.report.defected',
+			], [
+				'title'	=> 'Item Keluar (Hilang)',
+				'url'	=> 'twh.report.index',
+				'param' => ['group' => 'lost'],
+				'scope'	=> 'twh.report.lost',
+			], [
+				'title'	=> 'Item Keluar (Tidak jelas)',
+				'url'	=> 'twh.report.index',
+				'param' => ['group' => 'unidentified'],
+				'scope'	=> 'twh.report.unidentified',
 			], [
 				'title'	=> 'Performa Packing',
 				'url'	=> 'twh.report.timer',
@@ -201,6 +211,17 @@ return [
 				'url'	=> 'twh.report.timer',
 				'param' => ['group' => 'unpacking'],
 				'scope'	=> 'twh.timer.unpacking',
+			]],
+			'Rekomendasi' => [[
+				'title'	=> 'Opname',
+				'url'	=> 'twh.report.opname',
+				'param' => [],
+				'scope'	=> 'twh.report.opname',
+			], [
+				'title'	=> 'Pembelian',
+				'url'	=> 'twh.report.procure',
+				'param' => [],
+				'scope'	=> 'twh.report.procure',
 			]],
 		],
 		'PRODUKSI'		=> [
@@ -227,15 +248,15 @@ return [
 				'scope'	=> 'tmf.menu.setting',
 			]],
 			'Laporan' => [[
-				'title'	=> 'Performa Station',
-				'url'	=> 'tmf.report.index',
-				'param' => ['group' => 'station', 'filter[date_gte]' => date('Y-m-d')],
-				'scope'	=> 'tmf.report.station',
-			], [
 				'title'	=> 'Rasio Menu',
 				'url'	=> 'tmf.report.index',
 				'param' => ['group' => 'ratio', 'filter[date_gte]' => date('Y-m-d')],
 				'scope'	=> 'tmf.report.ratio',
+			], [
+				'title'	=> 'Performa Station',
+				'url'	=> 'tmf.report.index',
+				'param' => ['group' => 'station', 'filter[date_gte]' => date('Y-m-d')],
+				'scope'	=> 'tmf.report.station',
 			]],
 		],
 		'PEMBELIAN'		=> [
@@ -251,15 +272,15 @@ return [
 				'scope'	=> 'tproc.transaction.konsinyasi',
 			]],
 			'Laporan' => [[
-				'title'	=> 'Harga Barang',
-				'url'	=> 'tproc.report.index',
-				'param' => ['group' => 'price', 'filter[date_gte]' => date('Y-m-d')],
-				'scope'	=> 'tproc.report.price',
-			], [
 				'title'	=> 'Vendor',
 				'url'	=> 'tproc.report.index',
 				'param' => ['group' => 'vendor', 'filter[date_gte]' => date('Y-m-d')],
 				'scope'	=> 'tproc.report.vendor',
+			], [
+				'title'	=> 'Harga Barang',
+				'url'	=> 'tproc.report.index',
+				'param' => ['group' => 'price', 'filter[date_gte]' => date('Y-m-d')],
+				'scope'	=> 'tproc.report.price',
 			], [
 				'title'	=> 'Settlement Pembelian',
 				'url'	=> 'tproc.report.index',

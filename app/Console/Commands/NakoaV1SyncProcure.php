@@ -268,6 +268,7 @@ class NakoaV1SyncProcure extends Command
                                 'description'   => $ln['name'],
                                 'amount'        => $ln['qty'],
                                 'expired_at'    => null,
+                                'note'          => '',
                             ];
                         }else{
                             \Log::info('Unlisted: '.$ln['code']);

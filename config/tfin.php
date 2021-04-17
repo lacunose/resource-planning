@@ -2,64 +2,64 @@
 
 return [
     'scopes'    => [
-        'tfin.cashier.pemasukan'      => 'Handle transaksi pemasukan',
-        'tfin.cashier.pengeluaran'    => 'Handle transaksi pengeluaran',
-        'tfin.book.transaksi'         => 'Handle catatan transaksi',
-        'tfin.book.memorial'          => 'Handle catatan memorial',
-        'tfin.asset.depresiasi'       => 'Handle otomasi depresiasi',
-        'tfin.asset.amortisasi'       => 'Handle otomasi amortisasi',
-        'tfin.report.jurnal'         => 'Melihat report buku besar',
-        'tfin.report.neraca'         => 'Melihat report neraca',
-        'tfin.report.labarugi'       => 'Melihat report laba/rugi',
-        'tfin.setting.coa'            => 'Mengatur Akun Perkiraan',
-        'tfin.setting.jurnal'         => 'Mengatur pengaturan jurnal otomatis',
+        'tfin.cashier.pemasukan'    => 'Handle transaksi pemasukan',
+        'tfin.cashier.pengeluaran'  => 'Handle transaksi pengeluaran',
+        'tfin.book.transaksi'       => 'Handle catatan transaksi',
+        'tfin.book.memorial'        => 'Handle catatan memorial',
+        'tfin.asset.depresiasi'     => 'Handle otomasi depresiasi',
+        'tfin.asset.amortisasi'     => 'Handle otomasi amortisasi',
+        'tfin.report.jurnal'        => 'Melihat laporan buku besar',
+        'tfin.report.neraca'        => 'Melihat laporan neraca',
+        'tfin.report.labarugi'      => 'Melihat laporan laba/rugi',
+        'tfin.setting.coa'          => 'Mengatur Akun Perkiraan',
+        'tfin.setting.jurnal'       => 'Mengatur pengaturan jurnal otomatis',
     ],
-    'logo'          => 'https://thunderlab.id/storage/app/uploads/public/5f7/ae8/123/5f7ae81237a56599536208.png',
-    'name'          => 'THUNDERLAB',
-    'url'           => 'https://thunderlab.id',
-    'email'         => 'hello@thunderlab.id',
-    'whatsapp'      => '+62.895.8100.00500',
-    'address'       => 'VERNON BUILDING, Jln. Letjen Sutoyo No. 102A, Kota Malang, Jawa Timur, Indonesia 65145',
-    'glossary'      => [
-        'coa'       => [
+    'logo'      => 'https://thunderlab.id/storage/app/uploads/public/5f7/ae8/123/5f7ae81237a56599536208.png',
+    'name'      => 'THUNDERLAB',
+    'url'       => 'https://thunderlab.id',
+    'email'     => 'hello@thunderlab.id',
+    'whatsapp'  => '+62.895.8100.00500',
+    'address'   => 'VERNON BUILDING, Jln. Letjen Sutoyo No. 102A, Kota Malang, Jawa Timur, Indonesia 65145',
+    'glossary'  => [
+        'coa'   => [
             'actived'   => 'Aktif',
             'archived'  => 'Arsip',
         ],
-        'asset'     => [
+        'asset' => [
             'drafted'   => 'Inbox',
             'actived'   => 'Sudah Aktif',
             'disposed'  => 'Dihapus',
         ],
-        'book'      => [
+        'book'  => [
             'drafted'   => 'Inbox',
             'journaled' => 'Sudah Dijurnal',
             'locked'    => 'Sudah Dikunci',
             'archived'  => 'Diarsipkan',
         ],
-        'cashier'  => [
+        'cashier'       => [
             'opened'    => 'Pending',
             'closed'    => 'Lunas',
             'voided'    => 'Batal',
         ],
     ],
-    'opsi'          => [
-        'period'    => [
+    'opsi'      => [
+        'period'        => [
             'daily'     => 'Harian',
             'monthly'   => 'Bulanan',
             'yearly'    => 'Tahunan',
         ],
-        'currency'  => [
+        'currency'      => [
             'IDR'       => 'IDR',
         ],
-        'method'    => [
-            'flat'     => 'Flat',
-            'effective'=> 'Efektif',
-            'annuity'  => 'Anuitas',
+        'method'        => [
+            'flat'      => 'Flat',
+            'effective' => 'Efektif',
+            'annuity'   => 'Anuitas',
         ],
-        'coa_tag'   => [
-            'Kas & Bank'    => 'Kas & Bank',
-            'Akun Piutang'  => 'Akun Piutang',
-            'Persediaan'    => 'Persediaan',
+        'coa_tag'       => [
+            'Kas & Bank'                => 'Kas & Bank',
+            'Akun Piutang'              => 'Akun Piutang',
+            'Persediaan'                => 'Persediaan',
             'Aktiva Lancar Lainnya'     => 'Aktiva Lancar Lainnya',
             'Aktiva Tetap'              => 'Aktiva Tetap',
             'Depresiasi & Amortisasi'   => 'Depresiasi & Amortisasi',
@@ -75,18 +75,18 @@ return [
             'Beban Lainnya'             => 'Beban Lainnya',
         ],
         'coa_group'     => [
-            'asset'         => 'Aktiva',
-            'liability'     => 'Pasiva',
-            'equity'        => 'Modal',
-            'revenue'       => 'Pendapatan',
-            'expense'       => 'Pengeluaran',
+            'asset'     => 'Aktiva',
+            'liability' => 'Pasiva',
+            'equity'    => 'Modal',
+            'revenue'   => 'Pendapatan',
+            'expense'   => 'Pengeluaran',
         ],
-        'flag'    => [
+        'flag'  => [
             'fee'       => 'Biaya',
             'plafon'    => 'Pinjaman',
             'interest'  => 'Bunga',
         ],
-        'branch'    => [
+        'branch'        => [
             'default'   => 'Default',
         ],
     ],
@@ -107,7 +107,7 @@ return [
             'archived'  => 'danger',
         ],
     ],
-    'setting'       => [
+    'setting'   => [
         'currency'  => 'IDR',
         'round'     => 100,
         'per_page'  => 80
