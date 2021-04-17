@@ -10,7 +10,11 @@ return [
         'twh.report.opname'     => 'Melihat laporan rekomendasi opname',
         'twh.report.procure'    => 'Melihat laporan rekomendasi po',
         'twh.report.stock'      => 'Melihat laporan kartu stok',
-        'twh.report.owner'      => 'Melihat laporan kepemilikan stok',
+        'twh.report.spoiled'    => 'Melihat laporan item keluar (Basi)',
+        'twh.report.expired'    => 'Melihat laporan item keluar (Kadaluarsa)',
+        'twh.report.defected'   => 'Melihat laporan item keluar (Cacat)',
+        'twh.report.lost'       => 'Melihat laporan item keluar (Hilang)',
+        'twh.report.unidentified'   => 'Melihat laporan item keluar (Tidak jelas)',
         'twh.timer.packing'     => 'Melihat laporan performa packing',
         'twh.timer.unpacking'   => 'Melihat laporan performa unpacking',
         'twh.setting.item'      => 'Mengatur item',
@@ -63,6 +67,13 @@ return [
             'FIFO'      => 'FIFO',
             'LIFO'      => 'LIFO',
         ],
+        'note'      => [
+            'spoiled'   => 'Basi',
+            'expired'   => 'Kadaluarsa',
+            'defected'  => 'Cacat',
+            'lost'      => 'Hilang',
+            'unidentified'  => 'Tidak jelas',
+        ],
         'warehouse'     => [],
         'item_url'      => '/api/warehouse/item/submitted',
     ],
@@ -89,7 +100,7 @@ return [
         'stock'   => ['owner' => 'default'],
     ],
     'setting'     => [
-        'document_batch'    => ['opname', 'masuk', 'keluar'],
+        'document_batch'    => ['inhouse', 'masuk', 'keluar'],
         'per_page'          => 80
     ],
     'title'       => [

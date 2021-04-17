@@ -64,10 +64,10 @@ return [
             1               => 'Tidak Bermasalah',
         ],
         'method'            => [[
-            'method'        => 'cash',
+            'method'        => 'Cash',
             'min_amount'    => 0,
         ],[
-            'method'        => 'transfer',
+            'method'        => 'Bank Transfer',
             'min_amount'    => 0,
         ]],
         'item_model'        => 'Lacunose\\Warehouse\\Models\\Item',
