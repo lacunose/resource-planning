@@ -77,7 +77,7 @@ return [
             'nakoin'    => 'nakoin',
             'idr'       => 'idr',
         ],
-        'catalog_url'   => '/api/sale/katalog/published',
+        'catalog_url'   => '/api/sale/catalog/published',
         'program_url'   => '/api/customer/program/published',
         'mark'          => [
             'favorite'  => 'Favorit',
