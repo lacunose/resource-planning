@@ -248,15 +248,15 @@ return [
 				'scope'	=> 'tmf.menu.setting',
 			]],
 			'Laporan' => [[
-				'title'	=> 'Performa Station',
-				'url'	=> 'tmf.report.index',
-				'param' => ['group' => 'station', 'filter[date_gte]' => date('Y-m-d')],
-				'scope'	=> 'tmf.report.station',
-			], [
 				'title'	=> 'Rasio Menu',
 				'url'	=> 'tmf.report.index',
 				'param' => ['group' => 'ratio', 'filter[date_gte]' => date('Y-m-d')],
 				'scope'	=> 'tmf.report.ratio',
+			], [
+				'title'	=> 'Performa Station',
+				'url'	=> 'tmf.report.index',
+				'param' => ['group' => 'station', 'filter[date_gte]' => date('Y-m-d')],
+				'scope'	=> 'tmf.report.station',
 			]],
 		],
 		'PEMBELIAN'		=> [
