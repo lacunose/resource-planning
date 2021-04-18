@@ -28,10 +28,10 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('nakoa:sync:access')->dailyAt('18:00');
-        $schedule->command('nakoa:sync:procure')->dailyAt('18:10');
-        $schedule->command('nakoa:sync:warehouse')->dailyAt('18:45');
-        $schedule->command('nakoa:sync:sale')->dailyAt('19:00');
+        $schedule->command('nakoa:sync:access')->dailyAt('18:10');
+        $schedule->command('nakoa:sync:procure')->dailyAt('18:20');
+        $schedule->command('nakoa:sync:warehouse')->dailyAt('18:55');
+        $schedule->command('nakoa:sync:sale')->dailyAt('20:10');
     }
 
     /**
