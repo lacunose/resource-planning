@@ -67,6 +67,10 @@ return [
             'FIFO'      => 'FIFO',
             'LIFO'      => 'LIFO',
         ],
+        'type'          => [
+            'material'      => 'Bahan Baku',
+            'goods'         => 'Barang Jadi',
+        ],
         'note'          => [
             'spoiled'       => 'Basi',
             'expired'       => 'Kadaluarsa',
@@ -77,6 +81,7 @@ return [
         ],
         'warehouse'     => [],
         'item_url'      => '/api/warehouse/item/submitted',
+        'material_url'  => '/api/manufacture/resource/submitted',
     ],
     'color'     => [
         'item'          => [
