@@ -25,7 +25,8 @@ return [
 		'role'		=> [
 			'tsale.opsi.outlet'		=> 'Outlet',
 			'twh.opsi.warehouse'	=> 'Gudang',
-			'tfin.opsi.branch'		=> 'Unit',
+			'tmf.opsi.factory'		=> 'Pabrik',
+			'tfin.opsi.branch'		=> 'Cabang',
 		],
 	]
 ];

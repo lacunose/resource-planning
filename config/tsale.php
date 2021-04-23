@@ -63,9 +63,9 @@ return [
             'saturday'      => 'Sabtu',
         ],
         'type'  => [
-            'free'          => 'Produk Saja',
+            'free'          => 'Katalog Saja',
             'item'          => 'Item Stok',
-            'menu'          => 'Station Menu',
+            'good'          => 'Item Produksi',
         ],
         'promo' => [
             'transaction'   => [
@@ -106,8 +106,8 @@ return [
         'item_url'          => '/api/warehouse/item/submitted',
         'catalog_url'       => '/api/sale/catalog/published',
         'promo_url'         => '/api/sale/promo/published',
-        'menu_model'        => 'Lacunose\\Manufacture\\Models\\Menu',
-        'menu_url'          => '/api/manufacture/menu/published',
+        'good_model'        => 'Lacunose\\Manufacture\\Models\\Good',
+        'good_url'          => '/api/manufacture/good/published',
     ],
     'color' => [
         'catalog'       => [

@@ -225,33 +225,49 @@ return [
 			]],
 		],
 		'PRODUKSI'		=> [
-			'Pesanan'	=> [[
-				'title'	=> 'Persediaan',
-				'url'	=> 'tmf.document.index',
-				'param' => ['mode' => 'persediaan', 'status' => 'drafted'],
-				'scope'	=> 'tmf.document.persediaan',
-			], [
+			'Kontrol'	=> [[
 				'title'	=> 'Penjualan',
-				'url'	=> 'tmf.document.index',
-				'param' => ['mode' => 'penjualan', 'status' => 'drafted'],
-				'scope'	=> 'tmf.document.penjualan',
-			], [
-				'title'	=> 'Checker',
 				'url'	=> 'tmf.checker.index',
-				'param' => ['status' => 'requested'],
-				'scope'	=> 'tmf.document.checker',
+				'param' => ['mode' => 'penjualan', 'status' => 'requested'],
+				'scope'	=> 'tmf.checker.penjualan',
+			], [
+				'title'	=> 'Persediaan',
+				'url'	=> 'tmf.checker.index',
+				'param' => ['mode' => 'persediaan', 'status' => 'requested'],
+				'scope'	=> 'tmf.checker.persediaan',
+			], [
+				'title'	=> 'Percobaan',
+				'url'	=> 'tmf.checker.index',
+				'param' => ['mode' => 'percobaan', 'status' => 'requested'],
+				'scope'	=> 'tmf.checker.percobaan',
 			]],
 			'Pengaturan' => [[
-				'title'	=> 'Menu',
-				'url'	=> 'tmf.menu.index',
+				'title'	=> 'Item Produksi',
+				'url'	=> 'tmf.good.index',
 				'param' => ['status' => 'published'],
-				'scope'	=> 'tmf.menu.setting',
+				'scope'	=> 'tmf.good.setting',
+			], [
+				'title'	=> 'Sumber Daya',
+				'url'	=> 'tmf.resource.index',
+				'param' => ['status' => 'published'],
+				'scope'	=> 'tmf.resource.setting',
+			]],
+			'Pabrik' 	=> [[
+				'title'	=> 'Sumber Daya',
+				'url'	=> 'tmf.resource.listing',
+				'param' => [],
+				'scope'	=> 'tmf.resource.listing',
 			]],
 			'Laporan' => [[
-				'title'	=> 'Rasio Menu',
+				'title'	=> 'Penggunaan Bahan',
 				'url'	=> 'tmf.report.index',
-				'param' => ['group' => 'ratio', 'filter[date_gte]' => date('Y-m-d')],
-				'scope'	=> 'tmf.report.ratio',
+				'param' => ['group' => 'usage', 'filter[date_gte]' => date('Y-m-d')],
+				'scope'	=> 'tmf.report.usage',
+			], [
+				'title'	=> 'Koreksi Penggunaan Bahan',
+				'url'	=> 'tmf.report.index',
+				'param' => ['group' => 'correction', 'filter[date_gte]' => date('Y-m-d')],
+				'scope'	=> 'tmf.report.correction',
 			], [
 				'title'	=> 'Performa Station',
 				'url'	=> 'tmf.report.index',
