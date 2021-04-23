@@ -40,7 +40,7 @@ return [
             'saturday'  => 'Sabtu',
         ],
         'mode'          => [
-            'pos'       => 'POS',
+            'pembelian'     => 'Pembelian',
         ],
         'branch'            => [],
         'flag'              => [
