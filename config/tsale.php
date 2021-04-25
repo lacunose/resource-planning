@@ -63,9 +63,9 @@ return [
             'saturday'      => 'Sabtu',
         ],
         'type'  => [
-            'free'          => 'Katalog Saja',
-            'item'          => 'Item Stok',
-            'good'          => 'Item Produksi',
+            'free'          => 'Dropship',
+            'item'          => 'Stok',
+            'good'          => 'Produksi',
         ],
         'promo' => [
             'transaction'   => [
@@ -79,24 +79,42 @@ return [
                 'BUY_AND_SAVE'  => 'Beli x, Diskon y',
             ],
         ],
+        'step' => [
+            'processed'     => [
+                'delivered'     => 'Dikirim',
+                'paid'          => 'Dibayar',
+                'returned'      => 'Dikembalikan (retur)',
+            ],
+            'catalog'       => [
+                'DISCOUNT'      => 'Diskon',
+                'BUY_AND_PAY'   => 'Beli x, Bayar y',
+                'BUY_AND_SAVE'  => 'Beli x, Diskon y',
+            ],
+        ],
         'marketplace'       => [
             'pos'           => 'POS',
         ],
         'outlet'            => [],
         'flag'              => [
-            'service'           => 'Jasa',
             'catalog'           => 'Katalog',
+            'deposit'           => 'Titipan',
+            'service'           => 'Layanan',
             'promo_catalog'     => 'Promo Produk',
             'promo_transaction' => 'Promo Transaksi',
-            'deposit'           => 'Deposit',
             'tax'               => 'Pajak',
         ],
         'tax'               => [
-            // 'ppn'           => 10,
-            'pb1'           => 10,
+            'PPN'           => 10,
+            // 'PB1'           => 10,
         ],
         'service'           => [
-            'service'       => 10,
+            'Charge'       => 10,
+            'Pengiriman'    => 0,
+        ],
+        'deposit'           => [
+            'Ongkir'        => 0,
+            'Asuransi'      => 0,
+            'Ganti Uang'    => 100,
         ],
         'can_print'         => [
             0               => 'Bermasalah',
@@ -130,6 +148,7 @@ return [
         'order'     => ['warehouse' => 'nakoa', 'is_printed' => true],
     ],
     'setting'       => [
+        'business'  => 'nakoa',
         'per_page'  => 80,
     ],
     'title'         => [

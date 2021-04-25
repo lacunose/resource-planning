@@ -52,6 +52,7 @@ return [
 		'email'	    => 'silvia@basil.id',
 	],
 	'scopes'	=> [
+        'tswirl.database.reset'				=> 'Reset Database',
         'tswirl.conflict.stock_overlap'		=> 'Melihat stok rebutan',
 	],
 	'title'		=> [
