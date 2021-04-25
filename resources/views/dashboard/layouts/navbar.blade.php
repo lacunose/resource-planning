@@ -11,7 +11,7 @@
       @foreach(config()->get('menu.dashboard') as $kv => $nv)
         <li class="nav-item has-megamenu has-submenu">
           <a class="nav-link dropdown-toggle menu-navbar" href="#" data-toggle="dropdown"> {{$kv}}  </a>
-          <ul class="dropdown-menu submenu megamenu {{ $kv === 'KEUANGAN' ? 'submenu-right' : '' }}">
+          <ul class="dropdown-menu submenu megamenu {{ in_array($kv, ['KEUANGAN']) ? 'submenu-right' : '' }}">
             @foreach($nv as $group => $menus)
               <li>
                 <ul>
@@ -21,7 +21,7 @@
                     @if(in_array($menu['scope'], Auth::user()->scopes))
                       <li><a href="{{route($menu['url'], $menu['param'])}}">{{$menu['title']}}</a></li>
                     @else
-                      <li><a class="text-secondary">{{$menu['title']}}</a></li>
+                      <!-- <li><a class="text-secondary">{{$menu['title']}}</a></li> -->
                     @endif
                   @endforeach
                 </ul>
@@ -41,6 +41,12 @@
         <div class="dropdown-menu dropdown-menu-right dropdown-menu-animated profile-dropdown">
           <form action="{{route('logout')}}" method="post" class="mb-0">
             @csrf
+            @if(in_array('tswirl.database.reset', Auth::user()->scopes))
+              <a class="dropdown-item text-muted" href="{{ route('tswirl.database.reset') }}">
+                <i class="dripicons-time-reverse text-muted"></i> Reset Data
+              </a>
+              <div class="dropdown-divider"></div>
+            @endif
             <button class="dropdown-item" type="submit"><i class="dripicons-exit text-muted"></i> Logout</button>
           </form>
         </div>
