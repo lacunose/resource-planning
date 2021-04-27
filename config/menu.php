@@ -108,36 +108,6 @@ return [
 				'scope'	=> 'tsale.report.payment',
 			]],
 		],
-		'PELANGGAN'		=> [
-			'Data' 		=> [[
-				'title'	=> 'Akun',
-				'url'	=> 'tcust.account.index',
-				'param' => ['status' => 'opened'],
-				'scope'	=> 'tcust.account.data',
-			]],
-			'Pengaturan' => [[
-				'title'	=> 'Anggota',
-				'url'	=> 'tcust.customer.index',
-				'param' => ['status' => 'actived', 'sort[name]' => 'asc'],
-				'scope'	=> 'tcust.setting.customer',
-			], [
-				'title'	=> 'Program',
-				'url'	=> 'tcust.program.index',
-				'param' => ['status' => 'published'],
-				'scope'	=> 'tcust.setting.program',
-			]],
-			'Laporan' => [[
-				'title'	=> 'Transaksi Pending',
-				'url'	=> 'tcust.report.log',
-				'param' => ['mode' => 'pending'],
-				'scope'	=> 'tcust.log.pending',
-			], [
-				'title'	=> 'Transaksi Verifikasi',
-				'url'	=> 'tcust.report.log',
-				'param' => ['mode' => 'verified'],
-				'scope'	=> 'tcust.log.verified',
-			]],
-		],
 		'PERSEDIAAN'	=> [
 			'Stok' 		=> [[
 				'title'	=> 'Masuk',
@@ -242,18 +212,18 @@ return [
 				'scope'	=> 'tmf.checker.percobaan',
 			]],
 			'Pengaturan' => [[
-				'title'	=> 'Item Produksi',
+				'title'	=> 'Menu',
 				'url'	=> 'tmf.good.index',
 				'param' => ['status' => 'published'],
 				'scope'	=> 'tmf.good.setting',
 			], [
-				'title'	=> 'Sumber Daya',
+				'title'	=> 'Bahan / Tenaga',
 				'url'	=> 'tmf.resource.index',
 				'param' => ['status' => 'published'],
 				'scope'	=> 'tmf.resource.setting',
 			]],
-			'Pabrik' 	=> [[
-				'title'	=> 'Sumber Daya',
+			'Station' 	=> [[
+				'title'	=> 'Bahan / Tenaga',
 				'url'	=> 'tmf.resource.listing',
 				'param' => [],
 				'scope'	=> 'tmf.resource.listing',
@@ -304,62 +274,92 @@ return [
 				'scope'	=> 'tproc.report.payment',
 			]],
 		],
-		'KEUANGAN'		=> [
-			'Kasir' 	=> [[
-				'title'	=> 'Pemasukan',
-				'url'	=> 'tfin.cashier.index',
-				'param' => ['mode' => 'pemasukan', 'status' => 'opened'],
-				'scope'	=> 'tfin.cashier.pemasukan',
-			], [
-				'title'	=> 'Pengeluaran',
-				'url'	=> 'tfin.cashier.index',
-				'param' => ['mode' => 'pengeluaran', 'status' => 'opened'],
-				'scope'	=> 'tfin.cashier.pengeluaran',
-			]],
-			'Catatan' 	=> [[
-				'title'	=> 'Transaksi',
-				'url'	=> 'tfin.book.index',
-				'param' => ['cause' => 'transaksi', 'status' => 'drafted'],
-				'scope'	=> 'tfin.book.transaksi',
-			], [
-				'title'	=> 'Memorial',
-				'url'	=> 'tfin.book.index',
-				'param' => ['cause' => 'memorial', 'status' => 'drafted'],
-				'scope'	=> 'tfin.book.memorial',
-			]],
-			'Pengaturan' => [[
-				'title'	=> 'Akun',
-				'url'	=> 'tfin.coa.index',
-				'param' => ['status' => 'actived'],
-				'scope'	=> 'tfin.setting.coa',
-			], [
-				'title'	=> 'Depresiasi',
-				'url'	=> 'tfin.asset.index',
-				'param' => ['type' => 'depresiasi', 'status' => 'drafted'],
-				'scope'	=> 'tfin.asset.depresiasi',
-			], [
-				'title'	=> 'Amortisasi',
-				'url'	=> 'tfin.asset.index',
-				'param' => ['type' => 'amortisasi', 'status' => 'drafted'],
-				'scope'	=> 'tfin.asset.amortisasi',
-			]],
-			'Laporan' 	=> [[
-				'title'	=> 'Buku Besar',
-				'url'	=> 'tfin.report.journal',
-				'param' => ['filter[date_gte]' => date('Y-m-d')],
-				'scope'	=> 'tfin.report.jurnal',
-			], [
-				'title'	=> 'Neraca',
-				'url'	=> 'tfin.report.neraca',
-				'param' => ['date' => date('Y-m-d'), 'mode' => 'ringkas'],
-				'scope'	=> 'tfin.report.neraca',
-			], [
-				'title'	=> 'Laba / Rugi',
-				'url'	=> 'tfin.report.labarugi',
-				'param' => ['date' => date('Y-m-d'), 'mode' => 'ringkas'],
-				'scope'	=> 'tfin.report.labarugi',
-			]]
-		],
+		// 'PELANGGAN'		=> [
+		// 	'Data' 		=> [[
+		// 		'title'	=> 'Akun',
+		// 		'url'	=> 'tcust.account.index',
+		// 		'param' => ['status' => 'opened'],
+		// 		'scope'	=> 'tcust.account.data',
+		// 	]],
+		// 	'Pengaturan' => [[
+		// 		'title'	=> 'Anggota',
+		// 		'url'	=> 'tcust.customer.index',
+		// 		'param' => ['status' => 'actived', 'sort[name]' => 'asc'],
+		// 		'scope'	=> 'tcust.setting.customer',
+		// 	], [
+		// 		'title'	=> 'Program',
+		// 		'url'	=> 'tcust.program.index',
+		// 		'param' => ['status' => 'published'],
+		// 		'scope'	=> 'tcust.setting.program',
+		// 	]],
+		// 	'Laporan' => [[
+		// 		'title'	=> 'Transaksi Pending',
+		// 		'url'	=> 'tcust.report.log',
+		// 		'param' => ['mode' => 'pending'],
+		// 		'scope'	=> 'tcust.log.pending',
+		// 	], [
+		// 		'title'	=> 'Transaksi Verifikasi',
+		// 		'url'	=> 'tcust.report.log',
+		// 		'param' => ['mode' => 'verified'],
+		// 		'scope'	=> 'tcust.log.verified',
+		// 	]],
+		// ],
+		// 'KEUANGAN'		=> [
+		// 	'Kasir' 	=> [[
+		// 		'title'	=> 'Pemasukan',
+		// 		'url'	=> 'tfin.cashier.index',
+		// 		'param' => ['mode' => 'pemasukan', 'status' => 'opened'],
+		// 		'scope'	=> 'tfin.cashier.pemasukan',
+		// 	], [
+		// 		'title'	=> 'Pengeluaran',
+		// 		'url'	=> 'tfin.cashier.index',
+		// 		'param' => ['mode' => 'pengeluaran', 'status' => 'opened'],
+		// 		'scope'	=> 'tfin.cashier.pengeluaran',
+		// 	]],
+		// 	'Catatan' 	=> [[
+		// 		'title'	=> 'Transaksi',
+		// 		'url'	=> 'tfin.book.index',
+		// 		'param' => ['cause' => 'transaksi', 'status' => 'drafted'],
+		// 		'scope'	=> 'tfin.book.transaksi',
+		// 	], [
+		// 		'title'	=> 'Memorial',
+		// 		'url'	=> 'tfin.book.index',
+		// 		'param' => ['cause' => 'memorial', 'status' => 'drafted'],
+		// 		'scope'	=> 'tfin.book.memorial',
+		// 	]],
+		// 	'Pengaturan' => [[
+		// 		'title'	=> 'Akun',
+		// 		'url'	=> 'tfin.coa.index',
+		// 		'param' => ['status' => 'actived'],
+		// 		'scope'	=> 'tfin.setting.coa',
+		// 	], [
+		// 		'title'	=> 'Depresiasi',
+		// 		'url'	=> 'tfin.asset.index',
+		// 		'param' => ['type' => 'depresiasi', 'status' => 'drafted'],
+		// 		'scope'	=> 'tfin.asset.depresiasi',
+		// 	], [
+		// 		'title'	=> 'Amortisasi',
+		// 		'url'	=> 'tfin.asset.index',
+		// 		'param' => ['type' => 'amortisasi', 'status' => 'drafted'],
+		// 		'scope'	=> 'tfin.asset.amortisasi',
+		// 	]],
+		// 	'Laporan' 	=> [[
+		// 		'title'	=> 'Buku Besar',
+		// 		'url'	=> 'tfin.report.journal',
+		// 		'param' => ['filter[date_gte]' => date('Y-m-d')],
+		// 		'scope'	=> 'tfin.report.jurnal',
+		// 	], [
+		// 		'title'	=> 'Neraca',
+		// 		'url'	=> 'tfin.report.neraca',
+		// 		'param' => ['date' => date('Y-m-d'), 'mode' => 'ringkas'],
+		// 		'scope'	=> 'tfin.report.neraca',
+		// 	], [
+		// 		'title'	=> 'Laba / Rugi',
+		// 		'url'	=> 'tfin.report.labarugi',
+		// 		'param' => ['date' => date('Y-m-d'), 'mode' => 'ringkas'],
+		// 		'scope'	=> 'tfin.report.labarugi',
+		// 	]]
+		// ],
 		'BISNIS'		=> [
 			'Stok'		=> [[
 				'title'	=> 'Stok Rebutan',
