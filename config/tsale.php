@@ -45,6 +45,14 @@ return [
             'closed'        => 'Selesai',
             'voided'        => 'Dibatalkan',
         ],
+        'flag'              => [
+            'catalog'           => 'Katalog',
+            'deposit'           => 'Titipan',
+            'promo_catalog'     => 'Promo Produk',
+            'promo_transaction' => 'Promo Transaksi',
+            'service'           => 'Layanan',
+            'tax'               => 'Pajak',
+        ],
     ],
     'opsi'      => [
         'period'            => [
@@ -63,9 +71,9 @@ return [
             'saturday'      => 'Sabtu',
         ],
         'type'  => [
-            'free'          => 'Produk Saja',
-            'item'          => 'Item Stok',
-            'menu'          => 'Station Menu',
+            'free'          => 'Dropship',
+            'item'          => 'Stok',
+            'good'          => 'Menu',
         ],
         'promo' => [
             'transaction'   => [
@@ -79,24 +87,37 @@ return [
                 'BUY_AND_SAVE'  => 'Beli x, Diskon y',
             ],
         ],
+        'step' => [
+            'processed'     => [
+                'delivered'     => 'Dikirim',
+                'paid'          => 'Dibayar',
+                'returned'      => 'Dikembalikan (retur)',
+            ],
+        ],
         'marketplace'       => [
             'pos'           => 'POS',
         ],
         'outlet'            => [],
         'flag'              => [
-            'service'           => 'Jasa',
             'catalog'           => 'Katalog',
+            'deposit'           => 'Titipan',
             'promo_catalog'     => 'Promo Produk',
             'promo_transaction' => 'Promo Transaksi',
-            'deposit'           => 'Deposit',
-            'tax'               => 'Pajak',
+            // 'service'           => 'Layanan',
+            // 'tax'               => 'Pajak',
         ],
         'tax'               => [
-            // 'ppn'           => 10,
-            'pb1'           => 10,
+            // 'PPN'           => 10,
+            'PB1'           => 10,
         ],
         'service'           => [
-            'service'       => 10,
+            'Charge'       => 10,
+            // 'Pengiriman'    => 0,
+        ],
+        'deposit'           => [
+            'Ongkir'        => 0,
+            'Asuransi'      => 0,
+            'Ganti Uang'    => 100,
         ],
         'can_print'         => [
             0               => 'Bermasalah',
@@ -104,10 +125,10 @@ return [
         ],
         'item_model'        => 'Lacunose\\Warehouse\\Models\\Item',
         'item_url'          => '/api/warehouse/item/submitted',
-        'catalog_url'       => '/api/sale/katalog/published',
+        'catalog_url'       => '/api/sale/catalog/published',
         'promo_url'         => '/api/sale/promo/published',
-        'menu_model'        => 'Lacunose\\Manufacture\\Models\\Menu',
-        'menu_url'          => '/api/manufacture/menu/published',
+        'good_model'        => 'Lacunose\\Manufacture\\Models\\Good',
+        'good_url'          => '/api/manufacture/good/published',
     ],
     'color' => [
         'catalog'       => [
@@ -130,6 +151,7 @@ return [
         'order'     => ['warehouse' => 'nakoa', 'is_printed' => true],
     ],
     'setting'       => [
+        'business'  => 'nakoa',
         'per_page'  => 80,
     ],
     'title'         => [

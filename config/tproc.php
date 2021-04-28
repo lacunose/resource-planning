@@ -39,25 +39,24 @@ return [
             'friday'    => 'Jumat',
             'saturday'  => 'Sabtu',
         ],
-        'mode'          => [
-            'pos'       => 'POS',
+        'step' => [
+            'processed'     => [
+                'delivered'     => 'Dikirim',
+                'paid'          => 'Dibayar',
+                'returned'      => 'Dikembalikan (retur)',
+            ],
         ],
-        'branch'            => [],
-        'flag'              => [
-            'service'           => 'Jasa',
-            'catalog'           => 'Stok',
-            'asset'             => 'Inventaris',
-            // 'promo_catalog'     => 'Promo Produk',
-            // 'promo_transaction' => 'Promo Transaksi',
+        'mode'          => [
+            'pembelian'     => 'Pembelian',
+            'konsinyasi'    => 'Konsinyasi',
+        ],
+        'branch'    => [],
+        'flag'          => [
+            'misc'      => 'Lainnya',
+            'catalog'   => 'Stok',
+            'asset'     => 'Inventaris',
             // 'deposit'           => 'Deposit',
             // 'tax'               => 'Pajak',
-        ],
-        'tax'               => [
-            // 'ppn'           => 10,
-            // 'pb1'           => 10,
-        ],
-        'service'           => [
-            // 'service'       => 10,
         ],
         'can_print'         => [
             0               => 'Bermasalah',
@@ -73,7 +72,6 @@ return [
         'item_model'        => 'Lacunose\\Warehouse\\Models\\Item',
         'item_url'          => '/api/warehouse/item/submitted',
         'catalog_url'       => '/api/warehouse/item/submitted',
-        'promo_url'         => null,
     ],
     'color' => [
         'transaction'  => [

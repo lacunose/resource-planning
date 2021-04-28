@@ -18,6 +18,7 @@ class Kernel extends ConsoleKernel
         Commands\NakoaV1SyncProcure::class,
         Commands\NakoaV1SyncWarehouse::class,
         Commands\NakoaV1SyncSale::class,
+        //
     ];
 
     /**
