@@ -2,16 +2,15 @@
 
 return [
     'scopes'    => [
-        'tmf.checker.penjualan'     => 'Handle pesanan untuk penjualan',
-        'tmf.checker.persediaan'    => 'Handle pesanan untuk persediaan',
-        'tmf.checker.percobaan'     => 'Handle pesanan untuk percobaan',
+        'tmf.checker.index'         => 'Handle pesanan',
+        'tmf.requisition.index'     => 'Handle permintaan bahan',
         'tmf.report.usage'          => 'Melihat laporan penggunaan bahan',
         'tmf.report.correction'     => 'Melihat laporan koreksi penggunaan bahan',
         'tmf.report.processed'      => 'Melihat laporan performa pembuatan',
         'tmf.good.setting'          => 'Mengatur Menu',
         'tmf.resource.setting'      => 'Mengatur Bahan/Tenaga',
         'tmf.resource.listing'      => 'Mengatur Bahan/Tenaga Station',
-        'tmf.checker.voided'        => 'Approval void Checker',
+        'tmf.checker.voided'        => 'Approval void pesanan',
     ],
     'logo'      => 'https://thunderlab.id/storage/app/uploads/public/5f7/ae8/123/5f7ae81237a56599536208.png',
     'name'      => 'THUNDERLAB',
@@ -34,8 +33,24 @@ return [
             'delivered'     => 'Selesai',
             'voided'        => 'Dibatalkan',
         ],
+        'requisition'=> [
+            'opened'        => 'Inbox',
+            'processed'     => 'Dalam Proses',
+            'closed'        => 'Selesai',
+            'voided'        => 'Dibatalkan',
+        ],
     ],
     'opsi'      => [
+        'mode'              => [
+            'requisite'     => [
+                'supply'    => 'Persediaan',
+            ],
+            'checker'       => [
+                'penjualan' => 'Penjualan',
+                'persediaan'=> 'Persediaan',
+                'tester'    => 'Tester',
+            ],
+        ],
         'period'        => [
             'daily'     => 'Harian',
             'monthly'   => 'Bulanan',
@@ -51,11 +66,22 @@ return [
             'friday'    => 'Jumat',
             'saturday'  => 'Sabtu',
         ],
+        'step' => [
+            'processed'     => [
+                'delivered'     => 'Dikirim',
+                'paid'          => 'Dibayar',
+                'returned'      => 'Dikembalikan (retur)',
+            ],
+        ],
         'type'          => [
             'ingridient'    => 'Bahan',
             'package'       => 'Kemasan',
             'labor'         => 'Tenaga',
             'item'          => 'Stok',
+        ],
+        'flag'          => [
+            'item'      => 'Stok',
+            // 'item'      => 'Stok',
         ],
         'station'           => [],
         'item_url'          => '/api/warehouse/item/submitted',
@@ -79,9 +105,15 @@ return [
             'delivered'     => 'primary',
             'voided'        => 'danger',
         ],
+        'requisition'       => [
+            'opened'        => 'warning',
+            'processed'     => 'warning',
+            'closed'        => 'primary',
+            'voided'        => 'danger',
+        ],
     ],
     'default'       => [
-        'checker'   => ['factory' => 'nakoa', 'is_printed' => true],
+        'checker'   => ['station' => 'nakoa', 'is_printed' => true],
     ],
     'setting'       => [
         'per_page'  => 80,

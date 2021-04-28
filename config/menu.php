@@ -197,21 +197,16 @@ return [
 			]],
 		],
 		'PRODUKSI'		=> [
-			'Data'		=> [[
-				'title'	=> 'Penjualan',
+			'Transaksi'	=> [[
+				'title'	=> 'Checker',
 				'url'	=> 'tmf.checker.index',
-				'param' => ['mode' => 'penjualan', 'status' => 'requested'],
-				'scope'	=> 'tmf.checker.penjualan',
+				'param' => ['status' => 'requested'],
+				'scope'	=> 'tmf.checker.index',
 			], [
-				'title'	=> 'Persediaan',
-				'url'	=> 'tmf.checker.index',
-				'param' => ['mode' => 'persediaan', 'status' => 'requested'],
-				'scope'	=> 'tmf.checker.persediaan',
-			], [
-				'title'	=> 'Percobaan',
-				'url'	=> 'tmf.checker.index',
-				'param' => ['mode' => 'percobaan', 'status' => 'requested'],
-				'scope'	=> 'tmf.checker.percobaan',
+				'title'	=> 'Permintaan',
+				'url'	=> 'tmf.requisition.index',
+				'param' => ['status' => 'opened'],
+				'scope'	=> 'tmf.requisition.index',
 			]],
 			'Pengaturan Bisnis' 	=> [[
 				'title'	=> 'Menu',
