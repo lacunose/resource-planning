@@ -172,7 +172,7 @@ return [
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
+        // App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
         LaravelFCM\FCMServiceProvider::class,
@@ -180,7 +180,8 @@ return [
         Maatwebsite\Excel\ExcelServiceProvider::class,
         Mpociot\ApiDoc\ApiDocGeneratorServiceProvider::class,
         //SETUP AREA
-        Lacunose\Swirl\Providers\SodaServiceProvider::class,
+        Lacunose\Swirl\Providers\BasilServiceProvider::class,
+        // Lacunose\Swirl\Providers\SodaServiceProvider::class,
         Lacunose\Acl\Providers\AclServiceProvider::class,
         Lacunose\Subscribe\Providers\SubscribeServiceProvider::class,
         
@@ -191,9 +192,11 @@ return [
         Lacunose\Manufacture\Providers\ManufactureServiceProvider::class,
         //PROCURE AREA
         Lacunose\Procure\Providers\ProcureServiceProvider::class,
-        Lacunose\Finance\Providers\FinanceServiceProvider::class,
-        //BISDEV AREA
-        Lacunose\Customer\Providers\CustomerServiceProvider::class,
+        /*
+            PENDING
+            Lacunose\Finance\Providers\FinanceServiceProvider::class,
+            Lacunose\Customer\Providers\CustomerServiceProvider::class,
+        */
     ],
 
     /*

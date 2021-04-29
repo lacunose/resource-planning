@@ -2,16 +2,15 @@
 
 return [
     'scopes'    => [
-        'tmf.checker.penjualan'     => 'Handle pesanan untuk penjualan',
-        'tmf.checker.persediaan'    => 'Handle pesanan untuk persediaan',
-        'tmf.checker.percobaan'     => 'Handle pesanan untuk percobaan',
+        'tmf.checker.index'         => 'Handle pesanan',
+        'tmf.requisition.index'     => 'Handle permintaan bahan',
         'tmf.report.usage'          => 'Melihat laporan penggunaan bahan',
         'tmf.report.correction'     => 'Melihat laporan koreksi penggunaan bahan',
-        'tmf.report.station'        => 'Melihat laporan performa station',
-        'tmf.good.setting'       => 'Mengatur Item Produksi',
-        'tmf.resource.setting'      => 'Mengatur sumber daya',
-        'tmf.resource.listing'      => 'Mengatur sumber daya pabrik',
-        'tmf.checker.voided'        => 'Approval void Checker',
+        'tmf.report.processed'      => 'Melihat laporan performa pembuatan',
+        'tmf.good.setting'          => 'Mengatur Menu',
+        'tmf.resource.setting'      => 'Mengatur Bahan/Tenaga',
+        'tmf.resource.listing'      => 'Mengatur Bahan/Tenaga Station',
+        'tmf.checker.voided'        => 'Approval void pesanan',
     ],
     'logo'      => 'https://thunderlab.id/storage/app/uploads/public/5f7/ae8/123/5f7ae81237a56599536208.png',
     'name'      => 'THUNDERLAB',
@@ -29,13 +28,29 @@ return [
             'published'     => 'Ditampilkan',
         ],
         'checker'   => [
-            'requested'     => 'Belum Dikerjakan',
-            'processed'     => 'Sedang Dikerjakan',
-            'delivered'     => 'Sudah Dikerjakan',
+            'requested'     => 'Inbox',
+            'processed'     => 'Dalam Proses',
+            'delivered'     => 'Selesai',
+            'voided'        => 'Dibatalkan',
+        ],
+        'requisition'=> [
+            'opened'        => 'Inbox',
+            'processed'     => 'Dalam Proses',
+            'closed'        => 'Selesai',
             'voided'        => 'Dibatalkan',
         ],
     ],
     'opsi'      => [
+        'mode'              => [
+            'requisite'     => [
+                'supply'    => 'Persediaan',
+            ],
+            'checker'       => [
+                'penjualan' => 'Penjualan',
+                'persediaan'=> 'Persediaan',
+                'tester'    => 'Tester',
+            ],
+        ],
         'period'        => [
             'daily'     => 'Harian',
             'monthly'   => 'Bulanan',
@@ -51,18 +66,24 @@ return [
             'friday'    => 'Jumat',
             'saturday'  => 'Sabtu',
         ],
+        'step' => [
+            'processed'     => [
+                'delivered'     => 'Dikirim',
+                'paid'          => 'Dibayar',
+                'returned'      => 'Dikembalikan (retur)',
+            ],
+        ],
         'type'          => [
             'ingridient'    => 'Bahan',
             'package'       => 'Kemasan',
             'labor'         => 'Tenaga',
-            'item'          => 'Item Stok',
+            'item'          => 'Stok',
         ],
-        'station'       => [
-            'bar'           => 'BAR',
-            'kitchen'       => 'Kitchen',
-            // 'workshop'      => 'Workshop',
+        'flag'          => [
+            'item'      => 'Stok',
+            // 'item'      => 'Stok',
         ],
-        'factory'           => [],
+        'station'           => [],
         'item_url'          => '/api/warehouse/item/submitted',
         'resource_url'      => '/api/manufacture/resource/submitted',
         'good_url'          => '/api/manufacture/good/submitted',
@@ -84,9 +105,15 @@ return [
             'delivered'     => 'primary',
             'voided'        => 'danger',
         ],
+        'requisition'       => [
+            'opened'        => 'warning',
+            'processed'     => 'warning',
+            'closed'        => 'primary',
+            'voided'        => 'danger',
+        ],
     ],
     'default'       => [
-        'checker'   => ['factory' => 'nakoa', 'is_printed' => true],
+        'checker'   => ['station' => 'nakoa', 'is_printed' => true],
     ],
     'setting'       => [
         'per_page'  => 80,

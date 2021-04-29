@@ -2,13 +2,7 @@
 
 return [
     'scopes'    => [
-        'tsale.transaction.pos'         => 'Handle transaksi pos',
-        'tsale.transaction.shopee'      => 'Handle transaksi shopee',
-        'tsale.transaction.tokopedia'   => 'Handle transaksi tokopedia',
-        'tsale.transaction.lazada'      => 'Handle transaksi lazada',
-        'tsale.transaction.bukalapak'   => 'Handle transaksi bukalapak',
-        'tsale.transaction.jdid'        => 'Handle transaksi jdid',
-        'tsale.transaction.blibli'      => 'Handle transaksi blibli',
+        'tsale.transaction.penjualan'   => 'Handle transaksi penjualan',
         'tsale.report.customer'         => 'Melihat laporan pelanggan',
         'tsale.report.catalog'          => 'Melihat laporan trend produk',
         'tsale.report.palate'           => 'Melihat laporan preferensi produk',
@@ -45,6 +39,14 @@ return [
             'closed'        => 'Selesai',
             'voided'        => 'Dibatalkan',
         ],
+        'flag'              => [
+            'catalog'           => 'Katalog',
+            'deposit'           => 'Titipan',
+            'promo_catalog'     => 'Promo Produk',
+            'promo_transaction' => 'Promo Transaksi',
+            'service'           => 'Layanan',
+            'tax'               => 'Pajak',
+        ],
     ],
     'opsi'      => [
         'period'            => [
@@ -65,7 +67,7 @@ return [
         'type'  => [
             'free'          => 'Dropship',
             'item'          => 'Stok',
-            'good'          => 'Produksi',
+            'good'          => 'Menu',
         ],
         'promo' => [
             'transaction'   => [
@@ -85,31 +87,32 @@ return [
                 'paid'          => 'Dibayar',
                 'returned'      => 'Dikembalikan (retur)',
             ],
-            'catalog'       => [
-                'DISCOUNT'      => 'Diskon',
-                'BUY_AND_PAY'   => 'Beli x, Bayar y',
-                'BUY_AND_SAVE'  => 'Beli x, Diskon y',
-            ],
         ],
         'marketplace'       => [
             'pos'           => 'POS',
+            'shopee'        => 'SHOPEE',
+            'tokopedia'     => 'TOKOPEDIA',
+            'lazada'        => 'LAZADA',
+            'bukalapak'     => 'BUKALAPAK',
+            'jdid'          => 'JDID',
+            'blibli'        => 'BLIBLI',
         ],
         'outlet'            => [],
         'flag'              => [
             'catalog'           => 'Katalog',
             'deposit'           => 'Titipan',
-            'service'           => 'Layanan',
             'promo_catalog'     => 'Promo Produk',
             'promo_transaction' => 'Promo Transaksi',
-            'tax'               => 'Pajak',
+            // 'service'           => 'Layanan',
+            // 'tax'               => 'Pajak',
         ],
         'tax'               => [
-            'PPN'           => 10,
-            // 'PB1'           => 10,
+            // 'PPN'           => 10,
+            'PB1'           => 10,
         ],
         'service'           => [
             'Charge'       => 10,
-            'Pengiriman'    => 0,
+            // 'Pengiriman'    => 0,
         ],
         'deposit'           => [
             'Ongkir'        => 0,

@@ -2,7 +2,8 @@
 
 return [
     'support'       => [
-        'scopes'    => ['tsale', 'tcust', 'twh', 'tmf', 'tproc', 'tfin', 'tswirl'],
+        'scopes'    => ['tsale', 'twh', 'tmf', 'tproc', 'tswirl'],
+        // 'scopes'    => ['tsale', 'tcust', 'twh', 'tmf', 'tproc', 'tfin', 'tswirl'],
     ],
     'scopes'        => [
         'tsub.subscription.professional'    => 'Handle langganan pro',

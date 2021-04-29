@@ -3,43 +3,13 @@
 return [
 	'dashboard'	=> [
 		'PENJUALAN'		=> [
-			'Transaksi' => [[
-				'title'	=> 'POS',
+			'Data' 		=> [[
+				'title'	=> 'Penjualan',
 				'url'	=> 'tsale.transaction.index',
-				'param' => ['marketplace' => 'pos', 'status' => 'opened'],
-				'scope'	=> 'tsale.transaction.pos',
-			], [
-				'title'	=> 'SHOPEE',
-				'url'	=> 'tsale.transaction.index',
-				'param' => ['marketplace' => 'shopee', 'status' => 'opened'],
-				'scope'	=> 'tsale.transaction.shopee',
-			], [
-				'title'	=> 'TOKOPEDIA',
-				'url'	=> 'tsale.transaction.index',
-				'param' => ['marketplace' => 'tokopedia', 'status' => 'opened'],
-				'scope'	=> 'tsale.transaction.tokopedia',
-			], [
-				'title'	=> 'LAZADA',
-				'url'	=> 'tsale.transaction.index',
-				'param' => ['marketplace' => 'lazada', 'status' => 'opened'],
-				'scope'	=> 'tsale.transaction.lazada',
-			], [
-				'title'	=> 'BUKALAPAK',
-				'url'	=> 'tsale.transaction.index',
-				'param' => ['marketplace' => 'bukalapak', 'status' => 'opened'],
-				'scope'	=> 'tsale.transaction.bukalapak',
-			], [
-				'title'	=> 'JD.ID',
-				'url'	=> 'tsale.transaction.index',
-				'param' => ['marketplace' => 'jdid', 'status' => 'opened'],
-				'scope'	=> 'tsale.transaction.jdid',
-			], [
-				'title'	=> 'BLIBLI',
-				'url'	=> 'tsale.transaction.index',
-				'param' => ['marketplace' => 'blibli', 'status' => 'opened'],
-				'scope'	=> 'tsale.transaction.blibli',
+				'param' => ['mode' => 'penjualan', 'status' => 'opened'],
+				'scope'	=> 'tsale.transaction.penjualan',
 			]],
-			'Pengaturan' => [[
+			'Pengaturan Bisnis' => [[
 				'title'	=> 'Katalog',
 				'url'	=> 'tsale.catalog.index',
 				'param' => ['status' => 'published'],
@@ -65,7 +35,7 @@ return [
 				'param' => [],
 				'scope'	=> 'tsale.setting.pay',
 			]],
-			'Outlet' => [[
+			'Pengaturan Outlet' => [[
 				'title'	=> 'Katalog',
 				'url'	=> 'tsale.catalog.listing',
 				'param' => [],
@@ -76,7 +46,7 @@ return [
 				'param' => [],
 				'scope'	=> 'tsale.promo.listing',
 			]],
-			'Laporan' => [[
+			'Laporan Marketing' => [[
 				'title'	=> 'Pelanggan',
 				'url'	=> 'tsale.report.index',
 				'param' => ['group' => 'customer', 'filter[date_gte]' => date('Y-m-d')],
@@ -91,71 +61,42 @@ return [
 				'url'	=> 'tsale.report.index',
 				'param' => ['group' => 'palate', 'filter[date_gte]' => date('Y-m-d')],
 				'scope'	=> 'tsale.report.palate',
-			], [
-				'title'	=> 'Penjualan (Produk)',
+			]],
+			'Laporan Penjualan' => [[
+				'title'	=> 'Produk',
 				'url'	=> 'tsale.report.index',
 				'param' => ['group' => 'sold', 'filter[date_gte]' => date('Y-m-d')],
 				'scope'	=> 'tsale.report.sold',
 			], [
-				'title'	=> 'Penjualan (Kategori)',
+				'title'	=> 'Kategori',
 				'url'	=> 'tsale.report.index',
 				'param' => ['group' => 'category', 'filter[date_gte]' => date('Y-m-d')],
 				'scope'	=> 'tsale.report.category',
 			], [
-				'title'	=> 'Penjualan (Pembayaran)',
+				'title'	=> 'Pembayaran',
 				'url'	=> 'tsale.report.index',
 				'param' => ['group' => 'payment', 'filter[date_gte]' => date('Y-m-d')],
 				'scope'	=> 'tsale.report.payment',
 			]],
 		],
-		'PELANGGAN'		=> [
-			'Data' 		=> [[
-				'title'	=> 'Akun',
-				'url'	=> 'tcust.account.index',
-				'param' => ['status' => 'opened'],
-				'scope'	=> 'tcust.account.data',
-			]],
-			'Pengaturan' => [[
-				'title'	=> 'Anggota',
-				'url'	=> 'tcust.customer.index',
-				'param' => ['status' => 'actived', 'sort[name]' => 'asc'],
-				'scope'	=> 'tcust.setting.customer',
-			], [
-				'title'	=> 'Program',
-				'url'	=> 'tcust.program.index',
-				'param' => ['status' => 'published'],
-				'scope'	=> 'tcust.setting.program',
-			]],
-			'Laporan' => [[
-				'title'	=> 'Transaksi Pending',
-				'url'	=> 'tcust.report.log',
-				'param' => ['mode' => 'pending'],
-				'scope'	=> 'tcust.log.pending',
-			], [
-				'title'	=> 'Transaksi Verifikasi',
-				'url'	=> 'tcust.report.log',
-				'param' => ['mode' => 'verified'],
-				'scope'	=> 'tcust.log.verified',
-			]],
-		],
 		'PERSEDIAAN'	=> [
-			'Stok' 		=> [[
-				'title'	=> 'Masuk',
+			'Data'		=> [[
+				'title'	=> 'Stok Masuk',
 				'url'	=> 'twh.document.index',
-				'param' => ['cause' => 'masuk', 'status' => 'drafted'],
+				'param' => ['cause' => 'masuk', 'status' => 'opened'],
 				'scope'	=> 'twh.document.masuk',
 			], [
-				'title'	=> 'Keluar',
+				'title'	=> 'Stok Keluar',
 				'url'	=> 'twh.document.index',
-				'param' => ['cause' => 'keluar', 'status' => 'drafted'],
+				'param' => ['cause' => 'keluar', 'status' => 'opened'],
 				'scope'	=> 'twh.document.keluar',
 			], [
-				'title'	=> 'Inhouse',
+				'title'	=> 'Stok Inhouse',
 				'url'	=> 'twh.document.index',
-				'param' => ['cause' => 'inhouse', 'status' => 'drafted'],
+				'param' => ['cause' => 'inhouse', 'status' => 'opened'],
 				'scope'	=> 'twh.document.inhouse',
 			]],
-			'Pengaturan' => [[
+			'Pengaturan Bisnis' => [[
 				'title'	=> 'Item',
 				'url'	=> 'twh.item.index',
 				'param' => ['status' => 'submitted'],
@@ -171,43 +112,44 @@ return [
 				'param' => ['type' => 'unpack', 'status' => 'actived'],
 				'scope'	=> 'twh.conversion.unpack',
 			]],
-			'Laporan' => [[
+			'Laporan Stok' => [[
 				'title'	=> 'Kartu Stok',
 				'url'	=> 'twh.report.stock',
 				'param' => [],
 				'scope'	=> 'twh.report.stock',
 			], [
-				'title'	=> 'Item Keluar (Basi)',
+				'title'	=> 'Stok Keluar (Basi)',
 				'url'	=> 'twh.report.index',
 				'param' => ['group' => 'spoiled'],
 				'scope'	=> 'twh.report.spoiled',
 			], [
-				'title'	=> 'Item Keluar (Kadaluarsa)',
+				'title'	=> 'Stok Keluar (Kadaluarsa)',
 				'url'	=> 'twh.report.index',
 				'param' => ['group' => 'expired'],
 				'scope'	=> 'twh.report.expired',
 			], [
-				'title'	=> 'Item Keluar (Cacat)',
+				'title'	=> 'Stok Keluar (Cacat)',
 				'url'	=> 'twh.report.index',
 				'param' => ['group' => 'defected'],
 				'scope'	=> 'twh.report.defected',
 			], [
-				'title'	=> 'Item Keluar (Hilang)',
+				'title'	=> 'Stok Keluar (Hilang)',
 				'url'	=> 'twh.report.index',
 				'param' => ['group' => 'lost'],
 				'scope'	=> 'twh.report.lost',
 			], [
-				'title'	=> 'Item Keluar (Tidak jelas)',
+				'title'	=> 'Stok Keluar (Tidak jelas)',
 				'url'	=> 'twh.report.index',
 				'param' => ['group' => 'unidentified'],
 				'scope'	=> 'twh.report.unidentified',
-			], [
-				'title'	=> 'Performa Packing',
+			]],
+			'Laporan Performa' => [[
+				'title'	=> 'Packing',
 				'url'	=> 'twh.report.timer',
 				'param' => ['group' => 'packing'],
 				'scope'	=> 'twh.timer.packing',
 			], [
-				'title'	=> 'Performa Unpacking',
+				'title'	=> 'Unpacking',
 				'url'	=> 'twh.report.timer',
 				'param' => ['group' => 'unpacking'],
 				'scope'	=> 'twh.timer.unpacking',
@@ -225,58 +167,54 @@ return [
 			]],
 		],
 		'PRODUKSI'		=> [
-			'Kontrol'	=> [[
-				'title'	=> 'Penjualan',
+			'Data'		=> [[
+				'title'	=> 'Checker',
 				'url'	=> 'tmf.checker.index',
-				'param' => ['mode' => 'penjualan', 'status' => 'requested'],
-				'scope'	=> 'tmf.checker.penjualan',
+				'param' => ['status' => 'requested'],
+				'scope'	=> 'tmf.checker.index',
 			], [
-				'title'	=> 'Persediaan',
-				'url'	=> 'tmf.checker.index',
-				'param' => ['mode' => 'persediaan', 'status' => 'requested'],
-				'scope'	=> 'tmf.checker.persediaan',
-			], [
-				'title'	=> 'Percobaan',
-				'url'	=> 'tmf.checker.index',
-				'param' => ['mode' => 'percobaan', 'status' => 'requested'],
-				'scope'	=> 'tmf.checker.percobaan',
+				'title'	=> 'Requisition',
+				'url'	=> 'tmf.requisition.index',
+				'param' => ['status' => 'opened'],
+				'scope'	=> 'tmf.requisition.index',
 			]],
-			'Pengaturan' => [[
-				'title'	=> 'Item Produksi',
+			'Pengaturan Bisnis' 	=> [[
+				'title'	=> 'Menu',
 				'url'	=> 'tmf.good.index',
 				'param' => ['status' => 'published'],
 				'scope'	=> 'tmf.good.setting',
 			], [
-				'title'	=> 'Sumber Daya',
+				'title'	=> 'Bahan / Tenaga',
 				'url'	=> 'tmf.resource.index',
 				'param' => ['status' => 'published'],
 				'scope'	=> 'tmf.resource.setting',
 			]],
-			'Pabrik' 	=> [[
-				'title'	=> 'Sumber Daya',
+			'Pengaturan Station'	=> [[
+				'title'	=> 'Bahan / Tenaga',
 				'url'	=> 'tmf.resource.listing',
 				'param' => [],
 				'scope'	=> 'tmf.resource.listing',
 			]],
-			'Laporan' => [[
-				'title'	=> 'Penggunaan Bahan',
+			'Laporan Bahan' => [[
+				'title'	=> 'Penggunaan',
 				'url'	=> 'tmf.report.index',
 				'param' => ['group' => 'usage', 'filter[date_gte]' => date('Y-m-d')],
 				'scope'	=> 'tmf.report.usage',
 			], [
-				'title'	=> 'Koreksi Penggunaan Bahan',
+				'title'	=> 'Koreksi Penggunaan',
 				'url'	=> 'tmf.report.index',
 				'param' => ['group' => 'correction', 'filter[date_gte]' => date('Y-m-d')],
 				'scope'	=> 'tmf.report.correction',
-			], [
-				'title'	=> 'Performa Station',
+			]],
+			'Laporan Performa' => [[
+				'title'	=> 'Pembuatan',
 				'url'	=> 'tmf.report.index',
-				'param' => ['group' => 'station', 'filter[date_gte]' => date('Y-m-d')],
-				'scope'	=> 'tmf.report.station',
+				'param' => ['group' => 'processed', 'filter[date_gte]' => date('Y-m-d')],
+				'scope'	=> 'tmf.report.processed',
 			]],
 		],
 		'PEMBELIAN'		=> [
-			'Transaksi' => [[
+			'Data' 		=> [[
 				'title'	=> 'Pembelian',
 				'url'	=> 'tproc.transaction.index',
 				'param' => ['mode' => 'pembelian', 'status' => 'opened'],
@@ -287,16 +225,17 @@ return [
 				'param' => ['mode' => 'konsinyasi', 'status' => 'opened'],
 				'scope'	=> 'tproc.transaction.konsinyasi',
 			]],
-			'Laporan' => [[
-				'title'	=> 'Vendor',
-				'url'	=> 'tproc.report.index',
-				'param' => ['group' => 'vendor', 'filter[date_gte]' => date('Y-m-d')],
-				'scope'	=> 'tproc.report.vendor',
-			], [
+			'Laporan Riwayat' => [[
 				'title'	=> 'Harga Barang',
 				'url'	=> 'tproc.report.index',
 				'param' => ['group' => 'price', 'filter[date_gte]' => date('Y-m-d')],
 				'scope'	=> 'tproc.report.price',
+			]],
+			'Laporan Pembelian' => [[
+				'title'	=> 'Vendor',
+				'url'	=> 'tproc.report.index',
+				'param' => ['group' => 'vendor', 'filter[date_gte]' => date('Y-m-d')],
+				'scope'	=> 'tproc.report.vendor',
 			], [
 				'title'	=> 'Settlement Pembelian',
 				'url'	=> 'tproc.report.index',
@@ -304,64 +243,94 @@ return [
 				'scope'	=> 'tproc.report.payment',
 			]],
 		],
-		'KEUANGAN'		=> [
-			'Kasir' 	=> [[
-				'title'	=> 'Pemasukan',
-				'url'	=> 'tfin.cashier.index',
-				'param' => ['mode' => 'pemasukan', 'status' => 'opened'],
-				'scope'	=> 'tfin.cashier.pemasukan',
-			], [
-				'title'	=> 'Pengeluaran',
-				'url'	=> 'tfin.cashier.index',
-				'param' => ['mode' => 'pengeluaran', 'status' => 'opened'],
-				'scope'	=> 'tfin.cashier.pengeluaran',
-			]],
-			'Catatan' 	=> [[
-				'title'	=> 'Transaksi',
-				'url'	=> 'tfin.book.index',
-				'param' => ['cause' => 'transaksi', 'status' => 'drafted'],
-				'scope'	=> 'tfin.book.transaksi',
-			], [
-				'title'	=> 'Memorial',
-				'url'	=> 'tfin.book.index',
-				'param' => ['cause' => 'memorial', 'status' => 'drafted'],
-				'scope'	=> 'tfin.book.memorial',
-			]],
-			'Pengaturan' => [[
-				'title'	=> 'Akun',
-				'url'	=> 'tfin.coa.index',
-				'param' => ['status' => 'actived'],
-				'scope'	=> 'tfin.setting.coa',
-			], [
-				'title'	=> 'Depresiasi',
-				'url'	=> 'tfin.asset.index',
-				'param' => ['type' => 'depresiasi', 'status' => 'drafted'],
-				'scope'	=> 'tfin.asset.depresiasi',
-			], [
-				'title'	=> 'Amortisasi',
-				'url'	=> 'tfin.asset.index',
-				'param' => ['type' => 'amortisasi', 'status' => 'drafted'],
-				'scope'	=> 'tfin.asset.amortisasi',
-			]],
-			'Laporan' 	=> [[
-				'title'	=> 'Buku Besar',
-				'url'	=> 'tfin.report.journal',
-				'param' => ['filter[date_gte]' => date('Y-m-d')],
-				'scope'	=> 'tfin.report.jurnal',
-			], [
-				'title'	=> 'Neraca',
-				'url'	=> 'tfin.report.neraca',
-				'param' => ['date' => date('Y-m-d'), 'mode' => 'ringkas'],
-				'scope'	=> 'tfin.report.neraca',
-			], [
-				'title'	=> 'Laba / Rugi',
-				'url'	=> 'tfin.report.labarugi',
-				'param' => ['date' => date('Y-m-d'), 'mode' => 'ringkas'],
-				'scope'	=> 'tfin.report.labarugi',
-			]]
-		],
+		// 'PELANGGAN'		=> [
+		// 	'Data' 		=> [[
+		// 		'title'	=> 'Akun',
+		// 		'url'	=> 'tcust.account.index',
+		// 		'param' => ['status' => 'opened'],
+		// 		'scope'	=> 'tcust.account.data',
+		// 	]],
+		// 	'Pengaturan' => [[
+		// 		'title'	=> 'Anggota',
+		// 		'url'	=> 'tcust.customer.index',
+		// 		'param' => ['status' => 'actived', 'sort[name]' => 'asc'],
+		// 		'scope'	=> 'tcust.setting.customer',
+		// 	], [
+		// 		'title'	=> 'Program',
+		// 		'url'	=> 'tcust.program.index',
+		// 		'param' => ['status' => 'published'],
+		// 		'scope'	=> 'tcust.setting.program',
+		// 	]],
+		// 	'Laporan' => [[
+		// 		'title'	=> 'Transaksi Pending',
+		// 		'url'	=> 'tcust.report.log',
+		// 		'param' => ['mode' => 'pending'],
+		// 		'scope'	=> 'tcust.log.pending',
+		// 	], [
+		// 		'title'	=> 'Transaksi Verifikasi',
+		// 		'url'	=> 'tcust.report.log',
+		// 		'param' => ['mode' => 'verified'],
+		// 		'scope'	=> 'tcust.log.verified',
+		// 	]],
+		// ],
+		// 'KEUANGAN'		=> [
+		// 	'Kasir' 	=> [[
+		// 		'title'	=> 'Pemasukan',
+		// 		'url'	=> 'tfin.cashier.index',
+		// 		'param' => ['mode' => 'pemasukan', 'status' => 'opened'],
+		// 		'scope'	=> 'tfin.cashier.pemasukan',
+		// 	], [
+		// 		'title'	=> 'Pengeluaran',
+		// 		'url'	=> 'tfin.cashier.index',
+		// 		'param' => ['mode' => 'pengeluaran', 'status' => 'opened'],
+		// 		'scope'	=> 'tfin.cashier.pengeluaran',
+		// 	]],
+		// 	'Catatan' 	=> [[
+		// 		'title'	=> 'Transaksi',
+		// 		'url'	=> 'tfin.book.index',
+		// 		'param' => ['cause' => 'transaksi', 'status' => 'drafted'],
+		// 		'scope'	=> 'tfin.book.transaksi',
+		// 	], [
+		// 		'title'	=> 'Memorial',
+		// 		'url'	=> 'tfin.book.index',
+		// 		'param' => ['cause' => 'memorial', 'status' => 'drafted'],
+		// 		'scope'	=> 'tfin.book.memorial',
+		// 	]],
+		// 	'Pengaturan' => [[
+		// 		'title'	=> 'Akun',
+		// 		'url'	=> 'tfin.coa.index',
+		// 		'param' => ['status' => 'actived'],
+		// 		'scope'	=> 'tfin.setting.coa',
+		// 	], [
+		// 		'title'	=> 'Depresiasi',
+		// 		'url'	=> 'tfin.asset.index',
+		// 		'param' => ['type' => 'depresiasi', 'status' => 'drafted'],
+		// 		'scope'	=> 'tfin.asset.depresiasi',
+		// 	], [
+		// 		'title'	=> 'Amortisasi',
+		// 		'url'	=> 'tfin.asset.index',
+		// 		'param' => ['type' => 'amortisasi', 'status' => 'drafted'],
+		// 		'scope'	=> 'tfin.asset.amortisasi',
+		// 	]],
+		// 	'Laporan' 	=> [[
+		// 		'title'	=> 'Buku Besar',
+		// 		'url'	=> 'tfin.report.journal',
+		// 		'param' => ['filter[date_gte]' => date('Y-m-d')],
+		// 		'scope'	=> 'tfin.report.jurnal',
+		// 	], [
+		// 		'title'	=> 'Neraca',
+		// 		'url'	=> 'tfin.report.neraca',
+		// 		'param' => ['date' => date('Y-m-d'), 'mode' => 'ringkas'],
+		// 		'scope'	=> 'tfin.report.neraca',
+		// 	], [
+		// 		'title'	=> 'Laba / Rugi',
+		// 		'url'	=> 'tfin.report.labarugi',
+		// 		'param' => ['date' => date('Y-m-d'), 'mode' => 'ringkas'],
+		// 		'scope'	=> 'tfin.report.labarugi',
+		// 	]]
+		// ],
 		'BISNIS'		=> [
-			'Stok'		=> [[
+			'Laporan'	=> [[
 				'title'	=> 'Stok Rebutan',
 				'url'	=> 'tswirl.conflict.index',
 				'param' => ['topic' => 'stock_overlap'],

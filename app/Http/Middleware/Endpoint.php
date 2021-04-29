@@ -31,7 +31,7 @@ class Endpoint {
 
                 foreach ($ep as $e) {
                     $cnf[$e['name']] = $e['name'];
-                    config()->set($f[0].'.yellowbook.'.$e['name'], $e);
+                    // config()->set($f[0].'.yellowbook.'.$e['name'], $e);
                 }
 
                 if(!isset($ff[$f[2]]) || !array_intersect($ff[$f[2]], $cnf)){
@@ -41,6 +41,11 @@ class Endpoint {
                 //set pfn
                 config()->set($p, $cnf);
                 request()->merge(['filter' => $ff]);
+            }
+
+            $dms    = config()->get('tsub.support.scopes');
+            foreach ($dms as $dm) {
+                config()->set($dm.'.yellowbook', session()->get($dm.'.yellowbook'));
             }
         }
 
