@@ -166,53 +166,6 @@ return [
 				'scope'	=> 'twh.report.procure',
 			]],
 		],
-		'PRODUKSI'		=> [
-			'Data'		=> [[
-				'title'	=> 'Checker',
-				'url'	=> 'tmf.checker.index',
-				'param' => ['status' => 'requested'],
-				'scope'	=> 'tmf.checker.index',
-			], [
-				'title'	=> 'Requisition',
-				'url'	=> 'tmf.requisition.index',
-				'param' => ['status' => 'opened'],
-				'scope'	=> 'tmf.requisition.index',
-			]],
-			'Pengaturan Bisnis' 	=> [[
-				'title'	=> 'Menu',
-				'url'	=> 'tmf.good.index',
-				'param' => ['status' => 'published'],
-				'scope'	=> 'tmf.good.setting',
-			], [
-				'title'	=> 'Bahan / Tenaga',
-				'url'	=> 'tmf.resource.index',
-				'param' => ['status' => 'published'],
-				'scope'	=> 'tmf.resource.setting',
-			]],
-			'Pengaturan Station'	=> [[
-				'title'	=> 'Bahan / Tenaga',
-				'url'	=> 'tmf.resource.listing',
-				'param' => [],
-				'scope'	=> 'tmf.resource.listing',
-			]],
-			'Laporan Bahan' => [[
-				'title'	=> 'Penggunaan',
-				'url'	=> 'tmf.report.index',
-				'param' => ['group' => 'usage', 'filter[date_gte]' => date('Y-m-d')],
-				'scope'	=> 'tmf.report.usage',
-			], [
-				'title'	=> 'Koreksi Penggunaan',
-				'url'	=> 'tmf.report.index',
-				'param' => ['group' => 'correction', 'filter[date_gte]' => date('Y-m-d')],
-				'scope'	=> 'tmf.report.correction',
-			]],
-			'Laporan Performa' => [[
-				'title'	=> 'Pembuatan',
-				'url'	=> 'tmf.report.index',
-				'param' => ['group' => 'processed', 'filter[date_gte]' => date('Y-m-d')],
-				'scope'	=> 'tmf.report.processed',
-			]],
-		],
 		'PEMBELIAN'		=> [
 			'Data' 		=> [[
 				'title'	=> 'Pembelian',
