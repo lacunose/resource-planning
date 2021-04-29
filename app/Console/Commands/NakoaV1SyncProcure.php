@@ -57,7 +57,7 @@ class NakoaV1SyncProcure extends Command
     public function handle() {
         Auth::loginUsingId(2);
             
-        $this->set_coa();
+        // $this->set_coa();
 
         $this->set_item();
 

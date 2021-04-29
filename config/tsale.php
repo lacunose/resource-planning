@@ -2,13 +2,7 @@
 
 return [
     'scopes'    => [
-        'tsale.transaction.pos'         => 'Handle transaksi pos',
-        'tsale.transaction.shopee'      => 'Handle transaksi shopee',
-        'tsale.transaction.tokopedia'   => 'Handle transaksi tokopedia',
-        'tsale.transaction.lazada'      => 'Handle transaksi lazada',
-        'tsale.transaction.bukalapak'   => 'Handle transaksi bukalapak',
-        'tsale.transaction.jdid'        => 'Handle transaksi jdid',
-        'tsale.transaction.blibli'      => 'Handle transaksi blibli',
+        'tsale.transaction.penjualan'   => 'Handle transaksi penjualan',
         'tsale.report.customer'         => 'Melihat laporan pelanggan',
         'tsale.report.catalog'          => 'Melihat laporan trend produk',
         'tsale.report.palate'           => 'Melihat laporan preferensi produk',
@@ -96,6 +90,12 @@ return [
         ],
         'marketplace'       => [
             'pos'           => 'POS',
+            'shopee'        => 'SHOPEE',
+            'tokopedia'     => 'TOKOPEDIA',
+            'lazada'        => 'LAZADA',
+            'bukalapak'     => 'BUKALAPAK',
+            'jdid'          => 'JDID',
+            'blibli'        => 'BLIBLI',
         ],
         'outlet'            => [],
         'flag'              => [

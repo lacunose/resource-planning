@@ -4,40 +4,10 @@ return [
 	'dashboard'	=> [
 		'PENJUALAN'		=> [
 			'Data' 		=> [[
-				'title'	=> 'POS',
+				'title'	=> 'Penjualan',
 				'url'	=> 'tsale.transaction.index',
-				'param' => ['marketplace' => 'pos', 'status' => 'opened'],
-				'scope'	=> 'tsale.transaction.pos',
-			], [
-				'title'	=> 'SHOPEE',
-				'url'	=> 'tsale.transaction.index',
-				'param' => ['marketplace' => 'shopee', 'status' => 'opened'],
-				'scope'	=> 'tsale.transaction.shopee',
-			], [
-				'title'	=> 'TOKOPEDIA',
-				'url'	=> 'tsale.transaction.index',
-				'param' => ['marketplace' => 'tokopedia', 'status' => 'opened'],
-				'scope'	=> 'tsale.transaction.tokopedia',
-			], [
-				'title'	=> 'LAZADA',
-				'url'	=> 'tsale.transaction.index',
-				'param' => ['marketplace' => 'lazada', 'status' => 'opened'],
-				'scope'	=> 'tsale.transaction.lazada',
-			], [
-				'title'	=> 'BUKALAPAK',
-				'url'	=> 'tsale.transaction.index',
-				'param' => ['marketplace' => 'bukalapak', 'status' => 'opened'],
-				'scope'	=> 'tsale.transaction.bukalapak',
-			], [
-				'title'	=> 'JD.ID',
-				'url'	=> 'tsale.transaction.index',
-				'param' => ['marketplace' => 'jdid', 'status' => 'opened'],
-				'scope'	=> 'tsale.transaction.jdid',
-			], [
-				'title'	=> 'BLIBLI',
-				'url'	=> 'tsale.transaction.index',
-				'param' => ['marketplace' => 'blibli', 'status' => 'opened'],
-				'scope'	=> 'tsale.transaction.blibli',
+				'param' => ['mode' => 'penjualan', 'status' => 'opened'],
+				'scope'	=> 'tsale.transaction.penjualan',
 			]],
 			'Pengaturan Bisnis' => [[
 				'title'	=> 'Katalog',
@@ -113,17 +83,17 @@ return [
 			'Data'		=> [[
 				'title'	=> 'Stok Masuk',
 				'url'	=> 'twh.document.index',
-				'param' => ['cause' => 'masuk', 'status' => 'drafted'],
+				'param' => ['cause' => 'masuk', 'status' => 'opened'],
 				'scope'	=> 'twh.document.masuk',
 			], [
 				'title'	=> 'Stok Keluar',
 				'url'	=> 'twh.document.index',
-				'param' => ['cause' => 'keluar', 'status' => 'drafted'],
+				'param' => ['cause' => 'keluar', 'status' => 'opened'],
 				'scope'	=> 'twh.document.keluar',
 			], [
 				'title'	=> 'Stok Inhouse',
 				'url'	=> 'twh.document.index',
-				'param' => ['cause' => 'inhouse', 'status' => 'drafted'],
+				'param' => ['cause' => 'inhouse', 'status' => 'opened'],
 				'scope'	=> 'twh.document.inhouse',
 			]],
 			'Pengaturan Bisnis' => [[
@@ -197,13 +167,13 @@ return [
 			]],
 		],
 		'PRODUKSI'		=> [
-			'Transaksi'	=> [[
+			'Data'		=> [[
 				'title'	=> 'Checker',
 				'url'	=> 'tmf.checker.index',
 				'param' => ['status' => 'requested'],
 				'scope'	=> 'tmf.checker.index',
 			], [
-				'title'	=> 'Permintaan',
+				'title'	=> 'Requisition',
 				'url'	=> 'tmf.requisition.index',
 				'param' => ['status' => 'opened'],
 				'scope'	=> 'tmf.requisition.index',
