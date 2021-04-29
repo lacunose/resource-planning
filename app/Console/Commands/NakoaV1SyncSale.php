@@ -137,8 +137,10 @@ class NakoaV1SyncSale extends Command
                     $vn = 'Hot';
                 }
 
-                $menup  = Menu::where('code', $code[0])->first();
-                $menuv  = Menu::where('code', $item->code)->first();
+                // $menup  = Menu::where('code', $code[0])->first();
+                // $menuv  = Menu::where('code', $item->code)->first();
+                $menup  = null;
+                $menuv  = null;
                 $price  = isset($recs[$code[0]]) ? min($recs[$code[0]]['price'], $item->price) : $item->price;
 
                 $all_row= [
@@ -157,7 +159,7 @@ class NakoaV1SyncSale extends Command
                 ];
                 $recs   = $this->batch_product($recs, $all_row); 
             }else{
-                $menup  = Menu::where('code', $code[0])->first();
+                // $menup  = Menu::where('code', $code[0])->first();
 
                 $all_row= [
                     'code'  => $item->code,
