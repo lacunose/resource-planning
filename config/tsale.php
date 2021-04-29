@@ -65,7 +65,7 @@ return [
             'saturday'      => 'Sabtu',
         ],
         'type'  => [
-            'free'          => 'Dropship',
+            'free'          => 'Tanpa Resep',
             'item'          => 'Stok',
             'good'          => 'Menu',
         ],
