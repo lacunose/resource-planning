@@ -10,13 +10,13 @@ use Carbon\Carbon;
 
 use App\User;
 
-use Lacunose\Manufacture\Models\Menu;
-use Lacunose\Manufacture\Models\Document;
-use Lacunose\Manufacture\Models\DocumentChecker;
+use Lacunose\Manufacture\Models\Good;
+use Lacunose\Manufacture\Models\Checker;
+use Lacunose\Manufacture\Models\CheckerUsage;
 use Lacunose\Manufacture\Aggregates\MenuAggregateRoot;
-use Lacunose\Manufacture\Aggregates\DocumentAggregateRoot;
+use Lacunose\Manufacture\Aggregates\CheckerAggregateRoot;
 
-use Lacunose\Manufacture\Libraries\Traits\BatchMenuTrait;
+use Lacunose\Manufacture\Libraries\Traits\BatchGoodTrait;
 
 use Lacunose\Sale\Models\Promo;
 use Lacunose\Sale\Models\Product;
@@ -36,7 +36,7 @@ use Lacunose\Finance\Aggregates\BookAggregateRoot;
 class NakoaV1SyncSale extends Command
 {
     use BatchCatalogTrait;
-    use BatchMenuTrait;
+    use BatchGoodTrait;
     /**
      * The name and signature of the console command.
      *
@@ -385,10 +385,10 @@ class NakoaV1SyncSale extends Command
                     }else{
                         $dt = SaleTransactionAggregateRoot::retrieve($id)->create($input)->process('confirmed')->pay($pay)->persist();
 
-                        $docs   = Document::where('no_ref', $so->no)->get();
+                        $docs   = Checker::where('no_ref', $so->no)->get();
                         foreach ($docs as $doc) {
-                            $ids= array_column(DocumentChecker::where('document_id', $doc->id)->wherenull('delivered_at')->get()->toArray(), 'id');
-                            $dt = DocumentAggregateRoot::retrieve($doc->uuid)->submit($ids, $doc->date)->persist();
+                            $ids= array_column(CheckerUsage::where('checker_id', $doc->id)->wherenull('delivered_at')->get()->toArray(), 'id');
+                            $dt = CheckerAggregateRoot::retrieve($doc->uuid)->submit($ids, $doc->date)->persist();
                         }
                         //DO THE CHECKER
                         $dt     = SaleTransactionAggregateRoot::retrieve($id)->close()->persist();
