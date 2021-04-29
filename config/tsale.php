@@ -90,12 +90,12 @@ return [
         ],
         'marketplace'       => [
             'pos'           => 'POS',
-            'shopee'        => 'SHOPEE',
-            'tokopedia'     => 'TOKOPEDIA',
-            'lazada'        => 'LAZADA',
-            'bukalapak'     => 'BUKALAPAK',
-            'jdid'          => 'JDID',
-            'blibli'        => 'BLIBLI',
+            // 'shopee'        => 'SHOPEE',
+            // 'tokopedia'     => 'TOKOPEDIA',
+            // 'lazada'        => 'LAZADA',
+            // 'bukalapak'     => 'BUKALAPAK',
+            // 'jdid'          => 'JDID',
+            // 'blibli'        => 'BLIBLI',
         ],
         'outlet'            => [],
         'flag'              => [
