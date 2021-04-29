@@ -5,9 +5,6 @@ namespace App\Exceptions;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Throwable;
 
-use Mail;
-use App\Mail\ExceptionOccured;
-
 class Handler extends ExceptionHandler
 {
     /**
@@ -37,11 +34,8 @@ class Handler extends ExceptionHandler
      *
      * @throws \Exception
      */
-    public function report(Throwable $exception) {
-        if ($this->shouldReport($exception)) {
-            $this->sendEmail($exception); // sends an email
-        }
-
+    public function report(Throwable $exception)
+    {
         parent::report($exception);
     }
 
@@ -58,13 +52,4 @@ class Handler extends ExceptionHandler
     {
         return parent::render($request, $exception);
     }
-
-    public function sendEmail($exception) {
-        $msg = $exception->getMessage();
-
-        if(in_array(env('APP_ENV', 'local'), ['beta', 'production', 'prod'])) {
-            Mail::to('chelsy@thunderlab.id')->send(new ExceptionOccured($msg));
-        }
-    }
-
 }
