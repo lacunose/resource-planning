@@ -69,13 +69,13 @@ class NakoaV1SyncSale extends Command
     public function handle() {
         Auth::loginUsingId(2);
 
-        $this->set_menu();
+        // $this->set_menu();
 
         $this->set_katalog();
 
-        $this->set_promo();
+        // $this->set_promo();
 
-        $this->set_sale();
+        // $this->set_sale();
     }
 
     private function set_menu() {

@@ -174,7 +174,7 @@ class NakoaV1SyncProcure extends Command
                         'dlv'           => 0,
                         'amount'        => $ll['total']/max(1, $ll['qty']),
                         'flag'          => 'catalog',
-                        'promo_code'    => null,
+                        'unit'          => $ll['unit'],
                         'note'          => [],
                         'ux'            => ['item' => $item ? $item->toArray() : []]
                     ];
@@ -194,7 +194,7 @@ class NakoaV1SyncProcure extends Command
                         'dlv'           => 0,
                         'amount'        => $tax,
                         'flag'          => 'tax',
-                        'promo_code'    => null,
+                        'unit'          => $ll['unit'],
                         'note'          => [],
                         'ux'            => [],
                     ];
@@ -213,7 +213,7 @@ class NakoaV1SyncProcure extends Command
                     'vendor'    => $vendor['name'],
                     'warehouse' => $outlet['code'],
                     'bills'     => $bills,
-                    'shipping'  => [
+                    'recipient' => [
                         'name'      => $outlet['name'],
                         'phone'     => null,
                         'address'   => $outlet['address'].', '.$outlet['city'].'-'.$outlet['province'],
@@ -221,12 +221,12 @@ class NakoaV1SyncProcure extends Command
                         'receipt'   => null,
                         'deadline'  => $po->ship_at,
                     ],
-                    'store'     => [
+                    'biller'        => [
                         'name'      => $vendor['name'],
                         'phone'     => null,
                         'address'   => $vendor['address'].', '.$vendor['city'].'-'.$vendor['province'],
                     ],
-                    'customer'  => [
+                    'payer'         => [
                         'name'      => 'NAKOA',
                         'phone'     => null,
                         'address'   => 'Jl. Letjen Sutoyo No.102, Kota Malang, Jawa Timur 65141',
@@ -254,19 +254,24 @@ class NakoaV1SyncProcure extends Command
                         $item       = Item::where('code', $ln['code'])->first();
 
                         $lines[]    = [
-                            'item_code'     => $ln['code'],
+                            'item_code'     => $item->code,
                             'description'   => $ln['name'],
-                            'amount'        => $ln['qty'],
+                            'unit'          => $item->unit,
+                            'qty'           => $ln['qty'],
+                            'scale_unit'    => $item->unit,
+                            'scale_qty'     => $ln['qty'],
+                            'scale_ratio'   => 1,
                         ];
 
                         if($item) {
                             $stocks[]   = [
                                 'item_id'       => $item->id,
-                                'item_code'     => $ln['code'],
-                                'batch'         => $ln['code'],
+                                'item_code'     => $item->code,
+                                'item_unit'     => $item->unit,
+                                'batch'         => $item->code,
                                 'owner'         => 'nakoa',
                                 'description'   => $ln['name'],
-                                'amount'        => $ln['qty'],
+                                'qty'           => $ln['qty'],
                                 'expired_at'    => null,
                                 'note'          => '',
                             ];
@@ -310,9 +315,10 @@ class NakoaV1SyncProcure extends Command
                     }elseif(in_array($po->status, ['RECEIVED', 'PARTIALLY RECEIVED'])) {
                         $dt = ProcureTransactionAggregateRoot::retrieve($id)->create($input)->process('confirmed')->pay($pay)->persist();
                         foreach ($inpwh as $inp) {
-                            $dwh    = Document::no($po->no)->where('status', 'drafted')->first();
+                            $dwh    = Document::no($po->no)->where('status', 'opened')->first();
                             $id2    = $dwh ? $dwh->uuid : (string) Uuid::uuid4();
-                            $dt     = DocumentAggregateRoot::retrieve($id2)->draft($inp, [])->stock($inp['stocks'], [])->lock([])->persist();
+                            $dt     = DocumentAggregateRoot::retrieve($id2)->create($inp)->confirm()->stock($inp['stocks'])->approve()
+                                ->close()->persist();
                         }
                         $dt = ProcureTransactionAggregateRoot::retrieve($id)->close()->persist();
                     }
