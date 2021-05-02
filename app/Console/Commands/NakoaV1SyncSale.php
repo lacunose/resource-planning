@@ -107,12 +107,13 @@ class NakoaV1SyncSale extends Command
             if($product && $item) {
                 $record['code']     = $product->code;
                 $record['name']     = $product->name;
+                $record['station']  = 'BAR';
                 $record['cogs']     = 0;
                 $record['qty']      = $good->qty;
-                $record['resource_code'] = $all_row[$item->code]['resource_code'];
-                $record['resource_name'] = $all_row[$item->code]['resource_name'];
-                $record['resource_unit'] = $all_row[$item->code]['resource_unit'];
-                $record['resource_type'] = $all_row[$item->code]['resource_type'];
+                $record['resource_code'] = $rscs[$item->code]['resource_code'];
+                $record['resource_name'] = $rscs[$item->code]['resource_name'];
+                $record['resource_unit'] = $rscs[$item->code]['resource_unit'];
+                $record['resource_type'] = $rscs[$item->code]['resource_type'];
                 
                 $recs   = $this->batch_good($recs, $record); 
             }
