@@ -61,7 +61,7 @@ class NakoaV1SyncProcure extends Command
 
         $this->set_item();
 
-        $this->restok_from_po();
+        // $this->restok_from_po();
     }
 
     private function set_coa() {

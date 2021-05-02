@@ -4,7 +4,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
-use DB, Validator, Auth, Exception, Log, Str;
+use DB, Validator, Auth, Exception, Log, Str, Excel, Storage;
 use Ramsey\Uuid\Uuid;
 use Carbon\Carbon;
 
@@ -13,7 +13,7 @@ use App\User;
 use Lacunose\Manufacture\Models\Good;
 use Lacunose\Manufacture\Models\Checker;
 use Lacunose\Manufacture\Models\CheckerUsage;
-use Lacunose\Manufacture\Aggregates\MenuAggregateRoot;
+use Lacunose\Manufacture\Aggregates\GoodAggregateRoot;
 use Lacunose\Manufacture\Aggregates\CheckerAggregateRoot;
 
 use Lacunose\Manufacture\Libraries\Traits\BatchGoodTrait;
@@ -69,57 +69,69 @@ class NakoaV1SyncSale extends Command
     public function handle() {
         Auth::loginUsingId(2);
 
-        // $this->set_menu();
+        $this->set_good();
 
-        $this->set_katalog();
+        $this->set_catalog();
 
-        // $this->set_promo();
+        $this->set_promo();
 
         // $this->set_sale();
     }
 
-    private function set_menu() {
-        $menus  = DB::connection('nakoa1')->table('APP_product_item')->get();
+    private function set_good() {
         $recs   = [];
-        foreach ($menus as $menu) {
-            $product= DB::connection('nakoa1')->table('SALES_products')->where('id', $menu->product_id)->first();
-            $item   = DB::connection('nakoa1')->table('WMS_items')->where('id', $menu->item_id)->first();
+        $rscs   = [];
+
+        $file   = Storage::disk(config()->get('tswirl.storage.tmf'))->get('recipe.csv');
+        $rsc    = Excel::toArray(null, $file, config()->get('tswirl.storage.tmf'), 'csv');
+        $header = $rsc[0][0];
+        foreach ($rsc[0] as $k => $v) {
+            if($k > 0) {
+                $all_row  = array_combine($header, $v);
+                $rscs[$all_row['item_code']]    = $all_row;
+            }
+        }
+        dd($rscs);
+
+        $goods  = DB::connection('nakoa1')->table('APP_product_item')->get();
+        foreach ($goods as $good) {
+            $product= DB::connection('nakoa1')->table('SALES_products')->where('id', $good->product_id)->first();
+            $item   = DB::connection('nakoa1')->table('WMS_items')->where('id', $good->item_id)->first();
 
             if($product && $item) {
-                $all_row['code']    = $product->code;
-                $all_row['name']    = $product->name;
-                $all_row['station'] = $product->category;
-                $all_row['cogs']    = 0;
-                $all_row['item_code']   = $item->code;
-                $all_row['item_name']   = $item->name;
-                $all_row['amount']      = $menu->qty;
-                $all_row['cost']        = 0;
-                $all_row['is_synced']   = Str::is($item->category, 'Packaging') ? true : false;
+                $record['code']     = $product->code;
+                $record['name']     = $product->name;
+                $record['cogs']     = 0;
+                $record['qty']      = $good->qty;
+                $record['resource_code'] = $all_row[$item->code]['resource_code'];
+                $record['resource_name'] = $all_row[$item->code]['resource_name'];
+                $record['resource_unit'] = $all_row[$item->code]['resource_unit'];
+                $record['resource_type'] = $all_row[$item->code]['resource_type'];
                 
-                $recs   = $this->batch_menu($recs, $all_row); 
+                $recs   = $this->batch_good($recs, $record); 
             }
         }
 
-        //SIMPAN MENU
+        //SIMPAN good
         foreach ($recs as $k => $input) {
-            $prod   = Menu::where('code', $input['code'])->first();
+            $prod   = Good::where('code', $input['code'])->first();
             $id     = $prod ? $prod->uuid : (string) Uuid::uuid4();
 
             try {
                 DB::beginTransaction();
                 if(!$prod){
-                    $dt = MenuAggregateRoot::retrieve($id)->save($input, [])->publish(now())->persist();
+                    $dt = GoodAggregateRoot::retrieve($id)->save($input, [])->publish(now())->persist();
                 }
                 DB::commit();
             } catch (Exception $e) {
                 DB::rollback();
-                Log::info('SYNC MENU');
+                Log::info('SYNC good');
                 Log::info($e);
             }
         }
     }
 
-    private function set_katalog() {
+    private function set_catalog() {
         $items      = DB::connection('nakoa1')->table('SALES_products')->get();
         $recs       = [];
         foreach ($items as $item) {
@@ -137,33 +149,31 @@ class NakoaV1SyncSale extends Command
                     $vn = 'Hot';
                 }
 
-                // $menup  = Menu::where('code', $code[0])->first();
-                // $menuv  = Menu::where('code', $item->code)->first();
-                $menup  = null;
-                $menuv  = null;
+                $goodp  = Good::where('code', $code[0])->first();
+                $goodv  = Good::where('code', $item->code)->first();
                 $price  = isset($recs[$code[0]]) ? min($recs[$code[0]]['price'], $item->price) : $item->price;
 
                 $all_row= [
                     'code'  => $code[0],
-                    'type'  => $menup ? 'menu' : 'free',
+                    'type'  => $goodp ? 'good' : 'free',
                     'name'  => str_replace('Ice', '', $var[0]),
                     'group' => $item->category,
                     'price' => $price,
                     'description'   => null,
                     'gallery_url'   => 'https://www.malangculinary.com/upload/img_15944486022.jpg',
                     'gallery_title'     => 'foto',
-                    'varian_type'       => $menuv ? 'menu' : 'free',
+                    'varian_type'       => $goodv ? 'good' : 'free',
                     'varian_code'       => $item->code,
                     'varian_name'       => $vn,
                     'varian_extra_price'=> $item->price - $price,
                 ];
                 $recs   = $this->batch_product($recs, $all_row); 
             }else{
-                // $menup  = Menu::where('code', $code[0])->first();
+                $goodp  = Good::where('code', $code[0])->first();
 
                 $all_row= [
                     'code'  => $item->code,
-                    'type'  => $menup ? 'menu' : 'free',
+                    'type'  => $goodp ? 'good' : 'free',
                     'name'  => $item->name,
                     'group' => $item->category,
                     'price' => $item->price,
@@ -299,7 +309,7 @@ class NakoaV1SyncSale extends Command
                 foreach ($lls as $ll) {
                     $vou        = DB::connection('nakoa1')->table('REWARD_vouchers')->where('id', $ll['voucher_id'] ? $ll['voucher_id'] : 0)->first();
                     $promo      = Promo::where('title', $vou ? $vou->caption : '---')->first();
-                    $menu       = Menu::where('code', $ll['code'])->first();
+                    $good       = Good::where('code', $ll['code'])->first();
 
                     $bills[]    = [
                         'description'   => $ll['name'],
@@ -313,7 +323,7 @@ class NakoaV1SyncSale extends Command
                         'flag'          => 'catalog',
                         'promo_code'    => $promo ? $promo->code : null,
                         'note'          => [],
-                        'ux'            => ['item' => [], 'menu' => $menu ? $menu : []]
+                        'ux'            => ['item' => [], 'good' => $good ? $good : []]
                     ];
                 }
 
