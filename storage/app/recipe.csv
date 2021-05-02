@@ -358,20 +358,20 @@ FT-L,Black Tea Frappe Ice L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-0
 FT-L,Black Tea Frappe Ice L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 FT-L,Black Tea Frappe Ice L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 FT-L,Black Tea Frappe Ice L,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
-KL-R,Klepon Brown Sugar Boba R,Bar,0,ingridient,BB-13-002,Powder Klepon,GR,800gr,PO-02-00009-01,Powder Frappe Klepon Toffin Pack 1 Kg,0.015000
+KL-R,Klepon Brown Sugar Boba R,Bar,0,ingridient,BB-99-001,Powder Klepon,GR,800gr,PO-02-00009-01,Powder Frappe Klepon Toffin Pack 1 Kg,0.015000
 KL-R,Klepon Brown Sugar Boba R,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.070000
 KL-R,Klepon Brown Sugar Boba R,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.003636
 KL-R,Klepon Brown Sugar Boba R,Bar,0,ingridient,BB-16-001,Tapioca Pearl,KG,1 Kg,DA-07-00006-01,Boba Boba King Pack 1 Kg,0.027273
-KL-R,Klepon Brown Sugar Boba R,Bar,0,ingridient,BB-99-001,Powder Palm Sugar,MG,1 Mg,SI-03-000003-01,Palm Sugar Cair Dellifru Pack 1 Liter,0.030000
+KL-R,Klepon Brown Sugar Boba R,Bar,0,ingridient,BB-99-002,Powder Palm Sugar,MG,1 Mg,SI-03-000003-01,Palm Sugar Cair Dellifru Pack 1 Liter,0.030000
 KL-R,Klepon Brown Sugar Boba R,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 KL-R,Klepon Brown Sugar Boba R,Bar,0,package,PA-04-003,Cup PP SA 12 oz,PCS,1200 Pcs,PA-01-00001-01,Cup PP SA 12 oz Hansupack,1.000000
 KL-R,Klepon Brown Sugar Boba R,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 KL-R,Klepon Brown Sugar Boba R,Bar,0,package,PA-04-005,Sedotan Ungu 12 mm,PCS,200 Pcs,PA-01-00008-01,Sedotan Ungu Lancip 15 mm Hansupack,1.000000
-KL-L,Klepon Brown Sugar Boba L,Bar,0,ingridient,BB-13-002,Powder Klepon,GR,800gr,PO-02-00009-01,Powder Frappe Klepon Toffin Pack 1 Kg,0.020000
+KL-L,Klepon Brown Sugar Boba L,Bar,0,ingridient,BB-99-001,Powder Klepon,GR,800gr,PO-02-00009-01,Powder Frappe Klepon Toffin Pack 1 Kg,0.020000
 KL-L,Klepon Brown Sugar Boba L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.100000
 KL-L,Klepon Brown Sugar Boba L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.003636
 KL-L,Klepon Brown Sugar Boba L,Bar,0,ingridient,BB-16-001,Tapioca Pearl,KG,1 Kg,DA-07-00006-01,Boba Boba King Pack 1 Kg,0.027273
-KL-L,Klepon Brown Sugar Boba L,Bar,0,ingridient,BB-99-001,Powder Palm Sugar,MG,1 Mg,SI-03-000003-01,Palm Sugar Cair Dellifru Pack 1 Liter,0.030000
+KL-L,Klepon Brown Sugar Boba L,Bar,0,ingridient,BB-99-002,Powder Palm Sugar,MG,1 Mg,SI-03-000003-01,Palm Sugar Cair Dellifru Pack 1 Liter,0.030000
 KL-L,Klepon Brown Sugar Boba L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 KL-L,Klepon Brown Sugar Boba L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 KL-L,Klepon Brown Sugar Boba L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
@@ -379,7 +379,7 @@ KL-L,Klepon Brown Sugar Boba L,Bar,0,package,PA-04-005,Sedotan Ungu 12 mm,PCS,20
 VR-L,Caffe` Vanilla Rum L,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.050000
 VR-L,Caffe` Vanilla Rum L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.150000
 VR-L,Caffe` Vanilla Rum L,Bar,0,ingridient,BB-11-001,Sirup Vanilla,LITER,1 Liter,SI-02-000001-01,Sirup Vanilla Drip Syrup Botol 760 Ml,0.020000
-VR-L,Caffe` Vanilla Rum L,Bar,0,ingridient,BB-99-002,Sirup rum,MG,1 Mg,SI-03-000001-01,Sirup Rum Raisin Delifru Pack 1 Liter,0.020000
+VR-L,Caffe` Vanilla Rum L,Bar,0,ingridient,BB-99-003,Sirup rum,MG,1 Mg,SI-03-000001-01,Sirup Rum Raisin Delifru Pack 1 Liter,0.020000
 VR-L,Caffe` Vanilla Rum L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 VR-L,Caffe` Vanilla Rum L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 VR-L,Caffe` Vanilla Rum L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
@@ -404,7 +404,7 @@ CC-L,Cotton Candy Latte Ice L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M
 CC-L,Cotton Candy Latte Ice L,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
 BBS-L,Boba Brown Sugar L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.001904
 BBS-L,Boba Brown Sugar L,Bar,0,ingridient,BB-16-001,Tapioca Pearl,KG,1 Kg,DA-07-00006-01,Boba Boba King Pack 1 Kg,0.014286
-BBS-L,Boba Brown Sugar L,Bar,0,ingridient,BB-99-003,Brown sugar,KG,6 Kg,SI-04-000005-01,Brown Sugar Regular NIP Jirigen 7 Kg,0.014286
+BBS-L,Boba Brown Sugar L,Bar,0,ingridient,BB-99-004,Brown sugar,KG,6 Kg,SI-04-000005-01,Brown Sugar Regular NIP Jirigen 7 Kg,0.014286
 BBS-L,Boba Brown Sugar L,Bar,0,ingridient,BB-07-002,Sirup Brown Sugar,KG,1 Kg,SI-04-000003-01,Sirup Okinawa Brown Sugar NIP Botol 1 Kg,0.015000
 BBS-L,Boba Brown Sugar L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.014000
 BBS-L,Boba Brown Sugar L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
@@ -413,7 +413,7 @@ BBS-L,Boba Brown Sugar L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-0
 BBS-L,Boba Brown Sugar L,Bar,0,package,PA-04-005,Sedotan Ungu 12 mm,PCS,200 Pcs,PA-01-00008-01,Sedotan Ungu Lancip 15 mm Hansupack,1.000000
 CBR-L,Coffee Boba Brown Sugar Brulee L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.001904
 CBR-L,Coffee Boba Brown Sugar Brulee L,Bar,0,ingridient,BB-16-001,Tapioca Pearl,KG,1 Kg,DA-07-00006-01,Boba Boba King Pack 1 Kg,0.014286
-CBR-L,Coffee Boba Brown Sugar Brulee L,Bar,0,ingridient,BB-99-003,Brown sugar,KG,6 Kg,SI-04-000005-01,Brown Sugar Regular NIP Jirigen 7 Kg,0.014286
+CBR-L,Coffee Boba Brown Sugar Brulee L,Bar,0,ingridient,BB-99-004,Brown sugar,KG,6 Kg,SI-04-000005-01,Brown Sugar Regular NIP Jirigen 7 Kg,0.014286
 CBR-L,Coffee Boba Brown Sugar Brulee L,Bar,0,ingridient,BB-07-002,Sirup Brown Sugar,KG,1 Kg,SI-04-000003-01,Sirup Okinawa Brown Sugar NIP Botol 1 Kg,0.015000
 CBR-L,Coffee Boba Brown Sugar Brulee L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.012000
 CBR-L,Coffee Boba Brown Sugar Brulee L,Bar,0,ingridient,BB-07-007,Powder Palm Sugar,KG,1 Kg,PO-01-00006-01,Palm Sugar Bubuk Dellifru Pack 1 Kg,0.010000
@@ -424,7 +424,7 @@ CBR-L,Coffee Boba Brown Sugar Brulee L,Bar,0,package,PA-04-005,Sedotan Ungu 12 m
 CBR-L,Coffee Boba Brown Sugar Brulee L,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.006333
 BR-L,Boba Brown Sugar Macchiato Brulee L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.001904
 BR-L,Boba Brown Sugar Macchiato Brulee L,Bar,0,ingridient,BB-16-001,Tapioca Pearl,KG,1 Kg,DA-07-00006-01,Boba Boba King Pack 1 Kg,0.014286
-BR-L,Boba Brown Sugar Macchiato Brulee L,Bar,0,ingridient,BB-99-003,Brown sugar,KG,6 Kg,SI-04-000005-01,Brown Sugar Regular NIP Jirigen 7 Kg,0.014286
+BR-L,Boba Brown Sugar Macchiato Brulee L,Bar,0,ingridient,BB-99-004,Brown sugar,KG,6 Kg,SI-04-000005-01,Brown Sugar Regular NIP Jirigen 7 Kg,0.014286
 BR-L,Boba Brown Sugar Macchiato Brulee L,Bar,0,ingridient,BB-07-002,Sirup Brown Sugar,KG,1 Kg,SI-04-000003-01,Sirup Okinawa Brown Sugar NIP Botol 1 Kg,0.015000
 BR-L,Boba Brown Sugar Macchiato Brulee L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.014000
 BR-L,Boba Brown Sugar Macchiato Brulee L,Bar,0,ingridient,BB-07-007,Powder Palm Sugar,KG,1 Kg,PO-01-00006-01,Palm Sugar Bubuk Dellifru Pack 1 Kg,0.010000
@@ -433,14 +433,14 @@ BR-L,Boba Brown Sugar Macchiato Brulee L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,
 BR-L,Boba Brown Sugar Macchiato Brulee L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 BR-L,Boba Brown Sugar Macchiato Brulee L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 BR-L,Boba Brown Sugar Macchiato Brulee L,Bar,0,package,PA-04-005,Sedotan Ungu 12 mm,PCS,200 Pcs,PA-01-00008-01,Sedotan Ungu Lancip 15 mm Hansupack,1.000000
-ED-R,Es Doger with Coffee Jelly R,Bar,0,ingridient,BB-99-004,Powder Pinku,KG,6 Kg,PO-01-00003-01,Powder Pinku NIP Pack 1 Kg,0.020000
+ED-R,Es Doger with Coffee Jelly R,Bar,0,ingridient,BB-99-005,Powder Pinku,KG,6 Kg,PO-01-00003-01,Powder Pinku NIP Pack 1 Kg,0.020000
 ED-R,Es Doger with Coffee Jelly R,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.130000
 ED-R,Es Doger with Coffee Jelly R,Bar,0,ingridient,BB-16-002,Coffee Jelly,KG,2 Kg,DA-07-00001-01,Coffee Jelly NIP Jar 3.2 Kg,0.012500
 ED-R,Es Doger with Coffee Jelly R,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 ED-R,Es Doger with Coffee Jelly R,Bar,0,package,PA-04-003,Cup PP SA 12 oz,PCS,1200 Pcs,PA-01-00001-01,Cup PP SA 12 oz Hansupack,1.000000
 ED-R,Es Doger with Coffee Jelly R,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 ED-R,Es Doger with Coffee Jelly R,Bar,0,package,PA-04-005,Sedotan Ungu 12 mm,PCS,200 Pcs,PA-01-00008-01,Sedotan Ungu Lancip 15 mm Hansupack,1.000000
-ED-L,Es Doger with Coffee Jelly L,Bar,0,ingridient,BB-99-004,Powder Pinku,KG,6 Kg,PO-01-00003-01,Powder Pinku NIP Pack 1 Kg,0.030000
+ED-L,Es Doger with Coffee Jelly L,Bar,0,ingridient,BB-99-005,Powder Pinku,KG,6 Kg,PO-01-00003-01,Powder Pinku NIP Pack 1 Kg,0.030000
 ED-L,Es Doger with Coffee Jelly L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.180000
 ED-L,Es Doger with Coffee Jelly L,Bar,0,ingridient,BB-16-002,Coffee Jelly,KG,2 Kg,DA-07-00001-01,Coffee Jelly NIP Jar 3.2 Kg,0.015625
 ED-L,Es Doger with Coffee Jelly L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
@@ -486,7 +486,7 @@ JC-R,Java Chip Ice R,Bar,0,ingridient,BB-13-003,Powder Java Chips,GR,800gr,PO-02
 JC-R,Java Chip Ice R,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.026667
 JC-R,Java Chip Ice R,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.140000
 JC-R,Java Chip Ice R,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
-JC-R,Java Chip Ice R,Bar,0,ingridient,BB-99-005,Choco Chip,GRAM,500 Gram,DA-07-00004-01,Choco Chip Pack 500 Gram,0.005000
+JC-R,Java Chip Ice R,Bar,0,ingridient,BB-99-006,Choco Chip,GRAM,500 Gram,DA-07-00004-01,Choco Chip Pack 500 Gram,0.005000
 JC-R,Java Chip Ice R,Bar,0,package,PA-04-003,Cup PP SA 12 oz,PCS,1200 Pcs,PA-01-00001-01,Cup PP SA 12 oz Hansupack,1.000000
 JC-R,Java Chip Ice R,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 JC-R,Java Chip Ice R,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
@@ -494,7 +494,7 @@ JC-L,Java Chip Ice L,Bar,0,ingridient,BB-13-003,Powder Java Chips,GR,800gr,PO-02
 JC-L,Java Chip Ice L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.026667
 JC-L,Java Chip Ice L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.180000
 JC-L,Java Chip Ice L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
-JC-L,Java Chip Ice L,Bar,0,ingridient,BB-99-005,Choco Chip,GRAM,500 Gram,DA-07-00004-01,Choco Chip Pack 500 Gram,0.005000
+JC-L,Java Chip Ice L,Bar,0,ingridient,BB-99-006,Choco Chip,GRAM,500 Gram,DA-07-00004-01,Choco Chip Pack 500 Gram,0.005000
 JC-L,Java Chip Ice L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 JC-L,Java Chip Ice L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 JC-L,Java Chip Ice L,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
@@ -527,7 +527,7 @@ CT-R,Chocochip Tiramisu Ice R,Bar,0,ingridient,BB-07-008,Powder Cocoa,KG,1 Kg,PO
 CT-R,Chocochip Tiramisu Ice R,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.024000
 CT-R,Chocochip Tiramisu Ice R,Bar,0,ingridient,BB-12-003,Sirup Tiramisu,ML,760 Ml,SI-02-000004-01,Sirup Tiramisu Drip Syrup Botol 760 Ml,0.023684
 CT-R,Chocochip Tiramisu Ice R,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.120000
-CT-R,Chocochip Tiramisu Ice R,Bar,0,ingridient,BB-99-005,Choco Chip,GRAM,500 Gram,DA-07-00004-01,Choco Chip Pack 500 Gram,0.005000
+CT-R,Chocochip Tiramisu Ice R,Bar,0,ingridient,BB-99-006,Choco Chip,GRAM,500 Gram,DA-07-00004-01,Choco Chip Pack 500 Gram,0.005000
 CT-R,Chocochip Tiramisu Ice R,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 CT-R,Chocochip Tiramisu Ice R,Bar,0,package,PA-04-003,Cup PP SA 12 oz,PCS,1200 Pcs,PA-01-00001-01,Cup PP SA 12 oz Hansupack,1.000000
 CT-R,Chocochip Tiramisu Ice R,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
@@ -536,7 +536,7 @@ CT-L,Chocochip Tiramisu Ice L,Bar,0,ingridient,BB-07-008,Powder Cocoa,KG,1 Kg,PO
 CT-L,Chocochip Tiramisu Ice L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.026667
 CT-L,Chocochip Tiramisu Ice L,Bar,0,ingridient,BB-12-003,Sirup Tiramisu,ML,760 Ml,SI-02-000004-01,Sirup Tiramisu Drip Syrup Botol 760 Ml,0.032895
 CT-L,Chocochip Tiramisu Ice L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.150000
-CT-L,Chocochip Tiramisu Ice L,Bar,0,ingridient,BB-99-005,Choco Chip,GRAM,500 Gram,DA-07-00004-01,Choco Chip Pack 500 Gram,0.005000
+CT-L,Chocochip Tiramisu Ice L,Bar,0,ingridient,BB-99-006,Choco Chip,GRAM,500 Gram,DA-07-00004-01,Choco Chip Pack 500 Gram,0.005000
 CT-L,Chocochip Tiramisu Ice L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 CT-L,Chocochip Tiramisu Ice L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 CT-L,Chocochip Tiramisu Ice L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
@@ -545,7 +545,7 @@ FJC-L,Java Chip Frappe Ice L,Bar,0,ingridient,BB-13-003,Powder Java Chips,GR,800
 FJC-L,Java Chip Frappe Ice L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.026667
 FJC-L,Java Chip Frappe Ice L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.180000
 FJC-L,Java Chip Frappe Ice L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
-FJC-L,Java Chip Frappe Ice L,Bar,0,ingridient,BB-99-005,Choco Chip,GRAM,500 Gram,DA-07-00004-01,Choco Chip Pack 500 Gram,0.005000
+FJC-L,Java Chip Frappe Ice L,Bar,0,ingridient,BB-99-006,Choco Chip,GRAM,500 Gram,DA-07-00004-01,Choco Chip Pack 500 Gram,0.005000
 FJC-L,Java Chip Frappe Ice L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 FJC-L,Java Chip Frappe Ice L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 FJC-L,Java Chip Frappe Ice L,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
@@ -920,7 +920,7 @@ XES,Espresso,Pantry,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Be
 XBB,Boba: Original,Pantry,0,ingridient,BB-16-001,Tapioca Pearl,KG,1 Kg,DA-07-00006-01,Boba Boba King Pack 1 Kg,0.027273
 XBS,Boba: Brown Sugar,Pantry,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.003636
 XBS,Boba: Brown Sugar,Pantry,0,ingridient,BB-16-001,Tapioca Pearl,KG,1 Kg,DA-07-00006-01,Boba Boba King Pack 1 Kg,0.027273
-XBS,Boba: Brown Sugar,Pantry,0,ingridient,BB-99-001,Powder Palm Sugar,MG,1 Mg,SI-03-000003-01,Palm Sugar Cair Dellifru Pack 1 Liter,0.030000
+XBS,Boba: Brown Sugar,Pantry,0,ingridient,BB-99-002,Powder Palm Sugar,MG,1 Mg,SI-03-000003-01,Palm Sugar Cair Dellifru Pack 1 Liter,0.030000
 XCJ,Coffee Jelly,Pantry,0,ingridient,BB-16-002,Coffee Jelly,KG,2 Kg,DA-07-00001-01,Coffee Jelly NIP Jar 3.2 Kg,0.015625
 XIC,Ice Cream Scoop,Pantry,0,item,DA-07-00010-01,Ice Cream Reg Vanila Pack 8 Ltr,PC,PC,DA-07-00010-01,Ice Cream Reg Vanila Pack 8 Ltr,0.010000
 F-83,Eclair Matcha,Pantry,0,item,FO-01-00083-01,Eclair Matcha,PC,PC,FO-01-00083-01,Eclair Matcha,1.000000
