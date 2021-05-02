@@ -98,6 +98,8 @@ class NakoaV1SyncSale extends Command
                 $rscs[$all_row['item_code']]    = $all_row;
             }
         }
+        $scls = ['KG' => ['UNIT' => 'GRAM', 'RATIO' => 1000], 'LITER' => ['UNIT' => 'ML', 'RATIO' => 1000]];
+        $keys = ['KG', 'LITER'];
 
         $goods  = DB::connection('nakoa1')->table('APP_product_item')->get();
         foreach ($goods as $good) {
@@ -108,11 +110,14 @@ class NakoaV1SyncSale extends Command
                 $record['code']     = $product->code;
                 $record['name']     = $product->name;
                 $record['station']  = 'BAR';
+                $record['unit']     = 'PORSI';
                 $record['cogs']     = 0;
-                $record['qty']      = $good->qty;
+                $record['qty']      = in_array($rscs[$item->code]['resource_unit'], $kes) ? 
+                    ($scls[$rscs[$item->code]['resource_unit']]['RATIO'] * $good->qty) : $good->qty;
                 $record['resource_code'] = $rscs[$item->code]['resource_code'];
                 $record['resource_name'] = $rscs[$item->code]['resource_name'];
-                $record['resource_unit'] = $rscs[$item->code]['resource_unit'];
+                $record['resource_unit'] = in_array($rscs[$item->code]['resource_unit'], $keys) ? 
+                    $scls[$rscs[$item->code]['resource_unit']]['UNIT'] : $rscs[$item->code]['resource_unit'];
                 $record['resource_type'] = $rscs[$item->code]['resource_type'];
                 
                 $recs   = $this->batch_good($recs, $record); 
