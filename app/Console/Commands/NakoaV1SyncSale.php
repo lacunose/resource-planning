@@ -91,7 +91,6 @@ class NakoaV1SyncSale extends Command
                 $rscs[$all_row['item_code']]    = $all_row;
             }
         }
-        dd($rscs);
 
         $goods  = DB::connection('nakoa1')->table('APP_product_item')->get();
         foreach ($goods as $good) {
