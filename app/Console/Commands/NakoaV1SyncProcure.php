@@ -134,6 +134,7 @@ class NakoaV1SyncProcure extends Command
                 'type'      => $item->category,
                 'unit'      => $item->unit,
                 'galleries' => $gals,
+                'scales'    => [],
             ];
 
             if(!$nitem) {

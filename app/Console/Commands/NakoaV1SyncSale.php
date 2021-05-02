@@ -82,13 +82,21 @@ class NakoaV1SyncSale extends Command
         $recs   = [];
         $rscs   = [];
 
-        $file   = Storage::disk(config()->get('tswirl.storage.tmf'))->get('recipe.csv');
-        $rsc    = Excel::toArray(null, $file, config()->get('tswirl.storage.tmf'), 'csv');
-        $header = $rsc[0][0];
-        foreach ($rsc[0] as $k => $v) {
-            if($k > 0) {
-                $all_row  = array_combine($header, $v);
+        if (($handle = fopen('\www\xnakoa\storage\app\recipe.csv', 'r')) !== FALSE) 
+        {
+            $header         = null;
+
+            while (($data   = fgetcsv($handle, 500, ",")) !== FALSE) 
+            {
+                if ($header === null) 
+                {
+                    $header = $data;
+                    continue;
+                }
+            
+                $all_row    = array_combine($header, $data);
                 $rscs[$all_row['item_code']]    = $all_row;
+                }
             }
         }
 
