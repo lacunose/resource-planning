@@ -112,7 +112,7 @@ class NakoaV1SyncSale extends Command
                 $record['station']  = 'BAR';
                 $record['unit']     = 'PORSI';
                 $record['cogs']     = 0;
-                $record['qty']      = in_array($rscs[$item->code]['resource_unit'], $kes) ? 
+                $record['qty']      = in_array($rscs[$item->code]['resource_unit'], $keys) ? 
                     ($scls[$rscs[$item->code]['resource_unit']]['RATIO'] * $good->qty) : $good->qty;
                 $record['resource_code'] = $rscs[$item->code]['resource_code'];
                 $record['resource_name'] = $rscs[$item->code]['resource_name'];
