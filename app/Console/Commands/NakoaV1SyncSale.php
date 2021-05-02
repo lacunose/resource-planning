@@ -96,7 +96,6 @@ class NakoaV1SyncSale extends Command
             
                 $all_row    = array_combine($header, $data);
                 $rscs[$all_row['item_code']]    = $all_row;
-                }
             }
         }
 
