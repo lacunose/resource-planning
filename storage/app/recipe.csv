@@ -17,30 +17,30 @@ AM-H,Caffé Americano Hot,Bar,0,package,PA-04-001,Cup Hot + Lid 12 oz,PCS,1000 Pc
 AM-H,Caffé Americano Hot,Bar,0,package,PA-04-006,Sedotan Ungu Pipih,PCS,200 Pcs,PA-01-00003-01,Sedotan Pipih Ungu Hansupack,1.000000
 KSN-R,Es Kopi Susu Nakoa R,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.009500
 KSN-R,Es Kopi Susu Nakoa R,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.120000
-KSN-R,Es Kopi Susu Nakoa R,Bar,0,ingridient,BB-04-001,SKM,GR,495gr,DA-01-00006-01,Krimer Carnation Putih Kaleng 495 Gram,0.600000
+KSN-R,Es Kopi Susu Nakoa R,Bar,0,ingridient,BB-04-001,SKM,GR,0.495 Kg,DA-01-00006-01,Krimer Carnation Putih Kaleng 495 Gram,0.600000
 KSN-R,Es Kopi Susu Nakoa R,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 KSN-R,Es Kopi Susu Nakoa R,Bar,0,package,PA-04-003,Cup PP SA 12 oz,PCS,1200 Pcs,PA-01-00001-01,Cup PP SA 12 oz Hansupack,1.000000
 KSN-R,Es Kopi Susu Nakoa R,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 KSN-R,Es Kopi Susu Nakoa R,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
 KSA-R,Kopi Susu Gula Aren Ice R,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.014250
 KSA-R,Kopi Susu Gula Aren Ice R,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.062700
-KSA-R,Kopi Susu Gula Aren Ice R,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,430gr,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.110000
-KSA-R,Kopi Susu Gula Aren Ice R,Bar,0,ingridient,BB-13-001,Powder Aren,GR,800gr,PO-02-00008-01,Powder Frappe Organic Aren Sugar Toffin Pack 1 Kg,0.018750
+KSA-R,Kopi Susu Gula Aren Ice R,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,0.43 Kg,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.110000
+KSA-R,Kopi Susu Gula Aren Ice R,Bar,0,ingridient,BB-13-001,Powder Aren,GR,0.8 Kg,PO-02-00008-01,Powder Frappe Organic Aren Sugar Toffin Pack 1 Kg,0.018750
 KSA-R,Kopi Susu Gula Aren Ice R,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 KSA-R,Kopi Susu Gula Aren Ice R,Bar,0,package,PA-04-003,Cup PP SA 12 oz,PCS,1200 Pcs,PA-01-00001-01,Cup PP SA 12 oz Hansupack,1.000000
 KSA-R,Kopi Susu Gula Aren Ice R,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 KSA-R,Kopi Susu Gula Aren Ice R,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
 KSA-L,Kopi Susu Gula Aren Ice L,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.012670
 KSA-L,Kopi Susu Gula Aren Ice L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.085500
-KSA-L,Kopi Susu Gula Aren Ice L,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,430gr,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.150000
-KSA-L,Kopi Susu Gula Aren Ice L,Bar,0,ingridient,BB-13-001,Powder Aren,GR,800gr,PO-02-00008-01,Powder Frappe Organic Aren Sugar Toffin Pack 1 Kg,0.025000
+KSA-L,Kopi Susu Gula Aren Ice L,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,0.43 Kg,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.150000
+KSA-L,Kopi Susu Gula Aren Ice L,Bar,0,ingridient,BB-13-001,Powder Aren,GR,0.8 Kg,PO-02-00008-01,Powder Frappe Organic Aren Sugar Toffin Pack 1 Kg,0.025000
 KSA-L,Kopi Susu Gula Aren Ice L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 KSA-L,Kopi Susu Gula Aren Ice L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 KSA-L,Kopi Susu Gula Aren Ice L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 KSA-L,Kopi Susu Gula Aren Ice L,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
 CM-R,Caramel Macchiato Ice R,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.014250
 CM-R,Caramel Macchiato Ice R,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.057000
-CM-R,Caramel Macchiato Ice R,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,430gr,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.100000
+CM-R,Caramel Macchiato Ice R,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,0.43 Kg,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.100000
 CM-R,Caramel Macchiato Ice R,Bar,0,ingridient,BB-17-001,Sauce Caramel,LITER,2 Liter,SY-01-000001-01,Sauce Caramel Toffin Botol 1.8 Kg,0.008333
 CM-R,Caramel Macchiato Ice R,Bar,0,ingridient,BB-07-010,Powder Coffee Caramel,KG,2 Kg,PO-02-00001-01,Powder Caffe Caramello Toffin Pack 800 Gram,0.018750
 CM-R,Caramel Macchiato Ice R,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.013333
@@ -50,7 +50,7 @@ CM-R,Caramel Macchiato Ice R,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,
 CM-R,Caramel Macchiato Ice R,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
 CM-L,Caramel Macchiato Ice L,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.012670
 CM-L,Caramel Macchiato Ice L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.068400
-CM-L,Caramel Macchiato Ice L,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,430gr,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.120000
+CM-L,Caramel Macchiato Ice L,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,0.43 Kg,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.120000
 CM-L,Caramel Macchiato Ice L,Bar,0,ingridient,BB-17-001,Sauce Caramel,LITER,2 Liter,SY-01-000001-01,Sauce Caramel Toffin Botol 1.8 Kg,0.011111
 CM-L,Caramel Macchiato Ice L,Bar,0,ingridient,BB-07-010,Powder Coffee Caramel,KG,2 Kg,PO-02-00001-01,Powder Caffe Caramello Toffin Pack 800 Gram,0.025000
 CM-L,Caramel Macchiato Ice L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.026667
@@ -59,21 +59,21 @@ CM-L,Caramel Macchiato Ice L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pc
 CM-L,Caramel Macchiato Ice L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 CM-L,Caramel Macchiato Ice L,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
 LAD-R,Asian Dolce Latte Ice R,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.009500
-LAD-R,Asian Dolce Latte Ice R,Bar,0,ingridient,BB-04-001,SKM,GR,495gr,DA-01-00006-01,Krimer Carnation Putih Kaleng 495 Gram,0.060606
+LAD-R,Asian Dolce Latte Ice R,Bar,0,ingridient,BB-04-001,SKM,GR,0.495 Kg,DA-01-00006-01,Krimer Carnation Putih Kaleng 495 Gram,0.060606
 LAD-R,Asian Dolce Latte Ice R,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,6.666667
 LAD-R,Asian Dolce Latte Ice R,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 LAD-R,Asian Dolce Latte Ice R,Bar,0,package,PA-04-003,Cup PP SA 12 oz,PCS,1200 Pcs,PA-01-00001-01,Cup PP SA 12 oz Hansupack,1.000000
 LAD-R,Asian Dolce Latte Ice R,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 LAD-R,Asian Dolce Latte Ice R,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
 LAD-L,Asian Dolce Latte Ice L,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.014250
-LAD-L,Asian Dolce Latte Ice L,Bar,0,ingridient,BB-04-001,SKM,GR,495gr,DA-01-00006-01,Krimer Carnation Putih Kaleng 495 Gram,0.101010
+LAD-L,Asian Dolce Latte Ice L,Bar,0,ingridient,BB-04-001,SKM,GR,0.495 Kg,DA-01-00006-01,Krimer Carnation Putih Kaleng 495 Gram,0.101010
 LAD-L,Asian Dolce Latte Ice L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.180000
 LAD-L,Asian Dolce Latte Ice L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 LAD-L,Asian Dolce Latte Ice L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 LAD-L,Asian Dolce Latte Ice L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 LAD-L,Asian Dolce Latte Ice L,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
 LAD-H,Asian Dolce Latte Hot,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.012670
-LAD-H,Asian Dolce Latte Hot,Bar,0,ingridient,BB-04-001,SKM,GR,495gr,DA-01-00006-01,Krimer Carnation Putih Kaleng 495 Gram,0.101010
+LAD-H,Asian Dolce Latte Hot,Bar,0,ingridient,BB-04-001,SKM,GR,0.495 Kg,DA-01-00006-01,Krimer Carnation Putih Kaleng 495 Gram,0.101010
 LAD-H,Asian Dolce Latte Hot,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.200000
 LAD-H,Asian Dolce Latte Hot,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 LAD-H,Asian Dolce Latte Hot,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
@@ -82,7 +82,7 @@ LV-R,Vanilla Latte Ice R,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,
 LV-R,Vanilla Latte Ice R,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.013333
 LV-R,Vanilla Latte Ice R,Bar,0,ingridient,BB-11-001,Sirup Vanilla,LITER,1 Liter,SI-02-000001-01,Sirup Vanilla Drip Syrup Botol 760 Ml,0.026316
 LV-R,Vanilla Latte Ice R,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.057000
-LV-R,Vanilla Latte Ice R,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,430gr,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.100000
+LV-R,Vanilla Latte Ice R,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,0.43 Kg,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.100000
 LV-R,Vanilla Latte Ice R,Bar,0,package,PA-04-003,Cup PP SA 12 oz,PCS,1200 Pcs,PA-01-00001-01,Cup PP SA 12 oz Hansupack,1.000000
 LV-R,Vanilla Latte Ice R,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 LV-R,Vanilla Latte Ice R,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
@@ -90,7 +90,7 @@ LV-L,Vanilla Latte Ice L,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,
 LV-L,Vanilla Latte Ice L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.020000
 LV-L,Vanilla Latte Ice L,Bar,0,ingridient,BB-11-001,Sirup Vanilla,LITER,1 Liter,SI-02-000001-01,Sirup Vanilla Drip Syrup Botol 760 Ml,0.039474
 LV-L,Vanilla Latte Ice L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.074100
-LV-L,Vanilla Latte Ice L,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,430gr,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.130000
+LV-L,Vanilla Latte Ice L,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,0.43 Kg,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.130000
 LV-L,Vanilla Latte Ice L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 LV-L,Vanilla Latte Ice L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 LV-L,Vanilla Latte Ice L,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
@@ -98,53 +98,53 @@ LV-H,Vanilla Latte Hot,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Co
 LV-H,Vanilla Latte Hot,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.006667
 LV-H,Vanilla Latte Hot,Bar,0,ingridient,BB-11-001,Sirup Vanilla,LITER,1 Liter,SI-02-000001-01,Sirup Vanilla Drip Syrup Botol 760 Ml,0.039474
 LV-H,Vanilla Latte Hot,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.114000
-LV-H,Vanilla Latte Hot,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,430gr,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.200000
+LV-H,Vanilla Latte Hot,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,0.43 Kg,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.200000
 LV-H,Vanilla Latte Hot,Bar,0,package,PA-05-001,Cup Hot + Lid 8 oz,PCS,1000 Pcs,PA-01-00005-01,Paper Cup Hot + Lid 8 oz Hansupack,1.000000
 LV-H,Vanilla Latte Hot,Bar,0,package,PA-04-006,Sedotan Ungu Pipih,PCS,200 Pcs,PA-01-00003-01,Sedotan Pipih Ungu Hansupack,1.000000
 LC-R,Caramel Latte Ice R,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.009500
 LC-R,Caramel Latte Ice R,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.013333
-LC-R,Caramel Latte Ice R,Bar,0,ingridient,BB-12-002,Sirup Caramel,ML,760 Ml,SI-02-000003-01,Sirup Caramel Drip Botol 760 Ml,0.026316
+LC-R,Caramel Latte Ice R,Bar,0,ingridient,BB-12-002,Sirup Caramel,ML,0.76 LITER,SI-02-000003-01,Sirup Caramel Drip Botol 760 Ml,0.026316
 LC-R,Caramel Latte Ice R,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.057000
-LC-R,Caramel Latte Ice R,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,430gr,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.100000
+LC-R,Caramel Latte Ice R,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,0.43 Kg,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.100000
 LC-R,Caramel Latte Ice R,Bar,0,package,PA-04-003,Cup PP SA 12 oz,PCS,1200 Pcs,PA-01-00001-01,Cup PP SA 12 oz Hansupack,1.000000
 LC-R,Caramel Latte Ice R,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 LC-R,Caramel Latte Ice R,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
 LC-L,Caramel Latte Ice L,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.012670
 LC-L,Caramel Latte Ice L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.020000
-LC-L,Caramel Latte Ice L,Bar,0,ingridient,BB-12-002,Sirup Caramel,ML,760 Ml,SI-02-000003-01,Sirup Caramel Drip Botol 760 Ml,0.039474
+LC-L,Caramel Latte Ice L,Bar,0,ingridient,BB-12-002,Sirup Caramel,ML,0.76 LITER,SI-02-000003-01,Sirup Caramel Drip Botol 760 Ml,0.039474
 LC-L,Caramel Latte Ice L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.074100
-LC-L,Caramel Latte Ice L,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,430gr,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.130000
+LC-L,Caramel Latte Ice L,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,0.43 Kg,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.130000
 LC-L,Caramel Latte Ice L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 LC-L,Caramel Latte Ice L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 LC-L,Caramel Latte Ice L,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
 LC-H,Caramel Latte Hot,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.009500
 LC-H,Caramel Latte Hot,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.006667
-LC-H,Caramel Latte Hot,Bar,0,ingridient,BB-12-002,Sirup Caramel,ML,760 Ml,SI-02-000003-01,Sirup Caramel Drip Botol 760 Ml,0.039474
+LC-H,Caramel Latte Hot,Bar,0,ingridient,BB-12-002,Sirup Caramel,ML,0.76 LITER,SI-02-000003-01,Sirup Caramel Drip Botol 760 Ml,0.039474
 LC-H,Caramel Latte Hot,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.114000
-LC-H,Caramel Latte Hot,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,430gr,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.200000
+LC-H,Caramel Latte Hot,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,0.43 Kg,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.200000
 LC-H,Caramel Latte Hot,Bar,0,package,PA-05-001,Cup Hot + Lid 8 oz,PCS,1000 Pcs,PA-01-00005-01,Paper Cup Hot + Lid 8 oz Hansupack,1.000000
 LC-H,Caramel Latte Hot,Bar,0,package,PA-04-006,Sedotan Ungu Pipih,PCS,200 Pcs,PA-01-00003-01,Sedotan Pipih Ungu Hansupack,1.000000
 LH-R,Hazelnut Latte Ice R,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.009500
 LH-R,Hazelnut Latte Ice R,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.013333
-LH-R,Hazelnut Latte Ice R,Bar,0,ingridient,BB-12-001,Sirup Hazelnut,ML,760 Ml,SI-02-000002-01,Sirup Hazelnut Drip Syrup Botol 760 Ml,0.026316
+LH-R,Hazelnut Latte Ice R,Bar,0,ingridient,BB-12-001,Sirup Hazelnut,ML,0.76 LITER,SI-02-000002-01,Sirup Hazelnut Drip Syrup Botol 760 Ml,0.026316
 LH-R,Hazelnut Latte Ice R,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.057000
-LH-R,Hazelnut Latte Ice R,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,430gr,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.100000
+LH-R,Hazelnut Latte Ice R,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,0.43 Kg,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.100000
 LH-R,Hazelnut Latte Ice R,Bar,0,package,PA-04-003,Cup PP SA 12 oz,PCS,1200 Pcs,PA-01-00001-01,Cup PP SA 12 oz Hansupack,1.000000
 LH-R,Hazelnut Latte Ice R,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 LH-R,Hazelnut Latte Ice R,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
 LH-L,Hazelnut Latte Ice L,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.012670
 LH-L,Hazelnut Latte Ice L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.020000
-LH-L,Hazelnut Latte Ice L,Bar,0,ingridient,BB-12-001,Sirup Hazelnut,ML,760 Ml,SI-02-000002-01,Sirup Hazelnut Drip Syrup Botol 760 Ml,0.039474
+LH-L,Hazelnut Latte Ice L,Bar,0,ingridient,BB-12-001,Sirup Hazelnut,ML,0.76 LITER,SI-02-000002-01,Sirup Hazelnut Drip Syrup Botol 760 Ml,0.039474
 LH-L,Hazelnut Latte Ice L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.074100
-LH-L,Hazelnut Latte Ice L,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,430gr,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.130000
+LH-L,Hazelnut Latte Ice L,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,0.43 Kg,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.130000
 LH-L,Hazelnut Latte Ice L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 LH-L,Hazelnut Latte Ice L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 LH-L,Hazelnut Latte Ice L,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
 LH-H,Hazelnut Latte Hot,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.009500
 LH-H,Hazelnut Latte Hot,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.006667
-LH-H,Hazelnut Latte Hot,Bar,0,ingridient,BB-12-001,Sirup Hazelnut,ML,760 Ml,SI-02-000002-01,Sirup Hazelnut Drip Syrup Botol 760 Ml,0.039474
+LH-H,Hazelnut Latte Hot,Bar,0,ingridient,BB-12-001,Sirup Hazelnut,ML,0.76 LITER,SI-02-000002-01,Sirup Hazelnut Drip Syrup Botol 760 Ml,0.039474
 LH-H,Hazelnut Latte Hot,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.114000
-LH-H,Hazelnut Latte Hot,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,430gr,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.200000
+LH-H,Hazelnut Latte Hot,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,0.43 Kg,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.200000
 LH-H,Hazelnut Latte Hot,Bar,0,package,PA-05-001,Cup Hot + Lid 8 oz,PCS,1000 Pcs,PA-01-00005-01,Paper Cup Hot + Lid 8 oz Hansupack,1.000000
 LH-H,Hazelnut Latte Hot,Bar,0,package,PA-04-006,Sedotan Ungu Pipih,PCS,200 Pcs,PA-01-00003-01,Sedotan Pipih Ungu Hansupack,1.000000
 L-R,Caffé Latte Ice R,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.009500
@@ -200,7 +200,7 @@ AMH-H,Honey Americano Hot,Bar,0,package,PA-04-001,Cup Hot + Lid 12 oz,PCS,1000 P
 AMH-H,Honey Americano Hot,Bar,0,package,PA-04-006,Sedotan Ungu Pipih,PCS,200 Pcs,PA-01-00003-01,Sedotan Pipih Ungu Hansupack,1.000000
 MV-R,Mochaccino Vanilla Ice R,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.006333
 MV-R,Mochaccino Vanilla Ice R,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.068400
-MV-R,Mochaccino Vanilla Ice R,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,430gr,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.120000
+MV-R,Mochaccino Vanilla Ice R,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,0.43 Kg,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.120000
 MV-R,Mochaccino Vanilla Ice R,Bar,0,ingridient,BB-07-008,Powder Cocoa,KG,1 Kg,PO-01-00001-01,Powder Cocoa NIP Pack 1 Kg,0.004000
 MV-R,Mochaccino Vanilla Ice R,Bar,0,ingridient,BB-11-001,Sirup Vanilla,LITER,1 Liter,SI-02-000001-01,Sirup Vanilla Drip Syrup Botol 760 Ml,0.019737
 MV-R,Mochaccino Vanilla Ice R,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.026667
@@ -210,7 +210,7 @@ MV-R,Mochaccino Vanilla Ice R,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M
 MV-R,Mochaccino Vanilla Ice R,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
 MV-L,Mochaccino Vanilla Ice L,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.009500
 MV-L,Mochaccino Vanilla Ice L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.855000
-MV-L,Mochaccino Vanilla Ice L,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,430gr,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.150000
+MV-L,Mochaccino Vanilla Ice L,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,0.43 Kg,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.150000
 MV-L,Mochaccino Vanilla Ice L,Bar,0,ingridient,BB-07-008,Powder Cocoa,KG,1 Kg,PO-01-00001-01,Powder Cocoa NIP Pack 1 Kg,0.005000
 MV-L,Mochaccino Vanilla Ice L,Bar,0,ingridient,BB-11-001,Sirup Vanilla,LITER,1 Liter,SI-02-000001-01,Sirup Vanilla Drip Syrup Botol 760 Ml,0.026316
 MV-L,Mochaccino Vanilla Ice L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.026667
@@ -219,7 +219,7 @@ MV-L,Mochaccino Vanilla Ice L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 P
 MV-L,Mochaccino Vanilla Ice L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 MV-L,Mochaccino Vanilla Ice L,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
 FAD-L,Asian Dolce Frappe Ice L,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.019000
-FAD-L,Asian Dolce Frappe Ice L,Bar,0,ingridient,BB-04-001,SKM,GR,495gr,DA-01-00006-01,Krimer Carnation Putih Kaleng 495 Gram,0.101010
+FAD-L,Asian Dolce Frappe Ice L,Bar,0,ingridient,BB-04-001,SKM,GR,0.495 Kg,DA-01-00006-01,Krimer Carnation Putih Kaleng 495 Gram,0.101010
 FAD-L,Asian Dolce Frappe Ice L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.180000
 FAD-L,Asian Dolce Frappe Ice L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 FAD-L,Asian Dolce Frappe Ice L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
@@ -227,7 +227,7 @@ FAD-L,Asian Dolce Frappe Ice L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 
 FAD-L,Asian Dolce Frappe Ice L,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
 FCM-L,Caramel Machiato Frappe Ice L,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.012670
 FCM-L,Caramel Machiato Frappe Ice L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.068400
-FCM-L,Caramel Machiato Frappe Ice L,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,430gr,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.120000
+FCM-L,Caramel Machiato Frappe Ice L,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,0.43 Kg,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.120000
 FCM-L,Caramel Machiato Frappe Ice L,Bar,0,ingridient,BB-17-001,Sauce Caramel,LITER,2 Liter,SY-01-000001-01,Sauce Caramel Toffin Botol 1.8 Kg,0.011111
 FCM-L,Caramel Machiato Frappe Ice L,Bar,0,ingridient,BB-07-010,Powder Coffee Caramel,KG,2 Kg,PO-02-00001-01,Powder Caffe Caramello Toffin Pack 800 Gram,0.025000
 FCM-L,Caramel Machiato Frappe Ice L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.026667
@@ -296,7 +296,7 @@ TMH-L,Tea Macchiato Ice (Honey) L,Bar,0,ingridient,BB-07-007,Powder Black Tea,KG
 TMH-L,Tea Macchiato Ice (Honey) L,Bar,0,ingridient,BB-07-005,Concentrad Honey,KG,7 Kg,SI-04-000002-01,Concentrated Longan Honey NIP Jirigen 7 Kg,0.005714
 TMH-L,Tea Macchiato Ice (Honey) L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.013333
 TMH-L,Tea Macchiato Ice (Honey) L,Bar,0,ingridient,BB-07-009,Powder Cheese Foam,KG,1 Kg,DA-07-00014-01,Foam Cheese Manis NIP Pack 1 Kg,0.005625
-TMH-L,Tea Macchiato Ice (Honey) L,Bar,0,ingridient,BB-05-001,Whip Cream,ML,900 ml,DA-07-00002-01,Rich Value Pride Pack 900Ml,0.001300
+TMH-L,Tea Macchiato Ice (Honey) L,Bar,0,ingridient,BB-05-001,Whip Cream,ML,0.9 LITER,DA-07-00002-01,Rich Value Pride Pack 900Ml,0.001300
 TMH-L,Tea Macchiato Ice (Honey) L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 TMH-L,Tea Macchiato Ice (Honey) L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 TMH-L,Tea Macchiato Ice (Honey) L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
@@ -305,7 +305,7 @@ TML-L,Tea Macchiato Ice (Lychee) L,Bar,0,ingridient,BB-07-007,Powder Black Tea,K
 TML-L,Tea Macchiato Ice (Lychee) L,Bar,0,ingridient,BB-07-003,Concentrad Lychee,KG,7 Kg,SI-04-000004-01,Concentrated Lychee NIP Jirigen 7 Kg,0.005714
 TML-L,Tea Macchiato Ice (Lychee) L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.020000
 TML-L,Tea Macchiato Ice (Lychee) L,Bar,0,ingridient,BB-07-009,Powder Cheese Foam,KG,1 Kg,DA-07-00014-01,Foam Cheese Manis NIP Pack 1 Kg,0.005625
-TML-L,Tea Macchiato Ice (Lychee) L,Bar,0,ingridient,BB-05-001,Whip Cream,ML,900 ml,DA-07-00002-01,Rich Value Pride Pack 900Ml,0.001300
+TML-L,Tea Macchiato Ice (Lychee) L,Bar,0,ingridient,BB-05-001,Whip Cream,ML,0.9 LITER,DA-07-00002-01,Rich Value Pride Pack 900Ml,0.001300
 TML-L,Tea Macchiato Ice (Lychee) L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 TML-L,Tea Macchiato Ice (Lychee) L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 TML-L,Tea Macchiato Ice (Lychee) L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
@@ -314,7 +314,7 @@ TMM-L,Tea Macchiato Ice (Mango) L,Bar,0,ingridient,BB-07-007,Powder Black Tea,KG
 TMM-L,Tea Macchiato Ice (Mango) L,Bar,0,ingridient,BB-07-004,Concentrad Mango,KG,7 Kg,SI-04-000001-01,Concentrated Mango NIP Jirigen 7 Kg,0.005714
 TMM-L,Tea Macchiato Ice (Mango) L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.013333
 TMM-L,Tea Macchiato Ice (Mango) L,Bar,0,ingridient,BB-07-009,Powder Cheese Foam,KG,1 Kg,DA-07-00014-01,Foam Cheese Manis NIP Pack 1 Kg,0.005625
-TMM-L,Tea Macchiato Ice (Mango) L,Bar,0,ingridient,BB-05-001,Whip Cream,ML,900 ml,DA-07-00002-01,Rich Value Pride Pack 900Ml,0.001300
+TMM-L,Tea Macchiato Ice (Mango) L,Bar,0,ingridient,BB-05-001,Whip Cream,ML,0.9 LITER,DA-07-00002-01,Rich Value Pride Pack 900Ml,0.001300
 TMM-L,Tea Macchiato Ice (Mango) L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 TMM-L,Tea Macchiato Ice (Mango) L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 TMM-L,Tea Macchiato Ice (Mango) L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
@@ -323,7 +323,7 @@ TMP-L,Tea Macchiato Ice (Peach) L,Bar,0,ingridient,BB-07-007,Powder Black Tea,KG
 TMP-L,Tea Macchiato Ice (Peach) L,Bar,0,ingridient,BB-07-006,Sirup Peach,LITER,1 Liter,SI-03-000002-01,Sirup Peach Delifru Pack 1 Liter,0.030000
 TMP-L,Tea Macchiato Ice (Peach) L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.013333
 TMP-L,Tea Macchiato Ice (Peach) L,Bar,0,ingridient,BB-07-009,Powder Cheese Foam,KG,1 Kg,DA-07-00014-01,Foam Cheese Manis NIP Pack 1 Kg,0.005625
-TMP-L,Tea Macchiato Ice (Peach) L,Bar,0,ingridient,BB-05-001,Whip Cream,ML,900 ml,DA-07-00002-01,Rich Value Pride Pack 900Ml,0.001300
+TMP-L,Tea Macchiato Ice (Peach) L,Bar,0,ingridient,BB-05-001,Whip Cream,ML,0.9 LITER,DA-07-00002-01,Rich Value Pride Pack 900Ml,0.001300
 TMP-L,Tea Macchiato Ice (Peach) L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 TMP-L,Tea Macchiato Ice (Peach) L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 TMP-L,Tea Macchiato Ice (Peach) L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
@@ -358,7 +358,7 @@ FT-L,Black Tea Frappe Ice L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-0
 FT-L,Black Tea Frappe Ice L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 FT-L,Black Tea Frappe Ice L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 FT-L,Black Tea Frappe Ice L,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
-KL-R,Klepon Brown Sugar Boba R,Bar,0,ingridient,BB-99-001,Powder Klepon,GR,800gr,PO-02-00009-01,Powder Frappe Klepon Toffin Pack 1 Kg,0.015000
+KL-R,Klepon Brown Sugar Boba R,Bar,0,ingridient,BB-99-001,Powder Klepon,GR,0.8 Kg,PO-02-00009-01,Powder Frappe Klepon Toffin Pack 1 Kg,0.015000
 KL-R,Klepon Brown Sugar Boba R,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.070000
 KL-R,Klepon Brown Sugar Boba R,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.003636
 KL-R,Klepon Brown Sugar Boba R,Bar,0,ingridient,BB-16-001,Tapioca Pearl,KG,1 Kg,DA-07-00006-01,Boba Boba King Pack 1 Kg,0.027273
@@ -367,7 +367,7 @@ KL-R,Klepon Brown Sugar Boba R,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-0000
 KL-R,Klepon Brown Sugar Boba R,Bar,0,package,PA-04-003,Cup PP SA 12 oz,PCS,1200 Pcs,PA-01-00001-01,Cup PP SA 12 oz Hansupack,1.000000
 KL-R,Klepon Brown Sugar Boba R,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 KL-R,Klepon Brown Sugar Boba R,Bar,0,package,PA-04-005,Sedotan Ungu 12 mm,PCS,200 Pcs,PA-01-00008-01,Sedotan Ungu Lancip 15 mm Hansupack,1.000000
-KL-L,Klepon Brown Sugar Boba L,Bar,0,ingridient,BB-99-001,Powder Klepon,GR,800gr,PO-02-00009-01,Powder Frappe Klepon Toffin Pack 1 Kg,0.020000
+KL-L,Klepon Brown Sugar Boba L,Bar,0,ingridient,BB-99-001,Powder Klepon,GR,0.8 Kg,PO-02-00009-01,Powder Frappe Klepon Toffin Pack 1 Kg,0.020000
 KL-L,Klepon Brown Sugar Boba L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.100000
 KL-L,Klepon Brown Sugar Boba L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.003636
 KL-L,Klepon Brown Sugar Boba L,Bar,0,ingridient,BB-16-001,Tapioca Pearl,KG,1 Kg,DA-07-00006-01,Boba Boba King Pack 1 Kg,0.027273
@@ -384,19 +384,19 @@ VR-L,Caffe` Vanilla Rum L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,
 VR-L,Caffe` Vanilla Rum L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 VR-L,Caffe` Vanilla Rum L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 VR-L,Caffe` Vanilla Rum L,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
-CC-R,Cotton Candy Latte Ice R,Bar,0,ingridient,BB-13-002,Powder Cotton Candy,GR,800gr,PO-02-00003-01,Powder Cotton Candy Toffin Pack 800 Gram,0.025000
+CC-R,Cotton Candy Latte Ice R,Bar,0,ingridient,BB-13-002,Powder Cotton Candy,GR,0.8 Kg,PO-02-00003-01,Powder Cotton Candy Toffin Pack 800 Gram,0.025000
 CC-R,Cotton Candy Latte Ice R,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.026667
 CC-R,Cotton Candy Latte Ice R,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.068400
-CC-R,Cotton Candy Latte Ice R,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,430gr,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.120000
+CC-R,Cotton Candy Latte Ice R,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,0.43 Kg,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.120000
 CC-R,Cotton Candy Latte Ice R,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.009500
 CC-R,Cotton Candy Latte Ice R,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 CC-R,Cotton Candy Latte Ice R,Bar,0,package,PA-04-003,Cup PP SA 12 oz,PCS,1200 Pcs,PA-01-00001-01,Cup PP SA 12 oz Hansupack,1.000000
 CC-R,Cotton Candy Latte Ice R,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 CC-R,Cotton Candy Latte Ice R,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
-CC-L,Cotton Candy Latte Ice L,Bar,0,ingridient,BB-13-002,Powder Cotton Candy,GR,800gr,PO-02-00003-01,Powder Cotton Candy Toffin Pack 800 Gram,0.037500
+CC-L,Cotton Candy Latte Ice L,Bar,0,ingridient,BB-13-002,Powder Cotton Candy,GR,0.8 Kg,PO-02-00003-01,Powder Cotton Candy Toffin Pack 800 Gram,0.037500
 CC-L,Cotton Candy Latte Ice L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.040000
 CC-L,Cotton Candy Latte Ice L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.140000
-CC-L,Cotton Candy Latte Ice L,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,430gr,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.150000
+CC-L,Cotton Candy Latte Ice L,Bar,0,ingridient,BB-03-001,Susu Evaporasi,GR,0.43 Kg,DA-01-00002-01,Susu Evaporasi F&N Kaleng 430 Gram,0.150000
 CC-L,Cotton Candy Latte Ice L,Bar,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.012670
 CC-L,Cotton Candy Latte Ice L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 CC-L,Cotton Candy Latte Ice L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
@@ -416,7 +416,7 @@ CBR-L,Coffee Boba Brown Sugar Brulee L,Bar,0,ingridient,BB-16-001,Tapioca Pearl,
 CBR-L,Coffee Boba Brown Sugar Brulee L,Bar,0,ingridient,BB-99-004,Brown sugar,KG,6 Kg,SI-04-000005-01,Brown Sugar Regular NIP Jirigen 7 Kg,0.014286
 CBR-L,Coffee Boba Brown Sugar Brulee L,Bar,0,ingridient,BB-07-002,Sirup Brown Sugar,KG,1 Kg,SI-04-000003-01,Sirup Okinawa Brown Sugar NIP Botol 1 Kg,0.015000
 CBR-L,Coffee Boba Brown Sugar Brulee L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.012000
-CBR-L,Coffee Boba Brown Sugar Brulee L,Bar,0,ingridient,BB-99-002,Powder Palm Sugar,MG,1 Mg,PO-01-00006-01,Palm Sugar Bubuk Dellifru Pack 1 Kg,0.010000
+CBR-L,Coffee Boba Brown Sugar Brulee L,Bar,0,ingridient,BB-99-002,Powder Palm Sugar,MG,1 Kg,PO-01-00006-01,Palm Sugar Bubuk Dellifru Pack 1 Kg,0.010000
 CBR-L,Coffee Boba Brown Sugar Brulee L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 CBR-L,Coffee Boba Brown Sugar Brulee L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 CBR-L,Coffee Boba Brown Sugar Brulee L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
@@ -427,7 +427,7 @@ BR-L,Boba Brown Sugar Macchiato Brulee L,Bar,0,ingridient,BB-16-001,Tapioca Pear
 BR-L,Boba Brown Sugar Macchiato Brulee L,Bar,0,ingridient,BB-99-004,Brown sugar,KG,6 Kg,SI-04-000005-01,Brown Sugar Regular NIP Jirigen 7 Kg,0.014286
 BR-L,Boba Brown Sugar Macchiato Brulee L,Bar,0,ingridient,BB-07-002,Sirup Brown Sugar,KG,1 Kg,SI-04-000003-01,Sirup Okinawa Brown Sugar NIP Botol 1 Kg,0.015000
 BR-L,Boba Brown Sugar Macchiato Brulee L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.014000
-BR-L,Boba Brown Sugar Macchiato Brulee L,Bar,0,ingridient,BB-99-002,Powder Palm Sugar,MG,1 Mg,PO-01-00006-01,Palm Sugar Bubuk Dellifru Pack 1 Kg,0.010000
+BR-L,Boba Brown Sugar Macchiato Brulee L,Bar,0,ingridient,BB-99-002,Powder Palm Sugar,MG,1 Kg,PO-01-00006-01,Palm Sugar Bubuk Dellifru Pack 1 Kg,0.010000
 BR-L,Boba Brown Sugar Macchiato Brulee L,Bar,0,ingridient,BB-07-009,Powder Cheese Foam,KG,1 Kg,DA-07-00014-01,Foam Cheese Manis NIP Pack 1 Kg,0.015000
 BR-L,Boba Brown Sugar Macchiato Brulee L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 BR-L,Boba Brown Sugar Macchiato Brulee L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
@@ -482,19 +482,19 @@ SC-H,Signature Dark Chocolate Hot,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 K
 SC-H,Signature Dark Chocolate Hot,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.200000
 SC-H,Signature Dark Chocolate Hot,Bar,0,package,PA-04-001,Cup Hot + Lid 12 oz,PCS,1000 Pcs,PA-01-00006-01,Paper Cup Hot + Lid 12 oz Hansupack,1.000000
 SC-H,Signature Dark Chocolate Hot,Bar,0,package,PA-04-006,Sedotan Ungu Pipih,PCS,200 Pcs,PA-01-00003-01,Sedotan Pipih Ungu Hansupack,1.000000
-JC-R,Java Chip Ice R,Bar,0,ingridient,BB-13-003,Powder Java Chips,GR,800gr,PO-02-00002-01,Powder Java Chips Toffin Pack 800 Gram,0.025000
+JC-R,Java Chip Ice R,Bar,0,ingridient,BB-13-003,Powder Java Chips,GR,0.8 Kg,PO-02-00002-01,Powder Java Chips Toffin Pack 800 Gram,0.025000
 JC-R,Java Chip Ice R,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.026667
 JC-R,Java Chip Ice R,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.140000
 JC-R,Java Chip Ice R,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
-JC-R,Java Chip Ice R,Bar,0,ingridient,BB-99-006,Choco Chip,GRAM,500 Gram,DA-07-00004-01,Choco Chip Pack 500 Gram,0.005000
+JC-R,Java Chip Ice R,Bar,0,ingridient,BB-99-006,Choco Chip,GRAM,0.5 Kg,DA-07-00004-01,Choco Chip Pack 500 Gram,0.005000
 JC-R,Java Chip Ice R,Bar,0,package,PA-04-003,Cup PP SA 12 oz,PCS,1200 Pcs,PA-01-00001-01,Cup PP SA 12 oz Hansupack,1.000000
 JC-R,Java Chip Ice R,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 JC-R,Java Chip Ice R,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
-JC-L,Java Chip Ice L,Bar,0,ingridient,BB-13-003,Powder Java Chips,GR,800gr,PO-02-00002-01,Powder Java Chips Toffin Pack 800 Gram,0.037500
+JC-L,Java Chip Ice L,Bar,0,ingridient,BB-13-003,Powder Java Chips,GR,0.8 Kg,PO-02-00002-01,Powder Java Chips Toffin Pack 800 Gram,0.037500
 JC-L,Java Chip Ice L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.026667
 JC-L,Java Chip Ice L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.180000
 JC-L,Java Chip Ice L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
-JC-L,Java Chip Ice L,Bar,0,ingridient,BB-99-006,Choco Chip,GRAM,500 Gram,DA-07-00004-01,Choco Chip Pack 500 Gram,0.005000
+JC-L,Java Chip Ice L,Bar,0,ingridient,BB-99-006,Choco Chip,GRAM,0.5 Kg,DA-07-00004-01,Choco Chip Pack 500 Gram,0.005000
 JC-L,Java Chip Ice L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 JC-L,Java Chip Ice L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 JC-L,Java Chip Ice L,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
@@ -525,27 +525,27 @@ CB-L,Choco Banana Ice L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01
 CB-L,Choco Banana Ice L,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
 CT-R,Chocochip Tiramisu Ice R,Bar,0,ingridient,BB-07-008,Powder Cocoa,KG,1 Kg,PO-01-00001-01,Powder Cocoa NIP Pack 1 Kg,0.008000
 CT-R,Chocochip Tiramisu Ice R,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.024000
-CT-R,Chocochip Tiramisu Ice R,Bar,0,ingridient,BB-12-003,Sirup Tiramisu,ML,760 Ml,SI-02-000004-01,Sirup Tiramisu Drip Syrup Botol 760 Ml,0.023684
+CT-R,Chocochip Tiramisu Ice R,Bar,0,ingridient,BB-12-003,Sirup Tiramisu,ML,0.76 LITER,SI-02-000004-01,Sirup Tiramisu Drip Syrup Botol 760 Ml,0.023684
 CT-R,Chocochip Tiramisu Ice R,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.120000
-CT-R,Chocochip Tiramisu Ice R,Bar,0,ingridient,BB-99-006,Choco Chip,GRAM,500 Gram,DA-07-00004-01,Choco Chip Pack 500 Gram,0.005000
+CT-R,Chocochip Tiramisu Ice R,Bar,0,ingridient,BB-99-006,Choco Chip,GRAM,0.5 Kg,DA-07-00004-01,Choco Chip Pack 500 Gram,0.005000
 CT-R,Chocochip Tiramisu Ice R,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 CT-R,Chocochip Tiramisu Ice R,Bar,0,package,PA-04-003,Cup PP SA 12 oz,PCS,1200 Pcs,PA-01-00001-01,Cup PP SA 12 oz Hansupack,1.000000
 CT-R,Chocochip Tiramisu Ice R,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 CT-R,Chocochip Tiramisu Ice R,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
 CT-L,Chocochip Tiramisu Ice L,Bar,0,ingridient,BB-07-008,Powder Cocoa,KG,1 Kg,PO-01-00001-01,Powder Cocoa NIP Pack 1 Kg,0.010000
 CT-L,Chocochip Tiramisu Ice L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.026667
-CT-L,Chocochip Tiramisu Ice L,Bar,0,ingridient,BB-12-003,Sirup Tiramisu,ML,760 Ml,SI-02-000004-01,Sirup Tiramisu Drip Syrup Botol 760 Ml,0.032895
+CT-L,Chocochip Tiramisu Ice L,Bar,0,ingridient,BB-12-003,Sirup Tiramisu,ML,0.76 LITER,SI-02-000004-01,Sirup Tiramisu Drip Syrup Botol 760 Ml,0.032895
 CT-L,Chocochip Tiramisu Ice L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.150000
-CT-L,Chocochip Tiramisu Ice L,Bar,0,ingridient,BB-99-006,Choco Chip,GRAM,500 Gram,DA-07-00004-01,Choco Chip Pack 500 Gram,0.005000
+CT-L,Chocochip Tiramisu Ice L,Bar,0,ingridient,BB-99-006,Choco Chip,GRAM,0.5 Kg,DA-07-00004-01,Choco Chip Pack 500 Gram,0.005000
 CT-L,Chocochip Tiramisu Ice L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 CT-L,Chocochip Tiramisu Ice L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 CT-L,Chocochip Tiramisu Ice L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 CT-L,Chocochip Tiramisu Ice L,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
-FJC-L,Java Chip Frappe Ice L,Bar,0,ingridient,BB-13-003,Powder Java Chips,GR,800gr,PO-02-00002-01,Powder Java Chips Toffin Pack 800 Gram,0.037500
+FJC-L,Java Chip Frappe Ice L,Bar,0,ingridient,BB-13-003,Powder Java Chips,GR,0.8 Kg,PO-02-00002-01,Powder Java Chips Toffin Pack 800 Gram,0.037500
 FJC-L,Java Chip Frappe Ice L,Bar,0,ingridient,BB-07-001,Simpel Sirup,KG,6 Kg,SI-01-000001-01,Sirup Simple Toffin Botol 750 Ml,0.026667
 FJC-L,Java Chip Frappe Ice L,Bar,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.180000
 FJC-L,Java Chip Frappe Ice L,Bar,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
-FJC-L,Java Chip Frappe Ice L,Bar,0,ingridient,BB-99-006,Choco Chip,GRAM,500 Gram,DA-07-00004-01,Choco Chip Pack 500 Gram,0.005000
+FJC-L,Java Chip Frappe Ice L,Bar,0,ingridient,BB-99-006,Choco Chip,GRAM,0.5 Kg,DA-07-00004-01,Choco Chip Pack 500 Gram,0.005000
 FJC-L,Java Chip Frappe Ice L,Bar,0,package,PA-04-002,Cup PP SA 16 oz,PCS,1200 Pcs,PA-01-00002-01,Cup PP SA 16 oz Hansupack,1.000000
 FJC-L,Java Chip Frappe Ice L,Bar,0,package,PA-06-001,Plastik Cup Sealer,M,150 M,PA-01-00010-01,Plastik Cup Sealer Roll 150 M,0.001300
 FJC-L,Java Chip Frappe Ice L,Bar,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
@@ -956,7 +956,7 @@ KSNJ-L,Kopi Susu Nakoa  With Coffee Jelly - L,Pantry,0,package,PA-04-004,Sedotan
 KSNJ-L,Kopi Susu Nakoa  With Coffee Jelly - L,Pantry,0,ingridient,BB-16-002,Coffee Jelly,KG,2 Kg,DA-07-00001-01,Coffee Jelly NIP Jar 3.2 Kg,0.015630
 KSNJ-L,Kopi Susu Nakoa  With Coffee Jelly - L,Pantry,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
 KSNJ-L,Kopi Susu Nakoa  With Coffee Jelly - L,Pantry,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.120000
-KSNJ-L,Kopi Susu Nakoa  With Coffee Jelly - L,Pantry,0,ingridient,BB-04-001,SKM,GR,495gr,DA-01-00006-01,Krimer Carnation Putih Kaleng 495 Gram,0.101000
+KSNJ-L,Kopi Susu Nakoa  With Coffee Jelly - L,Pantry,0,ingridient,BB-04-001,SKM,GR,0.495 Kg,DA-01-00006-01,Krimer Carnation Putih Kaleng 495 Gram,0.101000
 KSNJ-L,Kopi Susu Nakoa  With Coffee Jelly - L,Pantry,0,item,DA-01-00007-01, Carnation Coffeemate Kaleng 495 Gram,PC,PC,DA-01-00007-01, Carnation Coffeemate Kaleng 495 Gram,0.012670
 KSNJ-R,Kopi Susu Nakoa  With Coffee Jelly - R,Pantry,0,package,PA-04-003,Cup PP SA 12 oz,PCS,1200 Pcs,PA-01-00001-01,Cup PP SA 12 oz Hansupack,1.000000
 KSNJ-R,Kopi Susu Nakoa  With Coffee Jelly - R,Pantry,0,package,PA-04-004,Sedotan Ungu 6 mm,PCS,500 Pcs,PA-01-00007-01,Sedotan Ungu Lancip 6 mm Hansupack,1.000000
@@ -964,7 +964,7 @@ KSNJ-R,Kopi Susu Nakoa  With Coffee Jelly - R,Pantry,0,ingridient,BB-16-002,Coff
 KSNJ-R,Kopi Susu Nakoa  With Coffee Jelly - R,Pantry,0,ingridient,BB-01-001,Kopi,KG,1 Kg,DA-02-00001-01,Coffee Bean Roasted House Blend CV Arera Pack 1 Kg,0.009500
 KSNJ-R,Kopi Susu Nakoa  With Coffee Jelly - R,Pantry,0,ingridient,BB-02-001,Susu,LITER,1 Liter,DA-01-00001-01,Susu GreenField ESL Pack 1 Liter,0.100000
 KSNJ-R,Kopi Susu Nakoa  With Coffee Jelly - R,Pantry,0,ingridient,BB-10-001,Es,KG,10 Kg,DA-06-00001-01,Es Tube Sedang Pack,0.040000
-KSNJ-R,Kopi Susu Nakoa  With Coffee Jelly - R,Pantry,0,ingridient,BB-04-001,SKM,GR,495gr,DA-01-00006-01,Krimer Carnation Putih Kaleng 495 Gram,0.060000
+KSNJ-R,Kopi Susu Nakoa  With Coffee Jelly - R,Pantry,0,ingridient,BB-04-001,SKM,GR,0.495 Kg,DA-01-00006-01,Krimer Carnation Putih Kaleng 495 Gram,0.060000
 F-91,Strawberry Donut,Pantry,0,item,FO-01-00091-01,Strawberry Donut,PC,PC,FO-01-00091-01,Strawberry Donut,1.000000
 F-91,Strawberry Donut,Pantry,0,package,PA-01-001,Food Tray,PCS,500 pcs,PA-02-00001-01,Food Tray Eco Pack,1.000000
 F-91,Strawberry Donut,Pantry,0,package,PA-03-002,Garpu,PCS,50 Pcs,PA-02-00007-01,Garpu Suapi Pcs,1.000000

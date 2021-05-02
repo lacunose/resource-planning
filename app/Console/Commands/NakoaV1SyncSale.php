@@ -98,8 +98,12 @@ class NakoaV1SyncSale extends Command
                 $rscs[$all_row['item_code']]    = $all_row;
             }
         }
-        $scls = ['KG' => ['UNIT' => 'GRAM', 'RATIO' => 1000], 'LITER' => ['UNIT' => 'ML', 'RATIO' => 1000]];
-        $keys = ['KG', 'LITER'];
+        $scls = [
+            'KG'    => ['UNIT' => 'GRAM', 'RATIO' => 1000], 
+            'LITER' => ['UNIT' => 'ML', 'RATIO' => 1000],
+            'M'     => ['UNIT' => 'MM', 'RATIO' => 1000],
+        ];
+        $keys = ['KG', 'LITER', 'M'];
 
         $goods  = DB::connection('nakoa1')->table('APP_product_item')->get();
         foreach ($goods as $good) {
