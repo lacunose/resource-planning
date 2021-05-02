@@ -82,7 +82,7 @@ class NakoaV1SyncSale extends Command
         $recs   = [];
         $rscs   = [];
 
-        if (($handle = fopen('\www\xnakoa\storage\app\recipe.csv', 'r')) !== FALSE) 
+        if (($handle = fopen('/www/xnakoa/storage/app/recipe.csv', 'r')) !== FALSE) 
         {
             $header         = null;
 
