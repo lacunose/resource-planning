@@ -57,6 +57,10 @@ return [
                 'voided'    => 'Dibatalkan',
             ],
         ],
+        'timer'     => [
+            'packing'   => 'Pengemasan',
+            'shipped'   => 'Pengiriman',
+        ],
     ],
     'opsi'      => [
         'method'        => [
