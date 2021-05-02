@@ -49,9 +49,9 @@ return [
         ],
         'step'          => [
             'created'   => 'Baru',
-            'updated'   => 'Edit',
+            'updated'   => 'Update',
             'confirmed' => 'Konfirmasi',
-            'delivered' => 'Dikirim',
+            'delivered' => 'Diterima',
             'paid'      => 'Dibayar',
             'returned'  => 'Dikembalikan (retur)',
             'closed'    => 'Selesai',
@@ -101,11 +101,11 @@ return [
         'event' => [
             'opened'        => [
                 'created'   => 'Baru',
-                'updated'   => 'Edit',
+                'updated'   => 'Update',
             ],
             'processed'     => [
                 'confirmed' => 'Dikonfirmasi',
-                'delivered' => 'Dikirim',
+                'delivered' => 'Diterima',
                 'paid'      => 'Dibayar',
                 'returned'  => 'Dikembalikan (retur)',
             ],
