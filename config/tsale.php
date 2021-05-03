@@ -132,10 +132,10 @@ return [
         ],
         'tax'               => [
             // 'PPN'           => 10,
-            'PB1'           => 10,
+            // 'PB1'           => 10,
         ],
         'service'           => [
-            'Charge'       => 10,
+            // 'Charge'       => 10,
             // 'Pengiriman'    => 0,
         ],
         'deposit'           => [
