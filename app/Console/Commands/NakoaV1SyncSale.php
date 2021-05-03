@@ -135,7 +135,7 @@ class NakoaV1SyncSale extends Command
 
             try {
                 DB::beginTransaction();
-                if(!$prod){
+                if(!$prod) {
                     $dt = GoodAggregateRoot::retrieve($id)->save($input, [])->publish(now())->persist();
                 }
                 DB::commit();
@@ -152,7 +152,7 @@ class NakoaV1SyncSale extends Command
         $recs       = [];
         foreach ($items as $item) {
             $code   = explode('-', $item->code);
-            if(isset($code[1])) {
+            if(isset($code[1]) && !in_array(strtolower($item->category), ['food', 'extra'])) {
                 $var    = explode(' R', $item->name);
                 $vn     = 'Ice R';
                 if(!isset($var[1])) {
