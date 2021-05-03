@@ -118,11 +118,11 @@ class NakoaV1SyncSale extends Command
                 $record['cogs']     = 0;
                 $record['qty']      = (isset($rscs[$item->code]) && in_array($rscs[$item->code]['resource_unit'], $keys)) ? 
                     ($scls[$rscs[$item->code]['resource_unit']]['RATIO'] * $good->qty) : $good->qty;
-                $record['resource_code'] = $rscs[$item->code]['resource_code'];
-                $record['resource_name'] = $rscs[$item->code]['resource_name'];
+                $record['resource_code'] = isset($rscs[$item->code]) ? $rscs[$item->code]['resource_code'] : $item->code;
+                $record['resource_name'] = isset($rscs[$item->code]) ? $rscs[$item->code]['resource_name'] : $item->name;
                 $record['resource_unit'] = (isset($rscs[$item->code]) && in_array($rscs[$item->code]['resource_unit'], $keys)) ? 
-                    $scls[$rscs[$item->code]['resource_unit']]['UNIT'] : $rscs[$item->code]['resource_unit'];
-                $record['resource_type'] = $rscs[$item->code]['resource_type'];
+                    $scls[$rscs[$item->code]['resource_unit']]['UNIT'] : (isset($rscs[$item->code]) ? $rscs[$item->code]['resource_unit'] : $item->unit);
+                $record['resource_type'] = (isset($rscs[$item->code]) ? $rscs[$item->code]['resource_type'] : 'item';
                 
                 $recs   = $this->batch_good($recs, $record); 
             }
