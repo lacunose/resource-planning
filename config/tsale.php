@@ -47,6 +47,17 @@ return [
             'service'           => 'Layanan',
             'tax'               => 'Pajak',
         ],
+        'step'          => [
+            'created'   => 'Baru',
+            'updated'   => 'Update',
+            'reopend'   => 'Diulang',
+            'confirmed' => 'Konfirmasi',
+            'delivered' => 'Diterima',
+            'paid'      => 'Dibayar',
+            'returned'  => 'Dikembalikan (retur)',
+            'closed'    => 'Selesai',
+            'voided'    => 'Dibatalkan',
+        ],
     ],
     'opsi'      => [
         'period'            => [
@@ -87,6 +98,21 @@ return [
                 'paid'          => 'Dibayar',
                 'returned'      => 'Dikembalikan (retur)',
             ],
+        ],
+        'event' => [
+            'opened'        => [
+                'created'   => 'Baru',
+                'updated'   => 'Update',
+                'reopend'   => 'Diulang',
+            ],
+            'processed'     => [
+                'confirmed' => 'Dikonfirmasi',
+                'delivered' => 'Diterima',
+                'paid'      => 'Dibayar',
+                'returned'  => 'Dikembalikan (retur)',
+            ],
+            'closed'        => [],
+            'voided'        => [],
         ],
         'marketplace'       => [
             'pos'           => 'POS',

@@ -57,6 +57,11 @@ return [
                 'voided'    => 'Dibatalkan',
             ],
         ],
+        'timer'     => [
+            'unpacking' => 'Sortir',
+            'packing'   => 'Pengemasan',
+            'shipped'   => 'Pengiriman',
+        ],
     ],
     'opsi'      => [
         'method'        => [
@@ -118,7 +123,7 @@ return [
         ],
     ],
     'default'   => [
-        'stock'     => ['owner' => 'default'],
+        'stock'     => ['owner' => 'nakoa'],
     ],
     'setting'   => [
         'document_batch'=> ['inhouse', 'masuk', 'keluar'],
