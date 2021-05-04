@@ -58,6 +58,7 @@ return [
             ],
         ],
         'timer'     => [
+            'unpacking' => 'Sortir',
             'packing'   => 'Pengemasan',
             'shipped'   => 'Pengiriman',
         ],
