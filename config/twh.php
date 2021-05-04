@@ -77,6 +77,7 @@ return [
             ],
             'keluar'    => [
                 'delivery_order'    => 'Delivery Order',
+                'dispatch_note'     => 'Dispatch Note',
                 'store_requisition' => 'Store Requisition',
                 'procure_returned'  => 'Procure Returned',
             ],
