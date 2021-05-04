@@ -50,6 +50,7 @@ return [
         'step'          => [
             'created'   => 'Baru',
             'updated'   => 'Update',
+            'reopend'   => 'Diulang',
             'confirmed' => 'Konfirmasi',
             'delivered' => 'Diterima',
             'paid'      => 'Dibayar',
@@ -102,6 +103,7 @@ return [
             'opened'        => [
                 'created'   => 'Baru',
                 'updated'   => 'Update',
+                'reopend'   => 'Diulang',
             ],
             'processed'     => [
                 'confirmed' => 'Dikonfirmasi',
