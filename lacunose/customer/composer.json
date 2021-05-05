@@ -1,0 +1,65 @@
+{
+    "name": "lacunose/customer",
+    "description": "lacunose customer designed for accounting department.",
+    "type": "library",
+    "keywords": [
+        "customer",
+        "accounting"
+    ],
+    "license": "MIT",
+    "homepage": "https://thunderlab.id",
+    "support": {
+        "email": "chelsy@thunderlab.id",
+        "issues": "https://github.com/lacunose/customer/issues",
+        "source": "https://github.com/lacunose/customer",
+        "docs": "https://github.com/lacunose/customer/blob/master/README.md"
+    },
+    "authors": [
+        {
+            "name": "Chelsy",
+            "homepage": "https://thunderlab.id",
+            "email": "chelsy@thunderlab.id"
+        }
+    ],
+    "require": {
+        "php": "^7.4.0",
+        "illuminate/console": "^7.0.0",
+        "illuminate/database": "^7.0.0",
+        "illuminate/support": "^7.0.0",
+        "spatie/laravel-event-sourcing": "^4.5"
+    },
+    "require-dev": {
+        "illuminate/container": "^7.0.0",
+        "phpunit/phpunit": "^9.0.0"
+    },
+    "autoload": {
+        "classmap": [
+            "database"
+        ],
+        "psr-4": {
+            "Lacunose\\Customer\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lacunose\\Customer\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-programs": true,
+        "preferred-install": "dist",
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lacunose\\Customer\\Providers\\CustomerServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

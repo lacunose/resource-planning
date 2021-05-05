@@ -1,0 +1,27 @@
+[submodule "lacunose/acl"]
+	path = lacunose/acl
+	url = https://github.com/lacunose/acl
+[submodule "lacunose/finance"]
+	path = lacunose/finance
+	url = https://github.com/lacunose/finance
+[submodule "lacunose/warehouse"]
+	path = lacunose/warehouse
+	url = https://github.com/lacunose/warehouse
+[submodule "lacunose/sale"]
+	path = lacunose/sale
+	url = https://github.com/lacunose/sale
+[submodule "lacunose/procure"]
+	path = lacunose/procure
+	url = https://github.com/lacunose/procure
+[submodule "lacunose/customer"]
+	path = lacunose/customer
+	url = https://github.com/lacunose/customer
+[submodule "lacunose/swirl"]
+	path = lacunose/swirl
+	url = https://github.com/lacunose/swirl
+[submodule "lacunose/subscribe"]
+	path = lacunose/subscribe
+	url = https://github.com/lacunose/subscribe
+[submodule "lacunose/manufacture"]
+	path = lacunose/manufacture
+	url = https://github.com/lacunose/manufacture
