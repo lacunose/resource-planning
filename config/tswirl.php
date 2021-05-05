@@ -60,4 +60,5 @@ return [
 			'stock_overlap'	=> 'Stok Rebutan',
 		]
 	],
+	'setting'	=> ['business'		=> 'vernon'],
 ];
