@@ -71,9 +71,10 @@ return [
         ],
         'type'          => [
             'masuk'     => [
-                'receiving'     => 'Receiving',
+                'receive_note'  => 'Receive Note',
                 'restock_order' => 'Restock Order',
                 'sales_returned'=> 'Sales Returned',
+                'usage_note'    => 'Usage Note',
             ],
             'keluar'    => [
                 'delivery_order'    => 'Delivery Order',
