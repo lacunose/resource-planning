@@ -22,6 +22,17 @@ return [
             'closed'    => 'Selesai',
             'voided'    => 'Dibatalkan',
         ],
+        'step'          => [
+            'created'   => 'Baru',
+            'updated'   => 'Update',
+            'reopened'  => 'Diulang',
+            'confirmed' => 'Konfirmasi',
+            'delivered' => 'Diterima',
+            'paid'      => 'Dibayar',
+            'returned'  => 'Dikembalikan (retur)',
+            'closed'    => 'Selesai',
+            'voided'    => 'Dibatalkan',
+        ],
     ],
     'opsi'  => [
         'period'    => [
@@ -45,6 +56,21 @@ return [
                 'paid'          => 'Dibayar',
                 'returned'      => 'Dikembalikan (retur)',
             ],
+        ],
+        'event' => [
+            'opened'        => [
+                'created'   => 'Baru',
+                'updated'   => 'Update',
+                'reopened'  => 'Diulang',
+            ],
+            'processed'     => [
+                'confirmed' => 'Dikonfirmasi',
+                'delivered' => 'Diterima',
+                'paid'      => 'Dibayar',
+                'returned'  => 'Dikembalikan (retur)',
+            ],
+            'closed'        => [],
+            'voided'        => [],
         ],
         'mode'          => [
             'pembelian'     => 'Pembelian',

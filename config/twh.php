@@ -58,6 +58,7 @@ return [
             ],
         ],
         'timer'     => [
+            'unpacking' => 'Sortir',
             'packing'   => 'Pengemasan',
             'shipped'   => 'Pengiriman',
         ],
@@ -70,12 +71,14 @@ return [
         ],
         'type'          => [
             'masuk'     => [
-                'receiving'     => 'Receiving',
+                'receive_note'  => 'Receive Note',
                 'restock_order' => 'Restock Order',
                 'sales_returned'=> 'Sales Returned',
+                'usage_note'    => 'Usage Note',
             ],
             'keluar'    => [
                 'delivery_order'    => 'Delivery Order',
+                'dispatch_note'     => 'Dispatch Note',
                 'store_requisition' => 'Store Requisition',
                 'procure_returned'  => 'Procure Returned',
             ],
@@ -122,7 +125,7 @@ return [
         ],
     ],
     'default'   => [
-        'stock'     => ['owner' => 'default'],
+        'stock'     => ['owner' => 'nakoa'],
     ],
     'setting'   => [
         'document_batch'=> ['inhouse', 'masuk', 'keluar'],
