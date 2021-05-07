@@ -50,8 +50,8 @@ class NakoaV1SyncAccess extends Command
     public function handle() {
         Auth::loginUsingId(2);
 
-        // $website    = 'nakoa.localhost';
-        $website     = 'basilx.nakoa.id';
+        // $website    = 'nakoa2.localhost';
+        $website     = 'x.nakoa.id';
 
         $blists     = [];
             
@@ -63,9 +63,17 @@ class NakoaV1SyncAccess extends Command
     }
 
     private function set_endpoint($website) {
+        $inp0  = [
+            'website'   => $website,
+            'roles'     => ['tproc.opsi.branch'],
+            'name'      => 'HOLDING',
+            'phone'     => '',
+            'address'   => 'Vernon Office',
+        ];
+
         $inp1  = [
             'website'   => $website,
-            'roles'     => array_keys(config()->get('tacl.opsi.role')),
+            'roles'     => ['tsale.opsi.outlet', 'twh.opsi.warehouse', 'tproc.opsi.branch'],
             'name'      => 'MLG01',
             'phone'     => '',
             'address'   => 'Jl Bondowoso 14, KOTA MALANG JAWA TIMUR, INDONESIA',
@@ -73,22 +81,37 @@ class NakoaV1SyncAccess extends Command
 
         $inp2  = [
             'website'   => $website,
-            'roles'     => array_keys(config()->get('tacl.opsi.role')),
+            'roles'     => ['tsale.opsi.outlet', 'twh.opsi.warehouse', 'tproc.opsi.branch'],
             'name'      => 'MLG02',
             'phone'     => '',
             'address'   => 'Jl MT Haryono 116, KOTA MALANG JAWA TIMUR, INDONESIA',
         ];
+
+        $inp3  = [
+            'website'   => $website,
+            'roles'     => ['tmf.opsi.station'],
+            'name'      => 'BAR',
+            'phone'     => '',
+            'address'   => '-',
+        ];
         
+        $dt0    = Endpoint::where('website', $website)->where('name', $inp0['name'])->first();
         $dt1    = Endpoint::where('website', $website)->where('name', $inp1['name'])->first();
         $dt2    = Endpoint::where('website', $website)->where('name', $inp2['name'])->first();
+        $dt3    = Endpoint::where('website', $website)->where('name', $inp3['name'])->first();
+
+        $id0    = $dt0 ? $dt0->uuid : (string) Uuid::uuid4();
         $id1    = $dt1 ? $dt1->uuid : (string) Uuid::uuid4();
         $id2    = $dt2 ? $dt2->uuid : (string) Uuid::uuid4();
+        $id3    = $dt3 ? $dt3->uuid : (string) Uuid::uuid4();
         
         try {
             DB::BeginTransaction();
             //1. STORE USER
+            $dt = EndpointAggregateRoot::retrieve($id0)->save($inp0)->persist();
             $dt = EndpointAggregateRoot::retrieve($id1)->save($inp1)->persist();
             $dt = EndpointAggregateRoot::retrieve($id2)->save($inp2)->persist();
+            $dt = EndpointAggregateRoot::retrieve($id3)->save($inp3)->persist();
             //2. GRANT AKSES
 
             DB::commit();
@@ -116,7 +139,8 @@ class NakoaV1SyncAccess extends Command
             'role'      => $role,
             'scopes'    => $scopes,
             'clients'   => array_keys(config()->get('tsub.opsi.client')),
-            'endpoints' => array_column(Endpoint::whereIn('name', ['MLG01', 'MLG02'])->get()->toArray(), 'id'),
+            'endpoints' => array_column(Endpoint::whereIn('name', ['HOLDING', 'MLG01', 'MLG02', 'BAR'])
+                ->get()->toArray(), 'id'),
         ];
 
         try{
@@ -168,7 +192,7 @@ class NakoaV1SyncAccess extends Command
                     'role'      => $role,
                     'scopes'    => $scopes,
                     'clients'   => array_keys(config()->get('tsub.opsi.client')),
-                    'endpoints' => array_column(Endpoint::whereIn('name', ['MLG01', 'MLG02'])->get()->toArray(), 'id'),
+                    'endpoints' => array_column(Endpoint::whereIn('name', ['HOLDING', 'MLG01', 'MLG02', 'BAR'])->get()->toArray(), 'id'),
                 ];
 
                 $id = $nuser ? $nuser->uuid : (string) Uuid::uuid4();

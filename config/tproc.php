@@ -80,7 +80,7 @@ return [
         'flag'          => [
             'misc'      => 'Lainnya',
             'catalog'   => 'Stok',
-            'asset'     => 'Inventaris',
+            // 'asset'     => 'Inventaris',
             // 'deposit'           => 'Deposit',
             // 'tax'               => 'Pajak',
         ],

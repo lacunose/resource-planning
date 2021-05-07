@@ -32,11 +32,22 @@ return [
 		'twh'		=> 'local',
 		'tswirl'	=> 'local',
 	],
+	'queue'			=> [
+		'tacl' 		=> 'database', 
+		'tsub' 		=> 'database',
+		'tcust'		=> 'database',
+		'tfin'		=> 'database',
+		'tmf'		=> 'database',
+		'tproc'		=> 'database',
+		'tsale'		=> 'database',
+		'twh'		=> 'database',
+		'tswirl'	=> 'database',
+	],
     'blacklist'    	=> [
         'host'		=> [
         	'nakoa.id',
 			'member.nakoa.id',
-			'ownerx.nakoa.id',
+			'owner.nakoa.id',
 			'thunder.nakoa.id',
 			'tools.nakoa.id',
 			'pos.nakoa.id',
@@ -60,5 +71,5 @@ return [
 			'stock_overlap'	=> 'Stok Rebutan',
 		]
 	],
-	'setting'	=> ['business'		=> 'vernon'],
+	'setting'	=> ['business'		=> 'nakoa'],
 ];

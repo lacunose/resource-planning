@@ -61,7 +61,24 @@ class NakoaV1SyncProcure extends Command
 
         $this->set_item();
 
-        // $this->restok_from_po();
+        $take   = 100;
+        $ttl    = DB::connection('nakoa1')->table('PURC_documents')->orderby('no', 'asc')->count();
+        $reg    = ProcureOrder::count();
+        $ttl    = min(100, ($ttl - $reg));
+        
+        $start  = $reg/100;
+        $range  = ceil($ttl / $take) - 1;
+
+        foreach (range($start, $range) as $step) {
+            $skip   = $take*$step;
+            $this->info("--------------------------------------------------------");
+            $this->info('FROM '.$skip.' TO '.($skip + $take). ' FROM '.$ttl);
+            $this->info("--------------------------------------------------------");
+            
+            Log::info('FROM '.$skip.' TO '.($skip + $take). ' FROM '.$ttl);
+            
+            $this->set_po($skip, $take);
+        }
     }
 
     private function set_coa() {
@@ -152,8 +169,8 @@ class NakoaV1SyncProcure extends Command
         }
     }
 
-    private function restok_from_po() {
-        $pos        = DB::connection('nakoa1')->table('PURC_documents')->get();
+    private function set_po($skip, $take = 100) {
+        $pos    = DB::connection('nakoa1')->table('PURC_documents')->orderby('no', 'asc')->skip($skip)->take($take)->get();
         foreach ($pos as $po) {
             $npo    = ProcureOrder::where('no', $po->no)->first();
             if(!$npo) {
@@ -266,14 +283,16 @@ class NakoaV1SyncProcure extends Command
 
                         if($item) {
                             $stocks[]   = [
+                                'line_id'       => null,
                                 'item_id'       => $item->id,
                                 'item_code'     => $item->code,
                                 'item_unit'     => $item->unit,
                                 'batch'         => $item->code,
-                                'owner'         => 'nakoa',
+                                'owner'         => 'NAKOA',
                                 'description'   => $ln['name'],
-                                'qty'           => $ln['qty'],
                                 'expired_at'    => null,
+                                'qty'           => $ln['qty'],
+                                'price'         => $ln['total'],
                                 'note'          => '',
                             ];
                         }else{
@@ -286,8 +305,8 @@ class NakoaV1SyncProcure extends Command
                         'no'        => $wh->no,
                         'no_ref'    => $po->no,
                         'cause'     => 'masuk',
-                        'owner'     => 'nakoa',
-                        'type'      => 'receiving',
+                        'owner'     => 'NAKOA',
+                        'type'      => 'receive_note',
                         'warehouse' => $outlet['code'],
                         'date'      => $wh->date,
                         'lines'     => $lines,
@@ -298,7 +317,7 @@ class NakoaV1SyncProcure extends Command
                             'receipt'   => null,
                             'courier'   => null,
                         ],
-                        'receiver'  => [
+                        'recipient' => [
                             'name'      => $outlet['name'],
                             'phone'     => null,
                             'address'   => $outlet['address'].', '.$outlet['city'].'-'.$outlet['province'],
@@ -314,12 +333,11 @@ class NakoaV1SyncProcure extends Command
                     if(in_array($po->status, ['CANCELLED'])) {
                         $dt = ProcureTransactionAggregateRoot::retrieve($id)->create($input)->void('unknown')->persist();
                     }elseif(in_array($po->status, ['RECEIVED', 'PARTIALLY RECEIVED'])) {
-                        $dt = ProcureTransactionAggregateRoot::retrieve($id)->create($input)->process('confirmed')->pay($pay)->persist();
+                        $dt = ProcureTransactionAggregateRoot::retrieve($id)->create($input)->confirm()->pay($pay)->persist();
                         foreach ($inpwh as $inp) {
                             $dwh    = Document::no($po->no)->where('status', 'opened')->first();
                             $id2    = $dwh ? $dwh->uuid : (string) Uuid::uuid4();
-                            $dt     = DocumentAggregateRoot::retrieve($id2)->create($inp)->confirm()->stock($inp['stocks'])->approve()
-                                ->close()->persist();
+                            $dt2    = DocumentAggregateRoot::retrieve($id2)->create($inp)->confirm()->stock($inp['stocks'])->approve()->close()->persist();
                         }
                         $dt = ProcureTransactionAggregateRoot::retrieve($id)->close()->persist();
                     }

@@ -69,20 +69,37 @@ class NakoaV1SyncSale extends Command
     public function handle() {
         Auth::loginUsingId(2);
 
-        $this->set_good();
+        // $this->set_good();
 
         $this->set_catalog();
 
         $this->set_promo();
 
-        // $this->set_sale();
+         $take   = 100;
+        $ttl    = DB::connection('nakoa1')->table('SALES_invoices')->orderby('no', 'asc')->count();
+        $reg    = SaleOrder::count();
+        $ttl    = min(100, ($ttl - $reg));
+        
+        $start  = $reg/100;
+        $range  = ceil($ttl / $take) - 1;
+
+        foreach (range($start, $range) as $step) {
+            $skip   = $take*$step;
+            $this->info("--------------------------------------------------------");
+            $this->info('FROM '.$skip.' TO '.($skip + $take). ' FROM '.$ttl);
+            $this->info("--------------------------------------------------------");
+            
+            Log::info('FROM '.$skip.' TO '.($skip + $take). ' FROM '.$ttl);
+            
+            $this->set_sale($skip, $take);
+        }
     }
 
     private function set_good() {
         $recs   = [];
         $rscs   = [];
 
-        if (($handle = fopen('/www/xnakoa/storage/app/recipe.csv', 'r')) !== FALSE) 
+        if (($handle = fopen(storage_path('app\recipe.csv'), 'r')) !== FALSE) 
         {
             $header         = null;
 
@@ -116,12 +133,10 @@ class NakoaV1SyncSale extends Command
                 $record['station']  = 'BAR';
                 $record['unit']     = 'PORSI';
                 $record['cogs']     = 0;
-                $record['qty']      = (isset($rscs[$item->code]) && in_array($rscs[$item->code]['resource_unit'], $keys)) ? 
-                    ($scls[$rscs[$item->code]['resource_unit']]['RATIO'] * $good->qty) : $good->qty;
+                $record['qty']      = $good->qty;
                 $record['resource_code'] = isset($rscs[$item->code]) ? $rscs[$item->code]['resource_code'] : $item->code;
                 $record['resource_name'] = isset($rscs[$item->code]) ? $rscs[$item->code]['resource_name'] : $item->name;
-                $record['resource_unit'] = (isset($rscs[$item->code]) && in_array($rscs[$item->code]['resource_unit'], $keys)) ? 
-                    $scls[$rscs[$item->code]['resource_unit']]['UNIT'] : (isset($rscs[$item->code]) ? $rscs[$item->code]['resource_unit'] : $item->unit);
+                $record['resource_unit'] = isset($rscs[$item->code]) ? $rscs[$item->code]['resource_code'] : $item->unit;
                 $record['resource_type'] = isset($rscs[$item->code]) ? $rscs[$item->code]['resource_type'] : 'item';
                 
                 $recs   = $this->batch_good($recs, $record); 
@@ -148,21 +163,21 @@ class NakoaV1SyncSale extends Command
     }
 
     private function set_catalog() {
-        $items      = DB::connection('nakoa1')->table('SALES_products')->get();
+        $items      = DB::connection('nakoa1')->table('SALES_products')->orderby('code', 'asc')->get();
         $recs       = [];
         foreach ($items as $item) {
             $code   = explode('-', $item->code);
             if(isset($code[1]) && !in_array(strtolower($item->category), ['food', 'extra'])) {
-                $var    = explode(' R', $item->name);
-                $vn     = 'Ice R';
+                $var    = explode(' Hot', $item->name);
+                $vn     = 'Hot';
                 if(!isset($var[1])) {
-                    $var= explode(' L', $item->name);
+                    $var= explode('Ice L', $item->name);
                     $vn = 'Ice L';
                 }
 
                 if(!isset($var[1])) {
-                    $var= explode(' Hot', $item->name);
-                    $vn = 'Hot';
+                    $var= explode('Ice R', $item->name);
+                    $vn = 'Ice R';
                 }
 
                 $goodp  = Good::where('code', $code[0])->first();
@@ -185,7 +200,7 @@ class NakoaV1SyncSale extends Command
                 ];
                 $recs   = $this->batch_product($recs, $all_row); 
             }else{
-                $goodp  = Good::where('code', $code[0])->first();
+                $goodp  = Good::where('code', $item->code)->first();
 
                 $all_row= [
                     'code'  => $item->code,
@@ -315,8 +330,8 @@ class NakoaV1SyncSale extends Command
         }
     }
 
-    private function set_sale() {
-        $sos        = DB::connection('nakoa1')->table('SALES_invoices')->orderby('updated_at', 'desc')->get();
+    private function set_sale($skip, $take = 100) {
+        $sos        = DB::connection('nakoa1')->table('SALES_invoices')->orderby('no', 'asc')->skip($skip)->take($take)->get();
         foreach ($sos as $so) {
             $nso    = SaleOrder::where('no', $so->no)->first();
             if(!$nso) {
@@ -374,7 +389,7 @@ class NakoaV1SyncSale extends Command
                     'courier'   => 'pickup',
                     'warehouse' => $outlet['code'],
                     'bills'     => $bills,
-                    'shipping'  => [
+                    'recipient' => [
                         'name'      => null,
                         'phone'     => null,
                         'address'   => null,
@@ -382,12 +397,12 @@ class NakoaV1SyncSale extends Command
                         'notes'     => null,
                         'receipt'   => null,
                     ],
-                    'store'     => [
+                    'biller'    => [
                         'name'      => $outlet['name'],
                         'phone'     => null,
                         'address'   => $outlet['address'],
                     ],
-                    'customer'  => [
+                    'payer'     => [
                         'name'      => null,
                         'phone'     => null,
                         'address'   => null,
@@ -411,15 +426,7 @@ class NakoaV1SyncSale extends Command
                     if($so->cancelled_at) {
                         $dt = SaleTransactionAggregateRoot::retrieve($id)->create($input)->void($so->cancel_note)->persist();
                     }else{
-                        $dt = SaleTransactionAggregateRoot::retrieve($id)->create($input)->process('confirmed')->pay($pay)->persist();
-
-                        $docs   = Checker::where('no_ref', $so->no)->get();
-                        foreach ($docs as $doc) {
-                            $ids= array_column(CheckerUsage::where('checker_id', $doc->id)->wherenull('delivered_at')->get()->toArray(), 'id');
-                            $dt = CheckerAggregateRoot::retrieve($doc->uuid)->submit($ids, $doc->date)->persist();
-                        }
-                        //DO THE CHECKER
-                        $dt     = SaleTransactionAggregateRoot::retrieve($id)->close()->persist();
+                        $dt = SaleTransactionAggregateRoot::retrieve($id)->create($input)->confirm()->pay($pay)->close()->persist();
                     }
                     DB::commit();
                 } catch (Exception $e) {

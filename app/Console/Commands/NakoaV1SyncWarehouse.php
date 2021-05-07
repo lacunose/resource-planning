@@ -62,7 +62,6 @@ class NakoaV1SyncWarehouse extends Command {
             $lines  = [];
             $stocks = [];
 
-
             if( preg_match('/\btester\b/i', strtolower($wh->note) ) ){
                 $note   = 'unidentified';
             }elseif( preg_match('/\bkadaluarsa\b/i', strtolower($wh->note)) 
@@ -87,19 +86,25 @@ class NakoaV1SyncWarehouse extends Command {
 
                 $lines[]    = [
                     'item_code'     => $ln['code'],
+                    'qty'           => $ln['qty'],
+                    'unit'          => $ln['unit'],
                     'description'   => $ln['name'],
-                    'amount'        => $ln['qty'],
+                    'scale_qty'     => $ln['qty'],
+                    'scale_unit'    => $ln['unit'],
+                    'scale_ratio'   => 1,
                 ];
 
                 if($item) {
                     $stocks[]   = [
+                        'line_id'       => null,
                         'item_id'       => $item->id,
                         'item_code'     => $ln['code'],
+                        'item_unit'     => $ln['unit'],
                         'batch'         => $ln['code'],
-                        'owner'         => 'nakoa',
+                        'owner'         => 'NAKOA',
                         'description'   => $ln['name'],
-                        'amount'        => $ln['qty'] * -1,
                         'expired_at'    => null,
+                        'qty'           => $ln['qty'] * -1,
                         'note'          => $note,
                     ];
                 }else{
@@ -110,11 +115,11 @@ class NakoaV1SyncWarehouse extends Command {
             $whouse = DB::connection('nakoa1')->table('WMS_warehouses')->where('id', $wh->warehouse_id)->first();
 
             $input  = [
-                'title'     => 'Perubahan stok karena '.$wh->note,
+                'title'     => 'Perubahan stok karena '.($wh->note ? $wh->note : 'tidak diketahui'),
                 'no'        => $wh->no,
                 'cause'     => 'inhouse',
-                'owner'     => 'nakoa',
-                'type'      => 'penyesuaian',
+                'owner'     => 'NAKOA',
+                'type'      => 'adjustment',
                 'warehouse' => $whouse->code,
                 'date'      => $wh->date,
                 'lines'     => $lines,
@@ -125,7 +130,7 @@ class NakoaV1SyncWarehouse extends Command {
                     'receipt'   => null,
                     'courier'   => null,
                 ],
-                'receiver'  => [
+                'recipient'  => [
                     'name'      => null,
                     'phone'     => null,
                     'address'   => null,
@@ -139,7 +144,7 @@ class NakoaV1SyncWarehouse extends Command {
             try {
                 DB::beginTransaction();
                 if(!$doc){
-                    $dt = DocumentAggregateRoot::retrieve($id)->draft($input, [])->stock($input['stocks'], [])->lock([])->persist();
+                    $dt = DocumentAggregateRoot::retrieve($id)->create($input)->stock($input['stocks'])->approve()->close()->persist();
                 }
                 DB::commit();
             } catch (Exception $e) {
@@ -167,20 +172,26 @@ class NakoaV1SyncWarehouse extends Command {
                 $item       = Item::where('code', $ln['code'])->first();
 
                 $lines[]    = [
-                    'item_code'     => $ln['code'],
+                    'item_code'     => $item->code,
                     'description'   => $ln['name'],
-                    'amount'        => $ln['qty'],
+                    'unit'          => $item->unit,
+                    'qty'           => $ln['qty'],
+                    'scale_unit'    => $item->unit,
+                    'scale_qty'     => $ln['qty'],
+                    'scale_ratio'   => 1,
                 ];
 
                 if($item) {
                     $stocks[]   = [
+                        'line_id'       => null,
                         'item_id'       => $item->id,
                         'item_code'     => $ln['code'],
+                        'item_unit'     => $ln['unit'],
                         'batch'         => $ln['code'],
-                        'owner'         => 'nakoa',
+                        'owner'         => 'NAKOA',
                         'description'   => $ln['name'],
-                        'amount'        => $ln['qty'],
                         'expired_at'    => null,
+                        'qty'           => $ln['qty'],
                         'note'          => '',
                     ];
                 }else{
@@ -191,9 +202,9 @@ class NakoaV1SyncWarehouse extends Command {
             $input  = [
                 'title'     => 'Stok masuk karena perpindahan',
                 'no'        => $wh->no,
-                'cause'     => 'masuk',
-                'owner'     => 'nakoa',
-                'type'      => 'perpindahan',
+                'cause'     => 'inhouse',
+                'owner'     => 'NAKOA',
+                'type'      => 'movement',
                 'warehouse' => $whouse->code,
                 'date'      => $wh->date,
                 'lines'     => $lines,
@@ -204,7 +215,7 @@ class NakoaV1SyncWarehouse extends Command {
                     'receipt'   => null,
                     'courier'   => null,
                 ],
-                'receiver'  => [
+                'recipient'  => [
                     'name'      => $whouse2->name,
                     'phone'     => null,
                     'address'   => null,
@@ -221,20 +232,26 @@ class NakoaV1SyncWarehouse extends Command {
                 $item       = Item::where('code', $ln['code'])->first();
 
                 $lines[]    = [
-                    'item_code'     => $ln['code'],
+                    'item_code'     => $item->code,
                     'description'   => $ln['name'],
-                    'amount'        => $ln['qty'],
+                    'unit'          => $item->unit,
+                    'qty'           => $ln['qty'],
+                    'scale_unit'    => $item->unit,
+                    'scale_qty'     => $ln['qty'],
+                    'scale_ratio'   => 1,
                 ];
 
                 if($item) {
                     $stocks[]   = [
+                        'line_id'       => null,
                         'item_id'       => $item->id,
                         'item_code'     => $ln['code'],
+                        'item_unit'     => $ln['unit'],
                         'batch'         => $ln['code'],
-                        'owner'         => 'nakoa',
+                        'owner'         => 'NAKOA',
                         'description'   => $ln['name'],
-                        'amount'        => $ln['qty'] * -1,
                         'expired_at'    => null,
+                        'qty'           => $ln['qty'] * -1,
                         'note'          => '',
                     ];
                 }else{
@@ -245,9 +262,9 @@ class NakoaV1SyncWarehouse extends Command {
             $input2 = [
                 'title'     => 'Stok keluar karena perpindahan',
                 'no'        => $wh2->no,
-                'cause'     => 'keluar',
-                'owner'     => 'nakoa',
-                'type'      => 'perpindahan',
+                'cause'     => 'inhouse',
+                'owner'     => 'NAKOA',
+                'type'      => 'movement',
                 'warehouse' => $whouse2->code,
                 'date'      => $wh2->date,
                 'lines'     => $lines,
@@ -258,7 +275,7 @@ class NakoaV1SyncWarehouse extends Command {
                     'receipt'   => null,
                     'courier'   => null,
                 ],
-                'receiver'  => [
+                'recipient'  => [
                     'name'      => $whouse->name,
                     'phone'     => null,
                     'address'   => null,
@@ -275,10 +292,10 @@ class NakoaV1SyncWarehouse extends Command {
             try {
                 DB::beginTransaction();
                 if(!$doc){
-                    $dt = DocumentAggregateRoot::retrieve($id)->draft($input, [])->stock($input['stocks'], [])->lock([])->persist();
+                    $dt = DocumentAggregateRoot::retrieve($id)->create($input)->stock($input['stocks'])->approve()->close()->persist();
                 }
                 if(!$doc2){
-                    $dt = DocumentAggregateRoot::retrieve($id2)->draft($input2, [])->stock($input2['stocks'], [])->lock([])->persist();
+                    $dt = DocumentAggregateRoot::retrieve($id2)->create($input2)->stock($input2['stocks'])->approve()->close()->persist();
                 }
                 DB::commit();
             } catch (Exception $e) {
@@ -302,20 +319,26 @@ class NakoaV1SyncWarehouse extends Command {
                 $item       = Item::where('code', $ln['code'])->first();
 
                 $lines[]    = [
-                    'item_code'     => $ln['code'],
+                    'item_code'     => $item->code,
                     'description'   => $ln['name'],
-                    'amount'        => $ln['qty'],
+                    'unit'          => $item->unit,
+                    'qty'           => $ln['qty'],
+                    'scale_unit'    => $item->unit,
+                    'scale_qty'     => $ln['qty'],
+                    'scale_ratio'   => 1,
                 ];
 
                 if($item) {
                     $stocks[]   = [
+                        'line_id'       => null,
                         'item_id'       => $item->id,
                         'item_code'     => $ln['code'],
+                        'item_unit'     => $ln['unit'],
                         'batch'         => $ln['code'],
-                        'owner'         => 'nakoa',
+                        'owner'         => 'NAKOA',
                         'description'   => $ln['name'],
-                        'amount'        => $ln['qty'],
                         'expired_at'    => null,
+                        'qty'           => $ln['qty'],
                         'note'          => '',
                     ];
                 }else{
@@ -329,7 +352,7 @@ class NakoaV1SyncWarehouse extends Command {
                 'title'     => 'Perubahan stok karena penyesuaian opname',
                 'no'        => $wh->no,
                 'cause'     => 'inhouse',
-                'owner'     => 'nakoa',
+                'owner'     => 'NAKOA',
                 'type'      => 'opname',
                 'warehouse' => $whouse->code,
                 'date'      => $wh->date,
@@ -341,7 +364,7 @@ class NakoaV1SyncWarehouse extends Command {
                     'receipt'   => null,
                     'courier'   => null,
                 ],
-                'receiver'  => [
+                'recipient'  => [
                     'name'      => null,
                     'phone'     => null,
                     'address'   => null,
@@ -355,7 +378,7 @@ class NakoaV1SyncWarehouse extends Command {
             try {
                 DB::beginTransaction();
                 if(!$doc){
-                    $dt = DocumentAggregateRoot::retrieve($id)->draft($input, [])->stock($input['stocks'], [])->lock([])->persist();
+                    $dt = DocumentAggregateRoot::retrieve($id)->create($input)->stock($input['stocks'])->approve()->close()->persist();
                 }
                 DB::commit();
             } catch (Exception $e) {
