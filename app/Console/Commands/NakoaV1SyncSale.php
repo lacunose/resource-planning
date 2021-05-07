@@ -180,6 +180,16 @@ class NakoaV1SyncSale extends Command
                     $vn = 'Ice R';
                 }
 
+                if(!isset($var[1])) {
+                    $var= explode(' R', $item->name);
+                    $vn = 'Ice R';
+                }
+
+                if(!isset($var[1])) {
+                    $var= explode(' L', $item->name);
+                    $vn = 'Ice L';
+                }
+
                 $goodp  = Good::where('code', $code[0])->first();
                 $goodv  = Good::where('code', $item->code)->first();
                 $price  = isset($recs[$code[0]]) ? min($recs[$code[0]]['price'], $item->price) : $item->price;
