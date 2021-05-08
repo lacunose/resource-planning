@@ -69,13 +69,15 @@ class NakoaV1SyncSale extends Command
     public function handle() {
         Auth::loginUsingId(2);
 
-        // $this->set_good();
+        $this->set_good();
 
         $this->set_catalog();
 
         $this->set_promo();
 
-         $take   = 100;
+        exit;
+
+        $take   = 100;
         $ttl    = DB::connection('nakoa1')->table('SALES_invoices')->orderby('no', 'asc')->count();
         $reg    = SaleOrder::count();
         $ttl    = min(100, ($ttl - $reg));
