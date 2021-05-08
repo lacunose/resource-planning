@@ -43,6 +43,17 @@ return [
 		'twh'		=> 'database',
 		'tswirl'	=> 'database',
 	],
+	'bladev'		=> [
+		'tacl' 		=> 'v2', 
+		'tsub' 		=> 'v2',
+		'tcust'		=> 'v2',
+		'tfin'		=> 'v2',
+		'tmf'		=> 'v2',
+		'tproc'		=> 'v2',
+		'tsale'		=> 'v2',
+		'twh'		=> 'v2',
+		'tswirl'	=> 'v2',
+	],
     'blacklist'    	=> [
         'host'		=> [
         	'nakoa.id',
