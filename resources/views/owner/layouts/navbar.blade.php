@@ -18,7 +18,6 @@
         </ul>
       </li>
     @endforeach
-    <li><a href="{{ route('subscribing') }}">____.{{ env('APP_BASE', 'localhost') }}</a></li>
     </ul>
     <ul class="navbar-nav ml-auto">
       <!-- User-->

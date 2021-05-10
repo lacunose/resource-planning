@@ -40,8 +40,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function map()
-    {
+    public function map() {
         $this->mapAuthRoutes();
         
         $this->mapOAuthRoutes();
@@ -50,11 +49,6 @@ class RouteServiceProvider extends ServiceProvider
         $this->mapWebRoutes();
 
         $this->mapThunderRoutes();
-        $this->mapOwnerRoutes();
-        $this->mapMemberRoutes();
-
-        $this->mapTenantHomepageRoutes();
-        $this->mapTenantDashboardRoutes();
     }
 
     /**
@@ -120,70 +114,10 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    protected function mapTenantHomepageRoutes()
-    {
-        Route::middleware('web')
-             ->namespace('App\Http\Controllers\Homepage')
-             ->group(base_path('routes/homepage.php'));
-    }
-
-    /**
-     * Define the "web" routes for the application.
-     *
-     * These routes all receive session state, CSRF protection, etc.
-     *
-     * @return void
-     */
-    protected function mapTenantDashboardRoutes()
-    {
+    protected function mapThunderRoutes() {
         Route::prefix('manage')
              ->middleware(['web', 'tacl.client'])
-             ->namespace('App\Http\Controllers\Dashboard')
-             ->group(base_path('routes/dashboard.php'));
-    }
-
-    /**
-     * Define the "web" routes for the application.
-     *
-     * These routes all receive session state, CSRF protection, etc.
-     *
-     * @return void
-     */
-    protected function mapThunderRoutes()
-    {
-        Route::domain('thunder.'.env('APP_BASE', 'localhost'))
-             ->middleware(['web', 'tacl.level:thunder'])
              ->namespace('App\Http\Controllers\Thunder')
-             ->group(base_path('routes/thunder.php'));
-    }
-
-    /**
-     * Define the "web" routes for the application.
-     *
-     * These routes all receive session state, CSRF protection, etc.
-     *
-     * @return void
-     */
-    protected function mapOwnerRoutes()
-    {
-        Route::domain('ownerx.'.env('APP_BASE', 'localhost'))
-             ->middleware(['web', 'tacl.level:owner|thunder'])
-             ->namespace('App\Http\Controllers\Owner')
-             ->group(base_path('routes/owner.php'));
-    }
-
-    /**
-     * Define the "web" routes for the application.
-     *
-     * These routes all receive session state, CSRF protection, etc.
-     *
-     * @return void
-     */
-    protected function mapMemberRoutes()
-    {
-        Route::domain('member.'.env('APP_BASE', 'localhost'))
-             ->middleware(['web'])
-             ->namespace('App\Http\Controllers\Member')
-             ->group(base_path('routes/member.php'));
+             ->group(__DIR__.'/../../routes/thunder.php');
     }
 }
