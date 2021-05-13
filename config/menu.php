@@ -25,12 +25,6 @@ return [
 				'param' => [],
 				'scope'	=> 'tsale.setting.pay',
 			]],
-			'Pengaturan Outlet' => [[
-				'title'	=> 'Katalog',
-				'url'	=> 'tsale.catalog.listing',
-				'param' => [],
-				'scope'	=> 'tsale.catalog.listing',
-			]],
 		],
 		'PERSEDIAAN'	=> [
 			'Dokumen'	=> [[
@@ -57,7 +51,7 @@ return [
 			]],
 		],
 		'PEMBELIAN'		=> [
-			'Data' 		=> [[
+			'Transaksi'	=> [[
 				'title'	=> 'Pembelian',
 				'url'	=> 'tproc.transaction.index',
 				'param' => ['mode' => 'pembelian', 'status' => 'opened'],
