@@ -54,7 +54,11 @@ return [
             'processed'     => [
                 'delivered'     => 'Dikirim',
                 'paid'          => 'Dibayar',
+<<<<<<< HEAD
                 'returned'      => 'Dikembalikan (retur)',
+=======
+                // 'returned'      => 'Dikembalikan (retur)',
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
             ],
         ],
         'event' => [
@@ -67,7 +71,11 @@ return [
                 'confirmed' => 'Dikonfirmasi',
                 'delivered' => 'Diterima',
                 'paid'      => 'Dibayar',
+<<<<<<< HEAD
                 'returned'  => 'Dikembalikan (retur)',
+=======
+                // 'returned'  => 'Dikembalikan (retur)',
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
             ],
             'closed'        => [],
             'voided'        => [],
@@ -80,7 +88,11 @@ return [
         'flag'          => [
             'misc'      => 'Lainnya',
             'catalog'   => 'Stok',
+<<<<<<< HEAD
             'asset'     => 'Inventaris',
+=======
+            // 'asset'     => 'Inventaris',
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
             // 'deposit'           => 'Deposit',
             // 'tax'               => 'Pajak',
         ],

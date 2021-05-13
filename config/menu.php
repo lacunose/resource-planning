@@ -3,7 +3,11 @@
 return [
 	'dashboard'	=> [
 		'PENJUALAN'		=> [
+<<<<<<< HEAD
 			'Data' 		=> [[
+=======
+			'Transaksi'	=> [[
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
 				'title'	=> 'Penjualan',
 				'url'	=> 'tsale.transaction.index',
 				'param' => ['mode' => 'penjualan', 'status' => 'opened'],
@@ -46,6 +50,7 @@ return [
 				'param' => [],
 				'scope'	=> 'tsale.promo.listing',
 			]],
+<<<<<<< HEAD
 			'Laporan Marketing' => [[
 				'title'	=> 'Pelanggan',
 				'url'	=> 'tsale.report.index',
@@ -95,12 +100,27 @@ return [
 				'url'	=> 'twh.document.index',
 				'param' => ['cause' => 'inhouse', 'status' => 'opened'],
 				'scope'	=> 'twh.document.inhouse',
+=======
+		],
+		'PERSEDIAAN'	=> [
+			'Dokumen'	=> [[
+				'title'	=> 'Tugas',
+				'url'	=> 'twh.task.index',
+				'param' => ['status' => 'opened'],
+				'scope'	=> 'twh.task.index',
+			], [
+				'title'	=> 'Stok',
+				'url'	=> 'twh.document.index',
+				'param' => ['status' => 'created'],
+				'scope'	=> 'twh.document.index',
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
 			]],
 			'Pengaturan Bisnis' => [[
 				'title'	=> 'Item',
 				'url'	=> 'twh.item.index',
 				'param' => ['status' => 'submitted'],
 				'scope'	=> 'twh.setting.item',
+<<<<<<< HEAD
 			], [
 				'title'	=> 'Repack',
 				'url'	=> 'twh.conversion.index',
@@ -164,6 +184,8 @@ return [
 				'url'	=> 'twh.report.procure',
 				'param' => [],
 				'scope'	=> 'twh.report.procure',
+=======
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
 			]],
 		],
 		'PEMBELIAN'		=> [
@@ -172,6 +194,7 @@ return [
 				'url'	=> 'tproc.transaction.index',
 				'param' => ['mode' => 'pembelian', 'status' => 'opened'],
 				'scope'	=> 'tproc.transaction.pembelian',
+<<<<<<< HEAD
 			], [
 				'title'	=> 'Konsinyasi',
 				'url'	=> 'tproc.transaction.index',
@@ -288,10 +311,13 @@ return [
 				'url'	=> 'tswirl.conflict.index',
 				'param' => ['topic' => 'stock_overlap'],
 				'scope'	=> 'tswirl.conflict.stock_overlap',
+=======
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
 			]],
 		],
 	],
 	'thunder'	=> [
+<<<<<<< HEAD
 		'Langganan' => [[
 			'title'	=> 'PRO',
 			'url'	=> 'tsub.subscription.index',
@@ -303,11 +329,14 @@ return [
 			'param' => ['membership' => 'exclusive', 'status' => 'inactived'],
 			'scope'	=> 'tsub.subscription.exclusive',
 		]],
+=======
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
 		'Pengaturan' => [[
 			'title'	=> 'Pengguna',
 			'url'	=> 'tacl.user.index',
 			'param' => ['sort[name]' => 'asc'],
 			'scope'	=> 'tacl.setting.user',
+<<<<<<< HEAD
 		], [
 			'title'	=> 'Paket Langganan',
 			'url'	=> 'tsub.package.index',
@@ -324,6 +353,8 @@ return [
 			'url'	=> 'tsub.report.bill',
 			'param' => ['mode' => 'paid'],
 			'scope'	=> 'tsub.bill.paid',
+=======
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
 		]],
 	],
 	'glossary'		=> [

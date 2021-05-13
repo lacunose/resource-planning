@@ -52,9 +52,15 @@ return [
             'updated'   => 'Update',
             'reopend'   => 'Diulang',
             'confirmed' => 'Konfirmasi',
+<<<<<<< HEAD
             'delivered' => 'Diterima',
             'paid'      => 'Dibayar',
             'returned'  => 'Dikembalikan (retur)',
+=======
+            // 'delivered' => 'Diterima',
+            'paid'      => 'Dibayar',
+            // 'returned'  => 'Dikembalikan (retur)',
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
             'closed'    => 'Selesai',
             'voided'    => 'Dibatalkan',
         ],
@@ -76,7 +82,11 @@ return [
             'saturday'      => 'Sabtu',
         ],
         'type'  => [
+<<<<<<< HEAD
             'free'          => 'Dropship',
+=======
+            'free'          => 'Tanpa Resep',
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
             'item'          => 'Stok',
             'good'          => 'Menu',
         ],
@@ -94,9 +104,15 @@ return [
         ],
         'step' => [
             'processed'     => [
+<<<<<<< HEAD
                 'delivered'     => 'Dikirim',
                 'paid'          => 'Dibayar',
                 'returned'      => 'Dikembalikan (retur)',
+=======
+                // 'delivered'     => 'Dikirim',
+                'paid'          => 'Dibayar',
+                // 'returned'      => 'Dikembalikan (retur)',
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
             ],
         ],
         'event' => [
@@ -107,21 +123,36 @@ return [
             ],
             'processed'     => [
                 'confirmed' => 'Dikonfirmasi',
+<<<<<<< HEAD
                 'delivered' => 'Diterima',
                 'paid'      => 'Dibayar',
                 'returned'  => 'Dikembalikan (retur)',
+=======
+                // 'delivered' => 'Diterima',
+                'paid'      => 'Dibayar',
+                // 'returned'  => 'Dikembalikan (retur)',
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
             ],
             'closed'        => [],
             'voided'        => [],
         ],
         'marketplace'       => [
             'pos'           => 'POS',
+<<<<<<< HEAD
             'shopee'        => 'SHOPEE',
             'tokopedia'     => 'TOKOPEDIA',
             'lazada'        => 'LAZADA',
             'bukalapak'     => 'BUKALAPAK',
             'jdid'          => 'JDID',
             'blibli'        => 'BLIBLI',
+=======
+            // 'shopee'        => 'SHOPEE',
+            // 'tokopedia'     => 'TOKOPEDIA',
+            // 'lazada'        => 'LAZADA',
+            // 'bukalapak'     => 'BUKALAPAK',
+            // 'jdid'          => 'JDID',
+            // 'blibli'        => 'BLIBLI',
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
         ],
         'outlet'            => [],
         'flag'              => [
