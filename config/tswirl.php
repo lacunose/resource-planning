@@ -56,12 +56,12 @@ return [
 	],
     'blacklist'    	=> [
         'host'		=> [
-        	'localhost',
-			'member.localhost',
-			'owner.localhost',
-			'thunder.localhost',
-			'tools.localhost',
-			'pos.localhost',
+        	'soda.id',
+			'member.soda.id',
+			'owner.soda.id',
+			'thunder.soda.id',
+			'tools.soda.id',
+			'pos.soda.id',
         ],
     ],
     'whitelist'    	=> [
