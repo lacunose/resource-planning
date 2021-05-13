@@ -3,17 +3,11 @@
 return [
     'scopes'    => [
         'tsale.transaction.penjualan'   => 'Handle transaksi penjualan',
-        'tsale.report.customer'         => 'Melihat laporan pelanggan',
-        'tsale.report.catalog'          => 'Melihat laporan trend produk',
-        'tsale.report.palate'           => 'Melihat laporan preferensi produk',
-        'tsale.report.sold'             => 'Melihat laporan penjualan (produk)',
-        'tsale.report.category'         => 'Melihat laporan penjualan (kategori)',
-        'tsale.report.payment'          => 'Melihat laporan penjualan (pembayaran)',
         'tsale.promo.transaction'       => 'Mengatur promo transaksi',
         'tsale.promo.catalog'           => 'Mengatur promo produk',
-        'tsale.promo.listing'           => 'Mengatur promo outlet',
         'tsale.catalog.setting'         => 'Mengatur katalog',
-        'tsale.catalog.listing'         => 'Mengatur katalog outlet',
+        // 'tsale.promo.listing'           => 'Mengatur promo outlet',
+        // 'tsale.catalog.listing'         => 'Mengatur katalog outlet',
         'tsale.setting.pay'             => 'Mengatur metode pembayaran',
         'tsale.setting.note'            => 'Mengatur template note',
         'tsale.transaction.voided'      => 'Approval void transaksi',
@@ -52,15 +46,9 @@ return [
             'updated'   => 'Update',
             'reopend'   => 'Diulang',
             'confirmed' => 'Konfirmasi',
-<<<<<<< HEAD
-            'delivered' => 'Diterima',
+            'delivered' => 'Dikirim',
             'paid'      => 'Dibayar',
-            'returned'  => 'Dikembalikan (retur)',
-=======
-            // 'delivered' => 'Diterima',
-            'paid'      => 'Dibayar',
-            // 'returned'  => 'Dikembalikan (retur)',
->>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
+            'returned'  => 'Dikembalikan (full retur)',
             'closed'    => 'Selesai',
             'voided'    => 'Dibatalkan',
         ],
@@ -82,11 +70,7 @@ return [
             'saturday'      => 'Sabtu',
         ],
         'type'  => [
-<<<<<<< HEAD
-            'free'          => 'Dropship',
-=======
             'free'          => 'Tanpa Resep',
->>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
             'item'          => 'Stok',
             'good'          => 'Menu',
         ],
@@ -104,15 +88,9 @@ return [
         ],
         'step' => [
             'processed'     => [
-<<<<<<< HEAD
                 'delivered'     => 'Dikirim',
                 'paid'          => 'Dibayar',
-                'returned'      => 'Dikembalikan (retur)',
-=======
-                // 'delivered'     => 'Dikirim',
-                'paid'          => 'Dibayar',
-                // 'returned'      => 'Dikembalikan (retur)',
->>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
+                'returned'      => 'Dikembalikan (full retur)',
             ],
         ],
         'event' => [
@@ -123,36 +101,21 @@ return [
             ],
             'processed'     => [
                 'confirmed' => 'Dikonfirmasi',
-<<<<<<< HEAD
-                'delivered' => 'Diterima',
+                'delivered' => 'Dikirim',
                 'paid'      => 'Dibayar',
-                'returned'  => 'Dikembalikan (retur)',
-=======
-                // 'delivered' => 'Diterima',
-                'paid'      => 'Dibayar',
-                // 'returned'  => 'Dikembalikan (retur)',
->>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
+                'returned'  => 'Dikembalikan (full retur)',
             ],
             'closed'        => [],
             'voided'        => [],
         ],
         'marketplace'       => [
             'pos'           => 'POS',
-<<<<<<< HEAD
-            'shopee'        => 'SHOPEE',
-            'tokopedia'     => 'TOKOPEDIA',
-            'lazada'        => 'LAZADA',
-            'bukalapak'     => 'BUKALAPAK',
-            'jdid'          => 'JDID',
-            'blibli'        => 'BLIBLI',
-=======
             // 'shopee'        => 'SHOPEE',
             // 'tokopedia'     => 'TOKOPEDIA',
             // 'lazada'        => 'LAZADA',
             // 'bukalapak'     => 'BUKALAPAK',
             // 'jdid'          => 'JDID',
             // 'blibli'        => 'BLIBLI',
->>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
         ],
         'outlet'            => [],
         'flag'              => [

@@ -15,6 +15,16 @@ return [
 				'param' => ['status' => 'published'],
 				'scope'	=> 'tsale.catalog.setting',
 			], [
+				'title'	=> 'Promo Produk',
+				'url'	=> 'tsale.promo.index',
+				'param' => ['mode' => 'catalog', 'status' => 'activated'],
+				'scope'	=> 'tsale.promo.catalog',
+			], [
+				'title'	=> 'Promo Transaksi',
+				'url'	=> 'tsale.promo.index',
+				'param' => ['mode' => 'transaction', 'status' => 'activated'],
+				'scope'	=> 'tsale.promo.transaction',
+			], [
 				'title'	=> 'Template Note',
 				'url'	=> 'tsale.note.get',
 				'param' => [],
@@ -30,6 +40,11 @@ return [
 				'url'	=> 'tsale.catalog.listing',
 				'param' => [],
 				'scope'	=> 'tsale.catalog.listing',
+			],[
+				'title'	=> 'Promo',
+				'url'	=> 'tsale.promo.listing',
+				'param' => [],
+				'scope'	=> 'tsale.promo.listing',
 			]],
 		],
 		'PERSEDIAAN'	=> [
@@ -43,11 +58,6 @@ return [
 				'url'	=> 'twh.document.index',
 				'param' => ['status' => 'created'],
 				'scope'	=> 'twh.document.index',
-			], [
-				'title'	=> 'Paket',
-				'url'	=> 'twh.record.index',
-				'param' => ['status' => 'started'],
-				'scope'	=> 'twh.record.index',
 			]],
 			'Pengaturan Bisnis' => [[
 				'title'	=> 'Item',

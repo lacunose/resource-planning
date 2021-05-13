@@ -180,12 +180,8 @@ return [
         Maatwebsite\Excel\ExcelServiceProvider::class,
         Mpociot\ApiDoc\ApiDocGeneratorServiceProvider::class,
         //SETUP AREA
-<<<<<<< HEAD
-        // Lacunose\Swirl\Providers\BasilServiceProvider::class,
         Lacunose\Swirl\Providers\SodaXVernonServiceProvider::class,
-=======
-        Lacunose\Swirl\Providers\BasilXNakoaServiceProvider::class,
->>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
+        // Lacunose\Swirl\Providers\BasilXNakoaServiceProvider::class,
         Lacunose\Acl\Providers\AclServiceProvider::class,
         Lacunose\Subscribe\Providers\SubscribeServiceProvider::class,
         
@@ -193,18 +189,11 @@ return [
         Lacunose\Sale\Providers\SaleServiceProvider::class,
         //OPERATION AREA
         Lacunose\Warehouse\Providers\WarehouseServiceProvider::class,
-<<<<<<< HEAD
-        Lacunose\Manufacture\Providers\ManufactureServiceProvider::class,
-=======
->>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
         //PROCURE AREA
         Lacunose\Procure\Providers\ProcureServiceProvider::class,
         /*
             PENDING
-<<<<<<< HEAD
-=======
             Lacunose\Manufacture\Providers\ManufactureServiceProvider::class,
->>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
             Lacunose\Finance\Providers\FinanceServiceProvider::class,
             Lacunose\Customer\Providers\CustomerServiceProvider::class,
         */
