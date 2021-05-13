@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'support'       => ['tsale', 'twh', 'tproc'],
+    'support'       => ['tsale', 'twh', 'tproc', 'tswirl'],
     // 'support'       => ['tsale', 'tcust', 'twh', 'tmf', 'tproc', 'tfin', 'tswirl'],
     'scopes'        => [
         'tsub.subscription.professional'    => 'Handle langganan pro',

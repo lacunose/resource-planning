@@ -111,6 +111,7 @@ class WebsiteController extends Controller {
             return redirect($url);
         } catch (Exception $e) {
             DB::rollback();
+            dd($e);
             Flash::error($e->getMessage());
             return redirect()->back();
         }

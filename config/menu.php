@@ -66,11 +66,38 @@ return [
 		],
 	],
 	'thunder'	=> [
+		'Langganan' => [[
+			'title'	=> 'PRO',
+			'url'	=> 'tsub.subscription.index',
+			'param' => ['membership' => 'professional', 'status' => 'inactived'],
+			'scope'	=> 'tsub.subscription.professional',
+		], [
+			'title'	=> 'X',
+			'url'	=> 'tsub.subscription.index',
+			'param' => ['membership' => 'exclusive', 'status' => 'inactived'],
+			'scope'	=> 'tsub.subscription.exclusive',
+		]],
 		'Pengaturan' => [[
 			'title'	=> 'Pengguna',
 			'url'	=> 'tacl.user.index',
 			'param' => ['sort[name]' => 'asc'],
 			'scope'	=> 'tacl.setting.user',
+		], [
+			'title'	=> 'Paket Langganan',
+			'url'	=> 'tsub.package.index',
+			'param' => ['status' => 'published'],
+			'scope'	=> 'tsub.setting.package',
+		]],
+		'Laporan' => [[
+			'title'	=> 'Tagihan Pending',
+			'url'	=> 'tsub.report.bill',
+			'param' => ['mode' => 'unpaid'],
+			'scope'	=> 'tsub.bill.unpaid',
+		], [
+			'title'	=> 'Tagihan Lunas',
+			'url'	=> 'tsub.report.bill',
+			'param' => ['mode' => 'paid'],
+			'scope'	=> 'tsub.bill.paid',
 		]],
 	],
 	'glossary'		=> [
