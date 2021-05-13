@@ -188,11 +188,11 @@ return [
         Lacunose\Sale\Providers\SaleServiceProvider::class,
         //OPERATION AREA
         Lacunose\Warehouse\Providers\WarehouseServiceProvider::class,
-        Lacunose\Manufacture\Providers\ManufactureServiceProvider::class,
         //PROCURE AREA
         Lacunose\Procure\Providers\ProcureServiceProvider::class,
         /*
             PENDING
+            Lacunose\Manufacture\Providers\ManufactureServiceProvider::class,
             Lacunose\Finance\Providers\FinanceServiceProvider::class,
             Lacunose\Customer\Providers\CustomerServiceProvider::class,
         */

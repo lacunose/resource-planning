@@ -52,9 +52,9 @@ return [
             'updated'   => 'Update',
             'reopend'   => 'Diulang',
             'confirmed' => 'Konfirmasi',
-            'delivered' => 'Diterima',
+            // 'delivered' => 'Diterima',
             'paid'      => 'Dibayar',
-            'returned'  => 'Dikembalikan (retur)',
+            // 'returned'  => 'Dikembalikan (retur)',
             'closed'    => 'Selesai',
             'voided'    => 'Dibatalkan',
         ],
@@ -94,9 +94,9 @@ return [
         ],
         'step' => [
             'processed'     => [
-                'delivered'     => 'Dikirim',
+                // 'delivered'     => 'Dikirim',
                 'paid'          => 'Dibayar',
-                'returned'      => 'Dikembalikan (retur)',
+                // 'returned'      => 'Dikembalikan (retur)',
             ],
         ],
         'event' => [
@@ -107,9 +107,9 @@ return [
             ],
             'processed'     => [
                 'confirmed' => 'Dikonfirmasi',
-                'delivered' => 'Diterima',
+                // 'delivered' => 'Diterima',
                 'paid'      => 'Dibayar',
-                'returned'  => 'Dikembalikan (retur)',
+                // 'returned'  => 'Dikembalikan (retur)',
             ],
             'closed'        => [],
             'voided'        => [],

@@ -54,7 +54,7 @@ return [
             'processed'     => [
                 'delivered'     => 'Dikirim',
                 'paid'          => 'Dibayar',
-                'returned'      => 'Dikembalikan (retur)',
+                // 'returned'      => 'Dikembalikan (retur)',
             ],
         ],
         'event' => [
@@ -67,7 +67,7 @@ return [
                 'confirmed' => 'Dikonfirmasi',
                 'delivered' => 'Diterima',
                 'paid'      => 'Dibayar',
-                'returned'  => 'Dikembalikan (retur)',
+                // 'returned'  => 'Dikembalikan (retur)',
             ],
             'closed'        => [],
             'voided'        => [],

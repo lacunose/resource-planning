@@ -51,13 +51,17 @@ class NakoaV1SyncAccess extends Command
         Auth::loginUsingId(2);
 
         // $website    = 'nakoa2.localhost';
-        $website     = 'x.nakoa.id';
+        // $thunder    = 'thunder.localhost';
+        $website    = 'x.nakoa.id';
+        $thunder    = 'thunder.nakoa.id';
 
         $blists     = [];
             
         $this->set_endpoint($website);
 
-        $this->set_thunder_user($website, 'chelsy@thunderlab.id');
+        $this->set_thunder_user($thunder, 'chelsy@thunderlab.id');
+        
+        $this->allow_thunder_user($website, 'chelsy@thunderlab.id');
         
         $this->set_user_from_employment($website, $blists);
     }
@@ -87,23 +91,14 @@ class NakoaV1SyncAccess extends Command
             'address'   => 'Jl MT Haryono 116, KOTA MALANG JAWA TIMUR, INDONESIA',
         ];
 
-        $inp3  = [
-            'website'   => $website,
-            'roles'     => ['tmf.opsi.station'],
-            'name'      => 'BAR',
-            'phone'     => '',
-            'address'   => '-',
-        ];
         
         $dt0    = Endpoint::where('website', $website)->where('name', $inp0['name'])->first();
         $dt1    = Endpoint::where('website', $website)->where('name', $inp1['name'])->first();
         $dt2    = Endpoint::where('website', $website)->where('name', $inp2['name'])->first();
-        $dt3    = Endpoint::where('website', $website)->where('name', $inp3['name'])->first();
 
         $id0    = $dt0 ? $dt0->uuid : (string) Uuid::uuid4();
         $id1    = $dt1 ? $dt1->uuid : (string) Uuid::uuid4();
         $id2    = $dt2 ? $dt2->uuid : (string) Uuid::uuid4();
-        $id3    = $dt3 ? $dt3->uuid : (string) Uuid::uuid4();
         
         try {
             DB::BeginTransaction();
@@ -111,7 +106,6 @@ class NakoaV1SyncAccess extends Command
             $dt = EndpointAggregateRoot::retrieve($id0)->save($inp0)->persist();
             $dt = EndpointAggregateRoot::retrieve($id1)->save($inp1)->persist();
             $dt = EndpointAggregateRoot::retrieve($id2)->save($inp2)->persist();
-            $dt = EndpointAggregateRoot::retrieve($id3)->save($inp3)->persist();
             //2. GRANT AKSES
 
             DB::commit();
@@ -121,8 +115,8 @@ class NakoaV1SyncAccess extends Command
         }
     }
 
-    private function set_thunder_user($website, $email) {
-        $domains    = config()->get('tsub.support.scopes');
+    private function allow_thunder_user($website, $email) {
+        $domains    = config()->get('tsub.support');
         $role       = 'maintainer';
         $scopes     = [];
 
@@ -139,13 +133,44 @@ class NakoaV1SyncAccess extends Command
             'role'      => $role,
             'scopes'    => $scopes,
             'clients'   => array_keys(config()->get('tsub.opsi.client')),
-            'endpoints' => array_column(Endpoint::whereIn('name', ['HOLDING', 'MLG01', 'MLG02', 'BAR'])
+            'endpoints' => array_column(Endpoint::whereIn('name', ['HOLDING', 'MLG01', 'MLG02'])
                 ->get()->toArray(), 'id'),
         ];
 
         try{
             $id2= $acc ? $acc->uuid : (string) Uuid::uuid4();
-            $dt = AccessAggregateRoot::retrieve($id2)->grant($inp2, 'https://basil.id')->accept($inp2['token'])->persist();
+            $dt = AccessAggregateRoot::retrieve($id2)->grant($inp2, $website)->accept($inp2['token'])->persist();
+        } catch (Exception $e) {
+            DB::rollback();
+            Log::info('TROUBLE: '.$e);
+        }
+    }
+
+    private function set_thunder_user($website, $email) {
+        /*ADD ACCESS TO DASHBOARD THUNDER*/
+        $domains    = config()->get('tacl.support');
+        $role       = 'maintainer';
+        $scopes     = [];
+
+        foreach ($domains as $dom) {
+            $scopes = array_merge(array_keys(config()->get($dom.'.scopes')), $scopes);
+        }
+        
+        $acc    = Access::where('website', $website)->where('email', $email)->first();
+
+        $inp2   = [
+            'website'   => $website,
+            'email'     => $email,
+            'token'     => Str::random(32),
+            'role'      => $role,
+            'scopes'    => $scopes,
+            'clients'   => [],
+            'endpoints' => [],
+        ];
+
+        try{
+            $id2= $acc ? $acc->uuid : (string) Uuid::uuid4();
+            $dt = AccessAggregateRoot::retrieve($id2)->grant($inp2, $website)->accept($inp2['token'])->persist();
         } catch (Exception $e) {
             DB::rollback();
             Log::info('TROUBLE: '.$e);
@@ -168,7 +193,7 @@ class NakoaV1SyncAccess extends Command
                     $domains    = ['tproc', 'tfin'];
                     $role       = 'accountant';
                 }elseif($user->management_roles && in_array('superuser', json_decode($user->management_roles, true))) {
-                    $domains    = config()->get('tsub.support.scopes');
+                    $domains    = config()->get('tsub.support');
                     $role       = 'owner';
                 }
 
@@ -192,7 +217,7 @@ class NakoaV1SyncAccess extends Command
                     'role'      => $role,
                     'scopes'    => $scopes,
                     'clients'   => array_keys(config()->get('tsub.opsi.client')),
-                    'endpoints' => array_column(Endpoint::whereIn('name', ['HOLDING', 'MLG01', 'MLG02', 'BAR'])->get()->toArray(), 'id'),
+                    'endpoints' => array_column(Endpoint::whereIn('name', ['HOLDING', 'MLG01', 'MLG02'])->get()->toArray(), 'id'),
                 ];
 
                 $id = $nuser ? $nuser->uuid : (string) Uuid::uuid4();
@@ -204,7 +229,7 @@ class NakoaV1SyncAccess extends Command
                     $dt = UserAggregateRoot::retrieve($id)->register($inp1)->update($inp1)->persist();
 
                     //2. GRANT AKSES
-                    $dt = AccessAggregateRoot::retrieve($id2)->grant($inp2, 'https://basil.id')->accept($inp2['token'])->persist();
+                    // $dt = AccessAggregateRoot::retrieve($id2)->grant($inp2, 'https://basil.id')->accept($inp2['token'])->persist();
 
                     DB::commit();
                 } catch (Exception $e) {

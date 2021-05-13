@@ -45,10 +45,10 @@ class RouteServiceProvider extends ServiceProvider
         
         $this->mapOAuthRoutes();
 
+        $this->mapThunderRoutes();
+
         $this->mapApiRoutes();
         $this->mapWebRoutes();
-
-        $this->mapThunderRoutes();
     }
 
     /**
@@ -114,10 +114,11 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    protected function mapThunderRoutes() {
-        Route::prefix('manage')
-             ->middleware(['web', 'tacl.client'])
-             ->namespace('App\Http\Controllers\Thunder')
-             ->group(__DIR__.'/../../routes/thunder.php');
+    protected function mapThunderRoutes()
+    {
+        Route::domain('thunder.'.env('APP_BASE', 'localhost'))
+             ->middleware(['web', 'tacl.level:thunder'])
+             ->namespace('Lacunose\Swirl\Http\Controllers\Thunder')
+             ->group(base_path('routes/thunder.php'));
     }
 }

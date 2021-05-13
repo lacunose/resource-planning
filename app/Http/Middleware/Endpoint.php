@@ -43,7 +43,7 @@ class Endpoint {
                 request()->merge(['filter' => $ff]);
             }
 
-            $dms    = config()->get('tsub.support.scopes');
+            $dms    = config()->get('tsub.support');
             foreach ($dms as $dm) {
                 config()->set($dm.'.yellowbook', session()->get($dm.'.yellowbook'));
             }

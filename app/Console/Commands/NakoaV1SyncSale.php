@@ -10,6 +10,10 @@ use Carbon\Carbon;
 
 use App\User;
 
+use Lacunose\Warehouse\Models\Item;
+use Lacunose\Warehouse\Aggregates\ItemAggregateRoot;
+use Lacunose\Warehouse\Aggregates\DocumentAggregateRoot;
+
 use Lacunose\Manufacture\Models\Good;
 use Lacunose\Manufacture\Models\Checker;
 use Lacunose\Manufacture\Models\CheckerUsage;
@@ -69,9 +73,12 @@ class NakoaV1SyncSale extends Command
     public function handle() {
         Auth::loginUsingId(2);
 
-        $this->set_good();
+        // $this->set_good();
+        $this->set_item();
 
         $this->set_catalog();
+
+        $this->set_food();
 
         $this->set_promo();
 
@@ -94,6 +101,36 @@ class NakoaV1SyncSale extends Command
             Log::info('FROM '.$skip.' TO '.($skip + $take). ' FROM '.$ttl);
             
             $this->set_sale($skip, $take);
+        }
+    }
+
+    private function set_item(){
+        $items      = DB::connection('nakoa1')->table('SALES_products')->where('category', 'food')->orderby('code', 'asc')->get();
+        foreach ($items as $item) {
+            $nitem  = Item::where('code', $item->code)->first();
+            $gals   = [];
+            
+            $input  = [
+                'name'      => $item->name,
+                'code'      => $item->code,
+                'type'      => $item->category,
+                'unit'      => 'PC',
+                'galleries' => $gals,
+                'scales'    => [],
+            ];
+
+            if(!$nitem) {
+                $id = $nitem ? $nitem->uuid : (string) Uuid::uuid4();
+                try {
+                    DB::BeginTransaction();
+                    $dt = ItemAggregateRoot::retrieve($id)->draft($input)->submit()->persist();
+                    DB::commit();
+                } catch (Exception $e) {
+                    DB::rollback();
+                    Log::info('SYNC ITEM');
+                    Log::info($e);
+                }
+            }
         }
     }
 
@@ -165,7 +202,7 @@ class NakoaV1SyncSale extends Command
     }
 
     private function set_catalog() {
-        $items      = DB::connection('nakoa1')->table('SALES_products')->orderby('code', 'asc')->get();
+        $items      = DB::connection('nakoa1')->table('SALES_products')->where('category', '<>', 'food')->orderby('code', 'asc')->get();
         $recs       = [];
         foreach ($items as $item) {
             $code   = explode('-', $item->code);
@@ -192,31 +229,34 @@ class NakoaV1SyncSale extends Command
                     $vn = 'Ice L';
                 }
 
-                $goodp  = Good::where('code', $code[0])->first();
-                $goodv  = Good::where('code', $item->code)->first();
+                // $goodp  = Good::where('code', $code[0])->first();
+                // $goodv  = Good::where('code', $item->code)->first();
                 $price  = isset($recs[$code[0]]) ? min($recs[$code[0]]['price'], $item->price) : $item->price;
 
                 $all_row= [
                     'code'  => $code[0],
-                    'type'  => $goodp ? 'good' : 'free',
+                    'type'  => 'good',
+                    // 'type'  => $goodp ? 'good' : 'free',
                     'name'  => str_replace('Ice', '', $var[0]),
                     'group' => $item->category,
                     'price' => $price,
                     'description'   => null,
                     'gallery_url'   => 'https://www.malangculinary.com/upload/img_15944486022.jpg',
                     'gallery_title'     => 'foto',
-                    'varian_type'       => $goodv ? 'good' : 'free',
+                    'varian_type'       => 'good',
+                    // 'varian_type'       => $goodv ? 'good' : 'free',
                     'varian_code'       => $item->code,
                     'varian_name'       => $vn,
                     'varian_extra_price'=> $item->price - $price,
                 ];
                 $recs   = $this->batch_product($recs, $all_row); 
             }else{
-                $goodp  = Good::where('code', $item->code)->first();
+                // $goodp  = Good::where('code', $item->code)->first();
 
                 $all_row= [
                     'code'  => $item->code,
-                    'type'  => $goodp ? 'good' : 'free',
+                    'type'  => 'free',
+                    // 'type'  => $goodp ? 'good' : 'free',
                     'name'  => $item->name,
                     'group' => $item->category,
                     'price' => $item->price,
@@ -233,6 +273,48 @@ class NakoaV1SyncSale extends Command
         }
 
             foreach ($recs as $k => $input) {
+            $prod   = Product::where('code', $input['code'])->first();
+            $id     = $prod ? $prod->uuid : (string) Uuid::uuid4();
+
+            try {
+                DB::beginTransaction();
+                if(!$prod){
+                    $dt = CatalogAggregateRoot::retrieve($id)->save($input, [])->publish(now())->persist();
+                }
+                DB::commit();
+            } catch (Exception $e) {
+                DB::rollback();
+                Log::info('SYNC CATALOG');
+                Log::info($e);
+            }
+        }
+    }
+
+    private function set_food() {
+        $items      = DB::connection('nakoa1')->table('SALES_products')->where('category', 'food')->orderby('code', 'asc')->get();
+        $recs       = [];
+        foreach ($items as $item) {
+            $code   = explode('-', $item->code);
+            // $goodp  = Good::where('code', $item->code)->first();
+
+            $all_row= [
+                'code'  => $item->code,
+                'type'  => 'item',
+                'name'  => $item->name,
+                'group' => $item->category,
+                'price' => $item->price,
+                'description'   => null,
+                'gallery_url'   => 'https://www.malangculinary.com/upload/img_15944486022.jpg',
+                'gallery_title'     => 'foto',
+                'varian_type'       => null,
+                'varian_code'       => null,
+                'varian_name'       => null,
+                'varian_extra_price'=> 0,
+            ];
+            $recs   = $this->batch_product($recs, $all_row); 
+        }
+
+        foreach ($recs as $k => $input) {
             $prod   = Product::where('code', $input['code'])->first();
             $id     = $prod ? $prod->uuid : (string) Uuid::uuid4();
 

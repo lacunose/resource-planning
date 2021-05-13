@@ -43,16 +43,16 @@ return [
 		'twh'		=> 'database',
 		'tswirl'	=> 'database',
 	],
-	'bladev'		=> [
-		'tacl' 		=> 'v2', 
-		'tsub' 		=> 'v2',
-		'tcust'		=> 'v2',
-		'tfin'		=> 'v2',
-		'tmf'		=> 'v2',
-		'tproc'		=> 'v2',
-		'tsale'		=> 'v2',
-		'twh'		=> 'v2',
-		'tswirl'	=> 'v2',
+	'skin'	=> [
+		'tacl' 		=> 'v1', 
+		'tsub' 		=> 'v1',
+		'tcust'		=> 'v1',
+		'tfin'		=> 'v1',
+		'tmf'		=> 'v1',
+		'tproc'		=> 'v1',
+		'tsale'		=> 'v1',
+		'twh'		=> 'v1',
+		'tswirl'	=> 'v1',
 	],
     'blacklist'    	=> [
         'host'		=> [

@@ -6,7 +6,7 @@ return [
     'email'         => 'hello@thunderlab.id',
     'whatsapp'      => '+62.896.7200.7400',
     'address'       => 'VERNON BUILDING, Jln. Letjen Sutoyo No. 102A, Kota Malang, Jawa Timur, Indonesia 65141',
-	'support'		=> ['tacl', 'tsub'],
+	'support'		=> ['tacl'],
 	'scopes'		=> [
         'tacl.setting.user'	=> 'Mengatur user',
 	],
