@@ -2,23 +2,13 @@
 
 return [
     'scopes'    => [
-        'twh.document.masuk'        => 'Handle stok masuk',
-        'twh.document.keluar'       => 'Handle stok keluar',
-        'twh.document.inhouse'      => 'Handle stok inhouse',
-        'twh.conversion.repack'     => 'Handle konversi untuk repack item',
-        'twh.conversion.unpack'     => 'Handle konversi untuk unpack item',
-        'twh.report.opname'         => 'Melihat laporan rekomendasi opname',
-        'twh.report.procure'        => 'Melihat laporan rekomendasi po',
-        'twh.report.stock'          => 'Melihat laporan kartu stok',
-        'twh.report.spoiled'        => 'Melihat laporan item keluar (Basi)',
-        'twh.report.expired'        => 'Melihat laporan item keluar (Kadaluarsa)',
-        'twh.report.defected'       => 'Melihat laporan item keluar (Cacat)',
-        'twh.report.lost'           => 'Melihat laporan item keluar (Hilang)',
-        'twh.report.unidentified'   => 'Melihat laporan item keluar (Tidak jelas)',
-        'twh.timer.packing'         => 'Melihat laporan performa packing',
-        'twh.timer.unpacking'       => 'Melihat laporan performa unpacking',
+        'twh.task.index'            => 'Handle Task',
+        'twh.document.index'        => 'Handle Dokumen',
+        'twh.record.index'          => 'Handle Paket',
+        // 'twh.conversion.repack'     => 'Handle konversi untuk repack item',
+        // 'twh.conversion.unpack'     => 'Handle konversi untuk unpack item',
         'twh.setting.item'          => 'Mengatur item',
-        'twh.document.approved'     => 'Approval surat jalan',
+        'twh.task.approved'         => 'Approval surat jalan',
     ],
     'logo'      => 'https://thunderlab.id/storage/app/uploads/public/5f7/ae8/123/5f7ae81237a56599536208.png',
     'name'      => 'THUNDERLAB',
@@ -30,37 +20,27 @@ return [
         'item'      => [
             'drafted'   => 'Belum Aktif',
             'submitted' => 'Sudah Aktif',
-            'archived'  => 'Diarsipkan',
+            'archived'  => 'Arsip',
         ],
         'conversion'=> [
-            'drafted'   => 'Inbox',
+            'drafted'   => 'Belum Aktif',
             'actived'   => 'Sudah Aktif',
-            'archived'  => 'Diarsipkan',
+            'archived'  => 'Arsip',
+        ],
+        'task'  => [
+            'opened'    => 'Inbox',
+            'processed' => 'Dalam Proses',
+            'closed'    => 'Selesai',
+            'voided'    => 'Batal',
         ],
         'document'  => [
-            'masuk'     => [
-                'opened'    => 'Inbox',
-                'processed' => 'Dalam Proses',
-                'closed'    => 'Selesai',
-                'voided'    => 'Dibatalkan',
-            ],
-            'keluar'    => [
-                'opened'    => 'Inbox',
-                'processed' => 'Dalam Proses',
-                'closed'    => 'Selesai',
-                'voided'    => 'Dibatalkan',
-            ],
-            'inhouse'   => [
-                'opened'    => 'Inbox',
-                'processed' => 'Dalam Proses',
-                'closed'    => 'Selesai',
-                'voided'    => 'Dibatalkan',
-            ],
+            'created'   => 'Selesai',
+            'voided'    => 'Batal',
         ],
-        'timer'     => [
-            'unpacking' => 'Sortir',
-            'packing'   => 'Pengemasan',
-            'shipped'   => 'Pengiriman',
+        'record'  => [
+            'started'   => 'Mulai',
+            'ended'     => 'Selesai',
+            'voided'    => 'Batal',
         ],
     ],
     'opsi'      => [
@@ -69,39 +49,58 @@ return [
             'FIFO'      => 'FIFO',
             'LIFO'      => 'LIFO',
         ],
-        'type'          => [
-            'masuk'     => [
-                'receiving'     => 'Receiving',
-                'restock_order' => 'Restock Order',
-                'sales_returned'=> 'Sales Returned',
+        'task'  => [
+            'type'      => [
+                'inbound'   => 'Inbound',
+                'outbond'   => 'Outbond',
+                'daily'     => 'Daily',
+                'requisite' => 'Requisite',
+                'opname'    => 'Opname',
+            ]
+        ],
+        'document'  => [
+            'type'      => [
+                'putaway'   => 'Putaway',
+                'dispatch'  => 'Dispatch',
+                'movement'  => 'Movement',
+                'dispose'   => 'Dispose',
+                'cutoff'    => 'Cutoff',
             ],
-            'keluar'    => [
-                'delivery_order'    => 'Delivery Order',
-                'dispatch_note'     => 'Dispatch Note',
-                'store_requisition' => 'Store Requisition',
-                'procure_returned'  => 'Procure Returned',
+            'note'      => [
+                'spoiled'       => 'Basi',
+                'expired'       => 'Kadaluarsa',
+                'defected'      => 'Cacat',
+                'lost'          => 'Hilang',
+                'missed'        => 'Tertukar',
+                'unidentified'  => 'Tidak jelas',
             ],
-            'inhouse'   => [
-                'opname'        => 'Opname',
-                'movement'      => 'Movement',
+        ],
+        'record'    => [
+            'type'      => [
+                'packing'   => 'Packing',
+                'shipping'  => 'Shipping',
+                'receiving' => 'Receiving',
             ],
         ],
         'step' => [
-            'processed'     => [
-                'approved'  => 'Persetujuan',
-                'stocked'   => 'Pencatatan',
-                'declined'  => 'Penolakan',
+            'outbond'   => [
+                'document'  => 'Stok',
+                'record'    => 'Paket',
+            ],
+            'inbound'   => [
+                'document'  => 'Stok',
+                'record'    => 'Paket',
+            ],
+            'requisite' => [
+                'document'  => 'Stok',
+            ],
+            'opname'    => [
+                'document'  => 'Stok',
             ],
         ],
-        'note'          => [
-            'spoiled'       => 'Basi',
-            'expired'       => 'Kadaluarsa',
-            'defected'      => 'Cacat',
-            'lost'          => 'Hilang',
-            'missed'        => 'Tertukar',
-            'unidentified'  => 'Tidak jelas',
-        ],
         'warehouse'     => [],
+        'lot'           => ['default' => 'default', 'pending' => 'pending'],
+        'owner'         => ['nakoa' => 'nakoa'],
         'item_url'      => '/api/warehouse/item/submitted',
         'material_url'  => '/api/manufacture/resource/submitted',
     ],
@@ -116,18 +115,25 @@ return [
             'actived'   => 'primary',
             'archived'  => 'danger',
         ],
-        'document'      => [
+        'task'      => [
             'opened'    => 'warning',
             'processed' => 'warning',
             'closed'    => 'primary',
             'voided'    => 'danger',
         ],
+        'document'  => [
+            'created'   => 'primary',
+            'voided'    => 'danger',
+        ],
+        'record'    => [
+            'started'   => 'warning',
+            'ended'     => 'primary',
+            'voided'    => 'danger',
+        ],
     ],
-    'default'   => [
-        'stock'     => ['owner' => 'nakoa'],
-    ],
+    'default'   => [],
     'setting'   => [
-        'document_batch'=> ['inhouse', 'masuk', 'keluar'],
+        'task_batch'=> ['inhouse', 'masuk', 'keluar'],
         'per_page'      => 80
     ],
     'title'     => [

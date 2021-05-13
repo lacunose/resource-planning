@@ -40,12 +40,17 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @return void
      */
+<<<<<<< HEAD
     public function map()
     {
+=======
+    public function map() {
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
         $this->mapAuthRoutes();
         
         $this->mapOAuthRoutes();
 
+<<<<<<< HEAD
         $this->mapApiRoutes();
         $this->mapWebRoutes();
 
@@ -55,6 +60,12 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapTenantHomepageRoutes();
         $this->mapTenantDashboardRoutes();
+=======
+        $this->mapThunderRoutes();
+
+        $this->mapApiRoutes();
+        $this->mapWebRoutes();
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
     }
 
     /**
@@ -107,7 +118,8 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapApiRoutes()
     {
-        Route::prefix('api')
+        Route::domain(env('APP_BASE', 'localhost'))
+             ->prefix('api')
              ->middleware('api')
              ->namespace($this->namespace)
              ->group(base_path('routes/api.php'));
@@ -120,6 +132,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @return void
      */
+<<<<<<< HEAD
     protected function mapTenantHomepageRoutes()
     {
         Route::middleware('web')
@@ -149,10 +162,13 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @return void
      */
+=======
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
     protected function mapThunderRoutes()
     {
         Route::domain('thunder.'.env('APP_BASE', 'localhost'))
              ->middleware(['web', 'tacl.level:thunder'])
+<<<<<<< HEAD
              ->namespace('App\Http\Controllers\Thunder')
              ->group(base_path('routes/thunder.php'));
     }
@@ -186,4 +202,9 @@ class RouteServiceProvider extends ServiceProvider
              ->namespace('App\Http\Controllers\Member')
              ->group(base_path('routes/member.php'));
     }
+=======
+             ->namespace('Lacunose\Swirl\Http\Controllers\Thunder')
+             ->group(base_path('routes/thunder.php'));
+    }
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
 }

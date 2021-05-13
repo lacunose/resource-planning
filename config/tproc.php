@@ -4,9 +4,6 @@ return [
     'scopes'    => [
         'tproc.transaction.pembelian'   => 'Handle transaksi pembelian',
         'tproc.transaction.konsinyasi'  => 'Handle transaksi konsinyasi',
-        'tproc.report.vendor'           => 'Melihat laporan vendor',
-        'tproc.report.price'            => 'Melihat laporan harga barang',
-        'tproc.report.payment'          => 'Melihat laporan settlement pembelian',
         'tproc.transaction.voided'      => 'Approval void transaksi',
     ],
     'logo'          => 'https://thunderlab.id/storage/app/uploads/public/5f7/ae8/123/5f7ae81237a56599536208.png',
@@ -54,7 +51,11 @@ return [
             'processed'     => [
                 'delivered'     => 'Dikirim',
                 'paid'          => 'Dibayar',
+<<<<<<< HEAD
                 'returned'      => 'Dikembalikan (retur)',
+=======
+                // 'returned'      => 'Dikembalikan (retur)',
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
             ],
         ],
         'event' => [
@@ -67,7 +68,11 @@ return [
                 'confirmed' => 'Dikonfirmasi',
                 'delivered' => 'Diterima',
                 'paid'      => 'Dibayar',
+<<<<<<< HEAD
                 'returned'  => 'Dikembalikan (retur)',
+=======
+                // 'returned'  => 'Dikembalikan (retur)',
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
             ],
             'closed'        => [],
             'voided'        => [],
@@ -80,7 +85,11 @@ return [
         'flag'          => [
             'misc'      => 'Lainnya',
             'catalog'   => 'Stok',
+<<<<<<< HEAD
             'asset'     => 'Inventaris',
+=======
+            // 'asset'     => 'Inventaris',
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
             // 'deposit'           => 'Deposit',
             // 'tax'               => 'Pajak',
         ],

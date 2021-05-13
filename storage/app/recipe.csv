@@ -1,0 +1,985 @@
+"code","name","station","cogs","resource_type","resource_code","resource_name","resource_unit","conversion","item_code","item_name","qty"
+"AM-R","Caff� Americano Ice R","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.0095
+"AM-R","Caff� Americano Ice R","Bar",0,"ingridient","BB-09-001","Air","LITER","19 Liter","DA-06-00005-01","Air Cleo Galon",0.052834
+"AM-R","Caff� Americano Ice R","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"AM-R","Caff� Americano Ice R","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"AM-R","Caff� Americano Ice R","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"AM-R","Caff� Americano Ice R","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"AM-L","Caff� Americano Ice L","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.01267
+"AM-L","Caff� Americano Ice L","Bar",0,"ingridient","BB-09-001","Air","LITER","19 Liter","DA-06-00005-01","Air Cleo Galon",0.052834
+"AM-L","Caff� Americano Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"AM-L","Caff� Americano Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"AM-L","Caff� Americano Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"AM-L","Caff� Americano Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"AM-H","Caff� Americano Hot","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.0095
+"AM-H","Caff� Americano Hot","Bar",0,"ingridient","BB-09-001","Air","LITER","19 Liter","DA-06-00005-01","Air Cleo Galon",0.052834
+"AM-H","Caff� Americano Hot","Bar",0,"package","PA-04-001","Cup Hot + Lid 12 oz","PCS","1000 Pcs","PA-01-00006-01","Paper Cup Hot + Lid 12 oz Hansupack",1
+"AM-H","Caff� Americano Hot","Bar",0,"package","PA-04-006","Sedotan Ungu Pipih","PCS","200 Pcs","PA-01-00003-01","Sedotan Pipih Ungu Hansupack",1
+"KSN-R","Es Kopi Susu Nakoa R","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.0095
+"KSN-R","Es Kopi Susu Nakoa R","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.12
+"KSN-R","Es Kopi Susu Nakoa R","Bar",0,"ingridient","BB-04-001","SKM","KG","0.495 Kg","DA-01-00006-01","Krimer Carnation Putih Kaleng 495 Gram",0.6
+"KSN-R","Es Kopi Susu Nakoa R","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"KSN-R","Es Kopi Susu Nakoa R","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"KSN-R","Es Kopi Susu Nakoa R","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"KSN-R","Es Kopi Susu Nakoa R","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"KSA-R","Kopi Susu Gula Aren Ice R","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.01425
+"KSA-R","Kopi Susu Gula Aren Ice R","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.0627
+"KSA-R","Kopi Susu Gula Aren Ice R","Bar",0,"ingridient","BB-03-001","Susu Evaporasi","KG","0.43 Kg","DA-01-00002-01","Susu Evaporasi F&N Kaleng 430 Gram",0.11
+"KSA-R","Kopi Susu Gula Aren Ice R","Bar",0,"ingridient","BB-13-001","Powder Aren","KG","0.8 Kg","PO-02-00008-01","Powder Frappe Organic Aren Sugar Toffin Pack 1 Kg",0.01875
+"KSA-R","Kopi Susu Gula Aren Ice R","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"KSA-R","Kopi Susu Gula Aren Ice R","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"KSA-R","Kopi Susu Gula Aren Ice R","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"KSA-R","Kopi Susu Gula Aren Ice R","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"KSA-L","Kopi Susu Gula Aren Ice L","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.01267
+"KSA-L","Kopi Susu Gula Aren Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.0855
+"KSA-L","Kopi Susu Gula Aren Ice L","Bar",0,"ingridient","BB-03-001","Susu Evaporasi","KG","0.43 Kg","DA-01-00002-01","Susu Evaporasi F&N Kaleng 430 Gram",0.15
+"KSA-L","Kopi Susu Gula Aren Ice L","Bar",0,"ingridient","BB-13-001","Powder Aren","KG","0.8 Kg","PO-02-00008-01","Powder Frappe Organic Aren Sugar Toffin Pack 1 Kg",0.025
+"KSA-L","Kopi Susu Gula Aren Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"KSA-L","Kopi Susu Gula Aren Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"KSA-L","Kopi Susu Gula Aren Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"KSA-L","Kopi Susu Gula Aren Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"CM-R","Caramel Macchiato Ice R","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.01425
+"CM-R","Caramel Macchiato Ice R","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.057
+"CM-R","Caramel Macchiato Ice R","Bar",0,"ingridient","BB-03-001","Susu Evaporasi","KG","0.43 Kg","DA-01-00002-01","Susu Evaporasi F&N Kaleng 430 Gram",0.1
+"CM-R","Caramel Macchiato Ice R","Bar",0,"ingridient","BB-17-001","Sauce Caramel","LITER","2 Liter","SY-01-000001-01","Sauce Caramel Toffin Botol 1.8 Kg",0.008333
+"CM-R","Caramel Macchiato Ice R","Bar",0,"ingridient","BB-07-010","Powder Coffee Caramel","KG","2 Kg","PO-02-00001-01","Powder Caffe Caramello Toffin Pack 800 Gram",0.01875
+"CM-R","Caramel Macchiato Ice R","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.013333
+"CM-R","Caramel Macchiato Ice R","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"CM-R","Caramel Macchiato Ice R","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"CM-R","Caramel Macchiato Ice R","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"CM-R","Caramel Macchiato Ice R","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"CM-L","Caramel Macchiato Ice L","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.01267
+"CM-L","Caramel Macchiato Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.0684
+"CM-L","Caramel Macchiato Ice L","Bar",0,"ingridient","BB-03-001","Susu Evaporasi","KG","0.43 Kg","DA-01-00002-01","Susu Evaporasi F&N Kaleng 430 Gram",0.12
+"CM-L","Caramel Macchiato Ice L","Bar",0,"ingridient","BB-17-001","Sauce Caramel","LITER","2 Liter","SY-01-000001-01","Sauce Caramel Toffin Botol 1.8 Kg",0.011111
+"CM-L","Caramel Macchiato Ice L","Bar",0,"ingridient","BB-07-010","Powder Coffee Caramel","KG","2 Kg","PO-02-00001-01","Powder Caffe Caramello Toffin Pack 800 Gram",0.025
+"CM-L","Caramel Macchiato Ice L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.026667
+"CM-L","Caramel Macchiato Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"CM-L","Caramel Macchiato Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"CM-L","Caramel Macchiato Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"CM-L","Caramel Macchiato Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"LAD-R","Asian Dolce Latte Ice R","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.0095
+"LAD-R","Asian Dolce Latte Ice R","Bar",0,"ingridient","BB-04-001","SKM","KG","0.495 Kg","DA-01-00006-01","Krimer Carnation Putih Kaleng 495 Gram",0.060606
+"LAD-R","Asian Dolce Latte Ice R","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",6.666667
+"LAD-R","Asian Dolce Latte Ice R","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"LAD-R","Asian Dolce Latte Ice R","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"LAD-R","Asian Dolce Latte Ice R","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"LAD-R","Asian Dolce Latte Ice R","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"LAD-L","Asian Dolce Latte Ice L","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.01425
+"LAD-L","Asian Dolce Latte Ice L","Bar",0,"ingridient","BB-04-001","SKM","KG","0.495 Kg","DA-01-00006-01","Krimer Carnation Putih Kaleng 495 Gram",0.10101
+"LAD-L","Asian Dolce Latte Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.18
+"LAD-L","Asian Dolce Latte Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"LAD-L","Asian Dolce Latte Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"LAD-L","Asian Dolce Latte Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"LAD-L","Asian Dolce Latte Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"LAD-H","Asian Dolce Latte Hot","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.01267
+"LAD-H","Asian Dolce Latte Hot","Bar",0,"ingridient","BB-04-001","SKM","KG","0.495 Kg","DA-01-00006-01","Krimer Carnation Putih Kaleng 495 Gram",0.10101
+"LAD-H","Asian Dolce Latte Hot","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.2
+"LAD-H","Asian Dolce Latte Hot","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"LAD-H","Asian Dolce Latte Hot","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"LAD-H","Asian Dolce Latte Hot","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"LV-R","Vanilla Latte Ice R","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.0095
+"LV-R","Vanilla Latte Ice R","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.013333
+"LV-R","Vanilla Latte Ice R","Bar",0,"ingridient","BB-11-001","Sirup Vanilla","LITER","1 Liter","SI-02-000001-01","Sirup Vanilla Drip Syrup Botol 760 Ml",0.026316
+"LV-R","Vanilla Latte Ice R","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.057
+"LV-R","Vanilla Latte Ice R","Bar",0,"ingridient","BB-03-001","Susu Evaporasi","KG","0.43 Kg","DA-01-00002-01","Susu Evaporasi F&N Kaleng 430 Gram",0.1
+"LV-R","Vanilla Latte Ice R","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"LV-R","Vanilla Latte Ice R","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"LV-R","Vanilla Latte Ice R","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"LV-L","Vanilla Latte Ice L","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.01267
+"LV-L","Vanilla Latte Ice L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.02
+"LV-L","Vanilla Latte Ice L","Bar",0,"ingridient","BB-11-001","Sirup Vanilla","LITER","1 Liter","SI-02-000001-01","Sirup Vanilla Drip Syrup Botol 760 Ml",0.039474
+"LV-L","Vanilla Latte Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.0741
+"LV-L","Vanilla Latte Ice L","Bar",0,"ingridient","BB-03-001","Susu Evaporasi","KG","0.43 Kg","DA-01-00002-01","Susu Evaporasi F&N Kaleng 430 Gram",0.13
+"LV-L","Vanilla Latte Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"LV-L","Vanilla Latte Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"LV-L","Vanilla Latte Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"LV-H","Vanilla Latte Hot","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.0095
+"LV-H","Vanilla Latte Hot","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.006667
+"LV-H","Vanilla Latte Hot","Bar",0,"ingridient","BB-11-001","Sirup Vanilla","LITER","1 Liter","SI-02-000001-01","Sirup Vanilla Drip Syrup Botol 760 Ml",0.039474
+"LV-H","Vanilla Latte Hot","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.114
+"LV-H","Vanilla Latte Hot","Bar",0,"ingridient","BB-03-001","Susu Evaporasi","KG","0.43 Kg","DA-01-00002-01","Susu Evaporasi F&N Kaleng 430 Gram",0.2
+"LV-H","Vanilla Latte Hot","Bar",0,"package","PA-05-001","Cup Hot + Lid 8 oz","PCS","1000 Pcs","PA-01-00005-01","Paper Cup Hot + Lid 8 oz Hansupack",1
+"LV-H","Vanilla Latte Hot","Bar",0,"package","PA-04-006","Sedotan Ungu Pipih","PCS","200 Pcs","PA-01-00003-01","Sedotan Pipih Ungu Hansupack",1
+"LC-R","Caramel Latte Ice R","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.0095
+"LC-R","Caramel Latte Ice R","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.013333
+"LC-R","Caramel Latte Ice R","Bar",0,"ingridient","BB-12-002","Sirup Caramel","LITER","0.76 LITER","SI-02-000003-01","Sirup Caramel Drip Botol 760 Ml",0.026316
+"LC-R","Caramel Latte Ice R","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.057
+"LC-R","Caramel Latte Ice R","Bar",0,"ingridient","BB-03-001","Susu Evaporasi","KG","0.43 Kg","DA-01-00002-01","Susu Evaporasi F&N Kaleng 430 Gram",0.1
+"LC-R","Caramel Latte Ice R","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"LC-R","Caramel Latte Ice R","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"LC-R","Caramel Latte Ice R","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"LC-L","Caramel Latte Ice L","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.01267
+"LC-L","Caramel Latte Ice L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.02
+"LC-L","Caramel Latte Ice L","Bar",0,"ingridient","BB-12-002","Sirup Caramel","LITER","0.76 LITER","SI-02-000003-01","Sirup Caramel Drip Botol 760 Ml",0.039474
+"LC-L","Caramel Latte Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.0741
+"LC-L","Caramel Latte Ice L","Bar",0,"ingridient","BB-03-001","Susu Evaporasi","KG","0.43 Kg","DA-01-00002-01","Susu Evaporasi F&N Kaleng 430 Gram",0.13
+"LC-L","Caramel Latte Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"LC-L","Caramel Latte Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"LC-L","Caramel Latte Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"LC-H","Caramel Latte Hot","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.0095
+"LC-H","Caramel Latte Hot","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.006667
+"LC-H","Caramel Latte Hot","Bar",0,"ingridient","BB-12-002","Sirup Caramel","LITER","0.76 LITER","SI-02-000003-01","Sirup Caramel Drip Botol 760 Ml",0.039474
+"LC-H","Caramel Latte Hot","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.114
+"LC-H","Caramel Latte Hot","Bar",0,"ingridient","BB-03-001","Susu Evaporasi","KG","0.43 Kg","DA-01-00002-01","Susu Evaporasi F&N Kaleng 430 Gram",0.2
+"LC-H","Caramel Latte Hot","Bar",0,"package","PA-05-001","Cup Hot + Lid 8 oz","PCS","1000 Pcs","PA-01-00005-01","Paper Cup Hot + Lid 8 oz Hansupack",1
+"LC-H","Caramel Latte Hot","Bar",0,"package","PA-04-006","Sedotan Ungu Pipih","PCS","200 Pcs","PA-01-00003-01","Sedotan Pipih Ungu Hansupack",1
+"LH-R","Hazelnut Latte Ice R","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.0095
+"LH-R","Hazelnut Latte Ice R","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.013333
+"LH-R","Hazelnut Latte Ice R","Bar",0,"ingridient","BB-12-001","Sirup Hazelnut","LITER","0.76 LITER","SI-02-000002-01","Sirup Hazelnut Drip Syrup Botol 760 Ml",0.026316
+"LH-R","Hazelnut Latte Ice R","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.057
+"LH-R","Hazelnut Latte Ice R","Bar",0,"ingridient","BB-03-001","Susu Evaporasi","KG","0.43 Kg","DA-01-00002-01","Susu Evaporasi F&N Kaleng 430 Gram",0.1
+"LH-R","Hazelnut Latte Ice R","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"LH-R","Hazelnut Latte Ice R","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"LH-R","Hazelnut Latte Ice R","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"LH-L","Hazelnut Latte Ice L","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.01267
+"LH-L","Hazelnut Latte Ice L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.02
+"LH-L","Hazelnut Latte Ice L","Bar",0,"ingridient","BB-12-001","Sirup Hazelnut","LITER","0.76 LITER","SI-02-000002-01","Sirup Hazelnut Drip Syrup Botol 760 Ml",0.039474
+"LH-L","Hazelnut Latte Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.0741
+"LH-L","Hazelnut Latte Ice L","Bar",0,"ingridient","BB-03-001","Susu Evaporasi","KG","0.43 Kg","DA-01-00002-01","Susu Evaporasi F&N Kaleng 430 Gram",0.13
+"LH-L","Hazelnut Latte Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"LH-L","Hazelnut Latte Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"LH-L","Hazelnut Latte Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"LH-H","Hazelnut Latte Hot","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.0095
+"LH-H","Hazelnut Latte Hot","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.006667
+"LH-H","Hazelnut Latte Hot","Bar",0,"ingridient","BB-12-001","Sirup Hazelnut","LITER","0.76 LITER","SI-02-000002-01","Sirup Hazelnut Drip Syrup Botol 760 Ml",0.039474
+"LH-H","Hazelnut Latte Hot","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.114
+"LH-H","Hazelnut Latte Hot","Bar",0,"ingridient","BB-03-001","Susu Evaporasi","KG","0.43 Kg","DA-01-00002-01","Susu Evaporasi F&N Kaleng 430 Gram",0.2
+"LH-H","Hazelnut Latte Hot","Bar",0,"package","PA-05-001","Cup Hot + Lid 8 oz","PCS","1000 Pcs","PA-01-00005-01","Paper Cup Hot + Lid 8 oz Hansupack",1
+"LH-H","Hazelnut Latte Hot","Bar",0,"package","PA-04-006","Sedotan Ungu Pipih","PCS","200 Pcs","PA-01-00003-01","Sedotan Pipih Ungu Hansupack",1
+"L-R","Caff� Latte Ice R","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.0095
+"L-R","Caff� Latte Ice R","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.12
+"L-R","Caff� Latte Ice R","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"L-R","Caff� Latte Ice R","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"L-R","Caff� Latte Ice R","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"L-R","Caff� Latte Ice R","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"L-L","Caff� Latte Ice L","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.01267
+"L-L","Caff� Latte Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.15
+"L-L","Caff� Latte Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"L-L","Caff� Latte Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"L-L","Caff� Latte Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"L-L","Caff� Latte Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"L-H","Caff� Latte Hot","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.0095
+"L-H","Caff� Latte Hot","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.2
+"L-H","Caff� Latte Hot","Bar",0,"package","PA-04-001","Cup Hot + Lid 12 oz","PCS","1000 Pcs","PA-01-00006-01","Paper Cup Hot + Lid 12 oz Hansupack",1
+"L-H","Caff� Latte Hot","Bar",0,"package","PA-04-006","Sedotan Ungu Pipih","PCS","200 Pcs","PA-01-00003-01","Sedotan Pipih Ungu Hansupack",1
+"CAP-R","Cappucino Ice R","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.0095
+"CAP-R","Cappucino Ice R","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.12
+"CAP-R","Cappucino Ice R","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"CAP-R","Cappucino Ice R","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"CAP-R","Cappucino Ice R","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"CAP-R","Cappucino Ice R","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"CAP-L","Cappucino Ice L","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.06
+"CAP-L","Cappucino Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.15
+"CAP-L","Cappucino Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"CAP-L","Cappucino Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"CAP-L","Cappucino Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"CAP-L","Cappucino Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"CAP-H","Cappucino Hot","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.0095
+"CAP-H","Cappucino Hot","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.2
+"CAP-H","Cappucino Hot","Bar",0,"package","PA-04-001","Cup Hot + Lid 12 oz","PCS","1000 Pcs","PA-01-00006-01","Paper Cup Hot + Lid 12 oz Hansupack",1
+"CAP-H","Cappucino Hot","Bar",0,"package","PA-04-006","Sedotan Ungu Pipih","PCS","200 Pcs","PA-01-00003-01","Sedotan Pipih Ungu Hansupack",1
+"AMH-R","Honey Americano Ice R","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.0095
+"AMH-R","Honey Americano Ice R","Bar",0,"ingridient","BB-07-005","Concentrad Honey","KG","7 Kg","SI-04-000002-01","Concentrated Longan Honey NIP Jirigen 7 Kg",0.002143
+"AMH-R","Honey Americano Ice R","Bar",0,"ingridient","BB-09-001","Air","LITER","19 Liter","DA-06-00005-01","Air Cleo Galon",0.052834
+"AMH-R","Honey Americano Ice R","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"AMH-R","Honey Americano Ice R","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"AMH-R","Honey Americano Ice R","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"AMH-R","Honey Americano Ice R","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"AMH-L","Honey Americano Ice L","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.01267
+"AMH-L","Honey Americano Ice L","Bar",0,"ingridient","BB-07-005","Concentrad Honey","KG","7 Kg","SI-04-000002-01","Concentrated Longan Honey NIP Jirigen 7 Kg",0.002857
+"AMH-L","Honey Americano Ice L","Bar",0,"ingridient","BB-09-001","Air","LITER","19 Liter","DA-06-00005-01","Air Cleo Galon",0.052834
+"AMH-L","Honey Americano Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"AMH-L","Honey Americano Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"AMH-L","Honey Americano Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"AMH-L","Honey Americano Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"AMH-H","Honey Americano Hot","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.0095
+"AMH-H","Honey Americano Hot","Bar",0,"ingridient","BB-09-001","Air","LITER","19 Liter","DA-06-00005-01","Air Cleo Galon",0.052834
+"AMH-H","Honey Americano Hot","Bar",0,"ingridient","BB-07-005","Concentrad Honey","KG","7 Kg","SI-04-000002-01","Concentrated Longan Honey NIP Jirigen 7 Kg",0.002857
+"AMH-H","Honey Americano Hot","Bar",0,"package","PA-04-001","Cup Hot + Lid 12 oz","PCS","1000 Pcs","PA-01-00006-01","Paper Cup Hot + Lid 12 oz Hansupack",1
+"AMH-H","Honey Americano Hot","Bar",0,"package","PA-04-006","Sedotan Ungu Pipih","PCS","200 Pcs","PA-01-00003-01","Sedotan Pipih Ungu Hansupack",1
+"MV-R","Mochaccino Vanilla Ice R","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.006333
+"MV-R","Mochaccino Vanilla Ice R","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.0684
+"MV-R","Mochaccino Vanilla Ice R","Bar",0,"ingridient","BB-03-001","Susu Evaporasi","KG","0.43 Kg","DA-01-00002-01","Susu Evaporasi F&N Kaleng 430 Gram",0.12
+"MV-R","Mochaccino Vanilla Ice R","Bar",0,"ingridient","BB-07-008","Powder Cocoa","KG","1 Kg","PO-01-00001-01","Powder Cocoa NIP Pack 1 Kg",0.004
+"MV-R","Mochaccino Vanilla Ice R","Bar",0,"ingridient","BB-11-001","Sirup Vanilla","LITER","1 Liter","SI-02-000001-01","Sirup Vanilla Drip Syrup Botol 760 Ml",0.019737
+"MV-R","Mochaccino Vanilla Ice R","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.026667
+"MV-R","Mochaccino Vanilla Ice R","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"MV-R","Mochaccino Vanilla Ice R","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"MV-R","Mochaccino Vanilla Ice R","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"MV-R","Mochaccino Vanilla Ice R","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"MV-L","Mochaccino Vanilla Ice L","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.0095
+"MV-L","Mochaccino Vanilla Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.855
+"MV-L","Mochaccino Vanilla Ice L","Bar",0,"ingridient","BB-03-001","Susu Evaporasi","KG","0.43 Kg","DA-01-00002-01","Susu Evaporasi F&N Kaleng 430 Gram",0.15
+"MV-L","Mochaccino Vanilla Ice L","Bar",0,"ingridient","BB-07-008","Powder Cocoa","KG","1 Kg","PO-01-00001-01","Powder Cocoa NIP Pack 1 Kg",0.005
+"MV-L","Mochaccino Vanilla Ice L","Bar",0,"ingridient","BB-11-001","Sirup Vanilla","LITER","1 Liter","SI-02-000001-01","Sirup Vanilla Drip Syrup Botol 760 Ml",0.026316
+"MV-L","Mochaccino Vanilla Ice L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.026667
+"MV-L","Mochaccino Vanilla Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"MV-L","Mochaccino Vanilla Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"MV-L","Mochaccino Vanilla Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"MV-L","Mochaccino Vanilla Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"FAD-L","Asian Dolce Frappe Ice L","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.019
+"FAD-L","Asian Dolce Frappe Ice L","Bar",0,"ingridient","BB-04-001","SKM","KG","0.495 Kg","DA-01-00006-01","Krimer Carnation Putih Kaleng 495 Gram",0.10101
+"FAD-L","Asian Dolce Frappe Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.18
+"FAD-L","Asian Dolce Frappe Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"FAD-L","Asian Dolce Frappe Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"FAD-L","Asian Dolce Frappe Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"FAD-L","Asian Dolce Frappe Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"FCM-L","Caramel Machiato Frappe Ice L","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.01267
+"FCM-L","Caramel Machiato Frappe Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.0684
+"FCM-L","Caramel Machiato Frappe Ice L","Bar",0,"ingridient","BB-03-001","Susu Evaporasi","KG","0.43 Kg","DA-01-00002-01","Susu Evaporasi F&N Kaleng 430 Gram",0.12
+"FCM-L","Caramel Machiato Frappe Ice L","Bar",0,"ingridient","BB-17-001","Sauce Caramel","LITER","2 Liter","SY-01-000001-01","Sauce Caramel Toffin Botol 1.8 Kg",0.011111
+"FCM-L","Caramel Machiato Frappe Ice L","Bar",0,"ingridient","BB-07-010","Powder Coffee Caramel","KG","2 Kg","PO-02-00001-01","Powder Caffe Caramello Toffin Pack 800 Gram",0.025
+"FCM-L","Caramel Machiato Frappe Ice L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.026667
+"FCM-L","Caramel Machiato Frappe Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"FCM-L","Caramel Machiato Frappe Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"FCM-L","Caramel Machiato Frappe Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"FCM-L","Caramel Machiato Frappe Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"FC-L","Coffee Frappe Ice L","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.019
+"FC-L","Coffee Frappe Ice L","Bar",0,"ingridient","BB-09-001","Air","LITER","19 Liter","DA-06-00005-01","Air Cleo Galon",0.052834
+"FC-L","Coffee Frappe Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"FC-L","Coffee Frappe Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"FC-L","Coffee Frappe Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"FC-L","Coffee Frappe Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"ML-R","Matcha Latte Ice R","Bar",0,"ingridient","BB-14-001","Powder Matcha Premium","KG","1 Kg","PO-03-00001-01","Powder Greantea LABR Premium Pack 1 Kg",0.01
+"ML-R","Matcha Latte Ice R","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.14
+"ML-R","Matcha Latte Ice R","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.033333
+"ML-R","Matcha Latte Ice R","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"ML-R","Matcha Latte Ice R","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"ML-R","Matcha Latte Ice R","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"ML-R","Matcha Latte Ice R","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"ML-L","Matcha Latte Ice L","Bar",0,"ingridient","BB-14-001","Powder Matcha Premium","KG","1 Kg","PO-03-00001-01","Powder Greantea LABR Premium Pack 1 Kg",0.015
+"ML-L","Matcha Latte Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.18
+"ML-L","Matcha Latte Ice L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.04
+"ML-L","Matcha Latte Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"ML-L","Matcha Latte Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"ML-L","Matcha Latte Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"ML-L","Matcha Latte Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"ML-H","Matcha Latte Hot","Bar",0,"ingridient","BB-14-001","Powder Matcha Premium","KG","1 Kg","PO-03-00001-01","Powder Greantea LABR Premium Pack 1 Kg",0.015
+"ML-H","Matcha Latte Hot","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.2
+"ML-H","Matcha Latte Hot","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.013333
+"ML-H","Matcha Latte Hot","Bar",0,"package","PA-04-001","Cup Hot + Lid 12 oz","PCS","1000 Pcs","PA-01-00006-01","Paper Cup Hot + Lid 12 oz Hansupack",1
+"ML-H","Matcha Latte Hot","Bar",0,"package","PA-04-006","Sedotan Ungu Pipih","PCS","200 Pcs","PA-01-00003-01","Sedotan Pipih Ungu Hansupack",1
+"BTH-L","Shaken Boba Tea Ice (Honey) L","Bar",0,"ingridient","BB-07-007","Powder Black Tea","KG","1 Kg","PO-01-00005-01","Powder Black Tea NIP Pack 1Kg",0.781
+"BTH-L","Shaken Boba Tea Ice (Honey) L","Bar",0,"ingridient","BB-07-005","Concentrad Honey","KG","7 Kg","SI-04-000002-01","Concentrated Longan Honey NIP Jirigen 7 Kg",0.005714
+"BTH-L","Shaken Boba Tea Ice (Honey) L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.003636
+"BTH-L","Shaken Boba Tea Ice (Honey) L","Bar",0,"ingridient","BB-16-001","Tapioca Pearl","KG","1 Kg","DA-07-00006-01","Boba Boba King Pack 1 Kg",0.027273
+"BTH-L","Shaken Boba Tea Ice (Honey) L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"BTH-L","Shaken Boba Tea Ice (Honey) L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"BTH-L","Shaken Boba Tea Ice (Honey) L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"BTH-L","Shaken Boba Tea Ice (Honey) L","Bar",0,"package","PA-04-005","Sedotan Ungu 12 mm","PCS","200 Pcs","PA-01-00008-01","Sedotan Ungu Lancip 15 mm Hansupack",1
+"BTL-L","Shaken Boba Tea Ice (Lychee) L","Bar",0,"ingridient","BB-07-007","Powder Black Tea","KG","1 Kg","PO-01-00005-01","Powder Black Tea NIP Pack 1Kg",0.2125
+"BTL-L","Shaken Boba Tea Ice (Lychee) L","Bar",0,"ingridient","BB-07-003","Concentrad Lychee","KG","7 Kg","SI-04-000004-01","Concentrated Lychee NIP Jirigen 7 Kg",0.005714
+"BTL-L","Shaken Boba Tea Ice (Lychee) L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.003636
+"BTL-L","Shaken Boba Tea Ice (Lychee) L","Bar",0,"ingridient","BB-16-001","Tapioca Pearl","KG","1 Kg","DA-07-00006-01","Boba Boba King Pack 1 Kg",0.027273
+"BTL-L","Shaken Boba Tea Ice (Lychee) L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"BTL-L","Shaken Boba Tea Ice (Lychee) L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"BTL-L","Shaken Boba Tea Ice (Lychee) L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"BTL-L","Shaken Boba Tea Ice (Lychee) L","Bar",0,"package","PA-04-005","Sedotan Ungu 12 mm","PCS","200 Pcs","PA-01-00008-01","Sedotan Ungu Lancip 15 mm Hansupack",1
+"BTM-L","Shaken Boba Tea Ice (Mango) L","Bar",0,"ingridient","BB-07-007","Powder Black Tea","KG","1 Kg","PO-01-00005-01","Powder Black Tea NIP Pack 1Kg",0.2125
+"BTM-L","Shaken Boba Tea Ice (Mango) L","Bar",0,"ingridient","BB-07-004","Concentrad Mango","KG","7 Kg","SI-04-000001-01","Concentrated Mango NIP Jirigen 7 Kg",0.005714
+"BTM-L","Shaken Boba Tea Ice (Mango) L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.003636
+"BTM-L","Shaken Boba Tea Ice (Mango) L","Bar",0,"ingridient","BB-16-001","Tapioca Pearl","KG","1 Kg","DA-07-00006-01","Boba Boba King Pack 1 Kg",0.027273
+"BTM-L","Shaken Boba Tea Ice (Mango) L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"BTM-L","Shaken Boba Tea Ice (Mango) L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"BTM-L","Shaken Boba Tea Ice (Mango) L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"BTM-L","Shaken Boba Tea Ice (Mango) L","Bar",0,"package","PA-04-005","Sedotan Ungu 12 mm","PCS","200 Pcs","PA-01-00008-01","Sedotan Ungu Lancip 15 mm Hansupack",1
+"BTP-L","Shaken Boba Tea Ice (Peach) L","Bar",0,"ingridient","BB-07-007","Powder Black Tea","KG","1 Kg","PO-01-00005-01","Powder Black Tea NIP Pack 1Kg",0.2125
+"BTP-L","Shaken Boba Tea Ice (Peach) L","Bar",0,"ingridient","BB-07-006","Sirup Peach","LITER","1 Liter","SI-03-000002-01","Sirup Peach Delifru Pack 1 Liter",0.03
+"BTP-L","Shaken Boba Tea Ice (Peach) L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.003636
+"BTP-L","Shaken Boba Tea Ice (Peach) L","Bar",0,"ingridient","BB-16-001","Tapioca Pearl","KG","1 Kg","DA-07-00006-01","Boba Boba King Pack 1 Kg",0.027273
+"BTP-L","Shaken Boba Tea Ice (Peach) L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"BTP-L","Shaken Boba Tea Ice (Peach) L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"BTP-L","Shaken Boba Tea Ice (Peach) L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"BTP-L","Shaken Boba Tea Ice (Peach) L","Bar",0,"package","PA-04-005","Sedotan Ungu 12 mm","PCS","200 Pcs","PA-01-00008-01","Sedotan Ungu Lancip 15 mm Hansupack",1
+"TMH-L","Tea Macchiato Ice (Honey) L","Bar",0,"ingridient","BB-07-007","Powder Black Tea","KG","1 Kg","PO-01-00005-01","Powder Black Tea NIP Pack 1Kg",0.2125
+"TMH-L","Tea Macchiato Ice (Honey) L","Bar",0,"ingridient","BB-07-005","Concentrad Honey","KG","7 Kg","SI-04-000002-01","Concentrated Longan Honey NIP Jirigen 7 Kg",0.005714
+"TMH-L","Tea Macchiato Ice (Honey) L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.013333
+"TMH-L","Tea Macchiato Ice (Honey) L","Bar",0,"ingridient","BB-07-009","Powder Cheese Foam","KG","1 Kg","DA-07-00014-01","Foam Cheese Manis NIP Pack 1 Kg",0.005625
+"TMH-L","Tea Macchiato Ice (Honey) L","Bar",0,"ingridient","BB-05-001","Whip Cream","LITER","0.9 LITER","DA-07-00002-01","Rich Value Pride Pack 900Ml",0.0013
+"TMH-L","Tea Macchiato Ice (Honey) L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"TMH-L","Tea Macchiato Ice (Honey) L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"TMH-L","Tea Macchiato Ice (Honey) L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"TMH-L","Tea Macchiato Ice (Honey) L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"TML-L","Tea Macchiato Ice (Lychee) L","Bar",0,"ingridient","BB-07-007","Powder Black Tea","KG","1 Kg","PO-01-00005-01","Powder Black Tea NIP Pack 1Kg",0.2125
+"TML-L","Tea Macchiato Ice (Lychee) L","Bar",0,"ingridient","BB-07-003","Concentrad Lychee","KG","7 Kg","SI-04-000004-01","Concentrated Lychee NIP Jirigen 7 Kg",0.005714
+"TML-L","Tea Macchiato Ice (Lychee) L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.02
+"TML-L","Tea Macchiato Ice (Lychee) L","Bar",0,"ingridient","BB-07-009","Powder Cheese Foam","KG","1 Kg","DA-07-00014-01","Foam Cheese Manis NIP Pack 1 Kg",0.005625
+"TML-L","Tea Macchiato Ice (Lychee) L","Bar",0,"ingridient","BB-05-001","Whip Cream","LITER","0.9 LITER","DA-07-00002-01","Rich Value Pride Pack 900Ml",0.0013
+"TML-L","Tea Macchiato Ice (Lychee) L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"TML-L","Tea Macchiato Ice (Lychee) L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"TML-L","Tea Macchiato Ice (Lychee) L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"TML-L","Tea Macchiato Ice (Lychee) L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"TMM-L","Tea Macchiato Ice (Mango) L","Bar",0,"ingridient","BB-07-007","Powder Black Tea","KG","1 Kg","PO-01-00005-01","Powder Black Tea NIP Pack 1Kg",0.2125
+"TMM-L","Tea Macchiato Ice (Mango) L","Bar",0,"ingridient","BB-07-004","Concentrad Mango","KG","7 Kg","SI-04-000001-01","Concentrated Mango NIP Jirigen 7 Kg",0.005714
+"TMM-L","Tea Macchiato Ice (Mango) L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.013333
+"TMM-L","Tea Macchiato Ice (Mango) L","Bar",0,"ingridient","BB-07-009","Powder Cheese Foam","KG","1 Kg","DA-07-00014-01","Foam Cheese Manis NIP Pack 1 Kg",0.005625
+"TMM-L","Tea Macchiato Ice (Mango) L","Bar",0,"ingridient","BB-05-001","Whip Cream","LITER","0.9 LITER","DA-07-00002-01","Rich Value Pride Pack 900Ml",0.0013
+"TMM-L","Tea Macchiato Ice (Mango) L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"TMM-L","Tea Macchiato Ice (Mango) L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"TMM-L","Tea Macchiato Ice (Mango) L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"TMM-L","Tea Macchiato Ice (Mango) L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"TMP-L","Tea Macchiato Ice (Peach) L","Bar",0,"ingridient","BB-07-007","Powder Black Tea","KG","1 Kg","PO-01-00005-01","Powder Black Tea NIP Pack 1Kg",0.2125
+"TMP-L","Tea Macchiato Ice (Peach) L","Bar",0,"ingridient","BB-07-006","Sirup Peach","LITER","1 Liter","SI-03-000002-01","Sirup Peach Delifru Pack 1 Liter",0.03
+"TMP-L","Tea Macchiato Ice (Peach) L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.013333
+"TMP-L","Tea Macchiato Ice (Peach) L","Bar",0,"ingridient","BB-07-009","Powder Cheese Foam","KG","1 Kg","DA-07-00014-01","Foam Cheese Manis NIP Pack 1 Kg",0.005625
+"TMP-L","Tea Macchiato Ice (Peach) L","Bar",0,"ingridient","BB-05-001","Whip Cream","LITER","0.9 LITER","DA-07-00002-01","Rich Value Pride Pack 900Ml",0.0013
+"TMP-L","Tea Macchiato Ice (Peach) L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"TMP-L","Tea Macchiato Ice (Peach) L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"TMP-L","Tea Macchiato Ice (Peach) L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"TMP-L","Tea Macchiato Ice (Peach) L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"TP-R","Tea Peppermint Hot L","Bar",0,"ingridient","BB-18-002","Tea Peppermint","PCS","25 Pcs","TE-02-000001-01","Tea Peppermint Ronnefeldt Kotak Pcs",1
+"TP-R","Tea Peppermint Hot L","Bar",0,"ingridient","BB-09-001","Air","LITER","19 Liter","DA-06-00005-01","Air Cleo Galon",0.052834
+"TP-R","Tea Peppermint Hot L","Bar",0,"package","PA-04-001","Cup Hot + Lid 12 oz","PCS","1000 Pcs","PA-01-00006-01","Paper Cup Hot + Lid 12 oz Hansupack",1
+"TP-R","Tea Peppermint Hot L","Bar",0,"package","PA-04-006","Sedotan Ungu Pipih","PCS","200 Pcs","PA-01-00003-01","Sedotan Pipih Ungu Hansupack",1
+"TC-R","Tea Camomile Hot L","Bar",0,"ingridient","BB-18-001","Tea Chamomile","PCS","25 Pcs","TE-01-000002-01","Tea Chamomile Lipton Kotak Pcs",1
+"TC-R","Tea Camomile Hot L","Bar",0,"ingridient","BB-09-001","Air","LITER","19 Liter","DA-06-00005-01","Air Cleo Galon",0.052834
+"TC-R","Tea Camomile Hot L","Bar",0,"package","PA-04-001","Cup Hot + Lid 12 oz","PCS","1000 Pcs","PA-01-00006-01","Paper Cup Hot + Lid 12 oz Hansupack",1
+"TC-R","Tea Camomile Hot L","Bar",0,"package","PA-04-006","Sedotan Ungu Pipih","PCS","200 Pcs","PA-01-00003-01","Sedotan Pipih Ungu Hansupack",1
+"TEG-R","Tea Earl Grey Hot L","Bar",0,"ingridient","BB-18-004","Tea Earl Grey","PCS","25 Pcs","TE-01-000003-01","Tea Earl Grey Lipton Kotak Pcs",1
+"TEG-R","Tea Earl Grey Hot L","Bar",0,"ingridient","BB-09-001","Air","LITER","19 Liter","DA-06-00005-01","Air Cleo Galon",0.052834
+"TEG-R","Tea Earl Grey Hot L","Bar",0,"package","PA-04-001","Cup Hot + Lid 12 oz","PCS","1000 Pcs","PA-01-00006-01","Paper Cup Hot + Lid 12 oz Hansupack",1
+"TEG-R","Tea Earl Grey Hot L","Bar",0,"package","PA-04-006","Sedotan Ungu Pipih","PCS","200 Pcs","PA-01-00003-01","Sedotan Pipih Ungu Hansupack",1
+"TEB-R","Tea English Breakfast Hot L","Bar",0,"ingridient","BB-18-003","Tea English Breakfast","PCS","25 Pcs","TE-02-000002-01","Tea English Breakfast Ronnefeldt Pcs",1
+"TEB-R","Tea English Breakfast Hot L","Bar",0,"ingridient","BB-09-001","Air","LITER","19 Liter","DA-06-00005-01","Air Cleo Galon",0.052834
+"TEB-R","Tea English Breakfast Hot L","Bar",0,"package","PA-04-001","Cup Hot + Lid 12 oz","PCS","1000 Pcs","PA-01-00006-01","Paper Cup Hot + Lid 12 oz Hansupack",1
+"TEB-R","Tea English Breakfast Hot L","Bar",0,"package","PA-04-006","Sedotan Ungu Pipih","PCS","200 Pcs","PA-01-00003-01","Sedotan Pipih Ungu Hansupack",1
+"LT-L","Black Tea Latte Ice L","Bar",0,"ingridient","BB-07-007","Powder Black Tea","KG","1 Kg","PO-01-00005-01","Powder Black Tea NIP Pack 1Kg",0.1
+"LT-L","Black Tea Latte Ice L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.04
+"LT-L","Black Tea Latte Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.08
+"LT-L","Black Tea Latte Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"LT-L","Black Tea Latte Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"LT-L","Black Tea Latte Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"LT-L","Black Tea Latte Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"FT-L","Black Tea Frappe Ice L","Bar",0,"ingridient","BB-07-007","Powder Black Tea","KG","1 Kg","PO-01-00005-01","Powder Black Tea NIP Pack 1Kg",0.1
+"FT-L","Black Tea Frappe Ice L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.04
+"FT-L","Black Tea Frappe Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.08
+"FT-L","Black Tea Frappe Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"FT-L","Black Tea Frappe Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"FT-L","Black Tea Frappe Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"FT-L","Black Tea Frappe Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"KL-R","Klepon Brown Sugar Boba R","Bar",0,"ingridient","BB-99-001","Powder Klepon","KG","0.8 Kg","PO-02-00009-01","Powder Frappe Klepon Toffin Pack 1 Kg",0.015
+"KL-R","Klepon Brown Sugar Boba R","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.07
+"KL-R","Klepon Brown Sugar Boba R","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.003636
+"KL-R","Klepon Brown Sugar Boba R","Bar",0,"ingridient","BB-16-001","Tapioca Pearl","KG","1 Kg","DA-07-00006-01","Boba Boba King Pack 1 Kg",0.027273
+"KL-R","Klepon Brown Sugar Boba R","Bar",0,"ingridient","BB-99-002","Powder Palm Sugar","KG","1 Kg","SI-03-000003-01","Palm Sugar Cair Dellifru Pack 1 Liter",0.03
+"KL-R","Klepon Brown Sugar Boba R","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"KL-R","Klepon Brown Sugar Boba R","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"KL-R","Klepon Brown Sugar Boba R","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"KL-R","Klepon Brown Sugar Boba R","Bar",0,"package","PA-04-005","Sedotan Ungu 12 mm","PCS","200 Pcs","PA-01-00008-01","Sedotan Ungu Lancip 15 mm Hansupack",1
+"KL-L","Klepon Brown Sugar Boba L","Bar",0,"ingridient","BB-99-001","Powder Klepon","KG","0.8 Kg","PO-02-00009-01","Powder Frappe Klepon Toffin Pack 1 Kg",0.02
+"KL-L","Klepon Brown Sugar Boba L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.1
+"KL-L","Klepon Brown Sugar Boba L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.003636
+"KL-L","Klepon Brown Sugar Boba L","Bar",0,"ingridient","BB-16-001","Tapioca Pearl","KG","1 Kg","DA-07-00006-01","Boba Boba King Pack 1 Kg",0.027273
+"KL-L","Klepon Brown Sugar Boba L","Bar",0,"ingridient","BB-99-002","Powder Palm Sugar","KG","1 Kg","SI-03-000003-01","Palm Sugar Cair Dellifru Pack 1 Liter",0.03
+"KL-L","Klepon Brown Sugar Boba L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"KL-L","Klepon Brown Sugar Boba L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"KL-L","Klepon Brown Sugar Boba L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"KL-L","Klepon Brown Sugar Boba L","Bar",0,"package","PA-04-005","Sedotan Ungu 12 mm","PCS","200 Pcs","PA-01-00008-01","Sedotan Ungu Lancip 15 mm Hansupack",1
+"VR-L","Caffe` Vanilla Rum L","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.05
+"VR-L","Caffe` Vanilla Rum L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.15
+"VR-L","Caffe` Vanilla Rum L","Bar",0,"ingridient","BB-11-001","Sirup Vanilla","LITER","1 Liter","SI-02-000001-01","Sirup Vanilla Drip Syrup Botol 760 Ml",0.02
+"VR-L","Caffe` Vanilla Rum L","Bar",0,"ingridient","BB-99-003","Sirup rum","KG","1 Kg","SI-03-000001-01","Sirup Rum Raisin Delifru Pack 1 Liter",0.02
+"VR-L","Caffe` Vanilla Rum L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"VR-L","Caffe` Vanilla Rum L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"VR-L","Caffe` Vanilla Rum L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"VR-L","Caffe` Vanilla Rum L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"CC-R","Cotton Candy Latte Ice R","Bar",0,"ingridient","BB-13-002","Powder Cotton Candy","KG","0.8 Kg","PO-02-00003-01","Powder Cotton Candy Toffin Pack 800 Gram",0.025
+"CC-R","Cotton Candy Latte Ice R","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.026667
+"CC-R","Cotton Candy Latte Ice R","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.0684
+"CC-R","Cotton Candy Latte Ice R","Bar",0,"ingridient","BB-03-001","Susu Evaporasi","KG","0.43 Kg","DA-01-00002-01","Susu Evaporasi F&N Kaleng 430 Gram",0.12
+"CC-R","Cotton Candy Latte Ice R","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.0095
+"CC-R","Cotton Candy Latte Ice R","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"CC-R","Cotton Candy Latte Ice R","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"CC-R","Cotton Candy Latte Ice R","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"CC-R","Cotton Candy Latte Ice R","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"CC-L","Cotton Candy Latte Ice L","Bar",0,"ingridient","BB-13-002","Powder Cotton Candy","KG","0.8 Kg","PO-02-00003-01","Powder Cotton Candy Toffin Pack 800 Gram",0.0375
+"CC-L","Cotton Candy Latte Ice L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.04
+"CC-L","Cotton Candy Latte Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.14
+"CC-L","Cotton Candy Latte Ice L","Bar",0,"ingridient","BB-03-001","Susu Evaporasi","KG","0.43 Kg","DA-01-00002-01","Susu Evaporasi F&N Kaleng 430 Gram",0.15
+"CC-L","Cotton Candy Latte Ice L","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.01267
+"CC-L","Cotton Candy Latte Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"CC-L","Cotton Candy Latte Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"CC-L","Cotton Candy Latte Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"CC-L","Cotton Candy Latte Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"BBS-L","Boba Brown Sugar L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.001904
+"BBS-L","Boba Brown Sugar L","Bar",0,"ingridient","BB-16-001","Tapioca Pearl","KG","1 Kg","DA-07-00006-01","Boba Boba King Pack 1 Kg",0.014286
+"BBS-L","Boba Brown Sugar L","Bar",0,"ingridient","BB-99-004","Brown sugar","KG","6 Kg","SI-04-000005-01","Brown Sugar Regular NIP Jirigen 7 Kg",0.014286
+"BBS-L","Boba Brown Sugar L","Bar",0,"ingridient","BB-07-002","Sirup Brown Sugar","KG","1 Kg","SI-04-000003-01","Sirup Okinawa Brown Sugar NIP Botol 1 Kg",0.015
+"BBS-L","Boba Brown Sugar L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.014
+"BBS-L","Boba Brown Sugar L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"BBS-L","Boba Brown Sugar L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"BBS-L","Boba Brown Sugar L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"BBS-L","Boba Brown Sugar L","Bar",0,"package","PA-04-005","Sedotan Ungu 12 mm","PCS","200 Pcs","PA-01-00008-01","Sedotan Ungu Lancip 15 mm Hansupack",1
+"CBR-L","Coffee Boba Brown Sugar Brulee L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.001904
+"CBR-L","Coffee Boba Brown Sugar Brulee L","Bar",0,"ingridient","BB-16-001","Tapioca Pearl","KG","1 Kg","DA-07-00006-01","Boba Boba King Pack 1 Kg",0.014286
+"CBR-L","Coffee Boba Brown Sugar Brulee L","Bar",0,"ingridient","BB-99-004","Brown sugar","KG","6 Kg","SI-04-000005-01","Brown Sugar Regular NIP Jirigen 7 Kg",0.014286
+"CBR-L","Coffee Boba Brown Sugar Brulee L","Bar",0,"ingridient","BB-07-002","Sirup Brown Sugar","KG","1 Kg","SI-04-000003-01","Sirup Okinawa Brown Sugar NIP Botol 1 Kg",0.015
+"CBR-L","Coffee Boba Brown Sugar Brulee L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.012
+"CBR-L","Coffee Boba Brown Sugar Brulee L","Bar",0,"ingridient","BB-99-002","Powder Palm Sugar","KG","1 Kg","PO-01-00006-01","Palm Sugar Bubuk Dellifru Pack 1 Kg",0.01
+"CBR-L","Coffee Boba Brown Sugar Brulee L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"CBR-L","Coffee Boba Brown Sugar Brulee L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"CBR-L","Coffee Boba Brown Sugar Brulee L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"CBR-L","Coffee Boba Brown Sugar Brulee L","Bar",0,"package","PA-04-005","Sedotan Ungu 12 mm","PCS","200 Pcs","PA-01-00008-01","Sedotan Ungu Lancip 15 mm Hansupack",1
+"CBR-L","Coffee Boba Brown Sugar Brulee L","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.006333
+"BR-L","Boba Brown Sugar Macchiato Brulee L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.001904
+"BR-L","Boba Brown Sugar Macchiato Brulee L","Bar",0,"ingridient","BB-16-001","Tapioca Pearl","KG","1 Kg","DA-07-00006-01","Boba Boba King Pack 1 Kg",0.014286
+"BR-L","Boba Brown Sugar Macchiato Brulee L","Bar",0,"ingridient","BB-99-004","Brown sugar","KG","6 Kg","SI-04-000005-01","Brown Sugar Regular NIP Jirigen 7 Kg",0.014286
+"BR-L","Boba Brown Sugar Macchiato Brulee L","Bar",0,"ingridient","BB-07-002","Sirup Brown Sugar","KG","1 Kg","SI-04-000003-01","Sirup Okinawa Brown Sugar NIP Botol 1 Kg",0.015
+"BR-L","Boba Brown Sugar Macchiato Brulee L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.014
+"BR-L","Boba Brown Sugar Macchiato Brulee L","Bar",0,"ingridient","BB-99-002","Powder Palm Sugar","KG","1 Kg","PO-01-00006-01","Palm Sugar Bubuk Dellifru Pack 1 Kg",0.01
+"BR-L","Boba Brown Sugar Macchiato Brulee L","Bar",0,"ingridient","BB-07-009","Powder Cheese Foam","KG","1 Kg","DA-07-00014-01","Foam Cheese Manis NIP Pack 1 Kg",0.015
+"BR-L","Boba Brown Sugar Macchiato Brulee L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"BR-L","Boba Brown Sugar Macchiato Brulee L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"BR-L","Boba Brown Sugar Macchiato Brulee L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"BR-L","Boba Brown Sugar Macchiato Brulee L","Bar",0,"package","PA-04-005","Sedotan Ungu 12 mm","PCS","200 Pcs","PA-01-00008-01","Sedotan Ungu Lancip 15 mm Hansupack",1
+"ED-R","Es Doger with Coffee Jelly R","Bar",0,"ingridient","BB-99-005","Powder Pinku","KG","6 Kg","PO-01-00003-01","Powder Pinku NIP Pack 1 Kg",0.02
+"ED-R","Es Doger with Coffee Jelly R","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.13
+"ED-R","Es Doger with Coffee Jelly R","Bar",0,"ingridient","BB-16-002","Coffee Jelly","KG","2 Kg","DA-07-00001-01","Coffee�Jelly�NIP�Jar�3.2�Kg",0.0125
+"ED-R","Es Doger with Coffee Jelly R","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"ED-R","Es Doger with Coffee Jelly R","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"ED-R","Es Doger with Coffee Jelly R","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"ED-R","Es Doger with Coffee Jelly R","Bar",0,"package","PA-04-005","Sedotan Ungu 12 mm","PCS","200 Pcs","PA-01-00008-01","Sedotan Ungu Lancip 15 mm Hansupack",1
+"ED-L","Es Doger with Coffee Jelly L","Bar",0,"ingridient","BB-99-005","Powder Pinku","KG","6 Kg","PO-01-00003-01","Powder Pinku NIP Pack 1 Kg",0.03
+"ED-L","Es Doger with Coffee Jelly L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.18
+"ED-L","Es Doger with Coffee Jelly L","Bar",0,"ingridient","BB-16-002","Coffee Jelly","KG","2 Kg","DA-07-00001-01","Coffee�Jelly�NIP�Jar�3.2�Kg",0.015625
+"ED-L","Es Doger with Coffee Jelly L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"ED-L","Es Doger with Coffee Jelly L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"ED-L","Es Doger with Coffee Jelly L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"ED-L","Es Doger with Coffee Jelly L","Bar",0,"package","PA-04-005","Sedotan Ungu 12 mm","PCS","200 Pcs","PA-01-00008-01","Sedotan Ungu Lancip 15 mm Hansupack",1
+"MP-R","Matchapresso R","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.006333
+"MP-R","Matchapresso R","Bar",0,"ingridient","BB-14-001","Powder Matcha Premium","KG","1 Kg","PO-03-00001-01","Powder Greantea LABR Premium Pack 1 Kg",0.008
+"MP-R","Matchapresso R","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.12
+"MP-R","Matchapresso R","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.02
+"MP-R","Matchapresso R","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"MP-R","Matchapresso R","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"MP-R","Matchapresso R","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"MP-R","Matchapresso R","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"MP-L","Matchapresso L","Bar",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.0095
+"MP-L","Matchapresso L","Bar",0,"ingridient","BB-14-001","Powder Matcha Premium","KG","1 Kg","PO-03-00001-01","Powder Greantea LABR Premium Pack 1 Kg",0.015
+"MP-L","Matchapresso L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.18
+"MP-L","Matchapresso L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.04
+"MP-L","Matchapresso L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"MP-L","Matchapresso L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"MP-L","Matchapresso L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"MP-L","Matchapresso L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"SC-R","Signature Dark Chocolate Ice R","Bar",0,"ingridient","BB-07-008","Powder Cocoa","KG","1 Kg","PO-01-00001-01","Powder Cocoa NIP Pack 1 Kg",0.015
+"SC-R","Signature Dark Chocolate Ice R","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.033333
+"SC-R","Signature Dark Chocolate Ice R","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.14
+"SC-R","Signature Dark Chocolate Ice R","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"SC-R","Signature Dark Chocolate Ice R","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"SC-R","Signature Dark Chocolate Ice R","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"SC-R","Signature Dark Chocolate Ice R","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"SC-L","Signature Dark Chocolate Ice L","Bar",0,"ingridient","BB-07-008","Powder Cocoa","KG","1 Kg","PO-01-00001-01","Powder Cocoa NIP Pack 1 Kg",0.02
+"SC-L","Signature Dark Chocolate Ice L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.04
+"SC-L","Signature Dark Chocolate Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.18
+"SC-L","Signature Dark Chocolate Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"SC-L","Signature Dark Chocolate Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"SC-L","Signature Dark Chocolate Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"SC-L","Signature Dark Chocolate Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"SC-H","Signature Dark Chocolate Hot","Bar",0,"ingridient","BB-07-008","Powder Cocoa","KG","1 Kg","PO-01-00001-01","Powder Cocoa NIP Pack 1 Kg",0.015
+"SC-H","Signature Dark Chocolate Hot","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.026667
+"SC-H","Signature Dark Chocolate Hot","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.2
+"SC-H","Signature Dark Chocolate Hot","Bar",0,"package","PA-04-001","Cup Hot + Lid 12 oz","PCS","1000 Pcs","PA-01-00006-01","Paper Cup Hot + Lid 12 oz Hansupack",1
+"SC-H","Signature Dark Chocolate Hot","Bar",0,"package","PA-04-006","Sedotan Ungu Pipih","PCS","200 Pcs","PA-01-00003-01","Sedotan Pipih Ungu Hansupack",1
+"JC-R","Java Chip Ice R","Bar",0,"ingridient","BB-13-003","Powder Java Chips","KG","0.8 Kg","PO-02-00002-01","Powder Java Chips Toffin Pack 800 Gram",0.025
+"JC-R","Java Chip Ice R","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.026667
+"JC-R","Java Chip Ice R","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.14
+"JC-R","Java Chip Ice R","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"JC-R","Java Chip Ice R","Bar",0,"ingridient","BB-99-006","Choco Chip","KG","0.5 Kg","DA-07-00004-01","Choco Chip Pack 500 Gram",0.005
+"JC-R","Java Chip Ice R","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"JC-R","Java Chip Ice R","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"JC-R","Java Chip Ice R","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"JC-L","Java Chip Ice L","Bar",0,"ingridient","BB-13-003","Powder Java Chips","KG","0.8 Kg","PO-02-00002-01","Powder Java Chips Toffin Pack 800 Gram",0.0375
+"JC-L","Java Chip Ice L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.026667
+"JC-L","Java Chip Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.18
+"JC-L","Java Chip Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"JC-L","Java Chip Ice L","Bar",0,"ingridient","BB-99-006","Choco Chip","KG","0.5 Kg","DA-07-00004-01","Choco Chip Pack 500 Gram",0.005
+"JC-L","Java Chip Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"JC-L","Java Chip Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"JC-L","Java Chip Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"CS-R","Chocoberry Ice R","Bar",0,"ingridient","BB-16-004","Strawberry Jam","KG","2.3 Kg","DA-03-00002-01","Jam Strawberry Boba King Jar 2.3 Kg",0.013043
+"CS-R","Chocoberry Ice R","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.12
+"CS-R","Chocoberry Ice R","Bar",0,"ingridient","BB-07-008","Powder Cocoa","KG","1 Kg","PO-01-00001-01","Powder Cocoa NIP Pack 1 Kg",0.005
+"CS-R","Chocoberry Ice R","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.009333
+"CS-R","Chocoberry Ice R","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"CS-R","Chocoberry Ice R","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"CS-R","Chocoberry Ice R","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"CS-R","Chocoberry Ice R","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"CS-L","Chocoberry Ice L","Bar",0,"ingridient","BB-16-004","Strawberry Jam","KG","2.3 Kg","DA-03-00002-01","Jam Strawberry Boba King Jar 2.3 Kg",0.017391
+"CS-L","Chocoberry Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.15
+"CS-L","Chocoberry Ice L","Bar",0,"ingridient","BB-07-008","Powder Cocoa","KG","1 Kg","PO-01-00001-01","Powder Cocoa NIP Pack 1 Kg",0.007
+"CS-L","Chocoberry Ice L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.026667
+"CS-L","Chocoberry Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"CS-L","Chocoberry Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"CS-L","Chocoberry Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"CS-L","Chocoberry Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"CB-L","Choco Banana Ice L","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"CB-L","Choco Banana Ice L","Bar",0,"ingridient","BB-99-007","Powder Banana","KG","1 Kg","PO-04-00001-01","Powder Banana Lotusia Pack 1Kg",0.05
+"CB-L","Choco Banana Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.18
+"CB-L","Choco Banana Ice L","Bar",0,"ingridient","BB-07-008","Powder Cocoa","KG","1 Kg","PO-01-00001-01","Powder Cocoa NIP Pack 1 Kg",0.005
+"CB-L","Choco Banana Ice L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.013333
+"CB-L","Choco Banana Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"CB-L","Choco Banana Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"CB-L","Choco Banana Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"CB-L","Choco Banana Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"CT-R","Chocochip Tiramisu Ice R","Bar",0,"ingridient","BB-07-008","Powder Cocoa","KG","1 Kg","PO-01-00001-01","Powder Cocoa NIP Pack 1 Kg",0.008
+"CT-R","Chocochip Tiramisu Ice R","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.024
+"CT-R","Chocochip Tiramisu Ice R","Bar",0,"ingridient","BB-12-003","Sirup Tiramisu","LITER","0.76 LITER","SI-02-000004-01","Sirup Tiramisu Drip Syrup Botol 760 Ml",0.023684
+"CT-R","Chocochip Tiramisu Ice R","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.12
+"CT-R","Chocochip Tiramisu Ice R","Bar",0,"ingridient","BB-99-006","Choco Chip","KG","0.5 Kg","DA-07-00004-01","Choco Chip Pack 500 Gram",0.005
+"CT-R","Chocochip Tiramisu Ice R","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"CT-R","Chocochip Tiramisu Ice R","Bar",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"CT-R","Chocochip Tiramisu Ice R","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"CT-R","Chocochip Tiramisu Ice R","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"CT-L","Chocochip Tiramisu Ice L","Bar",0,"ingridient","BB-07-008","Powder Cocoa","KG","1 Kg","PO-01-00001-01","Powder Cocoa NIP Pack 1 Kg",0.01
+"CT-L","Chocochip Tiramisu Ice L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.026667
+"CT-L","Chocochip Tiramisu Ice L","Bar",0,"ingridient","BB-12-003","Sirup Tiramisu","LITER","0.76 LITER","SI-02-000004-01","Sirup Tiramisu Drip Syrup Botol 760 Ml",0.032895
+"CT-L","Chocochip Tiramisu Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.15
+"CT-L","Chocochip Tiramisu Ice L","Bar",0,"ingridient","BB-99-006","Choco Chip","KG","0.5 Kg","DA-07-00004-01","Choco Chip Pack 500 Gram",0.005
+"CT-L","Chocochip Tiramisu Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"CT-L","Chocochip Tiramisu Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"CT-L","Chocochip Tiramisu Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"CT-L","Chocochip Tiramisu Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"FJC-L","Java Chip Frappe Ice L","Bar",0,"ingridient","BB-13-003","Powder Java Chips","KG","0.8 Kg","PO-02-00002-01","Powder Java Chips Toffin Pack 800 Gram",0.0375
+"FJC-L","Java Chip Frappe Ice L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.026667
+"FJC-L","Java Chip Frappe Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.18
+"FJC-L","Java Chip Frappe Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"FJC-L","Java Chip Frappe Ice L","Bar",0,"ingridient","BB-99-006","Choco Chip","KG","0.5 Kg","DA-07-00004-01","Choco Chip Pack 500 Gram",0.005
+"FJC-L","Java Chip Frappe Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"FJC-L","Java Chip Frappe Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"FJC-L","Java Chip Frappe Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"FSC-L","Chocolate Frappe Ice L","Bar",0,"ingridient","BB-07-008","Powder Cocoa","KG","1 Kg","PO-01-00001-01","Powder Cocoa NIP Pack 1 Kg",0.02
+"FSC-L","Chocolate Frappe Ice L","Bar",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.04
+"FSC-L","Chocolate Frappe Ice L","Bar",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.18
+"FSC-L","Chocolate Frappe Ice L","Bar",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"FSC-L","Chocolate Frappe Ice L","Bar",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"FSC-L","Chocolate Frappe Ice L","Bar",0,"package","PA-06-001","Plastik Cup Sealer","M","150 M","PA-01-00010-01","Plastik Cup Sealer Roll 150 M",0.0013
+"FSC-L","Chocolate Frappe Ice L","Bar",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"F-1","Beef Fried Sandwich","Pantry",0,"ingridient","BB-06-001","Sauce Tomato","SACHET","24 Sachet","DA-04-00003-01","Sauce Tomato Del Monte pcs",1
+"F-1","Beef Fried Sandwich","Pantry",0,"ingridient","BB-06-002","Sauce Chili ","SACHET","24 Sachet","DA-04-00004-01","Sauce Extra Hot Del Monte pcs",1
+"F-1","Beef Fried Sandwich","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-1","Beef Fried Sandwich","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-1","Beef Fried Sandwich","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-1","Beef Fried Sandwich","Pantry",0,"item","FO-01-00001-01","Beef Fried Sandwich","PC","#N/A","FO-01-00001-01","Beef Fried Sandwich",1
+"F-2","Donut Cheese","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-2","Donut Cheese","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-2","Donut Cheese","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-2","Donut Cheese","Pantry",0,"item","FO-01-00002-01","Donut Cheese","PC","#N/A","FO-01-00002-01","Donut Cheese",1
+"F-3","Donut Choco","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-3","Donut Choco","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-3","Donut Choco","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-3","Donut Choco","Pantry",0,"item","FO-01-00003-01","Donut Choco","PC","#N/A","FO-01-00003-01","Donut Choco",1
+"F-4","Donut Plain/Sugar/Cinnamon","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-4","Donut Plain/Sugar/Cinnamon","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-4","Donut Plain/Sugar/Cinnamon","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-4","Donut Plain/Sugar/Cinnamon","Pantry",0,"item","FO-01-00004-01","Donut Plain/Sugar/Cinnamon","PC","#N/A","FO-01-00004-01","Donut Plain/Sugar/Cinnamon",1
+"F-5","Tiramisu Bomboloni","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-5","Tiramisu Bomboloni","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-5","Tiramisu Bomboloni","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-5","Tiramisu Bomboloni","Pantry",0,"item","FO-01-00005-01","Tiramisu Bomboloni","PC","#N/A","FO-01-00005-01","Tiramisu Bomboloni",1
+"F-6","Chocolate Bomboloni","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-6","Chocolate Bomboloni","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-6","Chocolate Bomboloni","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-6","Chocolate Bomboloni","Pantry",0,"item","FO-01-00006-01","Chocolate Bomboloni","PC","#N/A","FO-01-00006-01","Chocolate Bomboloni",1
+"F-7","Strawberry Bomboloni","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-7","Strawberry Bomboloni","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-7","Strawberry Bomboloni","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-7","Strawberry Bomboloni","Pantry",0,"item","FO-01-00007-01","Strawberry Bomboloni","PC","#N/A","FO-01-00007-01","Strawberry Bomboloni",1
+"F-8","Blueberry Bomboloni","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-8","Blueberry Bomboloni","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-8","Blueberry Bomboloni","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-8","Blueberry Bomboloni","Pantry",0,"item","FO-01-00008-01","Blueberry Bomboloni","PC","#N/A","FO-01-00008-01","Blueberry Bomboloni",1
+"F-9","Lemon Bomboloni","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-9","Lemon Bomboloni","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-9","Lemon Bomboloni","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-9","Lemon Bomboloni","Pantry",0,"item","FO-01-00009-01","Lemon Bomboloni","PC","#N/A","FO-01-00009-01","Lemon Bomboloni",1
+"F-10","Taro Bomboloni","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-10","Taro Bomboloni","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-10","Taro Bomboloni","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-10","Taro Bomboloni","Pantry",0,"item","FO-01-00010-01","Taro Bomboloni","PC","#N/A","FO-01-00010-01","Taro Bomboloni",1
+"F-11","Confetti Cake","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-11","Confetti Cake","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-11","Confetti Cake","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-11","Confetti Cake","Pantry",0,"item","FO-01-00011-01","Confetti Cake","PC","#N/A","FO-01-00011-01","Confetti Cake",1
+"F-12","Cinnamon Roll with Cream Cheese","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-12","Cinnamon Roll with Cream Cheese","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-12","Cinnamon Roll with Cream Cheese","Pantry",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.013333
+"F-12","Cinnamon Roll with Cream Cheese","Pantry",0,"ingridient","BB-07-009","Powder Cheese Foam","KG","1 Kg","DA-07-00014-01","Foam Cheese Manis NIP Pack 1 Kg",0.005625
+"F-12","Cinnamon Roll with Cream Cheese","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-12","Cinnamon Roll with Cream Cheese","Pantry",0,"item","FO-01-00012-01","Cinnamon Roll with Cream Cheese","PC","#N/A","FO-01-00012-01","Cinnamon Roll with Cream Cheese",1
+"F-13","Brown Sugar Boba Cheese","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-13","Brown Sugar Boba Cheese","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-13","Brown Sugar Boba Cheese","Pantry",0,"ingridient","BB-16-001","Tapioca Pearl","KG","1 Kg","DA-07-00006-01","Boba Boba King Pack 1 Kg",0.027273
+"F-13","Brown Sugar Boba Cheese","Pantry",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.013333
+"F-13","Brown Sugar Boba Cheese","Pantry",0,"ingridient","BB-07-009","Powder Cheese Foam","KG","1 Kg","DA-07-00014-01","Foam Cheese Manis NIP Pack 1 Kg",0.005625
+"F-13","Brown Sugar Boba Cheese","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-13","Brown Sugar Boba Cheese","Pantry",0,"item","FO-01-00013-01","Brown Sugar Boba Cheese","PC","#N/A","FO-01-00013-01","Brown Sugar Boba Cheese",1
+"F-14","Milk Tea Boba Cheese","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-14","Milk Tea Boba Cheese","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-14","Milk Tea Boba Cheese","Pantry",0,"ingridient","BB-16-001","Tapioca Pearl","KG","1 Kg","DA-07-00006-01","Boba Boba King Pack 1 Kg",0.027273
+"F-14","Milk Tea Boba Cheese","Pantry",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.013333
+"F-14","Milk Tea Boba Cheese","Pantry",0,"ingridient","BB-07-009","Powder Cheese Foam","KG","1 Kg","DA-07-00014-01","Foam Cheese Manis NIP Pack 1 Kg",0.005625
+"F-14","Milk Tea Boba Cheese","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-14","Milk Tea Boba Cheese","Pantry",0,"item","FO-01-00014-01","Milk Tea Boba Cheese","PC","#N/A","FO-01-00014-01","Milk Tea Boba Cheese",1
+"F-15","Matcha Boba Cheese","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-15","Matcha Boba Cheese","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-15","Matcha Boba Cheese","Pantry",0,"ingridient","BB-16-001","Tapioca Pearl","KG","1 Kg","DA-07-00006-01","Boba Boba King Pack 1 Kg",0.027273
+"F-15","Matcha Boba Cheese","Pantry",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.013333
+"F-15","Matcha Boba Cheese","Pantry",0,"ingridient","BB-07-009","Powder Cheese Foam","KG","1 Kg","DA-07-00014-01","Foam Cheese Manis NIP Pack 1 Kg",0.005625
+"F-15","Matcha Boba Cheese","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-15","Matcha Boba Cheese","Pantry",0,"item","FO-01-00015-01","Matcha Boba Cheese","PC","PC","FO-01-00015-01","Matcha Boba Cheese",1
+"F-16","Taro Boba Cheese","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-16","Taro Boba Cheese","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-16","Taro Boba Cheese","Pantry",0,"ingridient","BB-16-001","Tapioca Pearl","KG","1 Kg","DA-07-00006-01","Boba Boba King Pack 1 Kg",0.027273
+"F-16","Taro Boba Cheese","Pantry",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.013333
+"F-16","Taro Boba Cheese","Pantry",0,"ingridient","BB-07-009","Powder Cheese Foam","KG","1 Kg","DA-07-00014-01","Foam Cheese Manis NIP Pack 1 Kg",0.005625
+"F-16","Taro Boba Cheese","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-16","Taro Boba Cheese","Pantry",0,"item","FO-01-00016-01","Taro Boba Cheese","PC","PC","FO-01-00016-01","Taro Boba Cheese",1
+"F-17","Pandan Kaya Cake","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-17","Pandan Kaya Cake","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-17","Pandan Kaya Cake","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-17","Pandan Kaya Cake","Pantry",0,"item","FO-01-00017-01","Pandan Kaya Cake","PC","PC","FO-01-00017-01","Pandan Kaya Cake",1
+"F-18","Choco Chewy Almond","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-18","Choco Chewy Almond","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-18","Choco Chewy Almond","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-18","Choco Chewy Almond","Pantry",0,"item","FO-01-00018-01","Choco Chewy Almond","PC","PC","FO-01-00018-01","Choco Chewy Almond",1
+"F-19","Choco Chewy Double Choco","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-19","Choco Chewy Double Choco","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-19","Choco Chewy Double Choco","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-19","Choco Chewy Double Choco","Pantry",0,"item","FO-01-00019-01","Choco Chewy Double Choco","PC","PC","FO-01-00019-01","Choco Chewy Double Choco",1
+"F-20","Choco Chewy Cheese","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-20","Choco Chewy Cheese","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-20","Choco Chewy Cheese","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-20","Choco Chewy Cheese","Pantry",0,"item","FO-01-00020-01","Choco Chewy Cheese","PC","PC","FO-01-00020-01","Choco Chewy Cheese",1
+"F-21","Strawberry Shortcake","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-21","Strawberry Shortcake","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-21","Strawberry Shortcake","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-21","Strawberry Shortcake","Pantry",0,"item","FO-01-00021-01","Strawberry Shortcake","PC","PC","FO-01-00021-01","Strawberry Shortcake",1
+"F-22","Original Brownies","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-22","Original Brownies","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-22","Original Brownies","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-22","Original Brownies","Pantry",0,"item","FO-01-00022-01","Original Brownies","PC","PC","FO-01-00022-01","Original Brownies",1
+"F-23","Chococheese Brownies","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-23","Chococheese Brownies","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-23","Chococheese Brownies","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-23","Chococheese Brownies","Pantry",0,"item","FO-01-00023-01","Chococheese Brownies","PC","PC","FO-01-00023-01","Chococheese Brownies",1
+"F-24","Sugar Roll Croissant","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-24","Sugar Roll Croissant","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-24","Sugar Roll Croissant","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-24","Sugar Roll Croissant","Pantry",0,"item","FO-01-00024-01","Sugar Roll Croissant","PC","PC","FO-01-00024-01","Sugar Roll Croissant",1
+"F-25","Butter Croissant","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-25","Butter Croissant","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-25","Butter Croissant","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-25","Butter Croissant","Pantry",0,"item","FO-01-00025-01","Butter Croissant","PC","PC","FO-01-00025-01","Butter Croissant",1
+"F-26","Chocolate Croissant","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-26","Chocolate Croissant","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-26","Chocolate Croissant","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-26","Chocolate Croissant","Pantry",0,"item","FO-01-00026-01","Chocolate Croissant","PC","PC","FO-01-00026-01","Chocolate Croissant",1
+"F-27","Eclair","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-27","Eclair","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-27","Eclair","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-27","Eclair","Pantry",0,"item","FO-01-00027-01","Eclair","PC","PC","FO-01-00027-01","Eclair",1
+"F-28","Boba Pudding Mango","Pantry",0,"package","PA-03-003","Sendok Teh ","PCS","100 Pcs","PA-02-00010-01","Sendok Teh Suapi Pcs",1
+"F-28","Boba Pudding Mango","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-28","Boba Pudding Mango","Pantry",0,"item","FO-01-00028-01","Boba Pudding Mango","PC","PC","FO-01-00028-01","Boba Pudding Mango",1
+"F-29","Boba Pudding Caramel","Pantry",0,"package","PA-03-003","Sendok Teh ","PCS","100 Pcs","PA-02-00010-01","Sendok Teh Suapi Pcs",1
+"F-29","Boba Pudding Caramel","Pantry",0,"item","FO-01-00029-01","Boba Pudding Caramel","PC","PC","FO-01-00029-01","Boba Pudding Caramel",1
+"F-29","Boba Pudding Caramel","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-30","Boba Pudding Cappuccino","Pantry",0,"item","FO-01-00030-01","Boba Pudding Cappuccino","PC","PC","FO-01-00030-01","Boba Pudding Cappuccino",1
+"F-30","Boba Pudding Cappuccino","Pantry",0,"package","PA-03-003","Sendok Teh ","PCS","100 Pcs","PA-02-00010-01","Sendok Teh Suapi Pcs",1
+"F-30","Boba Pudding Cappuccino","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-31","Pizza Roll","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-31","Pizza Roll","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-31","Pizza Roll","Pantry",0,"ingridient","BB-06-001","Sauce Tomato","SACHET","24 Sachet","DA-04-00003-01","Sauce Tomato Del Monte pcs",1
+"F-31","Pizza Roll","Pantry",0,"ingridient","BB-06-002","Sauce Chili ","SACHET","24 Sachet","DA-04-00004-01","Sauce Extra Hot Del Monte pcs",1
+"F-31","Pizza Roll","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-31","Pizza Roll","Pantry",0,"item","FO-01-00031-01","Pizza Roll","PC","PC","FO-01-00031-01","Pizza Roll",1
+"F-32","Choco Pizookie Choco","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-32","Choco Pizookie Choco","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-32","Choco Pizookie Choco","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-32","Choco Pizookie Choco","Pantry",0,"item","FO-01-00032-01","Choco Pizookie Choco","PC","PC","FO-01-00032-01","Choco Pizookie Choco",1
+"F-33","Macaroni Bolognese","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-33","Macaroni Bolognese","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-33","Macaroni Bolognese","Pantry",0,"ingridient","BB-06-001","Sauce Tomato","SACHET","24 Sachet","DA-04-00003-01","Sauce Tomato Del Monte pcs",1
+"F-33","Macaroni Bolognese","Pantry",0,"ingridient","BB-06-002","Sauce Chili ","SACHET","24 Sachet","DA-04-00004-01","Sauce Extra Hot Del Monte pcs",1
+"F-33","Macaroni Bolognese","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-33","Macaroni Bolognese","Pantry",0,"item","FO-01-00033-01","Macaroni Bolognese","PC","PC","FO-01-00033-01","Macaroni Bolognese",1
+"F-34","Nakoa Snack","Pantry",0,"item","FO-01-00034-01","Nakoa Snack","PC","PC","FO-01-00034-01","Nakoa Snack",1
+"F-35","Oat & Raisin Cookies","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-35","Oat & Raisin Cookies","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-35","Oat & Raisin Cookies","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-35","Oat & Raisin Cookies","Pantry",0,"item","FO-01-00035-01","Oat & Raisin Cookies","PC","PC","FO-01-00035-01","Oat & Raisin Cookies",1
+"F-36","Sunny Side Bread","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-36","Sunny Side Bread","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-36","Sunny Side Bread","Pantry",0,"ingridient","BB-06-001","Sauce Tomato","SACHET","24 Sachet","DA-04-00003-01","Sauce Tomato Del Monte pcs",1
+"F-36","Sunny Side Bread","Pantry",0,"ingridient","BB-06-002","Sauce Chili ","SACHET","24 Sachet","DA-04-00004-01","Sauce Extra Hot Del Monte pcs",1
+"F-36","Sunny Side Bread","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-36","Sunny Side Bread","Pantry",0,"item","FO-01-00036-01","Sunny Side Bread","PC","PC","FO-01-00036-01","Sunny Side Bread",1
+"F-37","Hot Cheese Croquette","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-37","Hot Cheese Croquette","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-37","Hot Cheese Croquette","Pantry",0,"ingridient","BB-06-001","Sauce Tomato","SACHET","24 Sachet","DA-04-00003-01","Sauce Tomato Del Monte pcs",1
+"F-37","Hot Cheese Croquette","Pantry",0,"ingridient","BB-06-002","Sauce Chili ","SACHET","24 Sachet","DA-04-00004-01","Sauce Extra Hot Del Monte pcs",1
+"F-37","Hot Cheese Croquette","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-37","Hot Cheese Croquette","Pantry",0,"item","FO-01-00037-01","Hot Cheese Croquette","PC","PC","FO-01-00037-01","Hot Cheese Croquette",1
+"F-38","Cheese Croquette","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-38","Cheese Croquette","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-38","Cheese Croquette","Pantry",0,"ingridient","BB-06-001","Sauce Tomato","SACHET","24 Sachet","DA-04-00003-01","Sauce Tomato Del Monte pcs",1
+"F-38","Cheese Croquette","Pantry",0,"ingridient","BB-06-002","Sauce Chili ","SACHET","24 Sachet","DA-04-00004-01","Sauce Extra Hot Del Monte pcs",1
+"F-38","Cheese Croquette","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-38","Cheese Croquette","Pantry",0,"item","FO-01-00038-01","Cheese Croquette","PC","PC","FO-01-00038-01","Cheese Croquette",1
+"F-39","Vanillaberry Roll","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-39","Vanillaberry Roll","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-39","Vanillaberry Roll","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-39","Vanillaberry Roll","Pantry",0,"item","FO-01-00039-01","Vanillaberry Roll","PC","PC","FO-01-00039-01","Vanillaberry Roll",1
+"F-40","Coffee Cake","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-40","Coffee Cake","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-40","Coffee Cake","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-40","Coffee Cake","Pantry",0,"item","FO-01-00040-01","Coffee Cake","PC","PC","FO-01-00040-01","Coffee Cake",1
+"F-41","Browcano Cheese Cream","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-41","Browcano Cheese Cream","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-41","Browcano Cheese Cream","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-41","Browcano Cheese Cream","Pantry",0,"item","FO-01-00041-01","Browcano Cheese Cream","PC","PC","FO-01-00041-01","Browcano Cheese Cream",1
+"F-42","Browcano Matcha","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-42","Browcano Matcha","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-42","Browcano Matcha","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-42","Browcano Matcha","Pantry",0,"item","FO-01-00042-01","Browcano Matcha","PC","PC","FO-01-00042-01","Browcano Matcha",1
+"F-43","Browcano Tiramisu","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-43","Browcano Tiramisu","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-43","Browcano Tiramisu","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-43","Browcano Tiramisu","Pantry",0,"item","FO-01-00043-01","Browcano Tiramisu","PC","PC","FO-01-00043-01","Browcano Tiramisu",1
+"F-44","Browcano Peanut","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-44","Browcano Peanut","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-44","Browcano Peanut","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-44","Browcano Peanut","Pantry",0,"item","FO-01-00044-01","Browcano Peanut","PC","PC","FO-01-00044-01","Browcano Peanut",1
+"F-45","Browcano Taro","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-45","Browcano Taro","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-45","Browcano Taro","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-45","Browcano Taro","Pantry",0,"item","FO-01-00045-01","Browcano Taro","PC","PC","FO-01-00045-01","Browcano Taro",1
+"F-46","Browcano Lemon","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-46","Browcano Lemon","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-46","Browcano Lemon","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-46","Browcano Lemon","Pantry",0,"item","FO-01-00046-01","Browcano Lemon","PC","PC","FO-01-00046-01","Browcano Lemon",1
+"F-47","Corn Mayo Risol","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-47","Corn Mayo Risol","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-47","Corn Mayo Risol","Pantry",0,"ingridient","BB-06-001","Sauce Tomato","SACHET","24 Sachet","DA-04-00003-01","Sauce Tomato Del Monte pcs",1
+"F-47","Corn Mayo Risol","Pantry",0,"ingridient","BB-06-002","Sauce Chili ","SACHET","24 Sachet","DA-04-00004-01","Sauce Extra Hot Del Monte pcs",1
+"F-47","Corn Mayo Risol","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-47","Corn Mayo Risol","Pantry",0,"item","FO-01-00047-01","Corn Mayo Risol","PC","PC","FO-01-00047-01","Corn Mayo Risol",1
+"F-48","Homemade Snowy Donut","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-48","Homemade Snowy Donut","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-48","Homemade Snowy Donut","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-48","Homemade Snowy Donut","Pantry",0,"item","FO-01-00048-01","Homemade Snowy Donut","PC","PC","FO-01-00048-01","Homemade Snowy Donut",1
+"F-49","Chocoroll","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-49","Chocoroll","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-49","Chocoroll","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-49","Chocoroll","Pantry",0,"item","FO-01-00049-01","Chocoroll","PC","PC","FO-01-00049-01","Chocoroll",1
+"F-50","Japan Curry Donut","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-50","Japan Curry Donut","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-50","Japan Curry Donut","Pantry",0,"ingridient","BB-06-001","Sauce Tomato","SACHET","24 Sachet","DA-04-00003-01","Sauce Tomato Del Monte pcs",1
+"F-50","Japan Curry Donut","Pantry",0,"ingridient","BB-06-002","Sauce Chili ","SACHET","24 Sachet","DA-04-00004-01","Sauce Extra Hot Del Monte pcs",1
+"F-50","Japan Curry Donut","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-50","Japan Curry Donut","Pantry",0,"item","FO-01-00050-01","Japan Curry Donut","PC","PC","FO-01-00050-01","Japan Curry Donut",1
+"F-51","Coffee Boba Cheese","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-51","Coffee Boba Cheese","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-51","Coffee Boba Cheese","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-51","Coffee Boba Cheese","Pantry",0,"item","FO-01-00051-01","Coffee Boba Cheese","PC","PC","FO-01-00051-01","Coffee Boba Cheese",1
+"F-52","Pandan Cheese Roll","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-52","Pandan Cheese Roll","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-52","Pandan Cheese Roll","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-52","Pandan Cheese Roll","Pantry",0,"item","FO-01-00052-01","Pandan Cheese Roll","PC","PC","FO-01-00052-01","Pandan Cheese Roll",1
+"F-53","Dutch crown","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-53","Dutch crown","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-53","Dutch crown","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-53","Dutch crown","Pantry",0,"item","FO-01-00053-01","Dutch crown","PC","PC","FO-01-00053-01","Dutch crown",1
+"F-54","Brocoa","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-54","Brocoa","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-54","Brocoa","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-54","Brocoa","Pantry",0,"item","FO-01-00054-01","Brocoa","PC","PC","FO-01-00054-01","Brocoa",1
+"F-55","Chicken Nori Donut","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-55","Chicken Nori Donut","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-55","Chicken Nori Donut","Pantry",0,"ingridient","BB-06-001","Sauce Tomato","SACHET","24 Sachet","DA-04-00003-01","Sauce Tomato Del Monte pcs",1
+"F-55","Chicken Nori Donut","Pantry",0,"ingridient","BB-06-002","Sauce Chili ","SACHET","24 Sachet","DA-04-00004-01","Sauce Extra Hot Del Monte pcs",1
+"F-55","Chicken Nori Donut","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-55","Chicken Nori Donut","Pantry",0,"item","FO-01-00055-01","Chicken Nori Donut","PC","PC","FO-01-00055-01","Chicken Nori Donut",1
+"F-56","Tiramisu Roll","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-56","Tiramisu Roll","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-56","Tiramisu Roll","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-56","Tiramisu Roll","Pantry",0,"item","FO-01-00056-01","Tiramisu Roll","PC","PC","FO-01-00056-01","Tiramisu Roll",1
+"F-57","Choco Chrunchy Roll","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-57","Choco Chrunchy Roll","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-57","Choco Chrunchy Roll","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-57","Choco Chrunchy Roll","Pantry",0,"item","FO-01-00057-01","Choco Chrunchy Roll","PC","PC","FO-01-00057-01","Choco Chrunchy Roll",1
+"F-58","Cotton Cheesecake","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-58","Cotton Cheesecake","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-58","Cotton Cheesecake","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-58","Cotton Cheesecake","Pantry",0,"item","FO-01-00058-01","Cotton Cheesecake","PC","PC","FO-01-00058-01","Cotton Cheesecake",1
+"F-59","Cinnamon Roll with Cream Cheese Tiramissu","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-59","Cinnamon Roll with Cream Cheese Tiramissu","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-59","Cinnamon Roll with Cream Cheese Tiramissu","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-59","Cinnamon Roll with Cream Cheese Tiramissu","Pantry",0,"item","FO-01-00059-01","Cinnamon Roll with Cream Cheese Tiramissu","PC","PC","FO-01-00059-01","Cinnamon Roll with Cream Cheese Tiramissu",1
+"F-60","Cinnamon Roll with Cream Cheese Choco Crunchy","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-60","Cinnamon Roll with Cream Cheese Choco Crunchy","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-60","Cinnamon Roll with Cream Cheese Choco Crunchy","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-60","Cinnamon Roll with Cream Cheese Choco Crunchy","Pantry",0,"item","FO-01-00060-01","Cinnamon Roll with Cream Cheese Choco Crunchy","PC","PC","FO-01-00060-01","Cinnamon Roll with Cream Cheese Choco Crunchy",1
+"F-61","Banana Chocociz Fried","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-61","Banana Chocociz Fried","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-61","Banana Chocociz Fried","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-61","Banana Chocociz Fried","Pantry",0,"item","FO-01-00061-01","Banana Chocociz Fried","PC","PC","FO-01-00061-01","Banana Chocociz Fried",1
+"F-62","Klepon Cake","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-62","Klepon Cake","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-62","Klepon Cake","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-62","Klepon Cake","Pantry",0,"item","FO-01-00062-01","Klepon Cake","PC","PC","FO-01-00062-01","Klepon Cake",1
+"F-63","Choco Pizookie Peanut","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-63","Choco Pizookie Peanut","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-63","Choco Pizookie Peanut","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-63","Choco Pizookie Peanut","Pantry",0,"item","FO-01-00063-01","Choco Pizookie Peanut","PC","PC","FO-01-00063-01","Choco Pizookie Peanut",1
+"F-64","Choco Pizookie Oat & Raisin","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-64","Choco Pizookie Oat & Raisin","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-64","Choco Pizookie Oat & Raisin","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-64","Choco Pizookie Oat & Raisin","Pantry",0,"item","FO-01-00064-01","Choco Pizookie Oat & Raisin","PC","PC","FO-01-00064-01","Choco Pizookie Oat & Raisin",1
+"F-65","Fancy Heart Eclair","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-65","Fancy Heart Eclair","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-65","Fancy Heart Eclair","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-65","Fancy Heart Eclair","Pantry",0,"item","FO-01-00065-01","Fancy Heart Eclair","PC","PC","FO-01-00065-01","Fancy Heart Eclair",1
+"F-66","Cupid Cotton Cake","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-66","Cupid Cotton Cake","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-66","Cupid Cotton Cake","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-66","Cupid Cotton Cake","Pantry",0,"item","FO-01-00066-01","Cupid Cotton Cake","PC","PC","FO-01-00066-01","Cupid Cotton Cake",1
+"F-67","xoxo brownies","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-67","xoxo brownies","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-67","xoxo brownies","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-67","xoxo brownies","Pantry",0,"item","FO-01-00067-01","xoxo brownies","PC","PC","FO-01-00067-01","xoxo brownies",1
+"F-68","Regal Oreo Chococheese","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-68","Regal Oreo Chococheese","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-68","Regal Oreo Chococheese","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-68","Regal Oreo Chococheese","Pantry",0,"item","FO-01-00068-01","Regal Oreo Chococheese","PC","PC","FO-01-00068-01","Regal Oreo Chococheese",1
+"F-69","Boba Pudding Sweetheart","Pantry",0,"package","PA-03-003","Sendok Teh ","PCS","100 Pcs","PA-02-00010-01","Sendok Teh Suapi Pcs",1
+"F-69","Boba Pudding Sweetheart","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-69","Boba Pudding Sweetheart","Pantry",0,"item","FO-01-00069-01","Boba Pudding Sweetheart","PC","PC","FO-01-00069-01","Boba Pudding Sweetheart",1
+"F-70","Be Mine Cupcakes","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-70","Be Mine Cupcakes","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-70","Be Mine Cupcakes","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-70","Be Mine Cupcakes","Pantry",0,"item","FO-01-00070-01","Be Mine Cupcakes","PC","PC","FO-01-00070-01","Be Mine Cupcakes",1
+"F-71","Nakoa Sandwich","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-71","Nakoa Sandwich","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-71","Nakoa Sandwich","Pantry",0,"ingridient","BB-06-001","Sauce Tomato","SACHET","24 Sachet","DA-04-00003-01","Sauce Tomato Del Monte pcs",1
+"F-71","Nakoa Sandwich","Pantry",0,"ingridient","BB-06-002","Sauce Chili ","SACHET","24 Sachet","DA-04-00004-01","Sauce Extra Hot Del Monte pcs",1
+"F-71","Nakoa Sandwich","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-71","Nakoa Sandwich","Pantry",0,"item","FO-01-00071-01","Nakoa Sandwich","PC","PC","FO-01-00071-01","Nakoa Sandwich",1
+"F-72","Sandwich Beef","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-72","Sandwich Beef","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-72","Sandwich Beef","Pantry",0,"ingridient","BB-06-001","Sauce Tomato","SACHET","24 Sachet","DA-04-00003-01","Sauce Tomato Del Monte pcs",1
+"F-72","Sandwich Beef","Pantry",0,"ingridient","BB-06-002","Sauce Chili ","SACHET","24 Sachet","DA-04-00004-01","Sauce Extra Hot Del Monte pcs",1
+"F-72","Sandwich Beef","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-72","Sandwich Beef","Pantry",0,"item","FO-01-00072-01","Sandwich Beef","PC","PC","FO-01-00072-01","Sandwich Beef",1
+"F-73","Boba Pudding Milk Tea","Pantry",0,"package","PA-03-003","Sendok Teh ","PCS","100 Pcs","PA-02-00010-01","Sendok Teh Suapi Pcs",1
+"F-73","Boba Pudding Milk Tea","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",2
+"F-73","Boba Pudding Milk Tea","Pantry",0,"item","FO-01-00073-01","Boba Pudding Milk Tea","PC","PC","FO-01-00073-01","Boba Pudding Milk Tea",3
+"F-74","Boba Pudding Bubblegum","Pantry",0,"package","PA-03-003","Sendok Teh ","PCS","100 Pcs","PA-02-00010-01","Sendok Teh Suapi Pcs",1
+"F-74","Boba Pudding Bubblegum","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",2
+"F-74","Boba Pudding Bubblegum","Pantry",0,"item","FO-01-00074-01","Boba Pudding Bubblegum","PC","PC","FO-01-00074-01","Boba Pudding Bubblegum",3
+"F-75","Browcano","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-75","Browcano","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-75","Browcano","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-75","Browcano","Pantry",0,"item","FO-01-00075-01","Browcano","PC","PC","FO-01-00075-01","Browcano",1
+"F-76","Oreo Choco Brownies","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-76","Oreo Choco Brownies","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-76","Oreo Choco Brownies","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-76","Oreo Choco Brownies","Pantry",0,"item","FO-01-00076-01","Oreo Choco Brownies","PC","PC","FO-01-00076-01","Oreo Choco Brownies",1
+"F-77","Pizza Puff","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-77","Pizza Puff","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-77","Pizza Puff","Pantry",0,"ingridient","BB-06-001","Sauce Tomato","SACHET","24 Sachet","DA-04-00003-01","Sauce Tomato Del Monte pcs",1
+"F-77","Pizza Puff","Pantry",0,"ingridient","BB-06-002","Sauce Chili ","SACHET","24 Sachet","DA-04-00004-01","Sauce Extra Hot Del Monte pcs",1
+"F-77","Pizza Puff","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-77","Pizza Puff","Pantry",0,"item","FO-01-00037-01","Hot Cheese Croquette","PC","PC","FO-01-00037-01","Hot Cheese Croquette",1
+"F-78","Cupcakes Vanilla","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-78","Cupcakes Vanilla","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-78","Cupcakes Vanilla","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-78","Cupcakes Vanilla","Pantry",0,"item","FO-01-00077-01","Pizza Puff","PC","PC","FO-01-00077-01","Pizza Puff",1
+"F-79","Cupcakes Choco","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-79","Cupcakes Choco","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-79","Cupcakes Choco","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-79","Cupcakes Choco","Pantry",0,"item","FO-01-00078-01","Cupcakes Vanilla","PC","PC","FO-01-00078-01","Cupcakes Vanilla",1
+"F-80","Boba Cake Choco Milo","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-80","Boba Cake Choco Milo","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-80","Boba Cake Choco Milo","Pantry",0,"ingridient","BB-16-001","Tapioca Pearl","KG","1 Kg","DA-07-00006-01","Boba Boba King Pack 1 Kg",0.027273
+"F-80","Boba Cake Choco Milo","Pantry",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.013333
+"F-80","Boba Cake Choco Milo","Pantry",0,"ingridient","BB-07-009","Powder Cheese Foam","KG","1 Kg","DA-07-00014-01","Foam Cheese Manis NIP Pack 1 Kg",0.005625
+"F-80","Boba Cake Choco Milo","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-80","Boba Cake Choco Milo","Pantry",0,"item","FO-01-00079-01","Cupcakes Choco","PC","PC","FO-01-00079-01","Cupcakes Choco",1
+"F-81","Banana Cake","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-81","Banana Cake","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-81","Banana Cake","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-81","Banana Cake","Pantry",0,"item","FO-01-00081-01","Banana Cake","PC","PC","FO-01-00081-01","Banana Cake",1
+"F-82","Korean Donut","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-82","Korean Donut","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-82","Korean Donut","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-82","Korean Donut","Pantry",0,"item","FO-01-00082-01","Korean Donut","PC","PC","FO-01-00082-01","Korean Donut",1
+"XES","Espresso","Pantry",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.0095
+"XBB","Boba: Original","Pantry",0,"ingridient","BB-16-001","Tapioca Pearl","KG","1 Kg","DA-07-00006-01","Boba Boba King Pack 1 Kg",0.027273
+"XBS","Boba: Brown Sugar","Pantry",0,"ingridient","BB-07-001","Simpel Sirup","KG","6 Kg","SI-01-000001-01","Sirup Simple Toffin Botol 750 Ml",0.003636
+"XBS","Boba: Brown Sugar","Pantry",0,"ingridient","BB-16-001","Tapioca Pearl","KG","1 Kg","DA-07-00006-01","Boba Boba King Pack 1 Kg",0.027273
+"XBS","Boba: Brown Sugar","Pantry",0,"ingridient","BB-99-002","Powder Palm Sugar","KG","1 Kg","SI-03-000003-01","Palm Sugar Cair Dellifru Pack 1 Liter",0.03
+"XCJ","Coffee Jelly","Pantry",0,"ingridient","BB-16-002","Coffee Jelly","KG","2 Kg","DA-07-00001-01","Coffee�Jelly�NIP�Jar�3.2�Kg",0.015625
+"XIC","Ice Cream Scoop","Pantry",0,"item","DA-07-00010-01","Ice Cream Reg Vanila Pack 8 Ltr","PC","PC","DA-07-00010-01","Ice Cream Reg Vanila Pack 8 Ltr",0.01
+"F-83","Eclair Matcha","Pantry",0,"item","FO-01-00083-01","Eclair Matcha","PC","PC","FO-01-00083-01","Eclair Matcha",1
+"F-83","Eclair Matcha","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-83","Eclair Matcha","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-83","Eclair Matcha","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-84","Eclair Tiramisu","Pantry",0,"item","FO-01-00084-01","Eclair Tiramisu","PC","PC","FO-01-00084-01","Eclair Tiramisu",1
+"F-84","Eclair Tiramisu","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-84","Eclair Tiramisu","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-84","Eclair Tiramisu","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-85","Eclair Chocolate","Pantry",0,"item","FO-01-00085-01","Eclair Chocolate","PC","PC","FO-01-00085-01","Eclair Chocolate",1
+"F-85","Eclair Chocolate","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-85","Eclair Chocolate","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-85","Eclair Chocolate","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-86","Boba Pudding Greentea","Pantry",0,"item","FO-01-00086-01","Boba Pudding Greentea","PC","PC","FO-01-00086-01","Boba Pudding Greentea",1
+"F-86","Boba Pudding Greentea","Pantry",0,"package","PA-03-003","Sendok Teh ","PCS","100 Pcs","PA-02-00010-01","Sendok Teh Suapi Pcs",1
+"F-86","Boba Pudding Greentea","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-87","Boba Pudding Coklat","Pantry",0,"package","PA-03-003","Sendok Teh ","PCS","100 Pcs","PA-02-00010-01","Sendok Teh Suapi Pcs",1
+"F-87","Boba Pudding Coklat","Pantry",0,"item","FO-01-00087-01","Boba Pudding Coklat","PC","PC","FO-01-00087-01","Boba Pudding Coklat",1
+"F-87","Boba Pudding Coklat","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-88","Boba Pudding Cotton Candy","Pantry",0,"package","PA-03-003","Sendok Teh ","PCS","100 Pcs","PA-02-00010-01","Sendok Teh Suapi Pcs",1
+"F-88","Boba Pudding Cotton Candy","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-88","Boba Pudding Cotton Candy","Pantry",0,"item","FO-01-00088-01","Boba Pudding Cotton Candy","PC","PC","FO-01-00088-01","Boba Pudding Cotton Candy",1
+"F-89","Boba Pudding Strawberry","Pantry",0,"package","PA-03-003","Sendok Teh ","PCS","100 Pcs","PA-02-00010-01","Sendok Teh Suapi Pcs",1
+"F-89","Boba Pudding Strawberry","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-89","Boba Pudding Strawberry","Pantry",0,"item","FO-01-00089-01","Boba Pudding Strawberry","PC","PC","FO-01-00089-01","Boba Pudding Strawberry",1
+"F-90","Tiramisu Donut","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-90","Tiramisu Donut","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-90","Tiramisu Donut","Pantry",0,"item","FO-01-00090-01","Tiramisu Donut","PC","PC","FO-01-00090-01","Tiramisu Donut",1
+"F-90","Tiramisu Donut","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"KSNJ-L","Kopi Susu Nakoa  With Coffee Jelly - L","Pantry",0,"package","PA-04-002","Cup PP SA 16 oz","PCS","1200 Pcs","PA-01-00002-01","Cup PP SA 16 oz Hansupack",1
+"KSNJ-L","Kopi Susu Nakoa  With Coffee Jelly - L","Pantry",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"KSNJ-L","Kopi Susu Nakoa  With Coffee Jelly - L","Pantry",0,"ingridient","BB-16-002","Coffee Jelly","KG","2 Kg","DA-07-00001-01","Coffee�Jelly�NIP�Jar�3.2�Kg",0.01563
+"KSNJ-L","Kopi Susu Nakoa  With Coffee Jelly - L","Pantry",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"KSNJ-L","Kopi Susu Nakoa  With Coffee Jelly - L","Pantry",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.12
+"KSNJ-L","Kopi Susu Nakoa  With Coffee Jelly - L","Pantry",0,"ingridient","BB-04-001","SKM","KG","0.495 Kg","DA-01-00006-01","Krimer Carnation Putih Kaleng 495 Gram",0.101
+"KSNJ-L","Kopi Susu Nakoa  With Coffee Jelly - L","Pantry",0,"item","DA-01-00007-01"," Carnation Coffeemate Kaleng 495 Gram","PC","PC","DA-01-00007-01"," Carnation Coffeemate Kaleng 495 Gram",0.01267
+"KSNJ-R","Kopi Susu Nakoa  With Coffee Jelly - R","Pantry",0,"package","PA-04-003","Cup PP SA 12 oz","PCS","1200 Pcs","PA-01-00001-01","Cup PP SA 12 oz Hansupack",1
+"KSNJ-R","Kopi Susu Nakoa  With Coffee Jelly - R","Pantry",0,"package","PA-04-004","Sedotan Ungu 6 mm","PCS","500 Pcs","PA-01-00007-01","Sedotan Ungu Lancip 6 mm Hansupack",1
+"KSNJ-R","Kopi Susu Nakoa  With Coffee Jelly - R","Pantry",0,"ingridient","BB-16-002","Coffee Jelly","KG","2 Kg","DA-07-00001-01","Coffee�Jelly�NIP�Jar�3.2�Kg",0.0125
+"KSNJ-R","Kopi Susu Nakoa  With Coffee Jelly - R","Pantry",0,"ingridient","BB-01-001","Kopi","KG","1 Kg","DA-02-00001-01","Coffee Bean Roasted House Blend CV Arera Pack 1 Kg",0.0095
+"KSNJ-R","Kopi Susu Nakoa  With Coffee Jelly - R","Pantry",0,"ingridient","BB-02-001","Susu","LITER","1 Liter","DA-01-00001-01","Susu GreenField ESL Pack 1 Liter",0.1
+"KSNJ-R","Kopi Susu Nakoa  With Coffee Jelly - R","Pantry",0,"ingridient","BB-10-001","Es","KG","10 Kg","DA-06-00001-01","Es Tube Sedang Pack",0.04
+"KSNJ-R","Kopi Susu Nakoa  With Coffee Jelly - R","Pantry",0,"ingridient","BB-04-001","SKM","KG","0.495 Kg","DA-01-00006-01","Krimer Carnation Putih Kaleng 495 Gram",0.06
+"F-91","Strawberry Donut","Pantry",0,"item","FO-01-00091-01","Strawberry Donut","PC","PC","FO-01-00091-01","Strawberry Donut",1
+"F-91","Strawberry Donut","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-91","Strawberry Donut","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-91","Strawberry Donut","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-92","Banana Milk Donut","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-92","Banana Milk Donut","Pantry",0,"item","FO-01-00092-01","Banana Milk Donut","PC","PC","FO-01-00092-01","Banana Milk Donut",1
+"F-92","Banana Milk Donut","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-92","Banana Milk Donut","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-93","Korean Garlic Cheese Bread","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-93","Korean Garlic Cheese Bread","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1
+"F-93","Korean Garlic Cheese Bread","Pantry",0,"ingridient","BB-06-001","Sauce Tomato","SACHET","24 Sachet","DA-04-00003-01","Sauce Tomato Del Monte pcs",1
+"F-93","Korean Garlic Cheese Bread","Pantry",0,"ingridient","BB-06-002","Sauce Chili ","SACHET","24 Sachet","DA-04-00004-01","Sauce Extra Hot Del Monte pcs",1
+"F-93","Korean Garlic Cheese Bread","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-93","Korean Garlic Cheese Bread","Pantry",0,"item","FO-01-00093-01","Korean Garlic Cheese Bread","PC","PC","FO-01-00093-01","Korean Garlic Cheese Bread",1
+"F-94","Banana Chips","Pantry",0,"item","FO-01-00094-01","Banana Chips","PC","PC","FO-01-00094-01","Banana Chips",1
+"F-94","Banana Chips","Pantry",0,"package","PA-01-001","Food Tray","PCS","500 pcs","PA-02-00001-01","Food Tray Eco Pack",1
+"F-94","Banana Chips","Pantry",0,"package","PA-03-002","Garpu","PCS","50 Pcs","PA-02-00007-01","Garpu Suapi Pcs",1
+"F-94","Banana Chips","Pantry",0,"package","PA-03-001","Pisau","PCS","100 Pcs","PA-02-00008-01","Pisau Suapi Pcs",1

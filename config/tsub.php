@@ -1,10 +1,15 @@
 <?php
 
 return [
+<<<<<<< HEAD
     'support'       => [
         'scopes'    => ['tsale', 'twh', 'tmf', 'tproc', 'tswirl'],
         // 'scopes'    => ['tsale', 'tcust', 'twh', 'tmf', 'tproc', 'tfin', 'tswirl'],
     ],
+=======
+    'support'       => ['tsale', 'twh', 'tproc'],
+    // 'support'       => ['tsale', 'tcust', 'twh', 'tmf', 'tproc', 'tfin', 'tswirl'],
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
     'scopes'        => [
         'tsub.subscription.professional'    => 'Handle langganan pro',
         'tsub.subscription.exclusive'       => 'Handle langganan x',

@@ -13,7 +13,11 @@ return [
     |
     */
 
+<<<<<<< HEAD
     'default' => env('QUEUE_CONNECTION', 'sync'),
+=======
+    'default' => env('QUEUE_CONNECTION', 'database'),
+>>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
 
     /*
     |--------------------------------------------------------------------------

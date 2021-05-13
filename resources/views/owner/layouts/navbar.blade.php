@@ -12,16 +12,12 @@
       <li class="has-submenu">
       <a href="#">{{$v['website']}} <i class="mdi mdi-chevron-down mdi-drop"></i></a>
         <ul class="submenu text-center">
-          <li><a href="{{ route('owner.subscription.get', ['id' => $v['website']]) }}">TAGIHAN</a></li>
-          @if(in_array($v['membership'], ['professional']))
           <li><a href="{{ route('owner.endpoint.get', ['id' => $v['website']]) }}">ENDPOINT</a></li>
           <li><a href="{{ route('owner.access.get', ['id' => $v['website']]) }}">AKSES</a></li>
           <li><a href="{{$v['ux_website']}}">DASHBOARD</a></li>
-          @endif
         </ul>
       </li>
     @endforeach
-    <li><a href="{{ route('subscribing') }}">____.{{ env('APP_BASE', 'localhost') }}</a></li>
     </ul>
     <ul class="navbar-nav ml-auto">
       <!-- User-->

@@ -32,6 +32,28 @@ return [
 		'twh'		=> 'tenant',
 		'tswirl'	=> 'tenant',
 	],
+	'queue'			=> [
+		'tacl' 		=> 'database', 
+		'tsub' 		=> 'database',
+		'tcust'		=> 'database',
+		'tfin'		=> 'database',
+		'tmf'		=> 'database',
+		'tproc'		=> 'database',
+		'tsale'		=> 'database',
+		'twh'		=> 'database',
+		'tswirl'	=> 'database',
+	],
+	'skin'	=> [
+		'tacl' 		=> 'v1', 
+		'tsub' 		=> 'v1',
+		'tcust'		=> 'v1',
+		'tfin'		=> 'v1',
+		'tmf'		=> 'v1',
+		'tproc'		=> 'v1',
+		'tsale'		=> 'v1',
+		'twh'		=> 'v1',
+		'tswirl'	=> 'v1',
+	],
     'blacklist'    	=> [
         'host'		=> [
         	'soda.id',
