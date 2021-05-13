@@ -180,6 +180,7 @@ return [
         Maatwebsite\Excel\ExcelServiceProvider::class,
         Mpociot\ApiDoc\ApiDocGeneratorServiceProvider::class,
         //SETUP AREA
+        // Lacunose\Swirl\Providers\SodaXVernonServiceProvider::class,
         Lacunose\Swirl\Providers\BasilXNakoaServiceProvider::class,
         Lacunose\Acl\Providers\AclServiceProvider::class,
         Lacunose\Subscribe\Providers\SubscribeServiceProvider::class,
