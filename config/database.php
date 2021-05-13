@@ -105,44 +105,7 @@ return [
             'strict' => true,
             'engine' => null,
         ],
-<<<<<<< HEAD
-=======
-        
-        'nakoa1' => [
-            'driver' => 'mysql',
-            'host' => env('NAK1_HOST', '127.0.0.1'),
-            'port' => env('NAK1_PORT', '3306'),
-            'database' => env('NAK1_DATABASE', 'NAK1'),
-            'username' => env('NAK1_USERNAME', 'NAK1'),
-            'password' => env('NAK1_PASSWORD', ''),
-            'unix_socket' => env('DB_SOCKET', ''),
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
-            'strict' => true,
-            'engine' => null,
-        ],
->>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
 
-        'thunder' => [
-            'driver' => 'mysql',
-            'host' => env('TLAB_HOST', '127.0.0.1'),
-            'port' => env('TLAB_PORT', '3306'),
-            'database' => env('TLAB_DATABASE', 'tlab'),
-            'username' => env('TLAB_USERNAME', 'tlab'),
-            'password' => env('TLAB_PASSWORD', ''),
-            'unix_socket' => env('DB_SOCKET', ''),
-            'charset' => 'utf8mb4',
-            'collation' => 'utf8mb4_unicode_ci',
-            'prefix' => '',
-            'strict' => true,
-            'engine' => null,
-        ],
-<<<<<<< HEAD
-        
-=======
-
->>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
         'tenant' => [
             'driver' => 'mysql',
             'host' => env('TENANCY_HOST', '127.0.0.1'),

@@ -32,11 +32,7 @@ return [
      * A queue is used to guarantee that all events get passed to the projectors in
      * the right order. Here you can set of the name of the queue.
      */
-<<<<<<< HEAD
     'queue' => env('EVENT_PROJECTOR_QUEUE_NAME', null),
-=======
-    'queue' => env('EVENT_PROJECTOR_QUEUE_NAME', 'tst'),
->>>>>>> 8a4e788cd197070a929f1f35c583e4b73a664406
 
     /*
      * When a Projector or Reactor throws an exception the event Projectionist can catch it
