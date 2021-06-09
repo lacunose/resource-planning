@@ -110,7 +110,7 @@ return [
         ],
         'marketplace'       => [
             'pos'           => 'POS',
-            // 'shopee'        => 'SHOPEE',
+            'shopee'        => 'SHOPEE',
             // 'tokopedia'     => 'TOKOPEDIA',
             // 'lazada'        => 'LAZADA',
             // 'bukalapak'     => 'BUKALAPAK',
@@ -121,8 +121,8 @@ return [
         'flag'              => [
             'catalog'           => 'Katalog',
             'deposit'           => 'Titipan',
-            'promo_catalog'     => 'Promo Produk',
-            'promo_transaction' => 'Promo Transaksi',
+            // 'promo_catalog'     => 'Promo Produk',
+            // 'promo_transaction' => 'Promo Transaksi',
             // 'service'           => 'Layanan',
             // 'tax'               => 'Pajak',
         ],
@@ -168,10 +168,10 @@ return [
         ],
     ],
     'default'       => [
-        'order'     => ['warehouse' => 'nakoa', 'is_printed' => true],
+        'order'     => ['warehouse' => 'VERNON', 'is_printed' => true],
     ],
     'setting'       => [
-        'business'  => 'nakoa',
+        'business'  => 'VERNON',
         'per_page'  => 80,
     ],
     'title'         => [
@@ -182,6 +182,53 @@ return [
             'sold'      => 'Penjualan (produk)',
             'category'  => 'Penjualan (kategori)',
             'payment'   => 'Penjualan (pembayaran)',
+        ],
+    ],
+    'api'           => [
+        'tokopedia' => [
+            'fs_id'         => env('TOKOPEDIA_FSID'),
+            'client_id'     => env('TOKOPEDIA_CLIENT'),
+            'client_secret' => env('TOKOPEDIA_SECRET'),
+            'shops'         => [
+                '8656957'   => 'PASARIA',
+                '8766412'   => 'HALOLO',
+                '9907944'   => 'ADADIOKE',
+            ],
+            'paths'         => [
+                'decrypt_secret'    => '/credentials/tokopedia/rsa/decrypt-secret.sh',
+                'private_key'       => '/credentials/tokopedia/rsa/private_key.pem',
+                'encrypted_secret'  => '/credentials/tokopedia/rsa/encrypted_secret.txt',
+            ],
+        ],
+
+        'lazada'    => [
+            'fs_id'         => env('LAZADA_FSID'),
+            'client_id'     => env('LAZADA_CLIENT'),
+            'client_secret' => env('LAZADA_SECRET'),
+            'shops'         => [
+                'CODESHOP1'     => 'PASARIA',
+                'CODESHOP2'     => 'HALOLO',
+                'CODESHOP3'     => 'ADADIOKE',
+                'CODESHOP4'     => 'VERNON',
+            ],
+            'paths'         => [
+                'refresh_token'     => '/credentials/lazada/token.txt',
+            ],
+        ],
+
+        'shopee' => [
+            'fs_id'         => env('SHOPEE_FSID'),
+            'client_id'     => env('SHOPEE_CLIENT'),
+            'client_secret' => env('SHOPEE_SECRET'),
+            'shops'         => [
+                '9375'      => 'VERNON',
+                // '267626702'   => 'PASARIA',
+                // '47491431'    => 'HALOLO',
+                // '187703509'   => 'ADADIOKE',
+            ],
+            'paths'         => [
+                'refresh_token'     => '/credentials/shopee/token.txt',
+            ],
         ],
     ],
 ];
