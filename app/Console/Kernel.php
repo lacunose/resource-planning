@@ -13,6 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
+        \Lacunose\Sale\Console\Commands\ShopeeOrder::class,
         Commands\CreateWebsite::class,
         //
     ];
