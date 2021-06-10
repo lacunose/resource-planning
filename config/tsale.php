@@ -206,10 +206,9 @@ return [
             'client_id'     => env('LAZADA_CLIENT'),
             'client_secret' => env('LAZADA_SECRET'),
             'shops'         => [
-                'CODESHOP1'     => 'PASARIA',
-                'CODESHOP2'     => 'HALOLO',
-                'CODESHOP3'     => 'ADADIOKE',
-                'CODESHOP4'     => 'VERNON',
+                '400607199001'  => 'PASARIA',
+                '400610928016'  => 'HALOLO',
+                '100187768'     => 'VERNON',
             ],
             'paths'         => [
                 'refresh_token'     => '/credentials/lazada/token.txt',

@@ -39,3 +39,8 @@ Route::post('invited/{website}/{token}', 'WebsiteController@invited')->name('inv
 
 Route::get('subscribing', 'WebsiteController@subscribing')->middleware('auth:web')->name('subscribing');
 Route::post('subscribed', 'WebsiteController@subscribed')->middleware('auth:web')->name('subscribed');
+
+Route::get('/api/sync/lazada', function () {
+	$url 	= str_replace(request()->getHost(), request()->subdomain, route('tswirl.apisync.lazada', ['code' => request()->code]));
+	return redirect($url);
+});

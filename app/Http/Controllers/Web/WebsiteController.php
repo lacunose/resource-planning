@@ -138,7 +138,7 @@ class WebsiteController extends Controller {
             DB::beginTransaction();
             if(!$access->user){
                 $uuid   =  (string) Uuid::uuid4();
-                $data   = UserAggregateRoot::retrieve($uuid)->register($user)->verify_without_token()->persist();
+                $data   = UserAggregateRoot::retrieve($uuid)->check_password($user['email'], $user['password'])->register($user)->verify_without_token()->persist();
             }
             $dt = AccessAggregateRoot::retrieve($access->uuid)->accept($token)->persist();
             $ac = Access::where('website', $website)->where('email', $access->email)->firstorfail();
@@ -147,6 +147,7 @@ class WebsiteController extends Controller {
             return redirect($ac->user->level);
 
         } catch (Exception $e) {
+            Flash::error($e->getMessage());
             DB::rollback();
             return redirect()->back();
         }

@@ -29,5 +29,9 @@ return [
 			'tproc.opsi.branch'		=> 'Divisi Pembelian',
 			'tfin.opsi.branch'		=> 'Divisi Keuangan',
 		],
-	]
+	],
+	'setting'       => [
+        'password'  => 'none',
+        'per_page'  => 80,
+    ],
 ];
