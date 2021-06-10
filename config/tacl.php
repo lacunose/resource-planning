@@ -31,7 +31,7 @@ return [
 		],
 	],
 	'setting'       => [
-        'password'  => 'none',
+        'password'  => 'strong',
         'per_page'  => 80,
     ],
 ];
