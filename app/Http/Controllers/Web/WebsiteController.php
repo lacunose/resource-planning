@@ -39,7 +39,8 @@ class WebsiteController extends Controller {
         try {
             DB::beginTransaction();
             //1. REGISTER USER
-            $dt     = UserAggregateRoot::retrieve($id)->register($user)->request_verification_token()->persist();
+            $dt     = UserAggregateRoot::retrieve($id)->check_password($user['email'], $user['password'])
+                ->register($user)->request_verification_token()->persist();
             DB::commit();
 
             // dd('Berhasil daftar. Tolong cek email.');
@@ -111,7 +112,6 @@ class WebsiteController extends Controller {
             return redirect($url);
         } catch (Exception $e) {
             DB::rollback();
-            dd($e);
             Flash::error($e->getMessage());
             return redirect()->back();
         }
