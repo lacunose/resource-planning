@@ -1,10 +1,8 @@
 <?php
 
 return [
-    'support'       => [
-        'scopes'    => ['tsale', 'twh', 'tmf', 'tproc', 'tswirl'],
-        // 'scopes'    => ['tsale', 'tcust', 'twh', 'tmf', 'tproc', 'tfin', 'tswirl'],
-    ],
+    'support'       => ['tsale', 'twh', 'tproc', 'tswirl'],
+    // 'support'       => ['tsale', 'tcust', 'twh', 'tmf', 'tproc', 'tfin', 'tswirl'],
     'scopes'        => [
         'tsub.subscription.professional'    => 'Handle langganan pro',
         'tsub.subscription.exclusive'       => 'Handle langganan x',

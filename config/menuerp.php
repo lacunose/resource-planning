@@ -15,6 +15,16 @@ return [
 				'param' => ['status' => 'published'],
 				'scope'	=> 'tsale.catalog.setting',
 			], [
+				'title'	=> 'Promo Produk',
+				'url'	=> 'tsale.promo.index',
+				'param' => ['mode' => 'catalog', 'status' => 'activated'],
+				'scope'	=> 'tsale.promo.catalog',
+			], [
+				'title'	=> 'Promo Transaksi',
+				'url'	=> 'tsale.promo.index',
+				'param' => ['mode' => 'transaction', 'status' => 'activated'],
+				'scope'	=> 'tsale.promo.transaction',
+			], [
 				'title'	=> 'Template Note',
 				'url'	=> 'tsale.note.get',
 				'param' => [],
@@ -24,6 +34,17 @@ return [
 				'url'	=> 'tsale.pay.get',
 				'param' => [],
 				'scope'	=> 'tsale.setting.pay',
+			]],
+			'Pengaturan Outlet' => [[
+				'title'	=> 'Katalog',
+				'url'	=> 'tsale.catalog.listing',
+				'param' => [],
+				'scope'	=> 'tsale.catalog.listing',
+			],[
+				'title'	=> 'Promo',
+				'url'	=> 'tsale.promo.listing',
+				'param' => [],
+				'scope'	=> 'tsale.promo.listing',
 			]],
 		],
 		'PERSEDIAAN'	=> [
@@ -37,11 +58,6 @@ return [
 				'url'	=> 'twh.document.index',
 				'param' => ['status' => 'created'],
 				'scope'	=> 'twh.document.index',
-			], [
-				'title'	=> 'Paket',
-				'url'	=> 'twh.record.index',
-				'param' => ['status' => 'started'],
-				'scope'	=> 'twh.record.index',
 			]],
 			'Pengaturan Bisnis' => [[
 				'title'	=> 'Item',
@@ -51,47 +67,28 @@ return [
 			]],
 		],
 		'PEMBELIAN'		=> [
-			'Transaksi'	=> [[
+			'Data' 		=> [[
 				'title'	=> 'Pembelian',
 				'url'	=> 'tproc.transaction.index',
 				'param' => ['mode' => 'pembelian', 'status' => 'opened'],
 				'scope'	=> 'tproc.transaction.pembelian',
 			]],
 		],
+		'BISNIS'		=> [
+			'Data' 		=> [[
+				'title'	=> 'Stok Rebutan',
+				'url'	=> 'tswirl.conflict.index',
+				'param' => ['mode' => 'stock_overlap'],
+				'scope'	=> 'tswirl.conflict.stock_overlap',
+			]],
+		],
 	],
 	'thunder'	=> [
-		'Langganan' => [[
-			'title'	=> 'PRO',
-			'url'	=> 'tsub.subscription.index',
-			'param' => ['membership' => 'professional', 'status' => 'inactived'],
-			'scope'	=> 'tsub.subscription.professional',
-		], [
-			'title'	=> 'X',
-			'url'	=> 'tsub.subscription.index',
-			'param' => ['membership' => 'exclusive', 'status' => 'inactived'],
-			'scope'	=> 'tsub.subscription.exclusive',
-		]],
 		'Pengaturan' => [[
 			'title'	=> 'Pengguna',
 			'url'	=> 'tacl.user.index',
 			'param' => ['sort[name]' => 'asc'],
 			'scope'	=> 'tacl.setting.user',
-		], [
-			'title'	=> 'Paket Langganan',
-			'url'	=> 'tsub.package.index',
-			'param' => ['status' => 'published'],
-			'scope'	=> 'tsub.setting.package',
-		]],
-		'Laporan' => [[
-			'title'	=> 'Tagihan Pending',
-			'url'	=> 'tsub.report.bill',
-			'param' => ['mode' => 'unpaid'],
-			'scope'	=> 'tsub.bill.unpaid',
-		], [
-			'title'	=> 'Tagihan Lunas',
-			'url'	=> 'tsub.report.bill',
-			'param' => ['mode' => 'paid'],
-			'scope'	=> 'tsub.bill.paid',
 		]],
 	],
 	'glossary'		=> [

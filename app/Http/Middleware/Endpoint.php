@@ -34,16 +34,16 @@ class Endpoint {
                     // config()->set($f[0].'.yellowbook.'.$e['name'], $e);
                 }
 
-                if(!isset($ff[$f[2]]) || !array_intersect($ff[$f[2]], $cnf)){
+                if(!isset($ff[$f[2]]) || !array_intersect($ff[$f[2]], $cnf) && count($cnf)) {
                     $ff[$f[2]]  = $cnf;
                 }
-
+                
                 //set pfn
                 config()->set($p, $cnf);
                 request()->merge(['filter' => $ff]);
             }
 
-            $dms    = config()->get('tsub.support.scopes');
+            $dms    = config()->get('tsub.support');
             foreach ($dms as $dm) {
                 config()->set($dm.'.yellowbook', session()->get($dm.'.yellowbook'));
             }

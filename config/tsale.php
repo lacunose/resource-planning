@@ -3,20 +3,17 @@
 return [
     'scopes'    => [
         'tsale.transaction.penjualan'   => 'Handle transaksi penjualan',
-        'tsale.report.customer'         => 'Melihat laporan pelanggan',
-        'tsale.report.catalog'          => 'Melihat laporan trend produk',
-        'tsale.report.palate'           => 'Melihat laporan preferensi produk',
-        'tsale.report.sold'             => 'Melihat laporan penjualan (produk)',
-        'tsale.report.category'         => 'Melihat laporan penjualan (kategori)',
-        'tsale.report.payment'          => 'Melihat laporan penjualan (pembayaran)',
         'tsale.promo.transaction'       => 'Mengatur promo transaksi',
         'tsale.promo.catalog'           => 'Mengatur promo produk',
-        'tsale.promo.listing'           => 'Mengatur promo outlet',
         'tsale.catalog.setting'         => 'Mengatur katalog',
-        'tsale.catalog.listing'         => 'Mengatur katalog outlet',
+        // 'tsale.promo.listing'           => 'Mengatur promo outlet',
+        // 'tsale.catalog.listing'         => 'Mengatur katalog outlet',
         'tsale.setting.pay'             => 'Mengatur metode pembayaran',
         'tsale.setting.note'            => 'Mengatur template note',
         'tsale.transaction.voided'      => 'Approval void transaksi',
+        'tsale.report.settlement'       => 'Melihat laporan settlement',
+        'tsale.report.sold'             => 'Melihat laporan produk terlaris',
+        // 'tsale.report.promo'            => 'Melihat laporan promo terlaris',
     ],
     'logo'      => 'https://thunderlab.id/storage/app/uploads/public/5f7/ae8/123/5f7ae81237a56599536208.png',
     'name'      => 'THUNDERLAB',
@@ -52,9 +49,9 @@ return [
             'updated'   => 'Update',
             'reopend'   => 'Diulang',
             'confirmed' => 'Konfirmasi',
-            'delivered' => 'Diterima',
+            'delivered' => 'Dikirim',
             'paid'      => 'Dibayar',
-            'returned'  => 'Dikembalikan (retur)',
+            'returned'  => 'Dikembalikan (full retur)',
             'closed'    => 'Selesai',
             'voided'    => 'Dibatalkan',
         ],
@@ -76,7 +73,7 @@ return [
             'saturday'      => 'Sabtu',
         ],
         'type'  => [
-            'free'          => 'Dropship',
+            'free'          => 'Tanpa Resep',
             'item'          => 'Stok',
             'good'          => 'Menu',
         ],
@@ -96,7 +93,7 @@ return [
             'processed'     => [
                 'delivered'     => 'Dikirim',
                 'paid'          => 'Dibayar',
-                'returned'      => 'Dikembalikan (retur)',
+                'returned'      => 'Dikembalikan (full retur)',
             ],
         ],
         'event' => [
@@ -107,9 +104,9 @@ return [
             ],
             'processed'     => [
                 'confirmed' => 'Dikonfirmasi',
-                'delivered' => 'Diterima',
+                'delivered' => 'Dikirim',
                 'paid'      => 'Dibayar',
-                'returned'  => 'Dikembalikan (retur)',
+                'returned'  => 'Dikembalikan (full retur)',
             ],
             'closed'        => [],
             'voided'        => [],
@@ -117,27 +114,27 @@ return [
         'marketplace'       => [
             'pos'           => 'POS',
             'shopee'        => 'SHOPEE',
-            'tokopedia'     => 'TOKOPEDIA',
-            'lazada'        => 'LAZADA',
-            'bukalapak'     => 'BUKALAPAK',
-            'jdid'          => 'JDID',
-            'blibli'        => 'BLIBLI',
+            // 'tokopedia'     => 'TOKOPEDIA',
+            // 'lazada'        => 'LAZADA',
+            // 'bukalapak'     => 'BUKALAPAK',
+            // 'jdid'          => 'JDID',
+            // 'blibli'        => 'BLIBLI',
         ],
         'outlet'            => [],
         'flag'              => [
             'catalog'           => 'Katalog',
             'deposit'           => 'Titipan',
-            'promo_catalog'     => 'Promo Produk',
-            'promo_transaction' => 'Promo Transaksi',
+            // 'promo_catalog'     => 'Promo Produk',
+            // 'promo_transaction' => 'Promo Transaksi',
             // 'service'           => 'Layanan',
             // 'tax'               => 'Pajak',
         ],
         'tax'               => [
             // 'PPN'           => 10,
-            'PB1'           => 10,
+            // 'PB1'           => 10,
         ],
         'service'           => [
-            'Charge'       => 10,
+            // 'Charge'       => 10,
             // 'Pengiriman'    => 0,
         ],
         'deposit'           => [
@@ -174,10 +171,10 @@ return [
         ],
     ],
     'default'       => [
-        'order'     => ['warehouse' => 'nakoa', 'is_printed' => true],
+        'order'     => ['warehouse' => 'VERNON', 'is_printed' => true],
     ],
     'setting'       => [
-        'business'  => 'nakoa',
+        'business'  => 'VERNON',
         'per_page'  => 80,
     ],
     'title'         => [
@@ -188,6 +185,52 @@ return [
             'sold'      => 'Penjualan (produk)',
             'category'  => 'Penjualan (kategori)',
             'payment'   => 'Penjualan (pembayaran)',
+        ],
+    ],
+    'api'           => [
+        'tokopedia' => [
+            'fs_id'         => env('TOKOPEDIA_FSID'),
+            'client_id'     => env('TOKOPEDIA_CLIENT'),
+            'client_secret' => env('TOKOPEDIA_SECRET'),
+            'shops'         => [
+                '8656957'   => 'PASARIA',
+                '8766412'   => 'HALOLO',
+                '9907944'   => 'ADADIOKE',
+            ],
+            'paths'         => [
+                'decrypt_secret'    => '/credentials/tokopedia/rsa/decrypt-secret.sh',
+                'private_key'       => '/credentials/tokopedia/rsa/private_key.pem',
+                'encrypted_secret'  => '/credentials/tokopedia/rsa/encrypted_secret.txt',
+            ],
+        ],
+
+        'lazada'    => [
+            'fs_id'         => env('LAZADA_FSID'),
+            'client_id'     => env('LAZADA_CLIENT'),
+            'client_secret' => env('LAZADA_SECRET'),
+            'shops'         => [
+                '400607199001'  => 'PASARIA',
+                '400610928016'  => 'HALOLO',
+                '100187768'     => 'VERNON',
+            ],
+            'paths'         => [
+                'refresh_token'     => '/credentials/lazada/token.txt',
+            ],
+        ],
+
+        'shopee' => [
+            'fs_id'         => env('SHOPEE_FSID'),
+            'client_id'     => env('SHOPEE_CLIENT'),
+            'client_secret' => env('SHOPEE_SECRET'),
+            'shops'         => [
+                '9375'      => 'VERNON',
+                // '267626702'   => 'PASARIA',
+                // '47491431'    => 'HALOLO',
+                // '187703509'   => 'ADADIOKE',
+            ],
+            'paths'         => [
+                'refresh_token'     => '/credentials/shopee/token.txt',
+            ],
         ],
     ],
 ];

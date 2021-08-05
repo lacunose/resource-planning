@@ -105,7 +105,7 @@ return [
             'strict' => true,
             'engine' => null,
         ],
-        
+
         'tenant' => [
             'driver' => 'mysql',
             'host' => env('TENANCY_HOST', '127.0.0.1'),
